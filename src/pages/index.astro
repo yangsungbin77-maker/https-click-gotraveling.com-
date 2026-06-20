@@ -6,6 +6,7 @@ import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
+import heroBg from '../assets/pool/banner-04-mountain.png';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -23,12 +24,22 @@ const rest = posts.slice(1, 7);
 		<Header />
 		<main>
 			<section class="hero">
-				<span class="tag">여행지 · 항공 · 숙소</span>
-				<h1>떠나고 싶을 때, <span class="neon">가장 먼저</span><br />찾는 여행 가이드.</h1>
-				<p class="lead">{SITE_DESCRIPTION}</p>
-				<div class="hero-actions">
-					<a href="/blog" class="btn">최신 글 보기</a>
-					<a href="/about" class="btn-ghost btn">소개</a>
+				<div class="hero-bg" aria-hidden="true">
+					<Image src={heroBg} width={1600} height={914} alt="" loading="eager" />
+				</div>
+				<div class="hero-copy">
+					<span class="eyebrow">여행지 · 항공 · 숙소</span>
+					<h1 class="hero-title">떠나고 싶을 때,<br /><span class="neon">가장 먼저</span> 찾는 여행 가이드.</h1>
+					<p class="lead">{SITE_DESCRIPTION}</p>
+					<div class="hero-actions">
+						<a href="/blog" class="btn">최신 글 보기</a>
+						<a href="/about" class="btn-ghost btn">소개</a>
+					</div>
+					<ul class="trust" aria-label="이 블로그의 약속">
+						<li>직접 정리한 여행 정보</li>
+						<li>항공·숙소 절약 팁</li>
+						<li>매주 업데이트</li>
+					</ul>
 				</div>
 			</section>
 
@@ -88,23 +99,74 @@ const rest = posts.slice(1, 7);
 </html>
 
 <style>
+	/* 여행 히어로: 실사 풍경을 풀블리드 배경으로, 텍스트는 왼쪽 어두운 영역 위에 */
 	.hero {
-		padding: 2.5rem 0 3rem;
-		border-bottom: 1px solid var(--border);
+		position: relative;
+		min-height: clamp(420px, 56vh, 560px);
+		display: flex;
+		align-items: center;
+		padding: 3rem 0 3.5rem;
 		margin-bottom: 2.5rem;
+		border-bottom: 1px solid var(--border);
+		border-radius: var(--radius);
+		overflow: hidden;
+		isolation: isolate;
 	}
-	.hero h1 {
-		font-size: clamp(2.4rem, 6vw, 4rem);
-		margin: 0.6rem 0 0.8rem;
+	.hero-bg {
+		position: absolute;
+		inset: 0;
+		z-index: -2;
+	}
+	.hero-bg img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: 65% center;
+		border-radius: 0;
+	}
+	/* 왼쪽은 글이 읽히도록 어둡게, 오른쪽은 풍경이 살아나도록 */
+	.hero::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		background: linear-gradient(
+			90deg,
+			var(--bg) 0%,
+			rgba(11, 14, 20, 0.82) 34%,
+			rgba(11, 14, 20, 0.4) 60%,
+			transparent 82%
+		);
+	}
+	.hero-copy {
+		position: relative;
+		max-width: 34rem;
+		padding-left: clamp(1rem, 3vw, 2.2rem);
+	}
+
+	.eyebrow {
+		display: inline-block;
+		font-size: 0.8rem;
+		font-weight: 700;
+		letter-spacing: 0.14em;
+		color: var(--accent);
+		margin-bottom: 1rem;
+	}
+	.hero-title {
+		font-size: clamp(2.3rem, 5.4vw, 3.8rem);
+		line-height: 1.18;
+		letter-spacing: -0.02em;
+		margin: 0 0 1rem;
+		color: #fff;
 	}
 	.neon {
 		color: var(--accent);
-		text-shadow: 0 0 24px var(--accent-glow);
+		text-shadow: 0 0 28px var(--accent-glow);
 	}
 	.lead {
 		color: var(--text-muted);
-		font-size: 1.15rem;
-		max-width: 38ch;
+		font-size: 1.12rem;
+		max-width: 34ch;
 		margin-bottom: 1.6rem;
 	}
 	.hero-actions {
@@ -112,11 +174,78 @@ const rest = posts.slice(1, 7);
 		gap: 0.8rem;
 		flex-wrap: wrap;
 	}
+	.trust {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem 1.3rem;
+		list-style: none;
+		padding: 0;
+		margin: 1.7rem 0 0;
+		font-size: 0.82rem;
+		color: var(--text-dim);
+	}
+	.trust li {
+		position: relative;
+		padding-left: 0.95rem;
+	}
+	.trust li::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0.5em;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: var(--accent);
+		box-shadow: 0 0 8px var(--accent-glow);
+	}
+
+	/* 페이지 로드 스태거 */
+	.eyebrow,
+	.hero-title,
+	.lead,
+	.hero-actions,
+	.trust {
+		animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+	}
+	.hero-title { animation-delay: 0.06s; }
+	.lead { animation-delay: 0.12s; }
+	.hero-actions { animation-delay: 0.18s; }
+	.trust { animation-delay: 0.24s; }
+
+	@keyframes rise {
+		from { opacity: 0; transform: translateY(14px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+
+	@media (max-width: 760px) {
+		.hero {
+			min-height: 0;
+			padding: 2.5rem 0 2.8rem;
+		}
+		.hero-bg img { object-position: 58% 30%; }
+		.hero::before {
+			background: linear-gradient(
+				180deg,
+				rgba(11, 14, 20, 0.5) 0%,
+				rgba(11, 14, 20, 0.74) 45%,
+				var(--bg) 100%
+			);
+		}
+		.hero-copy { padding-left: 0; }
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.eyebrow,
+		.hero-title,
+		.lead,
+		.hero-actions,
+		.trust { animation: none; }
+	}
 
 	.featured {
 		display: block;
 		background:
-			linear-gradient(180deg, rgba(62, 245, 139, 0.08), transparent 40%),
+			linear-gradient(180deg, rgba(47, 155, 255, 0.08), transparent 40%),
 			var(--bg-elev);
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
@@ -127,15 +256,22 @@ const rest = posts.slice(1, 7);
 	.featured:hover {
 		border-color: var(--accent);
 		transform: translateY(-2px);
-		box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+		box-shadow:
+			0 14px 40px rgba(0, 0, 0, 0.4),
+			0 0 40px rgba(47, 155, 255, 0.1);
+	}
+	.featured-image {
+		overflow: hidden;
+		border-bottom: 1px solid var(--border);
 	}
 	.featured-image img {
 		display: block;
 		width: 100%;
 		aspect-ratio: 2 / 1;
 		object-fit: cover;
-		border-bottom: 1px solid var(--border);
+		transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 	}
+	.featured:hover .featured-image img { transform: scale(1.04); }
 	.featured-body { padding: 2rem; }
 	.featured h2 {
 		margin: 0.8rem 0 0.5rem;
@@ -164,6 +300,7 @@ const rest = posts.slice(1, 7);
 		gap: 1.2rem;
 	}
 	.card {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
@@ -171,20 +308,40 @@ const rest = posts.slice(1, 7);
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
 		overflow: hidden;
-		transition: border-color 0.2s ease, transform 0.15s ease, background 0.2s ease;
+		transition: border-color 0.2s ease, transform 0.15s ease, background 0.2s ease,
+			box-shadow 0.2s ease;
+	}
+	.card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: linear-gradient(90deg, var(--accent), transparent 70%);
+		opacity: 0;
+		transition: opacity 0.2s ease;
+		z-index: 2;
 	}
 	.card:hover {
 		border-color: var(--accent);
-		transform: translateY(-2px);
+		transform: translateY(-3px);
 		background: var(--bg-elev-2);
+		box-shadow: 0 16px 38px rgba(0, 0, 0, 0.42);
+	}
+	.card:hover::before { opacity: 1; }
+	.card-image {
+		overflow: hidden;
+		border-bottom: 1px solid var(--border);
 	}
 	.card-image img {
 		display: block;
 		width: 100%;
 		aspect-ratio: 2 / 1;
 		object-fit: cover;
-		border-bottom: 1px solid var(--border);
+		transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 	}
+	.card:hover .card-image img { transform: scale(1.05); }
 	.card-body {
 		display: flex;
 		flex-direction: column;
