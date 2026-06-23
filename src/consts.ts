@@ -6,3 +6,6 @@ export const SITE_DESCRIPTION = '여행지 추천부터 항공권·숙소 꿀팁
 
 // 구글 서치 콘솔 'HTML 태그' 인증의 content 값만 넣는다. 비워두면 메타태그가 출력되지 않는다.
 export const GSC_VERIFICATION = '4gLotamjr3uRUsQ1iatVZKGbhLbEUm84Wc9Q1tCDMNs';
+
+// 네이버 서치어드바이저 'HTML 태그' 인증의 content 값만 넣는다. 비워두면 메타태그가 출력되지 않는다.
+export const NAVER_VERIFICATION = '1f490f52d7a3315ec571a00aa2fafaf196e86dd8';
