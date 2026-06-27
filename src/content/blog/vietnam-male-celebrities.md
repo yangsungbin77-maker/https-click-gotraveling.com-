@@ -21,15 +21,25 @@ heroImage: '../../assets/pool/banner-03-city.png'
 
 팬덤 이름은 'Sky'이고, 직접 음반사를 세워 후배를 키울 만큼 영향력이 큽니다. 베트남의 한 공식 매체가 그를 "한류 스타에 견줄 자국 아이콘"으로 소개할 정도라, 베트남 대중문화의 상징적 인물로 봐도 됩니다. 더 자세한 이력은 [선뚱 엠티피 위키백과](https://en.wikipedia.org/wiki/S%C6%A1n_T%C3%B9ng_M-TP)에서 확인할 수 있어요.
 
-![베트남 남자 연예인 가수 배우를 상징하는 베트남 음악 시상식 무대](../../assets/posts/vietnam-male-celebrities.webp)
+![베트남 남자 연예인 선뚱 엠티피(Sơn Tùng M-TP) 사진](../../assets/posts/vietnam-celeb-sontung.png)
+*▲ 선뚱 엠티피 — 사진 ⓒ Viettel Telecom, CC BY 3.0 (Wikimedia Commons)*
 
 ## 감성 보컬, 발라드 라인 — 누 프억 틴·소빈 호앙 선·호 꽝 히에우
 
 부드러운 발라드로 사랑받는 가수들입니다. **누 프억 틴**(Noo Phước Thịnh)은 1988년생으로 모델로 시작해 가수로 자리 잡았고, '발라드 왕자'라 불립니다. "Mất em" 같은 곡이 대표적이고, 베트남 보이스 코치로도 활동했어요.
 
+![베트남 남자 가수 누 프억 틴(Noo Phước Thịnh) 사진](../../assets/posts/vietnam-celeb-noo.png)
+*▲ 누 프억 틴 — 사진 ⓒ Beyoncetan, CC BY-SA 4.0 (Wikimedia Commons)*
+
 **소빈 호앙 선**(Soobin Hoàng Sơn)은 1992년생 싱어송라이터로, "Phía sau một cô gái"가 널리 알려져 있습니다. 2024년 예능 'Anh trai vượt ngàn chông gai(천 개의 가시를 넘는 형들)'에 출연해 큰 화제를 모으며 제2의 전성기를 맞았어요. 저도 찾아보니 이 예능 출신들이 요즘 베트남에서 가장 화제더라고요.
 
+![베트남 남자 가수 소빈 호앙 선(Soobin Hoàng Sơn) 사진](../../assets/posts/vietnam-celeb-soobin.png)
+*▲ 소빈 호앙 선 — 사진 ⓒ YeaH1 Channel, CC BY 3.0 (Wikimedia Commons)*
+
 **호 꽝 히에우**(Hồ Quang Hiếu)는 1980년대생 가수로, 봄을 노래한 "Con bướm xuân"이 국민적으로 알려진 곡입니다. 세 사람 모두 음원 사이트나 유튜브에서 쉽게 들어볼 수 있으니, 베트남 감성 발라드가 궁금하면 이 라인부터 들어보세요.
+
+![베트남 남자 가수 호 꽝 히에우(Hồ Quang Hiếu) 사진](../../assets/posts/vietnam-celeb-hoquanghieu.jpg)
+*▲ 호 꽝 히에우 — 사진 ⓒ MVC TOPS, CC BY 3.0 (Wikimedia Commons)*
 
 ## 노래와 연기를 함께 — 아이작·응오 끼엔 후이
 
@@ -37,11 +47,17 @@ heroImage: '../../assets/pool/banner-03-city.png'
 
 **응오 끼엔 후이**(Ngô Kiến Huy)는 본명 레 타인 즈엉(Lê Thành Dương), 1988년생으로 가수·배우·MC를 두루 하는 만능형입니다. 특히 한국 영화 '수상한 그녀'의 베트남 리메이크 "Em là bà nội của anh"(2015) 흥행에 함께한 세대라, 한국 콘텐츠와의 접점도 있어요. 예능 '마스크드 싱어 베트남' 진행자로도 익숙한 얼굴입니다.
 
+![베트남 남자 연예인 응오 끼엔 후이(Ngô Kiến Huy) 사진](../../assets/posts/vietnam-celeb-ngokienhuy.jpg)
+*▲ 응오 끼엔 후이 — 사진 ⓒ BEE Entertainment, CC BY 3.0 (Wikimedia Commons)*
+
 ## 드라마·영화 미남 배우 — 빈 안·흐어 비 반
 
 드라마에서 자주 보이는 미남 배우들입니다. **빈 안**(Bình An)은 1993년생 배우 겸 모델로, 베트남 국영방송 VTV의 인기 드라마 "나의 첫사랑(Mối tình đầu của tôi)" 등에 출연한 대표적인 드라마 남주 이미지예요. 드라마 "자작나무 연가(Tình khúc bạch dương)"로 황금연(Cánh Diều Vàng)에서 남우조연상을 받기도 했습니다.
 
 **흐어 비 반**(Hứa Vĩ Văn)은 1979년생으로 모델 출신의 연기파 배우입니다. 앞서 말한 '수상한 그녀'의 베트남판 "Em là bà nội của anh"에 출연했고, 영화·드라마에서 입지가 탄탄해요. 두 사람 모두 베트남 드라마를 보다 보면 자연스럽게 마주치게 되는 얼굴입니다.
+
+![베트남 남자 배우 흐어 비 반(Hứa Vĩ Văn) 사진](../../assets/posts/vietnam-celeb-huavivan.jpg)
+*▲ 흐어 비 반 — 사진 ⓒ SAIGONTV, CC BY 3.0 (Wikimedia Commons)*
 
 ## 요즘 뜨는 V-pop 신예도 알아두면 좋아요
 
@@ -75,6 +91,17 @@ heroImage: '../../assets/pool/banner-03-city.png'
 ## 마무리
 
 베트남 남자 연예인, 이름이 낯설어 막막했다면 이거 하나만 기억하면 돼요. **가수는 선뚱 엠티피를 중심으로, 배우는 빈 안·흐어 비 반을 기준점으로** 잡으면 나머지는 가지치기로 따라옵니다. 저도 이름과 대표작을 표로 묶고 나서야 비로소 정리가 되더라고요. 베트남 여행을 앞두고 있다면 이 8명의 노래나 드라마를 미리 한두 편 보고 가는 것도 현지 분위기를 즐기는 좋은 준비입니다. 베트남 여행 자체가 처음이라면 [베트남 여행 준비물 체크리스트](/vietnam-travel-checklist/)도 함께 챙겨보세요. 즐거운 여행 되시길 바랄게요. ✈️
+
+## 이미지 출처
+
+본문 인물 사진은 위키미디어 공용(Wikimedia Commons)의 자유 라이선스 이미지를 출처 표기와 함께 사용했습니다. 아이작과 빈 안은 자유 라이선스 사진이 없어 글로만 소개했습니다.
+
+- 선뚱 엠티피 — ⓒ Viettel Telecom, CC BY 3.0
+- 누 프억 틴 — ⓒ Beyoncetan, CC BY-SA 4.0
+- 소빈 호앙 선 — ⓒ YeaH1 Channel, CC BY 3.0
+- 호 꽝 히에우 — ⓒ MVC TOPS, CC BY 3.0
+- 응오 끼엔 후이 — ⓒ BEE Entertainment, CC BY 3.0
+- 흐어 비 반 — ⓒ SAIGONTV, CC BY 3.0
 
 ---
 
