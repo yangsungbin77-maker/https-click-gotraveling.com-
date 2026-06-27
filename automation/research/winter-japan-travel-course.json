@@ -1,0 +1,66 @@
+{
+  "type": "info",
+  "keyword_root": "겨울 일본 여행 코스",
+  "keyword_cluster": [
+    "겨울 일본 여행지 추천", "삿포로 3박4일 코스", "삿포로 눈축제", "오타루 겨울",
+    "겨울 교토", "도쿄 일루미네이션", "일본 온천 여행", "겨울 오키나와",
+    "일본 여행 경비", "겨울 일본 옷차림", "스노우몽키", "하코네 온천", "겨울 여행지 추천"
+  ],
+  "serp": [
+    { "url": "https://www.tripstore.kr/blog/겨울-여행지-일본-추천-경비", "opened": true, "note": "삿포로·교토·도쿄 3도시 코스+경비. 삿포로 90만, 교토 70~80만, 도쿄 80~90만. 도시별 구성 근거" },
+    { "url": "https://www.japankuru.com/ko/tour/236713/", "opened": true, "note": "겨울 일본 5선(삿포로·하코네·교토·시라카와고·나가노). 온천·설경 테마 근거" },
+    { "url": "https://esim.holafly.com/ko/travel-tips/winter-japan-travel/", "opened": true, "note": "겨울 명소 TOP10(삿포로눈축제·오타루·긴잔온천·유후인·스노우몽키)+옷차림/준비물 근거" },
+    { "url": "https://www.tripstore.kr/blog/일본-2박3일-여행-코스-겨울-삿포로-커플-감성", "opened": true, "note": "삿포로 2박3일 일자별 동선(오도리·스스키노·시로이코이비토·오타루·니조시장). 경비 80만" },
+    { "url": "https://triple.guide/articles/a7964974-6f39-4840-afb9-3bdf5e6e9f69", "opened": true, "note": "삿포로 3박4일 코스(맥주박물관·오도리·시로이코이비토·후라노비에이·오타루). 동선 근거" },
+    { "url": "https://www.tripstore.kr/blog/삿포로-3박4일-여행코스-커플-시내-오타루-로맨틱", "opened": true, "note": "삿포로 3박4일 시내+오타루. 오타루 JR쾌속 약 35분. 성수기 경비 변동 큼(150만 사례)" },
+    { "url": "https://triple.guide/articles/9ddaaa69-cfb9-4cd9-b458-1d2391aca364", "opened": true, "note": "오사카 2박3일(도톤보리·우메다·가이유칸). 오사카 도시 코스 근거" },
+    { "url": "https://att-japan.net/en/att109-snow/", "opened": true, "note": "설경 명소 5선+축제 날짜(시코츠호 얼음축제 2026.1.31~2.23 등). 축제 날짜 변동성 근거" },
+    { "url": "https://kr.trip.com/blog/winter-japan-trip/", "opened": false, "note": "HTTP 418 차단 — 직접 열람 실패" },
+    { "url": "https://www.kkday.com/ko/blog/6120/asia-japan-hokkaido-sapporo", "opened": false, "note": "HTTP 403 차단 — 직접 열람 실패" }
+  ],
+  "factcheck": [
+    {
+      "claim": "삿포로 눈축제는 보통 매년 2월 초 오도리공원 일대에서 열린다(정확한 날짜는 매년 변동)",
+      "sources": [
+        "https://www.tripstore.kr/blog/겨울-여행지-일본-추천-경비",
+        "https://esim.holafly.com/ko/travel-tips/winter-japan-travel/"
+      ]
+    },
+    {
+      "claim": "겨울 삿포로 3박4일 1인 경비는 대략 80~100만 원대이며 성수기·예약시점에 따라 변동이 크다",
+      "sources": [
+        "https://www.tripstore.kr/blog/겨울-여행지-일본-추천-경비",
+        "https://www.tripstore.kr/blog/일본-2박3일-여행-코스-겨울-삿포로-커플-감성"
+      ]
+    },
+    {
+      "claim": "나가노 스노우몽키(지고쿠다니 야엔공원)는 야생 원숭이가 겨울 온천에 몸을 담그는 모습을 볼 수 있는 명소다",
+      "sources": [
+        "https://www.japankuru.com/ko/tour/236713/",
+        "https://esim.holafly.com/ko/travel-tips/winter-japan-travel/"
+      ]
+    },
+    {
+      "claim": "겨울 일본은 지역별 기온차가 커 홋카이도는 영하, 도쿄·교토는 1월 평균 5도 안팎, 오키나와는 15~20도다",
+      "sources": [
+        "https://esim.holafly.com/ko/travel-tips/winter-japan-travel/",
+        "https://www.tripstore.kr/blog/겨울-여행지-일본-추천-경비"
+      ]
+    },
+    {
+      "claim": "오타루는 삿포로에서 JR 쾌속으로 약 30~40분 거리이며 운하 가스등 야경·오르골당이 대표 명소다",
+      "sources": [
+        "https://www.tripstore.kr/blog/삿포로-3박4일-여행코스-커플-시내-오타루-로맨틱",
+        "https://triple.guide/articles/a7964974-6f39-4840-afb9-3bdf5e6e9f69"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "겨울 일본 여행 코스",
+    "headline_finding": "경쟁글은 명소 나열·삿포로 단일 코스 위주 — 우리는 눈/온천/일루미네이션/따뜻한남쪽 4테마 분류+도시별 코스+경비표로 차별화",
+    "unique_angle": "'어느 도시'가 아니라 '어떤 겨울을 원하는가'로 테마부터 정하는 의사결정 프레임 + 오키나와(따뜻한 남쪽) 옵션 포함",
+    "competitor_gap": "겨울 일본을 따뜻한 남쪽까지 포함해 테마로 통합하고 지역별 방한 준비를 콜아웃으로 정리한 글이 드뭄",
+    "internal_links": ["/osaka-free-travel-guide/", "/parents-japan-travel-course/", "/solo-japan-travel-course/"]
+  },
+  "hermes_score": 90
+}
