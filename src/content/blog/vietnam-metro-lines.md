@@ -162,6 +162,15 @@ heroImage: '../../assets/posts/vietnam-metro-lines-hero.png'
   <text x="36" y="448" font-family="sans-serif" font-size="11.5" fill="#94a3b8">※ 노선 구간·번호는 베트남 정부 발표안 기준이며 추후 변경될 수 있습니다.</text>
 </svg>
 
+위 도식이 색깔별 정리라면, 아래는 **그 계획 노선들을 실제 지도 위에 대략적인 경로로 얹은 지도**예요. 실선(파랑)이 운영 중인 1호선, **점선들이 계획·착공 노선**입니다. 색은 위 도식과 같아요. 한 가지만 기억하세요. 이건 확정 설계도가 아니라 **발표된 대략적 축을 옮긴 것**이라, 최종 노선·역 위치는 달라질 수 있습니다.
+
+<div id="map-hcmc-plan" style="height:470px;border-radius:12px;margin:1.2rem 0;z-index:0;"></div>
+
+<div class="cg-box cg-warn">
+<span class="cg-title">⚠️ 지도 보는 법</span>
+<p>점선은 아직 안 깔린 <strong>계획·공사 노선</strong>이라 지금 탈 수 없어요. 순환선격인 <strong>6호선</strong>은 세부 경로가 확정 전이라 지도에선 생략했습니다. 노선이 겹쳐 보이는 도심(벤탄 일대)은 여러 노선이 모이는 <strong>환승 허브</strong>가 될 구간이에요.</p>
+</div>
+
 이 중 가장 진도가 빠른 게 **2호선**(벤탄~탐르엉)이에요. 1단계 11.3km·11개 역 구간이 2026년 초 착공해 2030년 완공을 목표로 하고, 차량은 현대로템이 무인 전동차를 공급하기로 했습니다. 4호선은 **떤손녓 국제공항**과 도심을 잇는 노선이라 여행자에게 특히 의미가 큰데, 이건 아직 계획 단계예요. 솔직히 저도 처음엔 "2035년에 7개나 된다고?" 싶어 반신반의했지만, 발표를 뜯어보면 **3단계 재원 조달과 착공 일정까지 정부 차원에서 못박아 둔 상태**라 1호선 때처럼 차근차근 늘어날 가능성이 높습니다. 다만 베트남 대형 인프라가 으레 그렇듯 **개통 시점은 미뤄지는 경우가 잦으니**, 여행 계획에 "곧 공항철도 생긴다"를 전제로 깔진 마세요.
 
 ## 하노이 지하철 2A·3호선 — 운영 중인 두 노선
@@ -235,7 +244,43 @@ heroImage: '../../assets/posts/vietnam-metro-lines-hero.png'
     });
     map.fitBounds(line.getBounds().pad(0.08));
   }
+  function drawNetwork(id, lines) {
+    var el = document.getElementById(id);
+    if (!el || typeof L === 'undefined' || el._leaflet_id) return;
+    var map = L.map(id, { scrollWheelZoom: false });
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap, &copy; CARTO', maxZoom: 19
+    }).addTo(map);
+    var all = [];
+    lines.forEach(function (ln) {
+      L.polyline(ln.pts, { color: ln.color, weight: ln.dashed ? 4 : 6, opacity: 0.9, dashArray: ln.dashed ? '8,7' : null })
+        .addTo(map).bindPopup(ln.name);
+      [ln.pts[0], ln.pts[ln.pts.length - 1]].forEach(function (p) {
+        L.circleMarker(p, { radius: 5, color: ln.color, fillColor: '#fff', fillOpacity: 1, weight: 2 }).addTo(map);
+      });
+      all = all.concat(ln.pts);
+    });
+    map.fitBounds(L.latLngBounds(all).pad(0.05));
+    var legend = L.control({ position: 'topright' });
+    legend.onAdd = function () {
+      var d = L.DomUtil.create('div');
+      d.style.cssText = 'background:#fff;padding:6px 9px;border-radius:8px;font:12px sans-serif;line-height:1.7;box-shadow:0 1px 5px rgba(0,0,0,.3)';
+      d.innerHTML = lines.map(function (ln) {
+        return '<span style="display:inline-block;width:16px;height:3px;background:' + ln.color + ';vertical-align:middle;margin-right:6px"></span>' + ln.label;
+      }).join('<br>');
+      return d;
+    };
+    legend.addTo(map);
+  }
   function init() {
+    drawNetwork('map-hcmc-plan', [
+      { name: '1호선 (운영중)', label: '1호선 · 운영', color: '#2563eb', dashed: false, pts: [[10.7725, 106.6980], [10.7855, 106.7090], [10.8010, 106.7245], [10.8260, 106.7660], [10.8480, 106.7720], [10.8845, 106.8137]] },
+      { name: '2호선 — 벤탄~탐르엉~혹몬 (착공)', label: '2호선 · 착공', color: '#dc2626', dashed: true, pts: [[10.8870, 106.5950], [10.8330, 106.6260], [10.8000, 106.6420], [10.7725, 106.6980], [10.7780, 106.7250]] },
+      { name: '3호선 — 히엡빈프억~떤끼엔 (계획)', label: '3호선 · 계획', color: '#16a34a', dashed: true, pts: [[10.8500, 106.7150], [10.8280, 106.7130], [10.8050, 106.6900], [10.7800, 106.6650], [10.7450, 106.6100], [10.7400, 106.5500]] },
+      { name: '4호선 — 공항~벤탄~히엡프억 (계획)', label: '4호선 · 공항', color: '#ea580c', dashed: true, pts: [[10.8900, 106.6400], [10.8188, 106.6520], [10.7900, 106.6700], [10.7725, 106.6980], [10.7400, 106.7000], [10.6600, 106.7350]] },
+      { name: '5호선 — 롱쯔엉~다프억 (계획)', label: '5호선 · 계획', color: '#7c3aed', dashed: true, pts: [[10.8000, 106.8200], [10.8020, 106.7250], [10.7930, 106.6650], [10.7500, 106.6400], [10.6800, 106.6400]] },
+      { name: '7호선 — 떤끼엔~빈홈 그랜드파크 (계획)', label: '7호선 · 계획', color: '#db2777', dashed: true, pts: [[10.7450, 106.6100], [10.7300, 106.7000], [10.7600, 106.7250], [10.8030, 106.7340], [10.8555, 106.7875], [10.8380, 106.8350]] }
+    ]);
     draw('map-hcmc', '#2563eb', [
       [10.7725, 106.6980, '벤탄'], [10.7765, 106.7030, '오페라하우스'], [10.7855, 106.7090, '바손'],
       [10.8005, 106.7165, '반탄공원'], [10.8010, 106.7245, '떤깡'], [10.8025, 106.7340, '타오디엔'],
