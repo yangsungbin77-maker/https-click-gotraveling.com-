@@ -32,11 +32,10 @@ heroImage: '../../assets/posts/vietnam-metro-lines-hero.png'
 
 여행자 입장에서 지금 가장 쓸모 있는 노선은 단연 **호치민 메트로 1호선**입니다. 2024년 12월 22일 개통한 베트남 최초의 본격 도시철도로, 도심 한복판 **벤탄**(Bến Thành)에서 동부 외곽 **수오이띠엔**(Suối Tiên)까지 19.7km를 잇습니다. 도심 3개 역(벤탄·오페라하우스·바손)은 지하, 사이공강을 건넌 뒤부터는 11개 역이 고가로 달려요. 일본 ODA 자금으로 지어져 차량과 시스템이 깔끔하다는 평이 많습니다.
 
-아래는 1호선 시작점인 벤탄역 일대를 구글 지도로 본 모습이에요. 도심에서 동쪽으로 길게 뻗는 노선의 출발점입니다.
+아래는 1호선 전체 노선을 **실제 지도 위에 그려본 모습**이에요. 파란 선이 벤탄에서 동쪽 수오이띠엔까지 이어지는 실제 경로이고, 점을 누르면 역 이름이 뜹니다(지도는 손가락·마우스로 확대·이동돼요).
 
-<div style="position:relative;padding-bottom:62%;height:0;overflow:hidden;border-radius:12px;margin:1.2rem 0;">
-<iframe src="https://maps.google.com/maps?q=Ben%20Thanh%20Metro%20Station%20Ho%20Chi%20Minh%20City&t=&z=12&ie=UTF8&iwloc=&output=embed" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<div id="map-hcmc" style="height:430px;border-radius:12px;margin:1.2rem 0;z-index:0;"></div>
 
 말로만 들으면 감이 안 오니, 제가 14개 역을 순서대로 노선도로 그려봤어요. 어느 역에 뭐가 있는지 한눈에 들어오게 정리했습니다.
 
@@ -171,11 +170,9 @@ heroImage: '../../assets/posts/vietnam-metro-lines-hero.png'
 
 ![베트남 하노이 메트로 깟린역 고가 전철과 도심 풍경](../../assets/posts/vietnam-metro-hanoi-catlinh.png)
 
-두 번째가 **3호선**(뇬~하노이역)이에요. 2024년 8월 **뇬~꺼우저이** 8.5km·8개 역 고가 구간이 먼저 열렸고, 이어지는 **꺼우저이~하노이역** 4km 지하 구간은 공사 중이라 2027년경 개통이 예상됩니다. 즉 하노이 3호선은 지금 "절반만 운영 중"인 셈이라, 노선도에서 보이는 길이를 다 탈 수 있는 건 아니에요. 저도 이 부분을 헷갈렸는데, **개통 구간과 계획 구간을 꼭 나눠서 봐야** 현장에서 당황하지 않습니다. 아래 구글 지도로 2A호선 시작점 깟린역 위치를 확인해 보세요.
+두 번째가 **3호선**(뇬~하노이역)이에요. 2024년 8월 **뇬~꺼우저이** 8.5km·8개 역 고가 구간이 먼저 열렸고, 이어지는 **꺼우저이~하노이역** 4km 지하 구간은 공사 중이라 2027년경 개통이 예상됩니다. 즉 하노이 3호선은 지금 "절반만 운영 중"인 셈이라, 노선도에서 보이는 길이를 다 탈 수 있는 건 아니에요. 저도 이 부분을 헷갈렸는데, **개통 구간과 계획 구간을 꼭 나눠서 봐야** 현장에서 당황하지 않습니다. 아래 지도의 빨간 선이 2A호선(깟린~옌응이어) 실제 경로예요. 역 점을 누르면 역 이름이 뜹니다.
 
-<div style="position:relative;padding-bottom:62%;height:0;overflow:hidden;border-radius:12px;margin:1.2rem 0;">
-<iframe src="https://maps.google.com/maps?q=Cat%20Linh%20Station%20Hanoi&t=&z=12&ie=UTF8&iwloc=&output=embed" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+<div id="map-hanoi" style="height:430px;border-radius:12px;margin:1.2rem 0;z-index:0;"></div>
 
 ## 하노이 지하철 계획 — 2045년 15개 노선 600km대
 
@@ -219,3 +216,41 @@ heroImage: '../../assets/posts/vietnam-metro-lines-hero.png'
 ---
 
 **관련 키워드** — #베트남지하철 #호치민지하철 #호치민메트로 #호치민지하철노선도 #하노이지하철 #하노이메트로 #베트남메트로 #호치민1호선 #베트남지하철노선 #호치민지하철요금 #베트남지하철계획 #수오이띠엔
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function () {
+  function draw(id, color, stations) {
+    var el = document.getElementById(id);
+    if (!el || typeof L === 'undefined' || el._leaflet_id) return;
+    var map = L.map(id, { scrollWheelZoom: false });
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap, &copy; CARTO', maxZoom: 19
+    }).addTo(map);
+    var pts = stations.map(function (s) { return [s[0], s[1]]; });
+    var line = L.polyline(pts, { color: color, weight: 5, opacity: 0.9 }).addTo(map);
+    stations.forEach(function (s) {
+      L.circleMarker([s[0], s[1]], { radius: 6, color: color, fillColor: '#fff', fillOpacity: 1, weight: 3 })
+        .addTo(map).bindPopup(s[2]);
+    });
+    map.fitBounds(line.getBounds().pad(0.08));
+  }
+  function init() {
+    draw('map-hcmc', '#2563eb', [
+      [10.7725, 106.6980, '벤탄'], [10.7765, 106.7030, '오페라하우스'], [10.7855, 106.7090, '바손'],
+      [10.8005, 106.7165, '반탄공원'], [10.8010, 106.7245, '떤깡'], [10.8025, 106.7340, '타오디엔'],
+      [10.8050, 106.7430, '안푸'], [10.8150, 106.7600, '락찌엑'], [10.8260, 106.7660, '프억롱'],
+      [10.8385, 106.7705, '빈타이'], [10.8480, 106.7720, '투득'], [10.8555, 106.7875, '첨단기술단지'],
+      [10.8730, 106.7990, '국가대학'], [10.8845, 106.8137, '수오이띠엔(종점)']
+    ]);
+    draw('map-hanoi', '#dc2626', [
+      [21.0285, 105.8290, '깟린'], [21.0232, 105.8232, '라타인'], [21.0110, 105.8210, '타이하'],
+      [21.0042, 105.8175, '랑'], [20.9968, 105.8095, '트엉딘'], [20.9905, 105.8030, '바인다이3'],
+      [20.9835, 105.7975, '풍코앙'], [20.9760, 105.7910, '반꽌'], [20.9700, 105.7855, '하동'],
+      [20.9640, 105.7805, '라케'], [20.9590, 105.7760, '반케'], [20.9510, 105.7700, '옌응이어(종점)']
+    ]);
+  }
+  if (document.readyState !== 'loading') init();
+  else document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
