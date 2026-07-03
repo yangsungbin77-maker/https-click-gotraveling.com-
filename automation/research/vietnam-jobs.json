@@ -1,0 +1,40 @@
+{
+  "type": "info",
+  "keyword": "베트남 직업",
+  "gsc_basis": "GSC 검증 잃어버린 승자 재생성 — 옛 URL /베트남-직업-특이한-베트남-직업들/ 6.7위, 현재 홈 301(soft 404) 상태 회수",
+  "serp": [
+    { "url": "https://www.hankookilbo.com/news/article/201708161755112359", "opened": true, "note": "유망 직종 5(IT보안·의료·법률·관광·심리상담)+이유·초임 수치. 2017 보도라 글에서 시점 명시" },
+    { "url": "https://www.goodmorningvietnam.co.kr/news/article.html?no=81395", "opened": true, "note": "내무부 발표 — 2026 1분기 평균 월소득 900만 동·정규직 1,000만 동·+6.6%, 산업 구성(서비스41/산업33.7/농림25.3), 노동인구 5,360만. 수치 정본" },
+    { "url": "https://www.goodmorningvietnam.co.kr/news/article.html?no=81036", "opened": true, "note": "2026 노동시장 — 영업직 최대 채용, IT·AI·반도체 급증, 호치민=서비스·금융·기술/하노이=물류·IT, 이직 의향 70%+, 학위 소지 29.2%" },
+    { "url": "https://vietnam.vnanet.vn/korean/print/베트남-한국어과-졸업생-월급-178444.html", "opened": true, "note": "한국어과 졸업 1~5년차 1,400만 동=대졸 평균(749만 동) 2배, 통번역 종사 7할 — 한국 독자용 정보 게인 킬러" },
+    { "url": "https://vietnamguide.co.kr/베트남-여행/", "opened": true, "note": "쎄옴(헬멧 2개 대기·흥정제·베트남어 필요)·시클로(관광용)·그랩(정찰제) 정의, 길거리 음식 500~1,500원 — 거리 직업 섹션 근거" },
+    { "url": "https://talk.heykorean.asia/mobile/vn/discussion/8015?cat=327&page=29", "opened": true, "note": "교민 커뮤니티 — 금융 관리직 월 7,000만 동+ 전언, IT 인력 부족. 글에서 '전언·참고' 한정 처리" },
+    { "url": "https://globe-insight.com/베트남-취업/", "opened": true, "note": "경쟁 블로그 — 취업 가이드 구조 참고. 연봉 표 단위가 불명확(VND 표기 오류 의심)해 수치는 미인용" },
+    { "url": "https://ko.wikipedia.org/wiki/분류:직업별_베트남_사람", "opened": true, "note": "직업 분류 32종 — 인물 분류라 검색의도와 거리, 경쟁 아님" },
+    { "url": "https://www.vietnam.vn/en/loat-cong-viec-co-muc-luong-tren-100-trieu-dong-tai-viet-nam", "opened": false, "note": "HTTP 403" },
+    { "url": "https://ko.tradingeconomics.com/vietnam/wages", "opened": false, "note": "HTTP 403 — 임금 수치는 내무부 발표 보도로 대체" },
+    { "url": "https://m.saramin.co.kr/location-job/overseas-list?lc=210600", "opened": false, "note": "커넥션 거부" }
+  ],
+  "serp_summary": {
+    "intent": "혼합 — 문화 호기심(특이한 직업)과 취업·월급 정보가 섞임. 옛 승자는 문화 각도였음",
+    "common_items": "유망 직종, 평균 월급, 거리 직업(쎄옴 등)",
+    "gap": "상위가 취업 뉴스와 여행 가이드로 갈라져 있고, '거리의 특이한 직업(문화)+월급 실측(2026)+한국어 프리미엄'을 한 편에 묶은 한국어 글이 없음 — 옛 승자 각도를 유지하며 데이터 보강",
+    "avg_depth": "단편 뉴스·가이드 위주, 종합 정리 부재"
+  },
+  "factcheck": [
+    { "claim": "2026년 1분기 베트남 근로자 평균 월 소득 900만 동(내무부 발표), 정규직 1,000만 동, 전년 대비 6.6% 상승", "sources": ["https://www.goodmorningvietnam.co.kr/news/article.html?no=81395", "https://www.goodmorningvietnam.co.kr/news/article.html?no=81036(2025 3분기 840만 동≈336달러 — 상승 추이 교차)"] },
+    { "claim": "산업 구성 서비스 41%·산업/건설 33.7%·농림어업 25.3%, 노동 인구 약 5,300만, 학위·자격 소지 29.2%", "sources": ["https://www.goodmorningvietnam.co.kr/news/article.html?no=81395", "https://www.goodmorningvietnam.co.kr/news/article.html?no=81036"] },
+    { "claim": "한국어과 졸업생(1~5년차) 평균 1,400만 동 = 대졸 평균 749만 동의 2배, 통번역 종사 7할", "sources": ["https://vietnam.vnanet.vn/korean/print/베트남-한국어과-졸업생-월급-178444.html", "웹검색 요약(한국어과 월급 2배 제하 보도)"] },
+    { "claim": "쎄옴=흥정제 오토바이 택시(헬멧 복수 대기), 그랩=사전 확정 요금, 시클로=관광 중심, 길거리 음식 500~1,500원 수준", "sources": ["https://vietnamguide.co.kr/베트남-여행/", "웹검색 요약(쎄옴·시클로 정의 일치)"] },
+    { "claim": "채용 1위 영업직·IT/AI/반도체 급증·호치민 서비스금융기술/하노이 물류IT, 이직 의향 70%+ — 2026 노동시장 보도", "sources": ["https://www.goodmorningvietnam.co.kr/news/article.html?no=81036", "https://www.hankookilbo.com/news/article/201708161755112359(IT·의료 유망 방향 일치, 2017 시점 명시)"] }
+  ],
+  "variables": {
+    "keyword": "베트남 직업",
+    "headline_finding": "옛 6.7위 승자 각도(거리의 특이한 직업)는 SERP에서 여전히 공백 — 취업 뉴스와 여행 가이드 사이의 문화+데이터 융합 글이 없음",
+    "data_angle": "내무부 2026 1분기 실측(900만 동)+한국어과 2배 프리미엄+거리 직업의 세대교체(쎄옴→그랩) 서사로 재구성",
+    "conflict_handled": "환율 환산은 '환율에 따라 다름' 한정, 커뮤니티 고소득 전언은 '공식 통계 아님' 명시, 경쟁 블로그의 단위 불명 연봉 표는 미인용, 2017 유망직종 보도는 시점 명시",
+    "first_person_hook": "여행 자료 검색 중 거리 사진 속 직업들이 눈에 들어온 리서치 경험(방문 날조 없음)",
+    "recovery_context": "발행 후 _redirects의 /베트남-직업-특이한-베트남-직업들/ 도착지를 홈→/vietnam-jobs/로 갱신"
+  },
+  "hermes_score": 95
+}
