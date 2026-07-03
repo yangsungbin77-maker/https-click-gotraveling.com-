@@ -1,0 +1,41 @@
+{
+  "type": "howto",
+  "keyword": "저가 항공 이용 시 주의할 점",
+  "gsc_basis": "주제 큐 배정 — 항공권 클러스터(cheap-flight-tickets-tips·carry-on-prohibited-items) 내부링크 그물 강화",
+  "serp": [
+    { "url": "https://ko.wikipedia.org/wiki/저비용_항공사", "opened": true, "note": "LCC 원리(유료화 항목·기종 단일화·보조공항·빠른 턴어라운드), 한국 LCC 목록, 단점(헤드라인 운임·먼 공항 50~90km·환승 불편) — 구조 섹션 정본" },
+    { "url": "https://kr.trip.com/guide/airline-tickets/비행기+수하물+규정.html", "opened": true, "note": "국내외 LCC 수하물 수치 확보 — 진에어·에어부산 10kg/55×40×20·위탁15kg·초과 1kg 1.4만원, 이스타 7kg, 에어아시아·세부퍼시픽·피치 7kg, 라이언에어 40×20×25 소지품만, 세부퍼시픽 공항구매 2배, 제주항공 특가운임 위탁 미포함" },
+    { "url": "https://www.a-ha.io/questions/44ae7defae14c5f8ac2b2752328a8a94", "opened": true, "note": "Q&A — 사전 온라인 신청이 현장보다 저렴, 집 체중계 사전 측정, 귀국편 검사 더 엄격. 단답형이라 종합 정리 부재(갭)" },
+    { "url": "https://ko.skyticket.com/guide/53705", "opened": true, "note": "수하물 일반 가이드 — LCC는 위탁 기본 유료 많음, 위탁 후 기내 회수 불가. FSC 중심이라 LCC 특화 아님" },
+    { "url": "https://www.hostelworld.com/blog/budget-airline-carry-on-rules/", "opened": true, "note": "해외 LCC 11곳 휴대수하물 — 초과 시 €25~40, 온라인 사전구매 저렴, 게이트 15~30분 전 마감, 온라인 체크인 미리 안 하면 벌금, 액체 100ml/총1L" },
+    { "url": "https://www.sisain.co.kr/news/articleView.html?idxno=54836", "opened": true, "note": "LCC 구조 문제 — 정비사 1,601명=전체 27.4%, 권고 12명/대 충족 2곳, 타이트한 가동(월 418시간). 지연·결항 여력 섹션 근거" },
+    { "url": "https://www.hankyung.com/article/202605070022g", "opened": true, "note": "2026-05 — 프리미엄 좌석(180도 침대) 도입 LCC 등장 보도. '그래도 LCC' 밸런스 섹션 근거" },
+    { "url": "https://www.ebn.co.kr/news/articleView.html?idxno=1714262", "opened": true, "note": "2026 신생 LCC 재무난 보도(급여 반납·사회보험료 미납) — 신생사 리스크 문단 근거(글에선 사명 미표기로 완화)" },
+    { "url": "https://www.skyscanner.co.kr/destinations/advice/lcc-vs-fsc", "opened": false, "note": "JS 렌더로 본문 미확보(제목만) — 검색 요약으로 FSC 대비 총비용 관점만 참조" },
+    { "url": "https://www.skyscanner.co.kr/news/tips/airlines-luggage-guide", "opened": false, "note": "JS 렌더로 본문 미확보" },
+    { "url": "https://ns503.com/entry/2025-저가항공-수하물-규정", "opened": false, "note": "DNS 해석 실패(사이트 소멸 추정) — 경쟁 블로그 이탈 신호" },
+    { "url": "https://namu.wiki/w/저비용 항공사", "opened": false, "note": "나무위키 403 상시 차단(이전 세션들에서 확인) — ko.wikipedia로 대체" }
+  ],
+  "serp_summary": {
+    "intent": "정보성/How-to — 특가 함정·수하물 규정·체크리스트 수요",
+    "common_items": "추가 비용 구조, 수하물 무게·크기, 사전 구매 절약, 체크인 규정",
+    "gap": "상위가 수하물 단일 주제(트립닷컴)·Q&A 단답·백과 정의로 흩어져 있음 — 총비용 관점+국내외 수치 표+지연 대응 여력(정비·신생사 리스크)+30초 체크리스트를 묶은 종합 가이드 부재",
+    "avg_depth": "단일 주제 글 위주, 종합 체크리스트형 없음"
+  },
+  "factcheck": [
+    { "claim": "국내 LCC 기내 수하물 대체로 55×40×20cm·7~10kg(진에어·에어부산 10kg, 이스타 7kg), 위탁 15kg 안팎, 초과 1kg당 1만 원대(1.4만원 표기 사례)", "sources": ["https://kr.trip.com/guide/airline-tickets/비행기+수하물+규정.html", "https://ko.skyticket.com/guide/53705(LCC 위탁 기본 유료 다수)"] },
+    { "claim": "특가 운임에 위탁 수하물 미포함 사례 존재(제주항공 '플라이' 운임 등) — 글에서는 특정사 미지목 일반화", "sources": ["https://kr.trip.com/guide/airline-tickets/비행기+수하물+규정.html", "검색 요약(특가 운임 위탁 유료 다수)"] },
+    { "claim": "수하물 사전 온라인 구매가 공항 현장보다 저렴(세부퍼시픽 현장 2배 이상, 유럽 LCC 초과 €25~40), 게이트 15~30분 전 마감·온라인 체크인 미이행 수수료(일부)", "sources": ["https://kr.trip.com/guide/airline-tickets/비행기+수하물+규정.html", "https://www.hostelworld.com/blog/budget-airline-carry-on-rules/", "https://www.a-ha.io/questions/44ae7defae14c5f8ac2b2752328a8a94"] },
+    { "claim": "국내 LCC 정비 인력은 업계 전체의 27.4%(1,601명), 항공기당 권고 12명 충족 2곳 — 지연 대응 여력 근거", "sources": ["https://www.sisain.co.kr/news/articleView.html?idxno=54836", "https://www.ebn.co.kr/news/articleView.html?idxno=1714262(신생사 재무난 보도)"] },
+    { "claim": "유럽 일부 LCC는 도심에서 50~90km 떨어진 보조 공항 이용 사례, 라이언에어 기본 운임은 소형 소지품(40×20×25)만 포함", "sources": ["https://ko.wikipedia.org/wiki/저비용_항공사", "https://kr.trip.com/guide/airline-tickets/비행기+수하물+규정.html"] }
+  ],
+  "variables": {
+    "keyword": "저가 항공 이용 시 주의할 점",
+    "headline_finding": "SERP가 수하물 단일글·단답 Q&A·백과 정의로 파편화 — '특가=몸만 타는 가격' 프레임 + 국내외 수치 표 + 정비·신생사 리스크까지 묶은 종합 가이드가 공백",
+    "data_angle": "트립닷컴 수치+호스텔월드 해외 규정+시사IN 정비 실태+2026 신생사 보도를 교차해 주의점 7개 체계로 재구성, 수하물 다이어그램 자체 제작",
+    "conflict_handled": "요금·규정은 '검색 시점 기준·항공사마다 다름·공식 확인' 한정어 일괄 적용, 재정난 신생사는 사명 미표기로 완화, '저가=위험' 단정 배제",
+    "first_person_hook": "특가 검색 후 최종 결제액이 불어나는 리서치 경험(탑승 경험 날조 없음)",
+    "cluster_links": "cheap-flight-tickets-tips(2회)·carry-on-prohibited-items 내부링크로 항공 클러스터 그물 강화"
+  },
+  "hermes_score": 96
+}
