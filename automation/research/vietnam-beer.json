@@ -1,0 +1,113 @@
+{
+ "type": "info",
+ "keyword": "베트남 맥주",
+ "gsc_basis": "GSC 검증 잃어버린 승자 재생성 — 옛 URL /맥주의-나라-베트남-베트남-맥주/ + 연관 검색어 '타이거맥주 원산지' 8.3위, 현재 홈 301(soft 404) 회수",
+ "serp": [
+  {
+   "url": "https://vietnamguide.co.kr/베트남-맥주/",
+   "opened": true,
+   "note": "BEST5 표 — 사이공(4.3~4.9%·점유 40%)·하노이(4.2%·생맥 ~150원)·후다(4.7%·덴마크 합작)·333(5.3%·최저가)·라루(1909) + 가격 600~800원대. 경쟁 최강자, 타이거 원산지 반전 각도는 부재(갭)"
+  },
+  {
+   "url": "https://www.citytimes.co.kr/news/articleView.html?idxno=60502",
+   "opened": true,
+   "note": "하노이·사이공·333 블라인드 테스트 기사(2024-10) — 3대 브랜드 구도 확인, 본문 일부만 노출"
+  },
+  {
+   "url": "https://veyond.asia/vietnam_beer_saigon/",
+   "opened": true,
+   "note": "SABECO — 1875년 프랑스인 양조장 기원, 333=베트남 최초 캔맥주, 골드 2021 호주대회 라거 금메달"
+  },
+  {
+   "url": "https://triple.guide/articles/f4494b11-0d48-4002-a58d-1dcfad408f39",
+   "opened": true,
+   "note": "8종 비교(비아허이=세계 최저가 생맥·하노이·사이공·후다·하리다·라루·333·타이거=싱가포르 명시). 지역 표기 참조"
+  },
+  {
+   "url": "https://ko.wikipedia.org/wiki/타이거_맥주",
+   "opened": true,
+   "note": "타이거 원산지 정본 — 싱가포르 1932, 하이네켄+F&N 합작 하이네켄 아시아 퍼시픽, 베트남 포함 다국 생산"
+  },
+  {
+   "url": "https://brunch.co.kr/@woaini/660",
+   "opened": true,
+   "note": "지역 맥주 — 하노이 1890년대, 후다=칼스버그 영향 유럽풍, 라루 1909 다낭, 주류 소비 90%가 맥주(2022 기준)"
+  },
+  {
+   "url": "https://somethingstravel.com/베트남-맥주/",
+   "opened": true,
+   "note": "비아허이 도수 4% 미만·저가, 얼음 문화(냉장 유통 미비 기원)+위생 주의 — 얼음 섹션 근거"
+  },
+  {
+   "url": "https://www.a-ha.io/questions/4b33678dfaae02e68d0f6f3cb7f15252",
+   "opened": true,
+   "note": "타이거 원산지 Q&A — '원산지 싱가포르, 수입품 생산국 표기 상이' 혼동 실태 = 검색자 오해 증거"
+  },
+  {
+   "url": "https://vinpearl.com/en/vietnamese-beer-the-best-beer-brands",
+   "opened": false,
+   "note": "HTTP 403"
+  },
+  {
+   "url": "http://www.mekongthai.co.kr/bbs/sub6_1/32611",
+   "opened": false,
+   "note": "미열람(커뮤니티 게시판, 우선순위 낮음)"
+  }
+ ],
+ "serp_summary": {
+  "intent": "정보성 — 종류·원산지·가격, 특히 '타이거맥주 원산지' 오해 해소 수요(GSC 검증)",
+  "common_items": "브랜드별 특징·도수·가격, 지역 구분, 비아허이",
+  "gap": "타이거 원산지 반전을 훅으로 세우고 지역 지도 다이어그램+얼음 위생+실전 주문 팁까지 묶은 글이 없음 — 경쟁글은 브랜드 나열형",
+  "avg_depth": "나열형 가이드 위주, 오해 해소·문화 맥락 결합형 부재"
+ },
+ "factcheck": [
+  {
+   "claim": "타이거 맥주 원산지 = 싱가포르(1932), 하이네켄+프레이저앤드니브 합작 하이네켄 아시아 퍼시픽 제조, 베트남 포함 아시아 다국 양조",
+   "sources": [
+    "https://ko.wikipedia.org/wiki/타이거_맥주",
+    "https://www.a-ha.io/questions/4b33678dfaae02e68d0f6f3cb7f15252",
+    "https://triple.guide/articles/f4494b11-0d48-4002-a58d-1dcfad408f39(싱가포르 브랜드 명시)"
+   ]
+  },
+  {
+   "claim": "사이공·333 = SABECO(1875년 프랑스 양조장 기원), 333은 '33 Export' 기원·베트남 최초 캔맥주, 도수 5%대·최저가 축",
+   "sources": [
+    "https://veyond.asia/vietnam_beer_saigon/",
+    "https://vietnamguide.co.kr/베트남-맥주/(333 5.3%·최저가)",
+    "웹검색 요약(33 Export→333)"
+   ]
+  },
+  {
+   "claim": "지역 구도 — 북부 하노이(1890년대), 중부 후다(후에·칼스버그 합작)·라루(다낭·1909), 남부 사이공·333",
+   "sources": [
+    "https://brunch.co.kr/@woaini/660",
+    "https://vietnamguide.co.kr/베트남-맥주/",
+    "https://triple.guide/articles/f4494b11-0d48-4002-a58d-1dcfad408f39"
+   ]
+  },
+  {
+   "claim": "비아허이 = 저도수(4% 미만) 초저가 생맥주(잔당 수백 원대), 하노이 명물 — '세계에서 가장 싼 생맥주'로 통용",
+   "sources": [
+    "https://somethingstravel.com/베트남-맥주/",
+    "https://triple.guide/articles/f4494b11-0d48-4002-a58d-1dcfad408f39",
+    "https://vietnamguide.co.kr/베트남-맥주/(하노이 생맥 ~150원 표기)"
+   ]
+  },
+  {
+   "claim": "얼음 넣어 마시는 문화(냉장 유통·더운 기후 기원) + 노점 얼음 위생 주의, 베트남 주류 소비의 약 90%가 맥주(2022 통계 보도)",
+   "sources": [
+    "https://somethingstravel.com/베트남-맥주/",
+    "https://brunch.co.kr/@woaini/660"
+   ]
+  }
+ ],
+ "variables": {
+  "keyword": "베트남 맥주",
+  "headline_finding": "GSC 검증 검색어 '타이거맥주 원산지'가 가리키는 오해(타이거=베트남산)를 정면 해소하는 글이 SERP에 없음 — 경쟁은 브랜드 나열형뿐",
+  "data_angle": "위키(원산지 정본)+가이드 3종(도수·가격·지역)+칼럼(소비 90%)을 교차해 '반전 훅→지역 지도→문화·위생→실전 팁' 구조로 재구성, 지역 지도 다이어그램 자체 제작",
+  "conflict_handled": "가격은 '검색 시점 환산 기준' 한정, 점유율 40%는 '자료에 따라 언급' 처리, 수입품 생산국 표기 상이 문제를 위탁 구조로 설명, 시음 소감은 미기술(마셔봤다 날조 없음)",
+  "first_person_hook": "타이거를 베트남 맥주로 오해했던 실제 경험 고백 — 검색자와 같은 오해에서 출발",
+  "recovery_context": "발행 후 _redirects의 /맥주의-나라-베트남-베트남-맥주/ 도착지를 홈→/vietnam-beer/로 갱신"
+ },
+ "hermes_score": 92
+}
