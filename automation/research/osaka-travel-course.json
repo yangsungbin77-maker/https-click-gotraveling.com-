@@ -1,0 +1,31 @@
+{
+  "type": "course-guide",
+  "keyword": "오사카 여행 코스 3박 4일",
+  "queue_source": "google-autocomplete (priority 1, 경비 포함 변형 수요)",
+  "serp": [
+    { "url": "https://www.ytour.co.kr/blog/osaka-travel-3nights-4days-perfect-course-itinerary", "opened": true, "note": "패키지형 코스(나라·교토·고베 포함), 90만원대 경비. 이동시간 설명 부족" },
+    { "url": "https://kr.trip.com/blog/trip-course-to-osaka/", "opened": true, "note": "시내 집중형 4일 코스 + Top10 명소. 교토 근교 미포함이 약점" },
+    { "url": "https://esim.holafly.com/ko/travel-tips/osaka-essential-spot/", "opened": true, "note": "필수 코스 8곳+일정. 근교 당일치기 옵션 미제시" },
+    { "url": "https://www.tripstore.kr/blog/오사카-여행-코스-3박4일", "opened": true, "note": "라피트 38분·주유패스 절약·입장료 수치. 숙소 기준 불명확" },
+    { "url": "https://www.tripstore.kr/blog/오사카-3박-4일-여행-코스-헤매지-않는-완벽-루트-총정리", "opened": true, "note": "권역별(미나미/키타) 구성, 교토·나라는 사이드 언급만" },
+    { "url": "https://www.tripstore.kr/blog/일본-오사카-관광-3박4일-추천-코스-일정-총정리", "opened": true, "note": "USJ 8,600~10,400엔 변동가·교토/나라 택1 구조. 교토 당일치기 체력 부담 경고" },
+    { "url": "https://triple.guide/articles/b0cbbe1a-7f67-47c7-9280-bdf7cd0b9b14", "opened": true, "note": "근교 통합형(교토·아라시야마·고베) — 이동 과다가 약점" },
+    { "url": "https://v.daum.net/v/bfpYKwGk6l", "opened": true, "note": "라피트 약 40분·USJ 약 8,600엔. 숙박·식비 정보 부재" },
+    { "url": "https://kr.trip.com/guide/theme/오사카+가족여행.html", "opened": true, "note": "가족 3인 예산표(130만~220만). 유형별 추천은 가족만" },
+    { "url": "https://en.wikipedia.org/wiki/Universal_Studios_Japan", "opened": true, "note": "USJ 2001 개장·미국 외 최초 확인(팩트 출처 겸용)" },
+    { "url": "https://www.kkday.com/ko/blog/36585/asia-japan-osaka-travelcourse34", "opened": false, "note": "403 차단 — 열람 실패(시도함)" }
+  ],
+  "factcheck": [
+    { "claim": "간사이공항→난바 난카이 라피트 약 40분", "sources": ["https://www.tripstore.kr/blog/오사카-여행-코스-3박4일 (38분)", "https://v.daum.net/v/bfpYKwGk6l (약 40분)"] },
+    { "claim": "3박4일 표준 구조 = 시내 2일 + USJ/교토 택1 + 쇼핑 반나절 (상위 글 과반 공통)", "sources": ["https://www.ytour.co.kr/... (택1 구조)", "https://www.tripstore.kr/... 3개 글 모두 동일 구조", "https://kr.trip.com/guide/theme/오사카+가족여행.html"] },
+    { "claim": "USJ는 2001년 개장, 미국 외 최초 유니버설 테마파크", "sources": ["https://en.wikipedia.org/wiki/Universal_Studios_Japan", "kr.trip.com 블로그(아시아 최초 서술 교차)"] },
+    { "claim": "USJ 티켓은 날짜별 변동 가격제, 8천엔대부터 (8,600~10,400엔 범위 확인)", "sources": ["https://www.tripstore.kr/blog/일본-오사카-관광-3박4일-추천-코스-일정-총정리", "https://v.daum.net/v/bfpYKwGk6l (8,600엔)"] }
+  ],
+  "variables": {
+    "keyword": "오사카 여행 코스 3박 4일",
+    "headline_finding": "상위 10개 글이 전부 '선택지 나열'에 그침 — 여행 유형별(아이/부모님/커플/재방문) 3일차 확정 추천 표가 없다는 갭을 공략",
+    "differentiation": "이동시간 명시 + 항목별 경비 범위표(단정 금지·시점 단서) + 2박3일/4박5일 변형 섹션",
+    "cannibalization_guard": "기존 osaka-free-travel-guide(입문·패스·숙소)와 의도 분리 — 이 글은 일자별 코스·경비 전담, 준비 정보는 내부링크로 위임"
+  },
+  "hermes_score": 96
+}
