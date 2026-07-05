@@ -27,7 +27,7 @@ heroImage: '../../assets/pool/vietnam-female-celebrities-hero.png'
 
 **호응옥하**(Hồ Ngọc Hà)는 1984년 후에(Huế) 출신으로, 모델로 시작해 가수로 자리 잡은 케이스입니다. 2001년 베트남 슈퍼모델 대회에서 우승한 뒤 2004년 데뷔 앨범을 내며 가수로 전향했고, 무대·패션·방송을 오가며 '엔터테인먼트의 여왕'이라는 별명을 얻었어요. "Hà Hồ(하호)"라는 애칭으로도 불립니다.
 
-<figure style="text-align:center;margin:1.2rem 0;"><img src="/images/celebs/hongocha.webp" alt="베트남 여자 가수 호응옥하(Hồ Ngọc Hà) 사진" width="300" height="447" loading="lazy" style="border-radius:12px;" /><figcaption style="font-size:0.85em;color:#888;margin-top:0.4rem;">▲ 호응옥하 — 사진 ⓒ SAIGONTV OFFICIAL, CC BY 3.0 (Wikimedia Commons)</figcaption></figure>
+<figure style="text-align:center;margin:1.2rem 0;"><img src="/images/celebs/hongocha.webp" alt="베트남 여자 가수 호응옥하(Hồ Ngọc Hà) 사진" width="300" height="451" loading="lazy" style="border-radius:12px;" /><figcaption style="font-size:0.85em;color:#888;margin-top:0.4rem;">▲ 호응옥하 — 사진 ⓒ KIYOUNG KIm, CC BY 2.0 (Wikimedia Commons)</figcaption></figure>
 
 미떰이 '노래로 남은 전설'이라면 호응옥하는 '무대 밖까지 장악한 셀럽'에 가깝습니다. 패션 화보·심사위원·브랜드 활동까지 영역이 넓어서, 베트남 방송이나 유튜브를 보다 보면 가장 자주 마주치는 얼굴 중 하나예요.
 
@@ -39,13 +39,13 @@ heroImage: '../../assets/pool/vietnam-female-celebrities-hero.png'
 
 힙합 쪽에는 **수보이**(Suboi)가 있습니다. 1990년생, 본명 항럼짱아인(Hàng Lâm Trang Anh)으로 '베트남 힙합의 여왕'이라 불리는 1세대 여성 래퍼예요. 2016년 오바마 당시 미국 대통령의 호치민 타운홀 행사에서 즉석 랩을 선보여 타임(TIME)지에 소개된 일화가 유명하고, 2020년부터는 베트남 최고 인기 힙합 경연 'Rap Việt'의 코치로도 활동했습니다.
 
-<figure style="text-align:center;margin:1.2rem 0;"><img src="/images/celebs/suboi.webp" alt="베트남 힙합 여왕 수보이(Suboi) 사진" width="300" height="333" loading="lazy" style="border-radius:12px;" /><figcaption style="font-size:0.85em;color:#888;margin-top:0.4rem;">▲ 수보이 — 사진 ⓒ Huy Trần, CC BY 2.0 (Wikimedia Commons)</figcaption></figure>
+<figure style="text-align:center;margin:1.2rem 0;"><img src="/images/celebs/suboi.webp" alt="베트남 힙합 여왕 수보이(Suboi) 화보 사진" width="300" height="400" loading="lazy" style="border-radius:12px;" /><figcaption style="font-size:0.85em;color:#888;margin-top:0.4rem;">▲ 수보이 — 사진 ⓒ SUBLIME ENT, CC BY 4.0 (Wikimedia Commons)</figcaption></figure>
 
 ## 배우와 가수를 오가는 찌푸
 
 **찌푸**(Chi Pu)는 베트남 여자 연예인 중 '크로스오버'의 대표 사례입니다. 1993년 하노이 출생, 본명 응우옌투이찌(Nguyễn Thùy Chi)로 2013년부터 드라마·영화 배우로 이름을 알렸고 2017년 가수로도 데뷔했어요. 한국 드라마 '그녀는 예뻤다'의 베트남 리메이크에 여주인공으로 출연해서, 남자 편에서 소개한 배우 빈안과 함께 화면에 나온 그 얼굴이 바로 찌푸입니다.
 
-<figure style="text-align:center;margin:1.2rem 0;"><img src="/images/celebs/chipu.webp" alt="베트남 여자 연예인 찌푸(Chi Pu) 사진" width="300" height="344" loading="lazy" style="border-radius:12px;" /><figcaption style="font-size:0.85em;color:#888;margin-top:0.4rem;">▲ 찌푸 — 사진 ⓒ Vietnam International Fashion Week, CC BY 3.0 (Wikimedia Commons)</figcaption></figure>
+<figure style="text-align:center;margin:1.2rem 0;"><img src="/images/celebs/chipu.webp" alt="베트남 여자 연예인 찌푸(Chi Pu) 사진" width="300" height="335" loading="lazy" style="border-radius:12px;" /><figcaption style="font-size:0.85em;color:#888;margin-top:0.4rem;">▲ 찌푸 — 사진 ⓒ FoodHub, CC BY 3.0 (Wikimedia Commons)</figcaption></figure>
 
 2023년에는 중국 인기 예능 '승풍파랑적저저(Sisters Who Make Waves)'에 출연해 최종 데뷔조에 들며 중국 활동까지 시작했습니다. 베트남 스타가 중화권으로 무대를 넓힌 대표 사례라, 현지 매체가 꼽는 '가장 영향력 있는 젊은 여자 연예인' 명단에 빠지지 않는 이름이에요.
 
@@ -53,7 +53,7 @@ heroImage: '../../assets/pool/vietnam-female-celebrities-hero.png'
 
 영화·드라마 쪽 대표는 **닌즈엉란응옥**(Ninh Dương Lan Ngọc)입니다. 1990년생으로 데뷔작 "The Floating Lives"(2010)로 베트남 대표 영화상인 황금연(Cánh Diều Vàng) 여우주연상을 받았고, 코미디 영화 "Jackpot"(2015)으로도 주요 영화상 트로피를 추가했어요. 해외 데이터 계정이 집계해 현지에서 화제가 된 '베트남 최미녀 여배우 25인' 순위에서 1위로 꼽히기도 했습니다. 다만 순위 기사를 여러 개 열어 비교해보니 명단이 절반쯤은 다르더라고요. 집계 방식 논란도 있었으니 순위는 참고용으로만 보는 게 좋아요.
 
-<figure style="text-align:center;margin:1.2rem 0;"><img src="/images/celebs/lanngoc.webp" alt="베트남 여배우 닌즈엉란응옥(Ninh Dương Lan Ngọc) 사진" width="300" height="252" loading="lazy" style="border-radius:12px;" /><figcaption style="font-size:0.85em;color:#888;margin-top:0.4rem;">▲ 닌즈엉란응옥 — 사진 ⓒ SỰ THẬT THẬT SỰ, CC BY 3.0 (Wikimedia Commons)</figcaption></figure>
+<figure style="text-align:center;margin:1.2rem 0;"><img src="/images/celebs/lanngoc.webp" alt="베트남 여배우 닌즈엉란응옥(Ninh Dương Lan Ngọc) 시상식 사진" width="300" height="480" loading="lazy" style="border-radius:12px;" /><figcaption style="font-size:0.85em;color:#888;margin-top:0.4rem;">▲ 닌즈엉란응옥 — 사진 ⓒ Niyari147, CC BY-SA 4.0 (Wikimedia Commons)</figcaption></figure>
 
 한 세대 위의 **응오타인반**(Ngô Thanh Vân)은 베트남을 넘어 할리우드까지 간 액션 배우입니다. 1979년생으로 모델·가수를 거쳐 배우가 됐고, '스타워즈 라스트 제다이'(2017)의 페이지 티코 역, 넷플릭스 '올드 가드'(2020) 등에 출연했어요. 감독·제작자로도 활동하며 베트남 영화 산업을 키운 인물이라, 현지에서 '베트남 액션 여제(đả nữ)'로 불리는 베테랑입니다.
 
@@ -104,7 +104,7 @@ heroImage: '../../assets/pool/vietnam-female-celebrities-hero.png'
 
 ## 이미지 출처
 
-이 글의 인물 사진은 모두 위키미디어 공용(Wikimedia Commons)의 자유 라이선스 사진입니다. 미떰 ⓒ INAX Vietnam (CC BY 3.0) · 호응옥하 ⓒ SAIGONTV OFFICIAL (CC BY 3.0) · 화민지 ⓒ Lynguyen173315 (CC BY-SA 4.0) · 수보이 ⓒ Huy Trần (CC BY 2.0) · 찌푸 ⓒ Vietnam International Fashion Week (CC BY 3.0) · 닌즈엉란응옥 ⓒ SỰ THẬT THẬT SỰ (CC BY 3.0) · 응오타인반 ⓒ LIFE TODAY Official (CC BY 3.0) · 흐헨니에 ⓒ California Fitness &amp; Yoga (CC BY 3.0).
+이 글의 인물 사진은 모두 위키미디어 공용(Wikimedia Commons)의 자유 라이선스 사진입니다. 미떰 ⓒ INAX Vietnam (CC BY 3.0) · 호응옥하 ⓒ KIYOUNG KIm (CC BY 2.0) · 화민지 ⓒ Lynguyen173315 (CC BY-SA 4.0) · 수보이 ⓒ SUBLIME ENT (CC BY 4.0) · 찌푸 ⓒ FoodHub (CC BY 3.0) · 닌즈엉란응옥 ⓒ Niyari147 (CC BY-SA 4.0) · 응오타인반 ⓒ LIFE TODAY Official (CC BY 3.0) · 흐헨니에 ⓒ California Fitness &amp; Yoga (CC BY 3.0).
 
 ---
 
