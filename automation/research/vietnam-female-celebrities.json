@@ -1,0 +1,37 @@
+{
+  "type": "info-list",
+  "keyword": "베트남 여자 연예인",
+  "queue_source": "gsc-lost-winner (옛 10.2위 회복 부스트, 옛 URL /베트남-미인-베트남-예쁜-연예인/)",
+  "serp": [
+    { "url": "https://www.goodmorningvietnam.co.kr/news/article.html?no=81930", "opened": true, "note": "베트남 최미녀 여배우 25인 순위 기사 — 닌즈엉란응옥 1위·찌푸 2위, 집계 방식 논란 언급. 순위 기사에 인물 설명이 얕음 → 우리는 인물별 깊이+한글·원어 병기로 차별화" },
+    { "url": "https://ko.wikipedia.org/wiki/분류:베트남의_여자_배우", "opened": true, "note": "위키 분류 목록 44명 — 이름 나열뿐 설명 없음. 정보게인: 우리는 선별 8인 + 스토리" },
+    { "url": "https://ko.wikipedia.org/wiki/분류:베트남의_여자_가수", "opened": true, "note": "위키 분류 목록 69명 — 동일하게 나열뿐. 검색의도(누가 유명한지)를 못 채움" },
+    { "url": "https://www.dailypop.kr/news/articleView.html?idxno=63540", "opened": true, "note": "우옌린 아시아송페스티벌 기사 — 단일 인물 스팟 기사, 총정리 부재 확인" },
+    { "url": "https://en.wikipedia.org/wiki/Chi_Pu", "opened": true, "note": "찌푸 본명·1993 하노이·배우→가수·2023 중국 예능 진출 확인 (검색 스니펫의 1995년설과 상충 → 위키 1993 채택)" },
+    { "url": "https://en.wikipedia.org/wiki/Mỹ_Tâm", "opened": true, "note": "미떰 1981 다낭·V-pop 여왕·2018 빌보드 월드앨범 톱10 최초 확인" },
+    { "url": "https://en.wikipedia.org/wiki/Hồ_Ngọc_Hà", "opened": true, "note": "호응옥하 1984 후에·2001 슈퍼모델 우승→2004 데뷔 앨범 확인" },
+    { "url": "https://en.wikipedia.org/wiki/Ninh_Dương_Lan_Ngọc", "opened": true, "note": "닌즈엉란응옥 1990·황금연 여우주연상 2회(2010/2016) 확인" },
+    { "url": "https://en.wikipedia.org/wiki/Hòa_Minzy", "opened": true, "note": "화민지 1995·2014 오디션 우승 데뷔·2025 Bắc Bling 확인" },
+    { "url": "https://en.wikipedia.org/wiki/Ngô_Thanh_Vân", "opened": true, "note": "응오타인반 1979·스타워즈 라스트제다이(2017)·올드가드(2020/2025)·감독 데뷔 확인" },
+    { "url": "https://namu.wiki/w/분류:베트남 여배우", "opened": false, "note": "403 차단 — 열람 실패(시도함)" },
+    { "url": "https://www.tiktok.com/discover/베트남-여배우-순위", "opened": false, "note": "JS 렌더 빈 페이지 — SERP에 틱톡 디스커버가 뜬다는 것 자체가 텍스트 경쟁글 부재 신호" }
+  ],
+  "factcheck": [
+    { "claim": "미떰(Mỹ Tâm)은 1981년 다낭 출생, 'V-pop의 여왕'으로 불리며 2018년 베트남 최초 빌보드 월드앨범 차트 톱10", "sources": ["https://en.wikipedia.org/wiki/Mỹ_Tâm", "https://ko.wikipedia.org/wiki/미떰"] },
+    { "claim": "호응옥하(Hồ Ngọc Hà)는 1984년 후에 출생, 모델 출신 가수, '엔터테인먼트의 여왕'", "sources": ["https://en.wikipedia.org/wiki/Hồ_Ngọc_Hà", "https://ko.wikipedia.org/wiki/호응옥하"] },
+    { "claim": "닌즈엉란응옥은 황금연 여우주연상 2회 수상, '최미녀 여배우 25인' 1위(논란 있는 참고용 순위)", "sources": ["https://en.wikipedia.org/wiki/Ninh_Dương_Lan_Ngọc", "https://www.goodmorningvietnam.co.kr/news/article.html?no=81930"] },
+    { "claim": "찌푸(Chi Pu)는 1993년 하노이 출생 배우 겸 가수, 최미녀 순위 2위, 2023 중국 예능 진출", "sources": ["https://en.wikipedia.org/wiki/Chi_Pu", "https://www.goodmorningvietnam.co.kr/news/article.html?no=81930"] },
+    { "claim": "수보이(Suboi)는 2016년 오바마 호치민 타운홀에서 랩을 선보여 TIME에 소개됨", "sources": ["https://en.wikipedia.org/wiki/Suboi", "TIME 기사 'Vietnam's Queen of Hip Hop Impresses Obama With Her Rhymes'(위키 인용 출처)"] },
+    { "claim": "흐헨니에(H'Hen Niê)는 에데족 출신, 2017 미스유니버스 베트남 우승·2018 본선 톱5(베트남 역대 최고 성적)", "sources": ["https://en.wikipedia.org/wiki/H'Hen_Niê", "https://en.wikipedia.org/wiki/Miss_Universe_2018 (직접 열어 톱5 교차확인)"] },
+    { "claim": "AMEE는 2000년생, 2019 데뷔, 2020 MAMA 베트남 최고 신인상(최연소 MAMA 수상)", "sources": ["https://en.wikipedia.org/wiki/Amee_(singer)", "MAMA 2020 수상 기록(위키 인용 출처)"] },
+    { "claim": "틀린(tlinh)은 2000년생, Rap Việt 시즌1 수보이 팀 출신 / 미아인(Mỹ Anh)은 디바 미린의 딸로 아시아 투어 동반", "sources": ["https://vi.wikipedia.org/wiki/Tlinh", "https://vietnamnews.vn/life-style/1721569/singer-my-linh-launches-first-asia-tour-with-daughter-my-anh.html"] }
+  ],
+  "variables": {
+    "keyword": "베트남 여자 연예인",
+    "headline_finding": "여자 연예계는 가수·배우 2축이 아니라 미인대회 포함 3축 구조 — 상위 경쟁글 중 이 프레임으로 정리한 글 없음",
+    "series_pairing": "기존 vietnam-male-celebrities(남자편)와 짝 구성, 같은 8인 포맷·CC 사진 원칙 유지",
+    "photo_sourcing": "8인 전원 위키미디어 공용 CC(BY 2.0/3.0/BY-SA 4.0) 사진 확보, 저작자·라이선스 캡션+출처 섹션 표기",
+    "recovery_context": "옛 워드프레스 URL(베트남-미인-베트남-예쁜-연예인)이 GSC 10.2위였던 키워드의 회복 타깃 글"
+  },
+  "hermes_score": 94
+}
