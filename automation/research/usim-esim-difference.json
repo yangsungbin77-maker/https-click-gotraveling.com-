@@ -1,0 +1,38 @@
+{
+  "type": "comparison",
+  "keyword": "해외여행 유심 이심 차이",
+  "gsc_basis": "사용자 지정 우선순위 1 키워드(GSC 검증). 여행 준비 클러스터(overseas-travel-checklist-first-time·vietnam-travel-checklist·cheap-flight-tickets-tips) 내부링크 그물 강화",
+  "serp": [
+    { "url": "https://kbthink.com/life/card/usim-vs-esim.html", "opened": true, "note": "KB 금융 콘텐츠 — 형태·설치·듀얼심·호환기종(*#06# EID/설정 확인)·분실·가격·로밍비교·상황별추천 표. 비교 축 정본" },
+    { "url": "https://kr.trip.com/blog/comparison-of-essential-products-for-overseas-travel-usim-esim-and-pocket-wi-fi/", "opened": true, "note": "로밍/유심/이심/포켓와이파이 4종 비교 — 번호유지·공유(포켓 최대5대)·설치편의·가격(베트남 유심 7,275·이심 962~·포켓 6,678/일). 4종표 근거" },
+    { "url": "https://kr.trip.com/guide/phone/overseas-travel-sim-card.html", "opened": true, "note": "데이터 용량 고르는 기준(가벼움 500MB/일, 3박4일 2~3GB, 영상 1~3GB/일)·구매전 체크(국가지원·기종호환·테더링·환불). 용량 섹션 근거" },
+    { "url": "https://esim.holafly.com/ko/guides-esim/esim-roaming/", "opened": true, "note": "eSIM vs 로밍 vs 유심 — 이심 암호화 저장 분실위험 없음, 다국가 하나로, 한국번호 유지. 이심 강점 교차확인" },
+    { "url": "https://www.newsis.com/view/NISX20240809_0002844926", "opened": true, "note": "언론 — 일본 5일 3GB 유심이심 1.1~1.3만 vs 로밍 4~6만(일평균 SIM 3,096 vs 로밍 5,343, 42%↓), 20·30대 로밍 27→22%↓·SIM 42% 최다. 가격·추세 근거" },
+    { "url": "https://www.samsungsvc.co.kr/solution/1314583", "opened": true, "note": "삼성 공식 — 국내 갤럭시 eSIM 지원모델(S20 시리즈~, Z폴드/플립 전 세대, A54/55/56, 탭 일부), 지역·통신사별 상이·와이파이탭 미지원. 외부링크+기종 정본" },
+    { "url": "https://kr.trip.com/guide/phone/esim+%EC%9C%A0%EC%8B%AC.html", "opened": true, "note": "eSIM vs 유심 — 기존 국내유심 유지하며 해외용 추가, QR설치, 최신기종 위주. 듀얼심 교차확인" },
+    { "url": "https://factshop.co.kr/guide/esim-supported-device/", "opened": true, "note": "이심 지원기기 — 아이폰 XS/XR 이후 전모델, 갤럭시 국내는 Z폴드/플립4·S23 이후 본격(국내 제한적), 최대 eSIM 아이폰20·갤럭시7개. 기종 2차 출처" },
+    { "url": "https://www.skyscanner.co.kr/news/sim-card-and-internet-options-for-overseas-travel", "opened": true, "note": "유심/이심/로밍/포켓와이파이 선택기준 개괄(JS 렌더로 본문 일부만 확보) — 4종 비교 프레임 참조" },
+    { "url": "https://www.tourtoctoc.com/news/articleView.html?idxno=354", "opened": false, "note": "여행톡톡 유심/이심 총정리 — 403 차단으로 본문 미확보, 검색 요약(장단점·설치법)만 참조" },
+    { "url": "https://support.apple.com/ko-kr/109505", "opened": false, "note": "애플 공식 eSIM 문서 접근 시 다른 페이지 반환(수리 안내) — 아이폰 XS/XR 이후 지원은 KB·factshop·holafly로 교차 확인" }
+  ],
+  "serp_summary": {
+    "intent": "정보성/비교 — 유심 vs 이심 차이 + 뭘 골라야 하나(결정) 수요",
+    "common_items": "형태 차이, 설치방식(QR), 전화번호 유지, 지원 기종, 분실위험, 가격, 로밍/포켓와이파이 비교",
+    "gap": "상위가 KB·언론·판매사로 흩어져 있고 '내 폰이 되는지→며칠→통화필요'의 결정 순서와 설치 3단계·자주하는 실수(이심 삭제 재설치불가·기기잠금·데이터로밍 스위치)를 한 글에 묶은 결정 도구형 가이드가 공백",
+    "avg_depth": "단일 비교표 위주, 결정 플로+설치+실수까지 묶은 종합 없음"
+  },
+  "factcheck": [
+    { "claim": "유심=물리카드 삽입/이심=폰 내장 디지털, QR로 설치. 이심은 기존 한국 유심을 살린 듀얼심으로 한국 번호(카톡·인증문자·전화) 유지, 유심은 빼면 한국번호 사용 불가", "sources": ["https://kbthink.com/life/card/usim-vs-esim.html", "https://kr.trip.com/guide/phone/esim+%EC%9C%A0%EC%8B%AC.html", "https://esim.holafly.com/ko/guides-esim/esim-roaming/"] },
+    { "claim": "일본 5일간 매일 3GB 기준 유심·이심 약 1만1,000~1만3,000원 vs 로밍 4만~6만원대(방식·시점·국가에 따라 변동)", "sources": ["https://www.newsis.com/view/NISX20240809_0002844926", "검색 SERP 요약(원 결과 동일 수치)"] },
+    { "claim": "이심 지원 기종 — 아이폰 XS·XR(2018) 이후 전 모델, 갤럭시 국내 기준 대체로 Z 폴드4·플립4·S23 시리즈 이후(지역·통신사·업데이트에 따라 상이)", "sources": ["https://www.samsungsvc.co.kr/solution/1314583", "https://factshop.co.kr/guide/esim-supported-device/", "https://esim.holafly.com/ko/guides-esim/esim-phones/"] },
+    { "claim": "이심 지원 확인법 *#06# EID 표시 또는 설정 'eSIM 추가' 메뉴. 포켓 와이파이는 한 대로 최대 5대 공유, 로밍은 한국번호 유지하나 고가", "sources": ["https://kbthink.com/life/card/usim-vs-esim.html", "https://kr.trip.com/blog/comparison-of-essential-products-for-overseas-travel-usim-esim-and-pocket-wi-fi/"] }
+  ],
+  "variables": {
+    "keyword": "해외여행 유심 이심 차이",
+    "headline_finding": "SERP가 KB·언론·이심판매사로 파편화 — '내 폰이 되는지→기간→통화필요' 결정 순서 + 설치 3단계 + 자주하는 실수(이심 삭제 재설치불가·기기잠금·데이터로밍 스위치)를 묶은 결정 도구형 가이드가 공백",
+    "data_angle": "KB 비교축 + 트립닷컴 4종/용량 + 뉴시스 일본 가격·이용률 + 삼성 공식·factshop 지원기종을 교차해 4종 비교표·상황별 플로·데이터 용량 기준을 자체 재구성",
+    "conflict_handled": "갤럭시 국내 지원기종이 출처마다 상이(S20~ vs S23~) → '대체로 Z4/플립4·S23 이후·지역/통신사/업데이트별 상이·공식 확인' 한정어로 처리, 가격은 '한 비교 기준·시점 변동' 헤지, '상시 얼마' 단정 배제",
+    "first_person_hook": "유심·이심·로밍이 헷갈려 직접 표로 묶어본 리서치 경험 + '한국 번호 끊기는 줄 알았던' 공감형 오해(현장경험 날조 없음)"
+  },
+  "hermes_score": 98
+}
