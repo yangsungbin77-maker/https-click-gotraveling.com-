@@ -43,27 +43,18 @@ export const CATEGORIES: Category[] = [
 		],
 	},
 	{
-		slug: 'jeju',
-		label: '제주·국내',
-		title: '제주·국내 여행정보',
-		emoji: '🏝️',
-		blurb: '제주도 등 국내 여행 코스와 예산·동선 정보를 정리했습니다.',
-		posts: [
-			'jeju-3night4day-course',
-		],
-	},
-	{
 		slug: 'tips',
 		label: '여행꿀팁',
 		title: '여행 준비·꿀팁',
 		emoji: '🧳',
-		blurb: '항공권·LCC·유심/이심·기내반입·첫 해외여행 체크리스트 등 나라 상관없이 쓰는 여행 준비 정보입니다.',
+		blurb: '항공권·LCC·유심/이심·기내반입·첫 해외여행 체크리스트부터 제주 국내 코스까지, 나라 상관없이 쓰는 여행 준비 정보입니다.',
 		posts: [
 			'cheap-flight-tickets-tips',
 			'lcc-airline-tips',
 			'usim-esim-difference',
 			'carry-on-prohibited-items',
 			'overseas-travel-checklist-first-time',
+			'jeju-3night4day-course',
 		],
 	},
 ];
