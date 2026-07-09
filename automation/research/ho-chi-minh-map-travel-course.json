@@ -1,0 +1,34 @@
+{
+  "type": "info",
+  "keyword": "호치민 지도",
+  "note": "옛 워드프레스 고노출 URL(/베트남-지도-호치민-지도/) 재생성. 노출多·CTR低 → 원인=행정지도만 주고 여행에 못 씀. 해법=1군 도보코스+포토스팟을 인라인 SVG 동선도로 시각화(메트로글 SVG 선례)+실제 구글맵 임베드로 실사용성. 옛 URL 301을 메트로글→이 새글로 재지정. 차별화=중앙우체국 설계자 반전(에펠 아니라 폴홍스), 경쟁글 대부분 오기재.",
+  "serp": [
+    { "url": "https://www.tripstore.kr/blog/호치민-지도-여행-코스", "opened": true, "note": "트립스토어 '호치민 지도 1~7군'. 1군=관광중심(시청·벤탄·부이비엔), 2군 타오디엔=서양인 카페, 3군=핑크성당, 7군 푸미흥=한인타운. 군별 성격 근거" },
+    { "url": "https://www.tripstore.kr/blog/호치민-관광지도-1군-도보-동선-최적화", "opened": true, "note": "1군 도보 동선: 우체국&성당(맞은편)→인민위원회청사(도보10분)→점심 실내(1~3시 더위)→떤딘성당(3군 택시10분)→부이비엔(18:30). 도보시간·시간대 근거" },
+    { "url": "https://kr.trip.com/blog/hochiminh-tour/", "opened": true, "note": "통일궁(1군 옛 대통령궁·통일선언)·중앙우체국(1군 Hai Ba Trung)·벤탄시장(1군 Le Loi)·사이공스카이덱(비텍스코 49층)·전쟁박물관(3군). 명소 위치 근거" },
+    { "url": "https://travel.moneylabkr.com/호치민-여행코스/", "opened": true, "note": "문화코스(통일궁→전쟁박물관→노트르담→우체국), 노트르담=붉은벽돌 고딕, 우체국=에펠 설계라 기재(통설), 응우옌후에 야간조명·분수쇼. 코스·포토스팟 근거" },
+    { "url": "https://kr.trip.com/moments/theme/poi-the-cafe-apartment-37152842-attraction-993137/", "opened": true, "note": "카페 아파트먼트=1군 응우옌후에 42번지, 1960년대 아파트 개조 수직 카페촌, 엘리베이터 1인 3,000동, 외관 아래서·발코니 포토스팟. 위치·팁 1차 근거" },
+    { "url": "https://m.view.nate.com/travel/view/360993/", "opened": true, "note": "중앙우체국: 노트르담 맞은편, 1891 완공 고딕·르네상스, '흔히 에펠 작품으로 알려졌으나 실제 설계자는 알프레드 폴홍스(Alfred Foulhoux)'. 반전 팩트 1차 근거" },
+    { "url": "https://www.tripadvisor.com/AttractionsNear-g293925-d311087-Ben_Thanh_Market-Ho_Chi_Minh_City.html", "opened": true, "note": "벤탄시장 도보권 명소: 벤탄 야시장(1분) 등. 1군 도보 밀집 근거" },
+    { "url": "https://triple.guide/attractions/60188671-7675-4178-ab48-ef604becd995", "opened": true, "note": "부이비엔=1군 팜응우라오, 여행자거리·나이트라이프, 통일궁 차 4분, 오토바이·소매치기 주의. 위치·안전 근거" },
+    { "url": "https://www.kkday.com/ko/blog/1621/vietnam-hochiminh-11-spots", "opened": false, "note": "403 차단. 가볼만한곳 11선은 trip.com·tripstore로 대체" },
+    { "url": "https://namu.wiki/w/호찌민시", "opened": false, "note": "403 차단. 군 구성·명소는 tripstore·trip.com으로 교차" }
+  ],
+  "factcheck": [
+    { "claim": "중앙우체국 실제 설계자는 알프레드 폴홍스(Alfred Foulhoux)이며 에펠 설계설은 통설/오해, 1891년 완공, 노트르담 성당 맞은편", "sources": ["https://m.view.nate.com/travel/view/360993/", "https://kr.trip.com/blog/hochiminh-tour/"] },
+    { "claim": "호치민 관광 핵심은 1군 도보권(벤탄시장·통일궁·노트르담·중앙우체국·응우옌후에·부이비엔), 2군 타오디엔=카페, 3군=핑크성당·전쟁박물관, 7군 푸미흥=한인타운", "sources": ["https://www.tripstore.kr/blog/호치민-지도-여행-코스", "https://kr.trip.com/blog/hochiminh-tour/"] },
+    { "claim": "1군 도보 동선: 벤탄시장→통일궁(약10분)→노트르담·중앙우체국(맞은편, 세트)→응우옌후에·카페아파트먼트→부이비엔(저녁), 낮 1~3시 실내 권장", "sources": ["https://www.tripstore.kr/blog/호치민-관광지도-1군-도보-동선-최적화", "https://travel.moneylabkr.com/호치민-여행코스/"] },
+    { "claim": "카페 아파트먼트=1군 응우옌후에 42번지, 1960년대 아파트 개조 카페촌, 엘리베이터 1인 약 3,000동, 외관·발코니 포토스팟", "sources": ["https://kr.trip.com/moments/theme/poi-the-cafe-apartment-37152842-attraction-993137/", "https://travel.moneylabkr.com/호치민-여행코스/"] },
+    { "claim": "전망 포토스팟: 비텍스코 사이공 스카이덱(1군 49층), 랜드마크81(81층 베트남 최고층 전망대)", "sources": ["https://kr.trip.com/blog/hochiminh-tour/", "https://travel.moneylabkr.com/호치민-여행코스/"] },
+    { "claim": "부이비엔=1군 팜응우라오 여행자 거리, 야간 나이트라이프·포토스팟, 오토바이·소매치기·호객 주의", "sources": ["https://triple.guide/attractions/60188671-7675-4178-ab48-ef604becd995", "https://www.tripstore.kr/blog/호치민-관광지도-1군-도보-동선-최적화"] }
+  ],
+  "variables": {
+    "keyword": "호치민 지도",
+    "headline_finding": "호치민 지도=1군 지도. 관광 90%가 1군 도보권이라 벤탄시장 기준점으로 걸어서 도는 게 정석",
+    "cta_fix": "노출多·CTR低 원인=행정지도만 줌 → 1군 도보코스+포토스팟 동선도(SVG)+실제 구글맵 임베드로 실사용성 제공",
+    "myth_bust": "중앙우체국 설계자=에펠(X)→알프레드 폴홍스(O), 경쟁글 대부분 오기재한 반전",
+    "walking_course": "벤탄시장→통일궁→노트르담→중앙우체국→응우옌후에·카페아파트먼트→부이비엔(저녁)",
+    "photo_spots": "중앙우체국 내부 지도벽화·노트르담 외관·카페아파트먼트 발코니·부이비엔 야경·스카이덱/랜드마크81 전망"
+  },
+  "hermes_score": 91
+}
