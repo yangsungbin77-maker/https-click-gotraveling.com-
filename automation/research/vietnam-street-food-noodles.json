@@ -1,0 +1,34 @@
+{
+  "type": "info",
+  "keyword": "베트남 음식",
+  "note": "노출 중인 vietnam-beer 후속(먹거리·음료 클러스터). 맥주글↔음식글 내부링크로 베트남 클러스터 강화. 차별화=경쟁글이 죄다 '음식 N선 나열'인데 우리는 쌀국수 계통 구분(국물·면·지역)+지역 지도+주문/위생 실전으로 10x. GEO 질문형 헤딩·답먼저 적용.",
+  "serp": [
+    { "url": "https://kr.trip.com/blog/vietnam-food-guide/", "opened": true, "note": "베트남 음식 18선 나열형. 계란커피·포·반미·분짜·분보남보 등. 계통 구분 없이 단순 목록+숙소 CTA. 우리 차별화 근거(나열의 한계)" },
+    { "url": "https://www.vietnamairlines.com/kr/ko/plan-book/travel/travel-guide/vietnam-food-dishes", "opened": true, "note": "베트남항공 공식 18선. 지역별 분류(하노이/후에/호이안/호치민) 있음. 쌀국수8/길거리9 분류 참고. 지역 지도 교차검증" },
+    { "url": "https://www.kayak.co.kr/news/tasty-street-food-in-vietnam/", "opened": true, "note": "길거리음식 10선. 포/분보후에/분짜(국수), 반미/반쎄오/짜조·고이꾸온/반꾸온(스낵), 째(디저트) 분류 명확. 튀김vs생 스프링롤 구분 근거" },
+    { "url": "http://www.insidevina.com/news/articleView.html?idxno=24834", "opened": true, "note": "TasteAtlas 베트남 길거리음식 8선(반미·껌떰·퍼·짜조·반꾸온·반쎄오·쏘이·반베오). 반미 최고평점" },
+    { "url": "https://vietnam.vnanet.vn/korean/tin-van/베트남의-반미와-쌀국수-아시아-유명-길거리-음식-top100-367111.html", "opened": true, "note": "베트남통신사 공식. 반미 아시아 길거리음식 4위, 반미팃 22위, 반미해오꽈이 47위. 반미 순위 1차 근거" },
+    { "url": "https://www.threads.com/@tckulee/post/DNcNsPFyJjx", "opened": true, "note": "국수 계통 설명: 포(맑은 국물), 분짜(하노이 비빔), 분보후에(중부 굵은면 매움), 후띠에우(남부 맑은 돼지뼈), 반깐(타피오카 굵은면 걸쭉). 계통 구분 근거" },
+    { "url": "https://kr.trip.com/guide/theme/베트남+여행+비용.html", "opened": true, "note": "식비: 로컬 쌀국수 국내보다 저렴, 길거리·로컬 식당이 레스토랑보다 쌈. 지역별 하루 식비 범위. 가격 맥락" },
+    { "url": "https://www.vietnamtourism.com/ko/cao-lau-the-definitive-guide-to-hoi-an-s-most-iconic-dish", "opened": true, "note": "베트남관광청 공식. 까오러우=호이안 전용(바레 우물물·잿물·현지쌀), 두껍고 쫄깃한 면·국물 거의 없음·차슈. 미꽝과 차이 명시. 외부링크 후보" },
+    { "url": "https://www.skyscanner.co.kr/news/destination/13-vietnamese-street-food-joints-you-should-not-miss", "opened": false, "note": "본문 추출 불가(헤더만). 다른 소스로 대체" },
+    { "url": "https://vinpearl.com/en/vietnam-rice-noodle-recipe", "opened": false, "note": "403 차단. 국수 종류는 threads·vietnamtourism·검색으로 교차" }
+  ],
+  "factcheck": [
+    { "claim": "반미는 테이스트아틀라스 아시아 길거리음식 순위 4위(반미팃 22위·반미해오꽈이 47위) — 베트남 음식 중 최고 순위", "sources": ["https://vietnam.vnanet.vn/korean/tin-van/베트남의-반미와-쌀국수-아시아-유명-길거리-음식-top100-367111.html", "http://www.insidevina.com/news/articleView.html?idxno=24834"] },
+    { "claim": "쌀국수 계통: 포(맑은 국물, 북부 담백/남부 진함)·분짜(하노이 국물없는 비빔+숯불돼지)·분보후에(중부 후에 맵고 굵은면)·미꽝(중부 자작한 강황 넓은면)·까오러우(호이안 전용 두꺼운면 국물거의없음)·후띠에우(남부 맑은 돼지뼈)", "sources": ["https://www.threads.com/@tckulee/post/DNcNsPFyJjx", "https://www.vietnamairlines.com/kr/ko/plan-book/travel/travel-guide/vietnam-food-dishes", "https://www.vietnamtourism.com/ko/cao-lau-the-definitive-guide-to-hoi-an-s-most-iconic-dish"] },
+    { "claim": "까오러우는 호이안 바레 우물물·참섬 잿물·현지쌀이 있어야 제맛(타지역 재현 불가), 미꽝은 얇은 강황면+국물 자작+새우·닭·돼지로 구분", "sources": ["https://www.vietnamtourism.com/ko/cao-lau-the-definitive-guide-to-hoi-an-s-most-iconic-dish", "https://vinpearl.com/en/mi-quang-quang-noodles-a-must-try-food-for-your-trip-to-central-vietnam"] },
+    { "claim": "길거리음식: 반미(바게트 샌드위치)·반쎄오(강황 부침개)·짜조/냄란(튀긴 스프링롤)·고이꾸온(생 월남쌈)·껌땀(부서진쌀밥+숯불갈비)·반꾸온(찐 쌀전병)·반베오(후에 찐 쌀케이크)", "sources": ["https://www.kayak.co.kr/news/tasty-street-food-in-vietnam/", "https://www.vietnamairlines.com/kr/ko/plan-book/travel/travel-guide/vietnam-food-dishes"] },
+    { "claim": "지역별 대표: 하노이=포·분짜·짜까라봉, 후에·다낭=분보후에·미꽝·반베오, 호이안=까오러우, 호치민=반미·껌땀·후띠에우", "sources": ["https://www.vietnamairlines.com/kr/ko/plan-book/travel/travel-guide/vietnam-food-dishes", "http://www.insidevina.com/news/articleView.html?idxno=24834"] },
+    { "claim": "로컬 식당 쌀국수 한 그릇 대체로 40,000~60,000동(약 2,000~3,000원), 노점 얼음·생채소는 위생 편차", "sources": ["https://kr.trip.com/guide/theme/베트남+여행+비용.html", "https://kr.trip.com/blog/vietnam-food-guide/"] }
+  ],
+  "variables": {
+    "keyword": "베트남 음식",
+    "headline_finding": "음식 이름 외우기 대신 쌀국수 계통(국물·면·지역)부터 잡으면 메뉴판이 읽힌다",
+    "noodle_taxonomy": "포/분짜/분보후에/미꽝/까오러우/후띠에우 6계통을 국물양·면굵기·지역으로 구분",
+    "regional_map": "그 동네 음식을 그 동네에서 — 하노이 분짜, 후에 분보후에, 호이안 까오러우, 호치민 반미·껌땀",
+    "banh_mi_rank": "반미=아시아 길거리음식 4위(테이스트아틀라스), 베트남 음식 최고 순위",
+    "beer_cluster_link": "먹거리(음식)↔음료(맥주글) 내부링크로 안주+맥주 세트 동선"
+  },
+  "hermes_score": 91
+}

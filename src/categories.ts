@@ -19,6 +19,7 @@ export const CATEGORIES: Category[] = [
 		emoji: '🇻🇳',
 		blurb: '다낭·호치민·하노이부터 맥주·지하철·물가까지, 베트남 여행에 필요한 정보를 모았습니다.',
 		posts: [
+			'vietnam-street-food-noodles',
 			'vietnam-travel-checklist',
 			'vietnam-metro-lines',
 			'vietnam-beer',
