@@ -39,28 +39,39 @@ heroImage: '../../assets/posts/ho-chi-minh-map-travel-course.webp'
 
 ## 호치민 1군 도보 코스 — 지도에 그려봤습니다
 
-1군 핵심 명소는 걸어서 반나절이면 도는 범위에 모여 있습니다. 실제 방문 순서로 동선도를 그려봤어요. 명소 사이 도보 시간도 함께 표시했습니다.
+1군 핵심 명소는 걸어서 반나절이면 도는 범위에 모여 있습니다. 실제 방문 순서 그대로 **지도 위에 도보 경로와 번호 마커**로 찍어봤어요. 지도를 드래그하고 확대하면서 실제 거리감을 확인해 보세요(마커를 누르면 장소 이름이 뜹니다).
 
-<svg viewBox="0 0 720 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="호치민 1군 도보 여행 코스 동선도 - 벤탄시장 통일궁 노트르담성당 중앙우체국 응우옌후에 부이비엔" style="width:100%;height:auto;max-width:720px;display:block;margin:1.2rem auto;background:#f8fafc;border-radius:14px;font-family:sans-serif;">
-  <text x="360" y="38" font-size="20" fill="#0f172a" font-weight="800" text-anchor="middle">호치민 1군 도보 코스 동선도</text>
-  <polyline points="120,430 165,270 320,150 470,150 575,320 320,480" fill="none" stroke="#16a34a" stroke-width="4" stroke-dasharray="2 0" opacity="0.6"/>
-  <!-- 도보시간 라벨 -->
-  <text x="120" y="360" font-size="14" fill="#15803d" font-weight="700">약 10분</text>
-  <text x="215" y="205" font-size="14" fill="#15803d" font-weight="700">약 8분</text>
-  <text x="380" y="135" font-size="14" fill="#15803d" font-weight="700">1분(맞은편)</text>
-  <text x="540" y="240" font-size="14" fill="#15803d" font-weight="700">약 7분</text>
-  <text x="430" y="430" font-size="14" fill="#15803d" font-weight="700">저녁·택시</text>
-  <!-- 정류장 -->
-  <g font-size="16" font-weight="700" fill="#0f172a">
-    <circle cx="120" cy="430" r="18" fill="#166534"/><text x="120" y="436" font-size="17" fill="#fff" text-anchor="middle">1</text><text x="145" y="436">벤탄시장</text>
-    <circle cx="165" cy="270" r="18" fill="#166534"/><text x="165" y="276" font-size="17" fill="#fff" text-anchor="middle">2</text><text x="190" y="276">통일궁</text>
-    <circle cx="320" cy="150" r="18" fill="#166534"/><text x="320" y="156" font-size="17" fill="#fff" text-anchor="middle">3</text><text x="345" y="150">노트르담 성당 📷</text>
-    <circle cx="470" cy="150" r="18" fill="#166534"/><text x="470" y="156" font-size="17" fill="#fff" text-anchor="middle">4</text><text x="495" y="150">중앙우체국 📷</text>
-    <circle cx="575" cy="320" r="18" fill="#166534"/><text x="575" y="326" font-size="17" fill="#fff" text-anchor="middle">5</text><text x="415" y="320">응우옌후에·카페 아파트먼트 📷</text>
-    <circle cx="320" cy="480" r="18" fill="#e11d48"/><text x="320" y="486" font-size="17" fill="#fff" text-anchor="middle">6</text><text x="345" y="486">부이비엔 (야간) 📷</text>
-  </g>
-  <text x="30" y="540" font-size="13" fill="#64748b">📷 = 사진 찍기 좋은 포토스팟 · 도보 시간은 대략치(도식)</text>
-</svg>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<div id="hcmc-course-map" style="height:460px;border-radius:14px;overflow:hidden;border:1px solid var(--border);margin:1.2rem 0;background:#e5efe9;"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function(){
+  function init(){
+    if(typeof L==='undefined'){return setTimeout(init,150);}
+    var el=document.getElementById('hcmc-course-map');
+    if(!el||el._built){return;} el._built=true;
+    var stops=[
+      {n:1,name:'벤탄시장',ll:[10.7725,106.6983]},
+      {n:2,name:'통일궁',ll:[10.7772,106.6954]},
+      {n:3,name:'노트르담 성당 📷',ll:[10.7797,106.6990]},
+      {n:4,name:'중앙우체국 📷',ll:[10.7799,106.6994]},
+      {n:5,name:'카페 아파트먼트 📷',ll:[10.7743,106.7041]},
+      {n:6,name:'부이비엔 (야간) 📷',ll:[10.7669,106.6931]}
+    ];
+    var map=L.map('hcmc-course-map',{scrollWheelZoom:false});
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'}).addTo(map);
+    var pts=stops.map(function(s){return s.ll;});
+    L.polyline(pts,{color:'#16a34a',weight:5,opacity:0.85}).addTo(map);
+    stops.forEach(function(s){
+      L.marker(s.ll,{icon:L.divIcon({className:'',html:'<div style="background:'+(s.n===6?'#e11d48':'#166534')+';color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;border:2px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.45)">'+s.n+'</div>',iconSize:[28,28],iconAnchor:[14,14]})}).addTo(map).bindPopup('<b>'+s.n+'. '+s.name+'</b>');
+    });
+    map.fitBounds(L.latLngBounds(pts).pad(0.25));
+  }
+  init();
+})();
+</script>
+
+<p style="font-size:0.9rem;color:var(--text-muted);text-align:center;margin:0.2rem 0 0.9rem;">▲ 실제 지도 위 도보 경로 · <b>1</b> 벤탄시장 → <b>2</b> 통일궁 → <b>3</b> 노트르담 성당 → <b>4</b> 중앙우체국 → <b>5</b> 카페 아파트먼트 → <b>6</b> 부이비엔. <a href="https://www.google.com/maps/dir/Ben+Thanh+Market,Ho+Chi+Minh+City/Independence+Palace,Ho+Chi+Minh+City/Notre-Dame+Cathedral+Basilica+of+Saigon/Saigon+Central+Post+Office/The+Cafe+Apartment,42+Nguyen+Hue/Bui+Vien+Street,Ho+Chi+Minh+City/" target="_blank" rel="noopener">📍 구글 지도 앱에서 이 코스 열기</a></p>
 
 **1) 벤탄시장**(Bến Thành)에서 출발합니다. 1군 한복판, 레러이 거리의 최대 재래시장이라 위치 기준점으로 딱이에요. 라탄백·건망고·커피 같은 기념품을 사되, 부른 값의 절반부터 흥정하는 게 요령입니다. 통로가 좁고 더우니 선선한 오전이 낫습니다.
 
@@ -82,15 +93,9 @@ heroImage: '../../assets/posts/ho-chi-minh-map-travel-course.webp'
 
 <div class="cg-box cg-tip"><span class="cg-title">💡 전망 사진은 여기서</span><p>시내 전경을 한 컷에 담고 싶다면 <b>비텍스코 타워 사이공 스카이덱</b>(1군 49층)이나 강 건너 <b>랜드마크81</b>(81층, 베트남 최고층) 전망대가 좋습니다. 일몰 시간대가 가장 예뻐요. 스카이덱은 1군 도보 코스에 바로 붙일 수 있습니다.</p></div>
 
-## 실제 구글 지도로 보기
+## 구글 지도에 저장해두면 편해요
 
-동선을 머리에 넣었다면, 실제 지도에서 위치를 확인하고 저장해두면 현지에서 편합니다. 아래는 1군의 기준점 벤탄시장 주변 지도예요.
-
-<div style="position:relative;overflow:hidden;border-radius:14px;margin:1.2rem 0;border:1px solid var(--border);">
-<iframe src="https://www.google.com/maps?q=Ben+Thanh+Market,+Ho+Chi+Minh+City&output=embed" width="100%" height="380" style="border:0;display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="호치민 1군 벤탄시장 구글 지도"></iframe>
-</div>
-
-구글 지도 앱에서는 위 명소들을 검색해 별표(저장)로 찍어두면, 현지에서 그랩을 부를 때 목적지 입력이 빨라집니다. 도보 이동은 지도 도보 안내가 대체로 정확한 편이에요.
+위 지도의 '구글 지도 앱에서 코스 전체 열기' 링크를 누르면 스마트폰 구글 지도에서 이 도보 경로가 그대로 열립니다. 각 명소를 검색해 **별표(저장)로 찍어두면**, 현지에서 그랩을 부를 때 목적지 입력이 빨라져요. 도보 구간은 지도 도보 안내가 대체로 정확한 편이라, 오프라인 지도까지 미리 내려받아 두면 데이터 없이도 길을 찾을 수 있습니다.
 
 ## 이동 팁 — 메트로·그랩·더위
 
