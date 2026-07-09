@@ -1,0 +1,130 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_TITLE } from '../../consts';
+import { CATEGORIES } from '../../categories';
+
+export async function getStaticPaths() {
+	const all = await getCollection('blog');
+	return CATEGORIES.map((cat) => {
+		const posts = cat.posts
+			.map((id) => all.find((p) => p.id === id))
+			.filter((p) => p !== undefined)
+			.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+		return { params: { category: cat.slug }, props: { cat, posts } };
+	});
+}
+
+const { cat, posts } = Astro.props;
+const pageTitle = `${cat.title} · ${SITE_TITLE}`;
+---
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<BaseHead title={pageTitle} description={cat.blurb} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<header class="page-head">
+				<span class="tag">{cat.emoji} CATEGORY</span>
+				<h1>{cat.title}</h1>
+				<p>{cat.blurb}</p>
+				<span class="count">글 {posts.length}편</span>
+			</header>
+			<ul class="grid">
+				{
+					posts.map((post) => (
+						<li>
+							<a href={`/${post.id}/`} class="card">
+								{post.data.heroImage && (
+									<div class="card-image">
+										<Image src={post.data.heroImage} width={600} height={300} alt={post.data.title} />
+									</div>
+								)}
+								<div class="card-body">
+									<h3>{post.data.title}</h3>
+									<p>{post.data.description}</p>
+									<span class="meta">
+										<FormattedDate date={post.data.pubDate} />
+									</span>
+								</div>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-head {
+		padding: 1.5rem 0 2.5rem;
+		margin-bottom: 2rem;
+		border-bottom: 1px solid var(--border);
+	}
+	.page-head .tag {
+		font-weight: 700;
+		font-size: 0.8rem;
+		letter-spacing: 0.08em;
+		color: var(--accent);
+	}
+	.page-head h1 {
+		font-size: clamp(2.2rem, 5vw, 3rem);
+		margin: 0.6rem 0 0.4rem;
+	}
+	.page-head p { color: var(--text-muted); margin: 0 0 0.6rem; max-width: 60ch; }
+	.count { color: var(--text-dim); font-size: 0.85rem; font-weight: 600; }
+
+	.grid {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 1.2rem;
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		background: var(--bg-elev);
+		border: 1px solid var(--border);
+		border-radius: var(--radius);
+		overflow: hidden;
+		transition: border-color 0.2s ease, transform 0.15s ease, background 0.2s ease;
+	}
+	.card:hover {
+		border-color: var(--accent);
+		transform: translateY(-2px);
+		background: var(--bg-elev-2);
+	}
+	.card-image img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 2 / 1;
+		object-fit: cover;
+		border-bottom: 1px solid var(--border);
+	}
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		padding: 1.5rem;
+	}
+	.card h3 { margin: 0 0 0.5rem; font-size: 1.25rem; }
+	.card p {
+		color: var(--text-muted);
+		font-size: 0.95rem;
+		margin-bottom: 1rem;
+		flex: 1;
+	}
+	.meta { color: var(--text-dim); font-size: 0.85rem; font-weight: 600; }
+</style>

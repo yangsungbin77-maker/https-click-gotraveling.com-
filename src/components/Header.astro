@@ -1,5 +1,6 @@
 ---
 import { SITE_TITLE } from '../consts';
+import { CATEGORIES } from '../categories';
 import HeaderLink from './HeaderLink.astro';
 ---
 
@@ -11,6 +12,11 @@ import HeaderLink from './HeaderLink.astro';
 		</a>
 		<div class="internal-links">
 			<HeaderLink href="/">홈</HeaderLink>
+			{
+				CATEGORIES.map((cat) => (
+					<HeaderLink href={`/category/${cat.slug}/`}>{cat.emoji} {cat.label}</HeaderLink>
+				))
+			}
 			<HeaderLink href="/blog">전체 글</HeaderLink>
 			<HeaderLink href="/about">소개</HeaderLink>
 		</div>
@@ -32,6 +38,8 @@ import HeaderLink from './HeaderLink.astro';
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		gap: 0.5rem 1rem;
+		flex-wrap: wrap;
 		padding: 0.9rem 0;
 	}
 	.brand {
@@ -57,7 +65,8 @@ import HeaderLink from './HeaderLink.astro';
 	}
 	.internal-links {
 		display: flex;
-		gap: 0.4em;
+		flex-wrap: wrap;
+		gap: 0.35em;
 	}
 	.internal-links :global(a) {
 		padding: 0.5em 0.9em;
