@@ -1,0 +1,117 @@
+{
+  "type": "howto",
+  "keyword_root": "여행 베트남어 표현",
+  "keyword_cluster": [
+    "베트남어 인사말",
+    "씬짜오 뜻",
+    "베트남어 감사합니다 깜언",
+    "베트남어 숫자",
+    "베트남 흥정 표현",
+    "얼마예요 베트남어",
+    "베트남어 발음 성조",
+    "베트남어 호칭 anh chi em",
+    "베트남 긴급전화 번호",
+    "베트남 식당 주문 베트남어",
+    "화장실 어디예요 베트남어",
+    "하노이 다낭 발음 차이"
+  ],
+  "keyword_filters": {
+    "competition": "낮음 — 상위 1페이지가 개인 블로그(브런치·티스토리·스팀잇)와 소형 매체 위주. 대형 언론·위키 없음",
+    "demand": "GSC/큐 기준 검색 390, 황금키워드 점수 79.2. 자동완성에 '여행 베트남어 표현/회화' 노출",
+    "intent": "정보성 — 상위 전부 블로그·정보글. 쇼핑탭·지도팩 없음"
+  },
+  "serp": [
+    { "url": "https://brunch.co.kr/@qrssa/70", "opened": true, "note": "7카테고리(인사/식당/시장/호텔·교통/길찾기/과일/형용사). PDF 제공·현지감 있으나 긴급표현·호칭 규칙 없음" },
+    { "url": "https://talkpal.ai/ko/vocabulary/여행자를-위한-필수-베트남어-문구/", "opened": true, "note": "7소제목·표현 약 20개·본문 800~900자로 얕음. 로마자만, 한글 발음 없음. 숙박·문화예절 누락" },
+    { "url": "https://www.vietnamvisa.org.vn/basic-vietnamese-phrases-for-foreign-tourists/", "opened": true, "note": "8카테고리·표현 80여개로 최다. 호칭(Words to address people) 섹션 있음. 다만 영어권 대상이라 한글 발음·한국인 맥락 없음" },
+    { "url": "https://blog.maeil11.com/blog/vietnamese-airport-phrases", "opened": true, "note": "공항·입국심사 특화 12소제목·표 15개+로 깊음. 성조 표기 미흡·존댓말 구분 불명확이 자체 약점. 공항 밖 상황(시장·식당) 없음" },
+    { "url": "https://etseconds.com/travel/1441", "opened": true, "note": "약 6000자·'베트남어|발음|의미|비고' 표 구성으로 상위권 중 가장 충실. 그러나 긴급표현 상세·숙박·문화금기 누락" },
+    { "url": "https://vietnamguide.co.kr/베트남-인사말-여행/", "opened": true, "note": "인사말 5종 + anh/chị/em 친족호칭 설명 + 'Ơi'로 부르기까지 다룬 유일한 글. 다만 인사말에만 한정, 숫자·흥정·긴급 없음" },
+    { "url": "https://dinos.site/59", "opened": true, "note": "인사/쇼핑/식당 3섹션뿐, '간단하게 몇 가지만' 표방. 긴급·숫자·교통 전무. 분량 최하위" },
+    { "url": "https://ling-app.com/blog/vietnamese-tones/", "opened": true, "note": "6성조(ngang/huyền/sắc/hỏi/ngã/nặng)와 ma 계열 예시. dưa·dừa·dứa=수박·코코넛·파인애플 사고 사례 확보. 여행 표현글은 아니지만 발음 섹션 근거" },
+    { "url": "https://steemit.com/kr/@munhwan/3wwbxd", "opened": false, "note": "HTTP 403 — 서버 차단으로 열람 실패" },
+    { "url": "https://11.neul2.com/entry/여행-베트남어-기본적인-베트남-인사말-알고가기", "opened": false, "note": "외부 도메인 302 리다이렉트(ww80.neul2.com) — 열람 실패, 스팸성 리다이렉트로 판단" }
+  ],
+  "serp_summary": {
+    "intent": "정보성 How-to — 상황별 문장 목록을 원함",
+    "common_required": [
+      "인사·감사·사과",
+      "숫자 1~10",
+      "가격 묻기·흥정",
+      "식당 주문·계산",
+      "교통·길찾기",
+      "화장실 위치"
+    ],
+    "gaps": [
+      "대부분 Xin chào만 알려주고 anh/chị/em 호칭 규칙을 다루지 않음(vietnamguide 1곳만 부분 언급)",
+      "북부/남부 발음 차이(hỏi·ngã 병합=남부 5성조, d·gi·r의 z/j) 다룬 글 전무",
+      "천 단위 nghìn(북)/ngàn(남) 차이 언급 전무",
+      "긴급전화 실제 번호(113/114/115)와 표현을 함께 준 글 거의 없음",
+      "2만 동↔50만 동 지폐 색 혼동 등 실전 돈 사고 경고 없음"
+    ],
+    "avg_length": "800~6000자, 중앙값 약 2000자 — 우리 6100자대로 상회"
+  },
+  "factcheck": [
+    {
+      "claim": "베트남 긴급전화는 경찰 113·소방/구조 114·구급 115",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_emergency_telephone_numbers",
+        "https://triple.guide/articles/0c4adb0c-c551-4cce-a43b-b5f0e4db9f01"
+      ]
+    },
+    {
+      "claim": "베트남 최고액권은 50만 동이고, 1만 동 이상 지폐는 폴리머 재질",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vietnamese_%C4%91%E1%BB%93ng",
+        "https://ko.wikipedia.org/wiki/베트남_동"
+      ]
+    },
+    {
+      "claim": "2만 동과 50만 동은 둘 다 푸른색 계열이라 여행자가 가장 많이 혼동한다",
+      "sources": [
+        "https://vietnamguide.co.kr/베트남-돈-화폐-및-사용시-주의사항-소개/",
+        "https://blog.allifetools.com/entry/베트남동-지폐-종류-동-구분-환율-계산하는-방법"
+      ]
+    },
+    {
+      "claim": "베트남어는 성조가 6개이며, 남부 방언에서는 hỏi와 ngã가 병합되어 실질 5개로 들린다(표기는 6종 유지)",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vietnamese_phonology",
+        "https://ko.wikipedia.org/wiki/베트남어"
+      ]
+    },
+    {
+      "claim": "베트남어 인칭대명사는 친족호칭 기반이라 상대 나이에 따라 anh/chị/em을 골라 쓴다",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vietnamese_pronouns",
+        "https://vietnamguide.co.kr/베트남-인사말-여행/"
+      ]
+    },
+    {
+      "claim": "성조를 틀리면 dưa(수박)·dừa(코코넛)·dứa(파인애플)처럼 전혀 다른 단어가 된다",
+      "sources": [
+        "https://ling-app.com/blog/vietnamese-tones/",
+        "https://en.wikipedia.org/wiki/Vietnamese_phonology"
+      ]
+    },
+    {
+      "claim": "북부는 d·gi·r을 z에 가깝게, 남부는 j에 가깝게 발음한다",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vietnamese_phonology",
+        "https://ko.wikipedia.org/wiki/베트남어"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "여행 베트남어 표현",
+    "headline_finding": "여행자가 실제로 반복해서 쓰는 문장은 12개뿐이고, 문장보다 anh/chị/em 호칭 선택이 현지 반응을 더 크게 바꾼다",
+    "unique_angle_1": "남부 방언은 hỏi·ngã 병합으로 성조가 5개로 들린다 — SERP 상위 10개 중 언급 0곳",
+    "unique_angle_2": "천 단위가 북부 nghìn / 남부 ngàn으로 갈린다 — SERP 상위 언급 0곳",
+    "unique_angle_3": "2만 동과 50만 동이 둘 다 푸른색이라 25배 손해가 날 수 있다",
+    "serp_median_length": "약 2000자(우리 6184자)",
+    "phrase_count": 30,
+    "judge_fixes_applied": "Không 발음 콤→콩 3곳, 지폐 혼동쌍 20만→50만 정정, Không cho rau thơm으로 자연화, Bật đồng hồ lên nhé로 정중화"
+  },
+  "hermes_score": 91,
+  "hermes_note": "독립 심판 3라운드. 1차 80점(치명 2건: 지폐 혼동쌍 오류·Không 발음 콤) → 수정 후 89점 → FAQ에 성조 표기/소리 구분 단서 추가 후 91점 통과"
+}
