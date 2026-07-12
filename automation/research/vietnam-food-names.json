@@ -1,0 +1,43 @@
+{
+  "type": "glossary",
+  "keyword": "베트남 음식 종류 이름 정리",
+  "serp": [
+    { "url": "https://www.vietnamairlines.com/kr/ko/plan-book/travel/travel-guide/vietnam-food-dishes", "opened": true, "note": "공식 항공사 가이드 18개 음식(퍼·반미·분짜·반쎄오·미꽝·껌땀·쏘이·분지에우·까오러우·분보후에·고이꾸온 등, 가격대 VND 15,000~150,000). 나열형, 이름 규칙 해설 없음 → 외부링크 채택" },
+    { "url": "https://ko.wikipedia.org/wiki/베트남_요리", "opened": true, "note": "북부=간단·중국 영향, 남부=프랑스 영향·해산물. 쌀·국수 주식, 허브·라임. 개별 음식 설명 부족" },
+    { "url": "https://kr.trip.com/blog/vietnam-food-guide/", "opened": true, "note": "18선+맛집 주소·영업시간. 맛집 위주라 이름 해설 없음, 하노이 편중. 계란커피 유래 설명은 충실" },
+    { "url": "https://www.hotelnbus.com/info/12", "opened": true, "note": "메뉴판 읽기+주문 표현(고수 빼기·계산). 음식명 6개뿐, 가격 읽기 미포함 = 우리가 채울 갭" },
+    { "url": "https://amonthofliving.com/entry/베트남에서-음식-주문하기", "opened": true, "note": "핵심 경쟁글. 3요소 조합 공식(베이스+재료+조리법: Pho/Com/Banh + Bo/Ga/Heo/Tom + Nuong/Ran/Rang/Kho), 껌 찌엔 하이산 예시, 호칭(엠어이). 주문 한정·표 부족 → 우리는 사전형 표+가격+대표메뉴 해독표로 확장" },
+    { "url": "https://brunch.co.kr/@vietnamqo/36", "opened": true, "note": "국수 8종 상세(퍼=납작 넓음·북부 / 분=둥글고 가늠·활용도 최고 / 후띠에우=쌀+타피오카 투명 탄력·남부 / 미=밀가루 노란 면 / 미꽝=중부 넓고 두꺼운 면·비빔형 / 반깐=굵고 쫀득 / 미엔=전분 당면 / 반다=북부 붉은 면)" },
+    { "url": "https://www.insidevina.com/news/articleView.html?idxno=33", "opened": true, "note": "퍼 이름 규칙: 퍼보=소고기(진한 국물)·퍼가=닭(맑고 담백). 고명 세분: 퍼찐(익힌 고기)·퍼따이(생고기 데침)·퍼비엔(완자)" },
+    { "url": "https://blog.allifetools.com/entry/베트남동-지폐-종류", "opened": true, "note": "가격 읽기: 0 하나 떼고 2로 나누면 원화 근사(500,000동→약 25,000원). 지폐 색상표(50만=파랑, 20만=빨강, 10만=초록), 동전 없음" },
+    { "url": "https://vinwonders.com/en/wonderpedia/news/vietnamese-food/", "opened": false, "note": "403 차단" },
+    { "url": "https://namu.wiki/w/베트남 요리", "opened": false, "note": "403(Cloudflare). 검색 스니펫: 면 앞 단어=면발 종류(퍼=칼국수형 넓적/북부, 분=소면형/중부, 후띠에우=당면형/남부), 분짜=숯불 돼지고기+느억맘 소스" },
+    { "url": "https://hatonet.kr/hatonet-news/406", "opened": false, "note": "응답 크기 초과로 열람 실패(분·퍼 비교 글)" },
+    { "url": "https://m.cafe.daum.net/vietnipa/V40V/7", "opened": false, "note": "미열람. 검색 스니펫: 퍼/분 구분은 면 단면 모양 기준" }
+  ],
+  "serp_summary": {
+    "intent": "정보(음식 이름 사전). 상위=공식 나열형(항공사·리조트)·위키·맛집 가이드·주문 표현 블로그",
+    "common_items": ["퍼(보/가)", "반미", "분짜", "반쎄오", "미꽝", "껌땀", "고이꾸온·짜조", "지역별(북·중·남) 구분"],
+    "gap": "①이름 조합 공식(베이스+재료+조리법)을 사전형 표로 체계화한 글이 amonthofliving(주문 한정) 하나뿐 ②음식 사전+메뉴판 가격 읽기(0떼고 반·점 표기·K 표기)를 합친 원페이지 없음 ③전부 나열형이라 처음 보는 메뉴 '해독'을 못 가르침 → 해독 프레임이 정보 게인",
+    "cluster_keywords": ["베트남 음식 이름", "베트남 음식 종류", "베트남 메뉴판 보는법", "베트남 메뉴판 가격", "퍼보 퍼가 차이", "분짜 뜻", "베트남 쌀국수 종류", "껌땀", "고수 빼주세요 베트남어", "베트남 동 가격 계산", "미꽝"],
+    "dedup_note": "기존 글 /vietnam-street-food-noodles/(7/9 발행, 계통·지역·추천 각도)와 중복 회피 — 이 글은 '이름 해독 사전' 각도로 분리, 상호 내부링크(사전↔지도 역할 분담)"
+  },
+  "factcheck": [
+    { "claim": "퍼=납작하고 넓은 쌀 면(북부 기원), 분=둥글고 가는 쌀 면(활용도 높음)", "sources": ["https://brunch.co.kr/@vietnamqo/36", "나무위키 베트남 요리 검색 스니펫(퍼=넓적 칼국수형, 분=소면형)", "다음카페 스니펫(단면 모양 기준 구분)"] },
+    { "claim": "퍼보=소고기 육수(진함), 퍼가=닭 육수(맑고 담백). 고명 세분=퍼찐(익힌)·퍼따이(생고기)", "sources": ["https://www.insidevina.com/news/articleView.html?idxno=33", "https://brunch.co.kr/@vietnamqo/36 (퍼 대표=소고기·닭고기 교차)"] },
+    { "claim": "음식 이름 3요소 조합 구조(베이스+재료+조리법), 재료(보=소·가=닭·헤오=돼지·똠=새우)·조리법(느엉=구이·란/찌엔=튀김·rang=볶음·kho=조림), 예시 껌 찌엔 하이산=해산물 볶음밥", "sources": ["https://amonthofliving.com/entry/베트남에서-음식-주문하기 (3요소 공식·단어·예시)", "https://www.insidevina.com/news/articleView.html?idxno=33 (보/가 재료 규칙 교차)"] },
+    { "claim": "분짜=가는 면+숯불 구운 돼지고기(느억맘 소스에 찍어 먹는 하노이식), 짜(chả)=구운 고기·완자류", "sources": ["나무위키 검색 스니펫(분짜=숯불 돼지고기+느억맘)", "https://www.vietnamairlines.com/kr/ko/... (Bun Cha=구운 돼지고기·쌀국수·찍는 소스)"] },
+    { "claim": "가격 근사 공식: 동 금액에서 0 하나 떼고 2로 나누면 원화 근사(예 50,000동≈2,500원, 환율 변동 헤지 표기), 베트남은 동전 미사용", "sources": ["https://blog.allifetools.com/entry/베트남동-지폐-종류 (공식+동전 없음)", "구글 검색 결과 요약(500,000동→1/2→0 제거→약 25,000원 동일 공식)"] },
+    { "claim": "미꽝=중부 꽝남·다낭 특산, 넓고 두꺼운 면, 국물 적은 비빔형", "sources": ["https://brunch.co.kr/@vietnamqo/36", "https://www.vietnamairlines.com/kr/ko/... (Mi Quang=지역 특산·강한 향)"] },
+    { "claim": "껌땀=부서진 쌀밥+구운 고기, 쏘이=찹쌀밥, 고이꾸온=생 스프링롤(월남쌈)", "sources": ["https://www.vietnamairlines.com/kr/ko/... (Com Tam·Xoi·Goi Cuon 정의)", "구글 검색 결과 요약(껌땀·월남쌈 교차)"] },
+    { "claim": "주문 회화: 고수(향채) 빼기 표현이 여행 회화의 핵심 수요 — '콩 쪼 라우 텀'(không=안, cho=넣다, rau thơm=향채 전반)로 본문에서 단어 구조까지 병기", "sources": ["https://www.hotelnbus.com/info/12 (고수 조절 표현: 빼기·조금·많이)", "https://amonthofliving.com/entry/... (주문 실전 문형 'Cho tôi ~' 구조 교차 — cho=주다/넣다 용법 확인)"] }
+  ],
+  "variables": {
+    "keyword": "베트남 음식 종류 이름 정리",
+    "headline_finding": "SERP 12개 중 이름 조합 공식을 사전형으로 체계화+가격 읽기까지 합친 글 0개 — '외우지 말고 해독하라' 프레임이 정보 게인",
+    "serp_analysis": "12개 시도 8개 직접 열람(vinwonders·나무위키 403, hatonet 용량 초과, 다음카페 미열람)",
+    "differentiation": "①베이스 12·재료 7·조리법 6 단어 사전 표 ②3초 해독 퀴즈(미엔 싸오 똠) ③가격 읽기(0떼고 반·점 표기·K 표기·동전 없음) ④대표 메뉴 10개 해독 완료표 ⑤기존 총정리 글과 사전↔지도 역할 분담(카니벌라이제이션 회피)",
+    "cluster_size": "루트 1 + 위성 11개"
+  },
+  "hermes_score": 95
+}
