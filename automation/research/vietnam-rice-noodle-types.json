@@ -1,0 +1,43 @@
+{
+  "type": "glossary",
+  "keyword": "베트남 쌀국수 종류",
+  "serp": [
+    { "url": "https://vietnamguide.co.kr/베트남-쌀국수/", "opened": true, "note": "6종(퍼·분보후에·후띠에우·까오러우·분짜까·분팃느엉). 까오러우=일본 우동 유래설·호이안 한정, 분짜까=다낭 명물·호불호(생선), 분팃느엉=분짜의 남부 버전·달짝지근 숯불. 나열형, 주문법 없음" },
+    { "url": "https://triple.guide/articles/9ffa1ed3-2a12-4179-95fe-e83cce7027d7", "opened": true, "note": "8종+주문 옵션(따이=생고기 데침, 찐=편육처럼 삶은 고기 선택 가능)+허브·라임 먹는 법. 외부링크 채택. 취향 결정 가이드는 없음" },
+    { "url": "https://www.goodmorningvietnam.co.kr/news/article.html?no=56556", "opened": true, "note": "TasteAtlas 세계 100대 국수에 베트남 9종(북부 포·분짜·분리에우, 중부 미꽝·까오러우, 남부 분팃느엉·반깐·분맘·분보남보). 분짜=오바마·보데인 일화. 지역 3분류 프레임 확보" },
+    { "url": "https://ko.wikipedia.org/wiki/퍼", "opened": true, "note": "퍼 정의·유래 2설(프랑스 포토푀/중국 광둥). 하노이식=담백+파·라임, 남부식=달고 기름+해선장·핫소스. ⚠️요약 중 '퍼따이=오리 육수·퍼찐=새우 육수'는 요약 오류로 판단(타 출처 3곳과 상충)해 채택 안 함" },
+    { "url": "https://brunch.co.kr/@vietnamqo/36", "opened": true, "note": "국수 8종 면 특성(퍼=납작 넓음, 분=둥글고 가늚, 후띠에우=쌀+타피오카 투명 탄력, 미꽝=중부 넓고 두꺼운 면·자작한 비빔형, 반깐·미엔·반다)" },
+    { "url": "https://www.insidevina.com/news/articleView.html?idxno=33", "opened": true, "note": "퍼 이름 규칙 핵심: 퍼보=소(진한 국물)·퍼가=닭(맑고 담백, 닭살 찢어 고명). 고명 세분 퍼찐=푹 익힌 고기·퍼따이=생고기·퍼비엔=완자. 현지 식사법=고명 먼저 소스에 찍고 면+향신채+숙주+느억맘" },
+    { "url": "https://www.vietnamairlines.com/kr/ko/plan-book/travel/travel-guide/vietnam-food-dishes", "opened": true, "note": "공식 가이드. 분보후에=매운 소고기 국수·레몬그라스·고추, 까오러우=호이안 우물물·쫄깃 면·역사성, 미꽝=강한 향·지역 특산 교차" },
+    { "url": "https://ko.wikipedia.org/wiki/베트남_요리", "opened": true, "note": "북부=담백·중국 영향, 남부=프랑스 영향. 지역 스타일 차이 교차" },
+    { "url": "https://namu.wiki/w/쌀국수", "opened": false, "note": "403(Cloudflare). 검색 스니펫: 향신채 거부 표현 '콤무온라우응오(không muốn rau ngổ)'" },
+    { "url": "https://guide.michelin.com/kr/ko/article/dining-in/베트남-분보-소고기-쌀국수-육수-따라하기", "opened": false, "note": "403 차단(미쉐린)" },
+    { "url": "https://www.threads.com/@tckulee/post/DNcNsPFyJjx", "opened": false, "note": "미열람. 스니펫: 포=국물, 분짜=국물 없는 찍먹, 분보후에=중부 교차" },
+    { "url": "https://vinpearl.com/en/vietnam-rice-noodle-recipe", "opened": false, "note": "영문 레시피 페이지, 검색의도 불일치로 스킵" }
+  ],
+  "serp_summary": {
+    "intent": "정보(종류+선택 가이드). 상위=나열형 목록(6~9종)·위키·레시피. 사용자 추가 요구=메뉴판에서 소고기/닭고기 고르는 법",
+    "common_items": ["퍼보/퍼가", "분짜", "분보후에", "미꽝", "까오러우", "후띠에우", "지역별(북·중·남) 구분"],
+    "gap": "전부 종류 나열형 — ①메뉴판 주문 기준(보/가 → 따이/찐 익힘 옵션)으로 풀어주는 글 없음 ②취향→주문 결정표 없음 ③여행 도시별 뭘 시킬지 매핑 없음. '주문 3단계' 프레임이 정보 게인",
+    "cluster_keywords": ["퍼보 퍼가 차이", "퍼따이 퍼찐", "베트남 쌀국수 주문", "분보후에", "분짜", "분팃느엉", "미꽝", "까오러우", "후띠에우", "다낭 쌀국수", "하노이 쌀국수"],
+    "dedup_note": "기존 총정리(/vietnam-street-food-noodles/, 계통·지역 지도)·이름사전(/vietnam-food-names/, 단어 문법)과 3각 분담 — 이 글=쌀국수 전문 심화+주문 실전. 허브-스포크로 '베트남 쌀국수 종류' 쿼리는 이 전용 글이 타깃"
+  },
+  "factcheck": [
+    { "claim": "퍼보=소뼈 육수(진하고 묵직), 퍼가=닭 육수(맑고 담백, 닭살 고명)", "sources": ["https://www.insidevina.com/news/articleView.html?idxno=33", "https://vietnamguide.co.kr/베트남-쌀국수/ (퍼=소뼈 육수 깔끔) + triple.guide(퍼 보/퍼 가 구분)"] },
+    { "claim": "소고기 고명 옵션: 따이(tái)=얇게 썬 생고기를 국물에 살짝 데침, 찐(chín)=푹 삶은 편육, 비엔(viên)=완자", "sources": ["https://www.insidevina.com/news/articleView.html?idxno=33 (퍼찐·퍼따이·퍼비엔 정의)", "https://triple.guide/articles/9ffa1ed3-... (따이=생고기 고명, 찐=편육처럼 삶아 얹음 선택)"] },
+    { "claim": "분짜=숯불 돼지고기·완자를 느억맘 소스에 담가 면·채소를 찍어 먹는 하노이식(국물 요리 아님), 오바마 방문 일화", "sources": ["https://www.goodmorningvietnam.co.kr/news/article.html?no=56556 (오바마·보딘 일화)", "구글 검색 결과(분짜=국물 없이 찍거나 비벼 먹는 하노이 대표) + vietnamairlines(구운 돼지고기·찍는 소스)"] },
+    { "claim": "분보후에=소뼈+돼지뼈 육수에 레몬그라스·고추·느억맘, 굵고 둥근 면, 중부 후에 기원 매콤 국수", "sources": ["구글 검색 결과 요약(소뼈+돼지뼈·레몬·고추·느억맘)", "https://www.vietnamairlines.com/... (Bun Bo Hue=매운 소고기 국수·레몬그라스·고추) + 기존 사이트 글 vietnam-street-food-noodles(굵고 둥근 면) 일관성 유지"] },
+    { "claim": "까오러우=호이안 지역 한정, 우동처럼 굵고 쫄깃한 면, 일본 우동 유래설('설이 전해진다'로 헤지)", "sources": ["https://vietnamguide.co.kr/베트남-쌀국수/ (일본 우동이 호이안식으로 변형)", "https://www.vietnamairlines.com/... (Cao Lau=호이안 우물물·쫄깃 면·지역 제한)"] },
+    { "claim": "하노이식 퍼=담백+파·라임 위주, 남부식=더 달고 기름지며 해선장·핫소스 제공", "sources": ["https://ko.wikipedia.org/wiki/퍼 (지역별 차이)", "https://ko.wikipedia.org/wiki/베트남_요리 (북부 담백·남부 프랑스 영향 교차)"] },
+    { "claim": "TasteAtlas 세계 100대 국수에 베트남 국수 9종 포함(보도 기준 표기), 미꽝=다낭·꽝남 특산 자작한 비빔형", "sources": ["https://www.goodmorningvietnam.co.kr/news/article.html?no=56556", "https://brunch.co.kr/@vietnamqo/36 (미꽝=중부 넓고 두꺼운 면·비빔형)"] }
+  ],
+  "variables": {
+    "keyword": "베트남 쌀국수 종류",
+    "headline_finding": "SERP 12개 전부 종류 나열형 — 메뉴판 주문 기준(보/가→따이/찐)과 취향 결정표로 풀어주는 글 0개. 사용자 요구(메뉴판에서 소·닭 고르는 법)와 정확히 일치하는 갭",
+    "serp_analysis": "12개 시도 8개 직접 열람(나무위키·미쉐린 403, threads·vinpearl 스킵). 위키백과 퍼 요약의 따이/찐 오류는 3개 출처 교차로 기각",
+    "differentiation": "①주문 3단계 프레임(국물/비빔→보/가→따이/찐) ②취향별 결정표+메뉴판 표기 병기 ③여행 도시별 국수 매핑 표 ④기존 2글과 3각 분담(총정리=지도, 이름사전=문법, 이 글=쌀국수 심화·주문)",
+    "cluster_size": "루트 1 + 위성 11개"
+  },
+  "post_judge_fixes": "심판 지적 반영 — 후띠에우 설명 문단 추가(brunch 면 특성+vietnamguide 돼지·새우 고명+vietnamairlines 건식·습식 선택 교차), 분보후에 여론 인용부호 단정 제거, 3갈래 표 추가(표 3개 충족), 1인칭 1회 추가. '콩 쪼 라우 텀'은 vietnam-food-names.json factcheck 8번(hotelnbus+amonthofliving 교차)에 근거 있음 — 내부글 위임",
+  "hermes_score": 91
+}
