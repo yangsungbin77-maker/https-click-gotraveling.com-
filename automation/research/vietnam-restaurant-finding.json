@@ -1,0 +1,41 @@
+{
+  "type": "howto",
+  "keyword": "베트남 맛집 찾는 법",
+  "serp": [
+    { "url": "https://brunch.co.kr/@@7rF2/649", "opened": true, "note": "'구글 지도에 없어요' 글. 로컬 가게 다수가 구글맵 미등록, 현지인 조언=교복·회사 유니폼 손님 많은 집(가격 합리·실패 낮음), 그림·공예 있는 취향 가게 신호. 구글맵 효율 떨어졌다는 평가" },
+    { "url": "https://brunch.co.kr/@dacartes/70", "opened": true, "note": "구글맵 꿀팁 10(현지어 검색, 한국인 리뷰 적은 곳, 폰카 사진, 리뷰 수·평점 상관 분석, 낮은 평점 리뷰 먼저, 함께 검색한 항목). 일반 해외용이라 베트남 특화 없음" },
+    { "url": "https://premiatnc.blog/베트남-필수-어플-blogging/", "opened": true, "note": "Foody=레스토랑 리뷰·평점·배달·할인쿠폰, Grab/GrabFood, Zalo 결제. 어플 나열형" },
+    { "url": "https://kr.trip.com/guide/transport/베트남+지도.html", "opened": true, "note": "구글맵=베트남 여행 기능 전반 제공·한국어 지원, 외곽 한계(맵스미 대안), 그랩푸드 제안" },
+    { "url": "https://www.teamblind.com/kr/post/해외여행-구글맵-...", "opened": true, "note": "구글맵 필터(평점 4.0+·가격대), 실시간 붐비는 시간 확인, 음식종류+도시명 검색. '블로그·인스타 안 보고 구글맵 신뢰' 반대 관점도 존재 확인" },
+    { "url": "https://www.kofood.net/related-news/?bmode=view&idx=145248453", "opened": true, "note": "현지인 신호 5(현지인 집객, 대표 메뉴, 숙소 직원·기사·상인에게 묻기, 10년+ 노포, 시장·골목). 광고·평점 의존 말고 현지인 시선 결론" },
+    { "url": "https://play.google.com/store/apps/details?id=com.traveler.app.aos", "opened": true, "note": "트래블러 앱=베트남 전지역 700여 제휴 맛집·스파 혜택(GPS 기반). 제휴 앱이라 본문에선 중립성 위해 미채택" },
+    { "url": "https://allijdesign.com/36", "opened": true, "note": "Foody=현지 맛집 찾기 최적 앱·현지인 다수 사용·배달·예약·리뷰, 그랩·배달K·배민 비교, 앱은 한국에서 미리 설치 권장" },
+    { "url": "https://www.thegoodreview.com.au/2022/09/...", "opened": false, "note": "404 소멸(브런치 649 재게재본)" },
+    { "url": "https://think-note.com/local/", "opened": false, "note": "본문 렌더 실패(빈 페이지)" },
+    { "url": "https://www.tripadvisor.com/Restaurants-g293921-Vietnam.html", "opened": false, "note": "403 차단. 서구권 여행자 리뷰 플랫폼으로 순위 제공" },
+    { "url": "https://play.google.com/store/apps/details?id=com.foody.vn.activity", "opened": false, "note": "미열람. 검색 결과 요약으로 Foody 기능(호치민·하노이·다낭 등 검색·리뷰·예약·배달, 영어 지원) 교차 확보" }
+  ],
+  "serp_summary": {
+    "intent": "How-to 방법론(정보성). 상위=팁 나열 블로그·어플 소개·커뮤니티, 특정 식당 리스트 글과 분리된 쿼리",
+    "common_items": ["구글맵 활용(필터·붐비는 시간)", "구글맵 평점의 한계", "Foody·그랩 등 현지 앱", "현지인 신호(교복·유니폼·집객)", "물어보기"],
+    "gap": "전부 팁 나열형 — ①평점 함정을 구조화(모수·저가 후한 평점·한국인 쏠림·전문 사진)한 글 없음 ②도구별 역할 분담(구글맵=수집, Foody=검증, 현장=확정)의 3단계 퍼널 프레임 없음 ③도시별 검증 강도 조절 관점 없음",
+    "cluster_keywords": ["베트남 맛집 어플", "베트남 구글맵 평점", "Foody 사용법", "다낭 맛집 찾기", "호치민 맛집 찾기", "현지인 맛집 구별", "그랩푸드", "베트남 여행 앱", "관광객 식당 거르는 법"],
+    "google_self_check": "5문항 대응 — ①고유 분석=평점 함정 4분류·3단계 퍼널 ②새 관점=도구 역할 분담 프레임 ③제목-본문 일치(함정 4가지·3단계 모두 본문 이행) ④충분성=수집→검증→현장→도시별 조절→FAQ ⑤유용성=3단계 필터 표(재방문 가치)"
+  },
+  "factcheck": [
+    { "claim": "구글맵 평점 함정: 리뷰 모수 적으면 신뢰도 낮음, 저가 식당은 평가가 후해지는 경향, 한국인 리뷰 쏠림=현지 검증 부재 신호, 일반인 폰카 사진이 실사용 증거", "sources": ["https://brunch.co.kr/@dacartes/70 (리뷰 수·평점 상관, 폰카 사진, 한국인 리뷰 적은 곳)", "구글 검색 결과 요약(모수 적으면 신뢰 낮게, 싸면 평점 후해짐)"] },
+    { "claim": "현장 신호: 교복·회사 유니폼 손님 많은 집=가격 합리·실패 확률 낮음(현지인 조언), 현지인 집객·10년+ 노포·시장 골목 가게", "sources": ["https://brunch.co.kr/@@7rF2/649 (교복·유니폼 현지인 조언 원문)", "https://www.kofood.net/... (현지인 집객·노포·시장 5신호)"] },
+    { "claim": "Foody=베트남 현지 맛집 리뷰·평점·배달·예약 앱, 호치민·하노이·다낭 등 주요 도시 커버, 영어 지원, 현지인 사용 다수", "sources": ["https://premiatnc.blog/... (리뷰·평점·배달·쿠폰)", "https://allijdesign.com/36 (현지 맛집 최적·현지인 다수·예약) + Foody 플레이스토어 검색 요약(도시 커버리지·영어 지원)"] },
+    { "claim": "구글맵 실전: 평점·가격대 필터, 실시간·시간대별 붐비는 정도 확인 가능, 베트남 로컬 가게 중 구글맵 미등록 다수", "sources": ["https://www.teamblind.com/... (필터·붐비는 시간)", "https://brunch.co.kr/@@7rF2/649 (구글 지도에 없는 가게) + trip.com(기능 전반·한계)"] },
+    { "claim": "물어보기(숙소 직원·기사·시장 상인)가 미등재 로컬 정보 획득 경로, 앱은 한국에서 미리 설치·가입 권장", "sources": ["https://www.kofood.net/... (직접 대화 활용)", "https://allijdesign.com/36 (사전 설치 권장)"] }
+  ],
+  "variables": {
+    "keyword": "베트남 맛집 찾는 법",
+    "headline_finding": "SERP 12개 전부 팁 나열형 — 평점 함정 4분류와 도구 역할 분담(수집→검증→현장) 3단계 퍼널로 구조화한 글 0개",
+    "serp_analysis": "12개 시도 8개 직접 열람(thegoodreview 404, think-note 빈페이지, tripadvisor 403, Foody 스토어 미열람)",
+    "differentiation": "①평점 함정 4가지 표 ②3단계 필터 프레임+도구 역할 분담 팁박스 ③도시별 검증 강도 조절(다낭=한국인 쏠림 보정) ④특정 식당 리스트 배제로 에버그린·E-E-A-T 리스크 제로 ⑤베트남 클러스터 4글과 내부링크(회화·이름사전·쌀국수·총정리)",
+    "evergreen_note": "식당 이름 무언급이라 폐업·변질 리스크 없음, 시점 표기 불필요한 방법론 글"
+  },
+  "post_judge_fixes": "심판 권장 반영 — 앱 비교 표 추가(표 3개), '목욕탕 의자 노포' 무근거 일반화 약화('~라는 말이 있을 정도'), 1인칭 1회 추가(도시별 섹션), Foody 영어 지원은 '알려짐'으로 헤지",
+  "hermes_score": 91
+}
