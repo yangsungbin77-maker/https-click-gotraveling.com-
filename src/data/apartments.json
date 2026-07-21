@@ -1,6 +1,6 @@
 {
-  "updated": "2026-07-21",
-  "note": "시점 기준 참고 범위. 실제 값은 층·전망·가구·계약조건에 따라 크게 다름. 정보 제공 목적(중개·투자자문 아님). 환율 $1≈1,380원, $1≈26,000동.",
+  "updated": "2026-07-22",
+  "note": "확정 범위가 아니라 시점 기준 참고 범위입니다. 신규 단지 일부는 추정치 포함. 실제 가격은 층·향·옵션·공실률에 따라 크게 달라집니다.",
   "rate_krw_per_usd": 1380,
   "rate_vnd_per_usd": 26000,
   "apartments": [
@@ -28,7 +28,7 @@
         "한국병원",
         "마트"
       ],
-      "img": "/realty/sunshine.webp",
+      "img": "/realty/real/phumyhung-midtown.jpg",
       "desc": "한국인이 가장 많이 사는 지역. 한국국제학교·한국병원·한인마트가 모여 정착 편의 최고."
     },
     {
@@ -79,7 +79,7 @@
         "메트로",
         "빈컴몰"
       ],
-      "img": "/realty/masteri.webp",
+      "img": "/realty/real/masteri-thao-dien.jpg",
       "desc": "빈컴 메가몰·메트로 연결. 서양인·외국인이 밀집한 인기 지역, 강·공원 조망."
     },
     {
@@ -105,7 +105,7 @@
         "강변",
         "교민많음"
       ],
-      "img": "/realty/vinhomes.webp",
+      "img": "/realty/real/vinhomes-central-park.jpg",
       "desc": "베트남 최고층 랜드마크81을 품은 대형 강변 단지. 교민 많음. 랜드마크81 타워는 +25%."
     },
     {
@@ -135,7 +135,7 @@
         "가성비",
         "메트로예정"
       ],
-      "img": "/realty/celadon.webp",
+      "img": "/realty/real/vinhomes-grand-park.jpg",
       "desc": "271ha 초대형 신도시. 자체 몰·학교·중앙공원. 신규 분양 물량 많고 상대적 가성비. 교민도 유입 중."
     },
     {
@@ -165,7 +165,7 @@
         "신도시",
         "분양"
       ],
-      "img": "/realty/empire.webp",
+      "img": "/realty/real/empire-city.jpg",
       "desc": "투티엠 신도시 강변 프리미엄 복합. 호치민 최고가 축, 1군 접근성 우수. 신규 분양 진행."
     },
     {
@@ -188,7 +188,7 @@
         "신규분양",
         "대형복합"
       ],
-      "img": "/realty/riviera.webp",
+      "img": "/realty/real/global-city.png",
       "desc": "Masterise Homes의 대형 복합 신도시. 2026 입주 예정, 616세대 등. 투득 프리미엄 신규 분양."
     },
     {
@@ -218,7 +218,7 @@
         "리버뷰",
         "분양"
       ],
-      "img": "/realty/riviera.webp",
+      "img": "/realty/real/metropole-thu-thiem.jpg",
       "desc": "투티엠 최고가 럭셔리 단지. 마지막 강변 부지 프리미엄으로 호치민 최상위 분양가대."
     },
     {
@@ -243,7 +243,7 @@
         "리조트형",
         "강변"
       ],
-      "img": "/realty/diamond.webp",
+      "img": "/realty/real/diamond-island.jpg",
       "desc": "사이공강 리조트형 럭셔리 콘도. 조경·수영장 강점."
     },
     {
@@ -297,7 +297,7 @@
         "외곽",
         "가성비"
       ],
-      "img": "/realty/celadon.webp",
+      "img": "/realty/real/celadon-city.jpg",
       "desc": "16ha 공원을 낀 타운십. 서부 외곽이라 저렴, 로컬 위주. 신규 분양도 진행."
     },
     {
@@ -327,8 +327,1705 @@
         "가성비",
         "분양"
       ],
-      "img": "/realty/diamond.webp",
+      "img": "/realty/real/mizuki-park.jpg",
       "desc": "일본풍 타운십, 수변·녹지 강점. 남서부 가성비 신규 분양 단지."
+    },
+    {
+      "id": "gateway-thao-dien",
+      "name_kr": "게이트웨이 타오디엔",
+      "name_en": "Gateway Thao Dien",
+      "district_kr": "2군 타오디엔",
+      "lat": 10.8012,
+      "lng": 106.735,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        900,
+        1400
+      ],
+      "rent_3br_usd": [
+        1600,
+        2500
+      ],
+      "sale_per_m2_usd": [
+        4500,
+        6500
+      ],
+      "tags": [
+        "메트로 역세권",
+        "리버뷰",
+        "쇼핑몰 연결"
+      ],
+      "img": "/realty/real/gateway-thao-dien.jpg",
+      "desc": "메트로 1호선 타오디엔역 바로 앞 단지. 지하 상가 연결로 생활 편의성이 좋고 한인 거주도 많음."
+    },
+    {
+      "id": "nassim-thao-dien",
+      "name_kr": "나심 타오디엔",
+      "name_en": "Nassim Thao Dien",
+      "district_kr": "2군 타오디엔",
+      "lat": 10.8005,
+      "lng": 106.7295,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        850,
+        1250
+      ],
+      "rent_3br_usd": [
+        1400,
+        2100
+      ],
+      "sale_per_m2_usd": [
+        4200,
+        5800
+      ],
+      "tags": [
+        "한인 다수",
+        "가성비 고급"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "타오디엔 중심부의 알짜 단지. 한국 식당·마트 도보권이라 가족 거주에 인기."
+    },
+    {
+      "id": "dedge-thao-dien",
+      "name_kr": "디에지 타오디엔",
+      "name_en": "D'Edge Thao Dien",
+      "district_kr": "2군 타오디엔",
+      "lat": 10.795,
+      "lng": 106.731,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        1200,
+        1800
+      ],
+      "rent_3br_usd": [
+        2200,
+        3200
+      ],
+      "sale_per_m2_usd": [
+        5500,
+        7800
+      ],
+      "tags": [
+        "카피엘랜드",
+        "리버프론트",
+        "고급 마감"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "사이공강변 프리미엄 단지. 유리 커튼월 외관과 인피니티 풀 조망이 강점."
+    },
+    {
+      "id": "feliz-en-vista",
+      "name_kr": "펠리즈 엔 비스타",
+      "name_en": "Feliz en Vista",
+      "district_kr": "2군 타오디엔",
+      "lat": 10.7887,
+      "lng": 106.7432,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        1000,
+        1500
+      ],
+      "rent_3br_usd": [
+        1800,
+        2600
+      ],
+      "sale_per_m2_usd": [
+        4200,
+        5800
+      ],
+      "tags": [
+        "카피엘랜드",
+        "대형 부대시설",
+        "리조트풀"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "3개 타워 규모의 리조트형 단지. 대규모 수영장·키즈존 등 부대시설이 넓어 가족 선호."
+    },
+    {
+      "id": "lumiere-riverside",
+      "name_kr": "루미에르 리버사이드",
+      "name_en": "Lumiere Riverside",
+      "district_kr": "2군 타오디엔",
+      "lat": 10.7955,
+      "lng": 106.7438,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        900,
+        1400
+      ],
+      "rent_3br_usd": [
+        1500,
+        2200
+      ],
+      "sale_per_m2_usd": [
+        4800,
+        6500
+      ],
+      "tags": [
+        "마스터라이즈",
+        "신축",
+        "리버뷰"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "마스터라이즈의 리버사이드 신축 단지. 최신 시설과 강 조망 세대가 매력."
+    },
+    {
+      "id": "q2-thao-dien",
+      "name_kr": "Q2 타오디엔",
+      "name_en": "Q2 Thao Dien",
+      "district_kr": "2군 타오디엔",
+      "lat": 10.8,
+      "lng": 106.7315,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        1300,
+        1900
+      ],
+      "rent_3br_usd": [
+        2200,
+        3500
+      ],
+      "sale_per_m2_usd": [
+        5800,
+        8000
+      ],
+      "tags": [
+        "프레이저스",
+        "하이엔드"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "싱가포르 프레이저스의 하이엔드 단지. 저밀도 설계와 최상급 마감으로 서구권 수요가 많음."
+    },
+    {
+      "id": "tropic-garden",
+      "name_kr": "트로픽 가든",
+      "name_en": "Tropic Garden",
+      "district_kr": "2군 타오디엔",
+      "lat": 10.798,
+      "lng": 106.7385,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        750,
+        1100
+      ],
+      "rent_3br_usd": [
+        1200,
+        1700
+      ],
+      "sale_per_m2_usd": [
+        3000,
+        4200
+      ],
+      "tags": [
+        "강변 위치",
+        "녹지 많음",
+        "가성비"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "사이공강변 조용한 위치의 중견 단지. 임대료가 타오디엔 평균 이하라 실속형 선택지."
+    },
+    {
+      "id": "thao-dien-pearl",
+      "name_kr": "타오디엔 펄",
+      "name_en": "Thao Dien Pearl",
+      "district_kr": "2군 타오디엔",
+      "lat": 10.808,
+      "lng": 106.729,
+      "korean": "하",
+      "status": "완공",
+      "rent_2br_usd": [
+        650,
+        950
+      ],
+      "rent_3br_usd": [
+        1000,
+        1400
+      ],
+      "sale_per_m2_usd": [
+        2500,
+        3500
+      ],
+      "tags": [
+        "가성비"
+      ],
+      "img": "/realty/real/thao-dien-pearl.jpg",
+      "desc": "타오디엔 북측의 실속 단지. 저렴한 임대료 대비 넓은 평형으로 예산형 가족에게 적합."
+    },
+    {
+      "id": "masteri-an-phu",
+      "name_kr": "마스테리 안푸",
+      "name_en": "Masteri An Phu",
+      "district_kr": "2군 안푸",
+      "lat": 10.7983,
+      "lng": 106.7493,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        650,
+        1000
+      ],
+      "rent_3br_usd": [
+        1000,
+        1500
+      ],
+      "sale_per_m2_usd": [
+        3200,
+        4500
+      ],
+      "tags": [
+        "메트로 역세권",
+        "가성비",
+        "한인 다수"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "메트로 1호선 안푸역 인접 단지. 마스테리 타오디엔보다 저렴하면서 한인 인프라 접근성은 유지."
+    },
+    {
+      "id": "estella",
+      "name_kr": "에스텔라",
+      "name_en": "Estella",
+      "district_kr": "2군 안푸",
+      "lat": 10.802,
+      "lng": 106.751,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        1000,
+        1400
+      ],
+      "rent_3br_usd": [
+        1600,
+        2200
+      ],
+      "sale_per_m2_usd": [
+        3800,
+        5200
+      ],
+      "tags": [
+        "한인 인기",
+        "관리 우수",
+        "안푸 중심"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "안푸 지역 대표 한인 선호 단지. 관리 상태와 보안이 좋아 장기 거주 한국 가족 비율이 높음."
+    },
+    {
+      "id": "estella-heights",
+      "name_kr": "에스텔라 하이츠",
+      "name_en": "Estella Heights",
+      "district_kr": "2군 안푸",
+      "lat": 10.8017,
+      "lng": 106.7527,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        900,
+        1300
+      ],
+      "rent_3br_usd": [
+        1500,
+        2200
+      ],
+      "sale_per_m2_usd": [
+        3800,
+        5500
+      ],
+      "tags": [
+        "케펠랜드",
+        "한인 선호"
+      ],
+      "img": "/realty/real/estella-heights.jpg",
+      "desc": "에스텔라 후속 고급 단지. 마감 품질이 좋고 한인 커뮤니티가 형성되어 있음."
+    },
+    {
+      "id": "cantavil-premier",
+      "name_kr": "칸타빌 프리미어",
+      "name_en": "Cantavil Premier",
+      "district_kr": "2군 안푸",
+      "lat": 10.7993,
+      "lng": 106.7505,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        800,
+        1100
+      ],
+      "rent_3br_usd": [
+        1300,
+        1800
+      ],
+      "sale_per_m2_usd": [
+        2800,
+        3800
+      ],
+      "tags": [
+        "마이찌토 대로변",
+        "가성비"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "마이찌토 대로변의 실속형 단지. 상가 시설이 붙어 있어 생활이 편리."
+    },
+    {
+      "id": "the-ascent",
+      "name_kr": "디 어센트",
+      "name_en": "The Ascent Thao Dien",
+      "district_kr": "2군 안푸",
+      "lat": 10.799,
+      "lng": 106.747,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        900,
+        1300
+      ],
+      "rent_3br_usd": [
+        1400,
+        2000
+      ],
+      "sale_per_m2_usd": [
+        3200,
+        4500
+      ],
+      "tags": [
+        "저층 2개동",
+        "조용한 주거"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "2개 동 규모의 아담한 단지. 대단지보다 조용한 환경을 원하는 거주자에게 적합."
+    },
+    {
+      "id": "imperia-an-phu",
+      "name_kr": "임페리아 안푸",
+      "name_en": "Imperia An Phu",
+      "district_kr": "2군 안푸",
+      "lat": 10.7965,
+      "lng": 106.752,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        850,
+        1250
+      ],
+      "rent_3br_usd": [
+        1400,
+        1900
+      ],
+      "sale_per_m2_usd": [
+        3300,
+        4600
+      ],
+      "tags": [
+        "안푸 남측",
+        "고층 조망"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "안푸 남측 고층 단지. 타오디엔·안푸 중간 위치로 이동이 편리."
+    },
+    {
+      "id": "lexington-residence",
+      "name_kr": "렉싱턴 레지던스",
+      "name_en": "Lexington Residence",
+      "district_kr": "2군 안푸",
+      "lat": 10.7955,
+      "lng": 106.7485,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        750,
+        1100
+      ],
+      "rent_3br_usd": [
+        1200,
+        1600
+      ],
+      "sale_per_m2_usd": [
+        2700,
+        3700
+      ],
+      "tags": [
+        "노바랜드",
+        "가성비",
+        "대단지"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "노바랜드 시공의 4개동 단지. 저렴한 임대료에 수영장·상가 등 기본 인프라를 갖춘 실속형."
+    },
+    {
+      "id": "the-river-thu-thiem",
+      "name_kr": "더 리버 투티엠",
+      "name_en": "The River Thu Thiem",
+      "district_kr": "투티엠",
+      "lat": 10.784,
+      "lng": 106.719,
+      "korean": "하",
+      "status": "완공",
+      "rent_2br_usd": [
+        1200,
+        1800
+      ],
+      "rent_3br_usd": [
+        2000,
+        3000
+      ],
+      "sale_per_m2_usd": [
+        5500,
+        7500
+      ],
+      "tags": [
+        "리피코",
+        "리버프론트",
+        "신축"
+      ],
+      "img": "/realty/empire.webp",
+      "desc": "투티엠 강변 1열 신축 단지. 1군 스카이라인 조망이 뛰어나며 메트로폴 대비 임대료가 낮은 편."
+    },
+    {
+      "id": "the-opera-residence",
+      "name_kr": "오페라 레지던스",
+      "name_en": "The Opera Residence (Metropole 3차)",
+      "district_kr": "투티엠",
+      "lat": 10.7855,
+      "lng": 106.718,
+      "korean": "하",
+      "status": "완공",
+      "rent_2br_usd": [
+        1800,
+        2800
+      ],
+      "rent_3br_usd": [
+        3000,
+        4500
+      ],
+      "sale_per_m2_usd": [
+        7000,
+        10000
+      ],
+      "tags": [
+        "손킴",
+        "최고급",
+        "오페라하우스 뷰"
+      ],
+      "img": "/realty/empire.webp",
+      "desc": "메트로폴 3차의 최상위 레지던스. 투티엠 최고가 단지로 고액 자산가 수요 중심."
+    },
+    {
+      "id": "sala-sarimi",
+      "name_kr": "살로 사리미",
+      "name_en": "Sarimi (Sala City)",
+      "district_kr": "투티엠 살로",
+      "lat": 10.7725,
+      "lng": 106.708,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        900,
+        1300
+      ],
+      "rent_3br_usd": [
+        1500,
+        2200
+      ],
+      "sale_per_m2_usd": [
+        4500,
+        6500
+      ],
+      "tags": [
+        "살로 초입",
+        "공원 조망"
+      ],
+      "img": "/realty/empire.webp",
+      "desc": "살로 신도시 초입의 첫 번째 아파트 단지. 중앙공원 조망과 쾌적한 가로 환경이 장점."
+    },
+    {
+      "id": "sala-sarica",
+      "name_kr": "살로 사리카",
+      "name_en": "Sarica (Sala City)",
+      "district_kr": "투티엠 살로",
+      "lat": 10.7715,
+      "lng": 106.709,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        950,
+        1400
+      ],
+      "rent_3br_usd": [
+        1600,
+        2300
+      ],
+      "sale_per_m2_usd": [
+        4800,
+        6800
+      ],
+      "tags": [
+        "강변 조망",
+        "살로 핵심"
+      ],
+      "img": "/realty/empire.webp",
+      "desc": "사리미 후속 단지로 강변 조망 세대 비율이 높음. 살로 상권 형성과 함께 임대 수요 증가 중."
+    },
+    {
+      "id": "sala-saroma",
+      "name_kr": "살로 사로마",
+      "name_en": "Saroma (Sala City)",
+      "district_kr": "투티엠 살로",
+      "lat": 10.774,
+      "lng": 106.7075,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        1000,
+        1500
+      ],
+      "rent_3br_usd": [
+        1700,
+        2400
+      ],
+      "sale_per_m2_usd": [
+        5000,
+        7000
+      ],
+      "tags": [
+        "신축",
+        "살로 북측",
+        "강 조망"
+      ],
+      "img": "/realty/empire.webp",
+      "desc": "살로 북측의 최신 아파트 단지. 강 조망과 신축 컨디션으로 살로 내 선호도가 높은 편."
+    },
+    {
+      "id": "zeit-river-thu-thiem",
+      "name_kr": "자이트 리버 투티엠",
+      "name_en": "Zeit River Thu Thiem",
+      "district_kr": "투티엠",
+      "lat": 10.7825,
+      "lng": 106.725,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        1300,
+        2000
+      ],
+      "rent_3br_usd": [
+        2200,
+        3200
+      ],
+      "sale_per_m2_usd": [
+        6000,
+        8000
+      ],
+      "tags": [
+        "GS건설",
+        "한국 시공",
+        "신축 입주"
+      ],
+      "img": "/realty/real/zeit-river-thu-thiem.jpg",
+      "desc": "GS건설이 시공한 투티엠 대형 단지. 한국 건설사 품질에 대한 신뢰로 한인 관심이 높으며 입주 초기."
+    },
+    {
+      "id": "scenic-valley-1",
+      "name_kr": "시닉밸리 1",
+      "name_en": "Scenic Valley 1",
+      "district_kr": "7군 푸미흥",
+      "lat": 10.736,
+      "lng": 106.7062,
+      "korean": "최상",
+      "status": "완공",
+      "rent_2br_usd": [
+        800,
+        1100
+      ],
+      "rent_3br_usd": [
+        1100,
+        1500
+      ],
+      "sale_per_m2_usd": [
+        3500,
+        4500
+      ],
+      "tags": [
+        "한인밀집",
+        "상권중심",
+        "학군"
+      ],
+      "img": "/realty/sunshine.webp",
+      "desc": "응웬르엉방 대로변 한인 최밀집 단지 중 하나. 한국 마트·식당이 도보권에 몰려 있어 한인 가족 선호도 최상."
+    },
+    {
+      "id": "green-valley",
+      "name_kr": "그린밸리",
+      "name_en": "Green Valley",
+      "district_kr": "7군 푸미흥",
+      "lat": 10.7348,
+      "lng": 106.7093,
+      "korean": "최상",
+      "status": "완공",
+      "rent_2br_usd": [
+        800,
+        1100
+      ],
+      "rent_3br_usd": [
+        1100,
+        1500
+      ],
+      "sale_per_m2_usd": [
+        3800,
+        4800
+      ],
+      "tags": [
+        "한인밀집",
+        "조용한주거",
+        "공원인접"
+      ],
+      "img": "/realty/sunshine.webp",
+      "desc": "시닉밸리 맞은편의 인기 한인 단지. 중심 상권과 가까우면서도 단지 남부는 조용해 가족 거주에 적합."
+    },
+    {
+      "id": "happy-valley",
+      "name_kr": "해피밸리",
+      "name_en": "Happy Valley",
+      "district_kr": "7군 푸미흥",
+      "lat": 10.7358,
+      "lng": 106.7038,
+      "korean": "최상",
+      "status": "완공",
+      "rent_2br_usd": [
+        900,
+        1300
+      ],
+      "rent_3br_usd": [
+        1300,
+        1800
+      ],
+      "sale_per_m2_usd": [
+        4000,
+        5000
+      ],
+      "tags": [
+        "한인밀집",
+        "넓은평수",
+        "저밀도",
+        "프리미엄"
+      ],
+      "img": "/realty/sunshine.webp",
+      "desc": "저밀도 대형 평형 위주의 프리미엄 한인 단지. 가족 단위 장기 거주 한인들이 선호."
+    },
+    {
+      "id": "star-hill",
+      "name_kr": "스타힐",
+      "name_en": "Star Hill",
+      "district_kr": "7군 푸미흥",
+      "lat": 10.7352,
+      "lng": 106.7008,
+      "korean": "최상",
+      "status": "완공",
+      "rent_2br_usd": [
+        1000,
+        1400
+      ],
+      "rent_3br_usd": [
+        1500,
+        2200
+      ],
+      "sale_per_m2_usd": [
+        4500,
+        6000
+      ],
+      "tags": [
+        "프리미엄",
+        "넓은평수",
+        "한인선호"
+      ],
+      "img": "/realty/sunshine.webp",
+      "desc": "푸미흥 내 최상급 프리미엄 단지. 넓은 평형과 고급 커뮤니티로 주재원 가족 수요가 두터움."
+    },
+    {
+      "id": "riverpark-residence",
+      "name_kr": "리버파크 레지던스",
+      "name_en": "Riverpark Residence",
+      "district_kr": "7군 푸미흥",
+      "lat": 10.7248,
+      "lng": 106.7048,
+      "korean": "최상",
+      "status": "완공",
+      "rent_2br_usd": [
+        800,
+        1100
+      ],
+      "rent_3br_usd": [
+        1100,
+        1500
+      ],
+      "sale_per_m2_usd": [
+        3200,
+        4200
+      ],
+      "tags": [
+        "강변조망",
+        "한인밀집",
+        "학군",
+        "크레센트몰"
+      ],
+      "img": "/realty/sunshine.webp",
+      "desc": "크레센트몰·국제학교 인접 강변 단지. 한인 가족 거주 비율이 높고 생활 인프라 완성도가 높음."
+    },
+    {
+      "id": "riverpark-premier",
+      "name_kr": "리버파크 프리미어",
+      "name_en": "Riverpark Premier",
+      "district_kr": "7군 푸미흥",
+      "lat": 10.7278,
+      "lng": 106.7032,
+      "korean": "최상",
+      "status": "완공",
+      "rent_2br_usd": [
+        900,
+        1200
+      ],
+      "rent_3br_usd": [
+        1300,
+        1700
+      ],
+      "sale_per_m2_usd": [
+        3800,
+        4800
+      ],
+      "tags": [
+        "강변",
+        "프리미엄",
+        "한인선호"
+      ],
+      "img": "/realty/sunshine.webp",
+      "desc": "리버파크 레지던스의 후속 프리미엄 단지. 강 조망 세대가 많고 커뮤니티 시설이 좋음."
+    },
+    {
+      "id": "the-antonia",
+      "name_kr": "디 안토니아",
+      "name_en": "The Antonia",
+      "district_kr": "7군 푸미흥",
+      "lat": 10.7265,
+      "lng": 106.6985,
+      "korean": "최상",
+      "status": "완공",
+      "rent_2br_usd": [
+        900,
+        1300
+      ],
+      "rent_3br_usd": [
+        1400,
+        1800
+      ],
+      "sale_per_m2_usd": [
+        4000,
+        5500
+      ],
+      "tags": [
+        "신축",
+        "미드타운인접",
+        "한인수요증가"
+      ],
+      "img": "/realty/sunshine.webp",
+      "desc": "푸미흥 개발공사가 지은 최신 단지로 미드타운 생활권. 신축 컨디션 덕에 한인 신규 유입이 느는 중."
+    },
+    {
+      "id": "happy-residence",
+      "name_kr": "흥푹 해피 레지던스",
+      "name_en": "Hung Phuc Happy Residence",
+      "district_kr": "7군 푸미흥",
+      "lat": 10.7208,
+      "lng": 106.707,
+      "korean": "최상",
+      "status": "완공",
+      "rent_2br_usd": [
+        700,
+        1000
+      ],
+      "rent_3br_usd": [
+        1000,
+        1400
+      ],
+      "sale_per_m2_usd": [
+        3000,
+        4000
+      ],
+      "tags": [
+        "롯데마트인접",
+        "가성비",
+        "한인밀집"
+      ],
+      "img": "/realty/sunshine.webp",
+      "desc": "롯데마트 푸미흥점 인근의 실속형 한인 단지. 중심부 대비 임대료가 저렴해 초기 정착에 인기."
+    },
+    {
+      "id": "sky-garden-3",
+      "name_kr": "스카이가든 3",
+      "name_en": "Sky Garden 3",
+      "district_kr": "7군 푸미흥 북측",
+      "lat": 10.7382,
+      "lng": 106.699,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        650,
+        900
+      ],
+      "rent_3br_usd": [
+        900,
+        1300
+      ],
+      "sale_per_m2_usd": [
+        2800,
+        3800
+      ],
+      "tags": [
+        "대단지",
+        "가성비",
+        "녹지많음"
+      ],
+      "img": "/realty/sunshine.webp",
+      "desc": "푸미흥 북측 응웬반린 대로변 대형 단지. 녹지가 많고 임대료가 저렴해 가성비 수요에 적합."
+    },
+    {
+      "id": "grande-marina",
+      "name_kr": "그란데 마리나",
+      "name_en": "Grande Marina Phu My Hung",
+      "district_kr": "7군 푸미흥",
+      "lat": 10.7225,
+      "lng": 106.711,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        800,
+        1100
+      ],
+      "rent_3br_usd": [
+        1200,
+        1600
+      ],
+      "sale_per_m2_usd": [
+        3500,
+        4500
+      ],
+      "tags": [
+        "신축",
+        "강변",
+        "수영장특화"
+      ],
+      "img": "/realty/sunshine.webp",
+      "desc": "푸미흥 남동측 강변의 최신 입주 단지. 대형 수영장 중심 커뮤니티가 특징."
+    },
+    {
+      "id": "sunrise-city",
+      "name_kr": "선라이즈 시티",
+      "name_en": "Sunrise City",
+      "district_kr": "7군",
+      "lat": 10.7485,
+      "lng": 106.6985,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        800,
+        1100
+      ],
+      "rent_3br_usd": [
+        1200,
+        1600
+      ],
+      "sale_per_m2_usd": [
+        3000,
+        4000
+      ],
+      "tags": [
+        "노바랜드",
+        "대단지",
+        "푸미흥인접"
+      ],
+      "img": "/realty/real/sunrise-city.jpg",
+      "desc": "응웬흐우토 대로변 노바랜드 대단지. 푸미흥까지 차로 5~10분이라 한인 세컨드 수요가 꾸준함."
+    },
+    {
+      "id": "eco-green-saigon",
+      "name_kr": "에코그린 사이공",
+      "name_en": "Eco Green Saigon",
+      "district_kr": "7군",
+      "lat": 10.7455,
+      "lng": 106.6965,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        800,
+        1100
+      ],
+      "rent_3br_usd": [
+        1200,
+        1600
+      ],
+      "sale_per_m2_usd": [
+        3500,
+        4500
+      ],
+      "tags": [
+        "신축",
+        "대형공원",
+        "쇼핑몰내장"
+      ],
+      "img": "/realty/diamond.webp",
+      "desc": "응웬반린-응웬흐우토 교차로의 최신 대단지. 자체 공원·쇼핑몰을 갖춰 푸미흥 대안 수요로 주목."
+    },
+    {
+      "id": "lux-garden",
+      "name_kr": "럭스 가든",
+      "name_en": "Lux Garden",
+      "district_kr": "7군",
+      "lat": 10.752,
+      "lng": 106.6975,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        650,
+        900
+      ],
+      "rent_3br_usd": [
+        950,
+        1300
+      ],
+      "sale_per_m2_usd": [
+        2200,
+        3000
+      ],
+      "tags": [
+        "가성비",
+        "소규모",
+        "조용한주거"
+      ],
+      "img": "/realty/diamond.webp",
+      "desc": "7군 북부의 중소규모 단지. 푸미흥 접근성은 유지하면서 임대료를 낮추려는 수요에 적합."
+    },
+    {
+      "id": "saigon-south-residences",
+      "name_kr": "사이공 사우스 레지던스",
+      "name_en": "Saigon South Residences",
+      "district_kr": "7군",
+      "lat": 10.748,
+      "lng": 106.704,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        550,
+        750
+      ],
+      "rent_3br_usd": [
+        750,
+        1050
+      ],
+      "sale_per_m2_usd": [
+        1800,
+        2500
+      ],
+      "tags": [
+        "초저렴",
+        "푸미흥인접",
+        "실속"
+      ],
+      "img": "/realty/diamond.webp",
+      "desc": "푸미흥 바로 북쪽의 실속형 단지. 7군 최저 수준 임대료로 예산형 수요에 적합."
+    },
+    {
+      "id": "city-garden",
+      "name_kr": "시티 가든",
+      "name_en": "City Garden",
+      "district_kr": "빈타인",
+      "lat": 10.7926,
+      "lng": 106.6957,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        900,
+        1300
+      ],
+      "rent_3br_usd": [
+        1400,
+        2000
+      ],
+      "sale_per_m2_usd": [
+        3500,
+        4500
+      ],
+      "tags": [
+        "1군근접",
+        "외국인밀집",
+        "쾌적한단지"
+      ],
+      "img": "/realty/vinhomes.webp",
+      "desc": "1군 접경 빈타인의 인기 외국인 단지. 단지 설계가 쾌적하고 1군 출퇴근이 편해 한인 직장인 수요가 있음."
+    },
+    {
+      "id": "saigon-pearl",
+      "name_kr": "사이공 펄",
+      "name_en": "Saigon Pearl",
+      "district_kr": "빈타인",
+      "lat": 10.7895,
+      "lng": 106.7175,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        800,
+        1200
+      ],
+      "rent_3br_usd": [
+        1200,
+        1700
+      ],
+      "sale_per_m2_usd": [
+        2800,
+        3800
+      ],
+      "tags": [
+        "강변",
+        "조용한주거",
+        "1군근접"
+      ],
+      "img": "/realty/vinhomes.webp",
+      "desc": "사이공강변 빈타인 초입의 대단지. 1군과 인접하고 조용하나 단지 연식이 다소 있음."
+    },
+    {
+      "id": "the-manor",
+      "name_kr": "더 매너",
+      "name_en": "The Manor HCMC",
+      "district_kr": "빈타인",
+      "lat": 10.7875,
+      "lng": 106.6985,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        700,
+        1100
+      ],
+      "rent_3br_usd": [
+        1100,
+        1600
+      ],
+      "sale_per_m2_usd": [
+        2500,
+        3500
+      ],
+      "tags": [
+        "1군근접",
+        "가성비"
+      ],
+      "img": "/realty/vinhomes.webp",
+      "desc": "디엔비엔푸-응웬흐우깡 교차로의 검증된 단지. 1군 접근성 대비 임대료가 저렴해 실속 수요가 꾸준함."
+    },
+    {
+      "id": "vinhomes-golden-river",
+      "name_kr": "빈홈 골든리버",
+      "name_en": "Vinhomes Golden River",
+      "district_kr": "1군 바선",
+      "lat": 10.788,
+      "lng": 106.709,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        1000,
+        1600
+      ],
+      "rent_3br_usd": [
+        1600,
+        2500
+      ],
+      "sale_per_m2_usd": [
+        5000,
+        8000
+      ],
+      "tags": [
+        "1군중심",
+        "강변",
+        "메트로1호선",
+        "빈홈"
+      ],
+      "img": "/realty/real/vinhomes-golden-river.jpg",
+      "desc": "구 바선 부지의 1군 대표 단지(일명 빈홈 바선). 메트로 1호선 바선역 직결로 입지가 최상급."
+    },
+    {
+      "id": "the-grand-manhattan",
+      "name_kr": "그랜드 맨해튼",
+      "name_en": "The Grand Manhattan",
+      "district_kr": "1군",
+      "lat": 10.769,
+      "lng": 106.698,
+      "korean": "하",
+      "status": "완공",
+      "rent_2br_usd": [
+        1500,
+        2200
+      ],
+      "rent_3br_usd": [
+        2200,
+        3200
+      ],
+      "sale_per_m2_usd": [
+        7000,
+        10000
+      ],
+      "tags": [
+        "1군중심",
+        "럭셔리",
+        "노바랜드"
+      ],
+      "img": "/realty/vinhomes.webp",
+      "desc": "꼬장거리 1군 한복판의 노바랜드 럭셔리 단지. 도심 최중심 입지로 분양가·임대료 모두 최상위권."
+    },
+    {
+      "id": "the-marq",
+      "name_kr": "더 마크",
+      "name_en": "The MarQ",
+      "district_kr": "1군",
+      "lat": 10.783,
+      "lng": 106.69,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        1400,
+        2200
+      ],
+      "rent_3br_usd": [
+        2200,
+        3500
+      ],
+      "sale_per_m2_usd": [
+        6000,
+        9000
+      ],
+      "tags": [
+        "럭셔리",
+        "1군북부"
+      ],
+      "img": "/realty/real/the-marq.jpg",
+      "desc": "응웬딘찌에우 거리의 하이엔드 단지. 1군 북부 총영사관·학원가 인접으로 고소득 수요 중심."
+    },
+    {
+      "id": "the-gold-view",
+      "name_kr": "골드뷰",
+      "name_en": "The Gold View",
+      "district_kr": "4군",
+      "lat": 10.7605,
+      "lng": 106.6995,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        650,
+        900
+      ],
+      "rent_3br_usd": [
+        950,
+        1400
+      ],
+      "sale_per_m2_usd": [
+        3000,
+        4000
+      ],
+      "tags": [
+        "4군",
+        "1군근접",
+        "가성비"
+      ],
+      "img": "/realty/diamond.webp",
+      "desc": "4군 벤반돈 대로변 대단지. 칼메트 다리로 1군 진입이 빨라 1군 출퇴근 가성비 수요가 많음."
+    },
+    {
+      "id": "river-gate",
+      "name_kr": "리버게이트",
+      "name_en": "River Gate",
+      "district_kr": "4군",
+      "lat": 10.7635,
+      "lng": 106.7,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        550,
+        800
+      ],
+      "rent_3br_usd": [
+        800,
+        1200
+      ],
+      "sale_per_m2_usd": [
+        2800,
+        3800
+      ],
+      "tags": [
+        "4군",
+        "1군근접",
+        "초가성비",
+        "강변"
+      ],
+      "img": "/realty/diamond.webp",
+      "desc": "1군과 다리 하나 차이의 4군 실속 단지. 1군 생활권을 최저 비용으로 누리려는 수요에 적합."
+    },
+    {
+      "id": "masteri-centre-point",
+      "name_kr": "마스테리 센터 포인트",
+      "name_en": "Masteri Centre Point",
+      "district_kr": "9군 그랜드파크",
+      "lat": 10.8365,
+      "lng": 106.8395,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        360,
+        580
+      ],
+      "rent_3br_usd": [
+        520,
+        800
+      ],
+      "sale_per_m2_usd": [
+        2400,
+        3400
+      ],
+      "tags": [
+        "그랜드파크 내",
+        "빈콤 메가몰 인접",
+        "마스테리"
+      ],
+      "img": "/realty/vinhomes.webp",
+      "desc": "빈홈 그랜드파크 중심부 빈콤 메가몰 바로 옆 마스테리 단지. 타운십 내 입지 최상급."
+    },
+    {
+      "id": "glory-heights",
+      "name_kr": "글로리 하이츠",
+      "name_en": "Glory Heights (Vinhomes Grand Park)",
+      "district_kr": "9군 그랜드파크",
+      "lat": 10.8342,
+      "lng": 106.832,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        400,
+        650
+      ],
+      "rent_3br_usd": [
+        600,
+        950
+      ],
+      "sale_per_m2_usd": [
+        2800,
+        3800
+      ],
+      "tags": [
+        "그랜드파크 프리미엄",
+        "저밀도",
+        "중앙공원 인접"
+      ],
+      "img": "/realty/vinhomes.webp",
+      "desc": "그랜드파크 내 프리미엄 저밀도 구역. 센트럴파크 조망 세대는 타운십 내 최상위 밴드."
+    },
+    {
+      "id": "the-beverly",
+      "name_kr": "더 베벌리",
+      "name_en": "The Beverly (Vinhomes Grand Park)",
+      "district_kr": "9군 그랜드파크",
+      "lat": 10.838,
+      "lng": 106.83,
+      "korean": "상",
+      "status": "분양중",
+      "rent_2br_usd": [
+        450,
+        720
+      ],
+      "rent_3br_usd": [
+        650,
+        1050
+      ],
+      "sale_per_m2_usd": [
+        3000,
+        4200
+      ],
+      "tags": [
+        "그랜드파크 럭셔리",
+        "신축"
+      ],
+      "img": "/realty/vinhomes.webp",
+      "desc": "빈홈 그랜드파크의 럭셔리 서브디비전. 분양가가 타운십 내 최고 밴드이며 순차 인도 중."
+    },
+    {
+      "id": "origami-grand-park",
+      "name_kr": "오리가미(그랜드파크)",
+      "name_en": "The Origami (Vinhomes Grand Park)",
+      "district_kr": "9군 그랜드파크",
+      "lat": 10.8401,
+      "lng": 106.834,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        320,
+        520
+      ],
+      "rent_3br_usd": [
+        460,
+        700
+      ],
+      "sale_per_m2_usd": [
+        2000,
+        2900
+      ],
+      "tags": [
+        "그랜드파크 내",
+        "일본 콘셉트",
+        "가성비"
+      ],
+      "img": "/realty/vinhomes.webp",
+      "desc": "그랜드파크 1기 오리가미 구역. 물량이 많아 임대 협상 여지가 크고 타운십 내 가성비 구역."
+    },
+    {
+      "id": "laimian-city",
+      "name_kr": "라이미안 시티",
+      "name_en": "Laimian City",
+      "district_kr": "투득(안푸 인접)",
+      "lat": 10.7917,
+      "lng": 106.741,
+      "korean": "최상",
+      "status": "완공",
+      "rent_2br_usd": [
+        440,
+        650
+      ],
+      "rent_3br_usd": [
+        600,
+        900
+      ],
+      "sale_per_m2_usd": [
+        2400,
+        3200
+      ],
+      "tags": [
+        "안푸 한인상권 인접",
+        "CT그룹",
+        "대형 커뮤니티"
+      ],
+      "img": "/realty/masteri.webp",
+      "desc": "안푸 한인상권과 가까워 한국인 수요가 높은 대단지. 타오디엔 대비 저렴하면서 생활 인프라 공유가 강점."
+    },
+    {
+      "id": "the-9-stellars",
+      "name_kr": "더 나인 스텔라스",
+      "name_en": "The 9 Stellars",
+      "district_kr": "9군(투득)",
+      "lat": 10.868,
+      "lng": 106.7995,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        400,
+        620
+      ],
+      "rent_3br_usd": [
+        580,
+        850
+      ],
+      "sale_per_m2_usd": [
+        2600,
+        3600
+      ],
+      "tags": [
+        "메트로 1호선 역세권",
+        "손킴",
+        "국립대 인접"
+      ],
+      "img": "/realty/vinhomes.webp",
+      "desc": "메트로 1호선 국립대역 초역세권 손킴 단지. 개통 효과로 임대 수요가 오르는 9군 북부 축 대표 신축."
+    },
+    {
+      "id": "metro-star",
+      "name_kr": "메트로 스타",
+      "name_en": "Metro Star",
+      "district_kr": "9군(투득)",
+      "lat": 10.8283,
+      "lng": 106.765,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        340,
+        520
+      ],
+      "rent_3br_usd": [
+        500,
+        720
+      ],
+      "sale_per_m2_usd": [
+        1800,
+        2600
+      ],
+      "tags": [
+        "싸로하노이 대로",
+        "중간 가격대",
+        "CT그룹"
+      ],
+      "img": "/realty/vinhomes.webp",
+      "desc": "싸로하노이 대로변 CT그룹 단지. 그랜드파크보다 시내 접근성이 좋고 임대료는 저렴한 편."
+    },
+    {
+      "id": "urban-green",
+      "name_kr": "어반 그린",
+      "name_en": "Urban Green",
+      "district_kr": "투득(히엡빈프억)",
+      "lat": 10.8347,
+      "lng": 106.7163,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        400,
+        560
+      ],
+      "rent_3br_usd": [
+        560,
+        780
+      ],
+      "sale_per_m2_usd": [
+        2000,
+        2800
+      ],
+      "tags": [
+        "쿠스토홈",
+        "일본계 품질"
+      ],
+      "img": "/realty/diamond.webp",
+      "desc": "일본계 쿠스토홈이 시공한 히엡빈프억 신축. 빈탄·고밥 접근성이 좋아 서부권 통근 수요에 적합."
+    },
+    {
+      "id": "the-infiniti-riviera-point",
+      "name_kr": "더 인피니티(리비에라 포인트)",
+      "name_en": "The Infiniti @ Riviera Point",
+      "district_kr": "7군 남단",
+      "lat": 10.718,
+      "lng": 106.7085,
+      "korean": "상",
+      "status": "완공",
+      "rent_2br_usd": [
+        520,
+        800
+      ],
+      "rent_3br_usd": [
+        750,
+        1100
+      ],
+      "sale_per_m2_usd": [
+        2200,
+        3200
+      ],
+      "tags": [
+        "케펠랜드",
+        "푸미흥 인접",
+        "리버뷰"
+      ],
+      "img": "/realty/riviera.webp",
+      "desc": "푸미흥 남단 까마우강변 케펠랜드 단지. 강 조망 세대 임대 프리미엄이 큼."
+    },
+    {
+      "id": "west-gate",
+      "name_kr": "웨스트게이트",
+      "name_en": "West Gate",
+      "district_kr": "빈짱",
+      "lat": 10.7215,
+      "lng": 106.584,
+      "korean": "하",
+      "status": "완공",
+      "rent_2br_usd": [
+        280,
+        440
+      ],
+      "rent_3br_usd": [
+        400,
+        600
+      ],
+      "sale_per_m2_usd": [
+        1400,
+        2000
+      ],
+      "tags": [
+        "안지아",
+        "미즈키 인접",
+        "저가 매물"
+      ],
+      "img": "/realty/riviera.webp",
+      "desc": "빈짱 안락 권역 안지아 개발 단지. 미즈키파크와 인접하며 서부권 최저가 밴드 임대 매물이 많음."
+    },
+    {
+      "id": "aio-city",
+      "name_kr": "아이오 시티",
+      "name_en": "Aio City",
+      "district_kr": "빈떤",
+      "lat": 10.748,
+      "lng": 106.604,
+      "korean": "하",
+      "status": "완공",
+      "rent_2br_usd": [
+        400,
+        600
+      ],
+      "rent_3br_usd": [
+        560,
+        800
+      ],
+      "sale_per_m2_usd": [
+        2000,
+        2800
+      ],
+      "tags": [
+        "텐루아 축",
+        "신축"
+      ],
+      "img": "/realty/riviera.webp",
+      "desc": "빈떤 텐루아 대로 축 신축 단지. 공항 서부·떤푸 방면 통근 수요 중심으로 임대 회전이 빠른 편."
+    },
+    {
+      "id": "hado-centrosa-garden",
+      "name_kr": "하도 센트로사 가든",
+      "name_en": "Hado Centrosa Garden",
+      "district_kr": "10군",
+      "lat": 10.7668,
+      "lng": 106.6607,
+      "korean": "중",
+      "status": "완공",
+      "rent_2br_usd": [
+        560,
+        800
+      ],
+      "rent_3br_usd": [
+        800,
+        1150
+      ],
+      "sale_per_m2_usd": [
+        2600,
+        3600
+      ],
+      "tags": [
+        "10군 도심",
+        "하도그룹"
+      ],
+      "img": "/realty/diamond.webp",
+      "desc": "10군 바탕하이 대로변 도심 단지. 시내 접근성이 좋아 외곽 단지 대비 임대료가 한 단계 높음."
+    },
+    {
+      "id": "akari-city",
+      "name_kr": "아카리 시티",
+      "name_en": "Akari City",
+      "district_kr": "빈떤",
+      "lat": 10.722,
+      "lng": 106.608,
+      "korean": "하",
+      "status": "완공",
+      "rent_2br_usd": [
+        400,
+        600
+      ],
+      "rent_3br_usd": [
+        560,
+        820
+      ],
+      "sale_per_m2_usd": [
+        1900,
+        2700
+      ],
+      "tags": [
+        "남롱",
+        "볼바오 키엣 대로",
+        "대규모 단지"
+      ],
+      "img": "/realty/riviera.webp",
+      "desc": "남롱이 볼바오 키엣 대로를 따라 개발한 빈떤 대단지. 단계별 인도가 진행되며 미즈키 파크 상위 라인업."
+    },
+    {
+      "id": "gs-metro-city",
+      "name_kr": "GS 메트로 시티",
+      "name_en": "GS Metrocity",
+      "district_kr": "냐베",
+      "lat": 10.7015,
+      "lng": 106.7405,
+      "korean": "중",
+      "status": "분양중",
+      "rent_2br_usd": [
+        320,
+        520
+      ],
+      "rent_3br_usd": [
+        460,
+        700
+      ],
+      "sale_per_m2_usd": [
+        1600,
+        2400
+      ],
+      "tags": [
+        "GS건설",
+        "냐베",
+        "한국 시공"
+      ],
+      "img": "/realty/diamond.webp",
+      "desc": "냐베 응우옌흐우토 축 GS건설 단지. 4군·7군 남단 통근권으로 일부 블록 인도 후 임대 매물이 나오기 시작."
+    },
+    {
+      "id": "cityland-park-hills",
+      "name_kr": "시티랜드 파크 힐스",
+      "name_en": "Cityland Park Hills",
+      "district_kr": "고밥",
+      "lat": 10.832,
+      "lng": 106.669,
+      "korean": "하",
+      "status": "완공",
+      "rent_2br_usd": [
+        380,
+        580
+      ],
+      "rent_3br_usd": [
+        540,
+        780
+      ],
+      "sale_per_m2_usd": [
+        1900,
+        2700
+      ],
+      "tags": [
+        "고밥",
+        "도심 북부"
+      ],
+      "img": "/realty/diamond.webp",
+      "desc": "고밥 판반찌 대로변 시티랜드 단지. 공항 북측 접근성이 좋고 고밥 내에서는 상급 임대 밴드."
+    },
+    {
+      "id": "legacy-central",
+      "name_kr": "레거시 센트럴",
+      "name_en": "Legacy Central",
+      "district_kr": "빈증(투언안)",
+      "lat": 10.931,
+      "lng": 106.718,
+      "korean": "하",
+      "status": "분양중",
+      "rent_2br_usd": [
+        240,
+        400
+      ],
+      "rent_3br_usd": [
+        340,
+        540
+      ],
+      "sale_per_m2_usd": [
+        1300,
+        1900
+      ],
+      "tags": [
+        "빈증",
+        "호치민 외곽"
+      ],
+      "img": "/realty/diamond.webp",
+      "desc": "투언안 빈증 소재(호치민 행정구역 아님, 참고용 별도 표기). 호치민 북부 확장 수요용 저가 대안 단지."
     }
   ],
   "image_note": "단지 이미지는 분위기 참고용 AI 생성 이미지이며 실제 건물 사진이 아닙니다."
