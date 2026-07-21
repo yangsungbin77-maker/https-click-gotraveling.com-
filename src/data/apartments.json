@@ -1,0 +1,15 @@
+{
+  "updated": "2026-07-21",
+  "note": "시점 기준 참고 범위. 실제 값은 층·전망·가구·계약조건에 따라 크게 다름. 정보 제공 목적(중개·투자자문 아님). 환율 $1≈1,380원, 1백만동≈5.3만원.",
+  "rate_krw_per_usd": 1380,
+  "apartments": [
+    { "id": "phumyhung-midtown", "name_kr": "푸미흥 미드타운", "name_en": "Phu My Hung Midtown", "district_kr": "7군 푸미흥", "lat": 10.7290, "lng": 106.7050, "korean": "최상", "rent_2br_usd": [900, 1200], "rent_3br_usd": [1200, 1600], "buy_note": "구별 중저가~중가", "tags": ["한인타운","한국학교","한국병원","마트"], "img": "/realty/vinhomes.webp", "desc": "한국인이 가장 많이 사는 지역. 한국국제학교·한국병원·한인마트가 모여 있어 정착 편의 최고." },
+    { "id": "sunshine-city-d7", "name_kr": "선샤인 시티 7군", "name_en": "Sunshine City District 7", "district_kr": "7군", "lat": 10.7280, "lng": 106.7180, "korean": "상", "rent_2br_usd": [700, 1000], "rent_3br_usd": [1000, 1400], "buy_note": "구별 중가", "tags": ["교민근접","신축"], "img": "/realty/masteri.webp", "desc": "푸미흥 인접 신축 단지. 한인 커뮤니티 접근성이 좋음." },
+    { "id": "masteri-thao-dien", "name_kr": "마스테리 타오디엔", "name_en": "Masteri Thao Dien", "district_kr": "2군 타오디엔", "lat": 10.8030, "lng": 106.7430, "korean": "상", "rent_2br_usd": [700, 1200], "rent_3br_usd": [1200, 2000], "buy_note": "고가", "tags": ["외국인밀집","메트로","빈컴몰"], "img": "/realty/masteri.webp", "desc": "빈컴 메가몰·메트로 연결. 서양인·외국인이 밀집한 인기 지역, 강·공원 조망." },
+    { "id": "vinhomes-central-park", "name_kr": "빈홈즈 센트럴파크", "name_en": "Vinhomes Central Park", "district_kr": "빈타인", "lat": 10.7932, "lng": 106.7155, "korean": "상", "rent_2br_usd": [900, 1450], "rent_3br_usd": [1300, 2000], "buy_note": "고가 (완공·입주)", "tags": ["랜드마크81","강변","교민많음"], "img": "/realty/vinhomes.webp", "desc": "베트남 최고층 랜드마크81을 품은 대형 강변 단지. 교민 많음. 랜드마크81 타워는 +25%." },
+    { "id": "empire-city", "name_kr": "엠파이어시티", "name_en": "Empire City", "district_kr": "투티엠", "lat": 10.7850, "lng": 106.7250, "korean": "중", "rent_2br_usd": [1580, 2200], "rent_3br_usd": [2200, 3200], "buy_note": "최고가", "tags": ["프리미엄","강변","신도시"], "img": "/realty/empire.webp", "desc": "투티엠 신도시 강변 프리미엄 복합. 호치민 최고가 축, 1군 접근성 우수." },
+    { "id": "diamond-island", "name_kr": "다이아몬드 아일랜드", "name_en": "Diamond Island", "district_kr": "2군", "lat": 10.7910, "lng": 106.8790, "korean": "중", "rent_2br_usd": [1000, 1600], "rent_3br_usd": [1600, 2400], "buy_note": "고가 (완공)", "tags": ["리조트형","강변"], "img": "/realty/empire.webp", "desc": "사이공강 리조트형 럭셔리 콘도. 조경·수영장 강점." },
+    { "id": "sun-avenue", "name_kr": "더 선 애비뉴", "name_en": "The Sun Avenue", "district_kr": "2군", "lat": 10.7965, "lng": 106.8830, "korean": "중", "rent_2br_usd": [600, 900], "rent_3br_usd": [900, 1300], "buy_note": "중가", "tags": ["가성비","안푸인근"], "img": "/realty/masteri.webp", "desc": "안푸 인터체인지 인근. 2군에서 상대적 가성비 신축." },
+    { "id": "celadon-city", "name_kr": "셀라돈 시티", "name_en": "Celadon City", "district_kr": "떤푸", "lat": 10.7890, "lng": 106.6290, "korean": "하", "rent_2br_usd": [450, 700], "rent_3br_usd": [700, 1000], "buy_note": "중저가", "tags": ["대형공원","외곽","가성비"], "img": "/realty/vinhomes.webp", "desc": "16ha 공원을 낀 타운십. 서부 외곽이라 저렴, 로컬 위주." }
+  ]
+}
