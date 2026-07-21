@@ -11,17 +11,17 @@ const rentStr = (a: any) => a.rent_2br_usd ? `$${a.rent_2br_usd[0]}~${a.rent_2br
 ---
 
 <Layout
-	title="호치민 아파트 시세·분양 지도 — 교민 인기 아파트 2룸·3룸 월세·분양가 (동·원)"
-	description="호치민 교민 인기 아파트와 신규 분양 단지를 지도에서 한눈에. 푸미흥·타오디엔·빈홈즈·9군 그랜드파크·투티엠 분양까지 2룸·3룸 월세와 분양가를 베트남 동·한국 돈으로 정리했습니다. 정보 제공 목적, 시점 기준."
+	title="호치민 아파트 시세·분양 지도 — 2룸·3룸 월세와 분양가 원화 환산"
+	description="호치민 교민 인기 아파트와 신규 분양 단지를 지도에서 한눈에. 푸미흥·타오디엔·빈홈즈·9군 그랜드파크·투티엠 분양까지 2룸·3룸 월세와 분양가를 한국 돈으로 환산해 정리했습니다. 정보 제공 목적, 시점 기준."
 	pubDate={new Date('July 21 2026')}
 >
 	<p>
 		호치민에서 <strong>어디에 어떤 아파트가 얼마인지</strong>, 그리고 <strong>지금 분양 중인 단지</strong>는
 		어딘지 지도로 한눈에 보고 싶으시죠? 그래서 교민이 많이 사는 아파트부터 9군 그랜드파크·투티엠 신규 분양까지
-		지도에 모으고, 2룸·3룸 월세와 분양가를 <strong>베트남 동·한국 돈</strong>으로 정리했어요. 핀을 눌러보세요.
+		지도에 모으고, 2룸·3룸 월세와 분양가를 <strong>한국 돈으로 환산</strong>해 정리했어요. 핀을 눌러보세요.
 	</p>
 
-	<div class="cg-box cg-warn"><span class="cg-title">⚠️ 먼저 알아두세요</span><p>정보 제공 목적이며 중개·투자자문이 아닙니다. 가격은 <b>{aptData.updated} 시점의 참고 범위</b>로, 층·전망·가구·계약조건에 따라 크게 달라집니다. 환율 $1≈{rate.toLocaleString()}원·$1≈{vnd.toLocaleString()}동 기준. 실제 계약은 현지 공식정보·전문가 확인이 필요합니다.</p></div>
+	<div class="cg-box cg-warn"><span class="cg-title">⚠️ 먼저 알아두세요</span><p>정보 제공 목적이며 중개·투자자문이 아닙니다. 가격은 <b>{aptData.updated} 시점의 참고 범위</b>로, 층·전망·가구·계약조건에 따라 크게 달라집니다. 환율 $1≈{rate.toLocaleString()}원 기준(변동). 실제 계약은 현지 공식정보·전문가 확인이 필요합니다.</p></div>
 
 	<div style="display:flex;gap:8px;flex-wrap:wrap;margin:0.6rem 0;align-items:center">
 		<button class="apt-filter is-on" data-f="all">전체</button>
@@ -44,7 +44,7 @@ const rentStr = (a: any) => a.rent_2br_usd ? `$${a.rent_2br_usd[0]}~${a.rent_2br
 					<td>{a.district_kr}</td>
 					<td>{a.rent_2br_usd ? (<span>${a.rent_2br_usd[0]}~{a.rent_2br_usd[1]}<br/><span style="color:#8b98a9;font-size:.85em">약 {won(a.rent_2br_usd[0])}~{won(a.rent_2br_usd[1])}만원</span></span>) : '—'}</td>
 					<td>{a.rent_3br_usd ? (<span>${a.rent_3br_usd[0]}~{a.rent_3br_usd[1]}<br/><span style="color:#8b98a9;font-size:.85em">약 {won(a.rent_3br_usd[0])}~{won(a.rent_3br_usd[1])}만원</span></span>) : '—'}</td>
-					<td>{a.sale_per_m2_usd ? (<span>${a.sale_per_m2_usd[0].toLocaleString()}~{a.sale_per_m2_usd[1].toLocaleString()}<br/><span style="color:#8b98a9;font-size:.85em">약 {mildong(a.sale_per_m2_usd[0])}~{mildong(a.sale_per_m2_usd[1])}백만동</span></span>) : '—'}</td>
+					<td>{a.sale_per_m2_usd ? (<span>${a.sale_per_m2_usd[0].toLocaleString()}~{a.sale_per_m2_usd[1].toLocaleString()}<br/><span style="color:#8b98a9;font-size:.85em">약 {won(a.sale_per_m2_usd[0]).toLocaleString()}만~{won(a.sale_per_m2_usd[1]).toLocaleString()}만원</span></span>) : '—'}</td>
 					<td>{a.status === '분양중' ? '🏗️ 분양중' : '완공'} · 교민 {a.korean}</td>
 				</tr>
 			))}
@@ -64,7 +64,7 @@ const rentStr = (a: any) => a.rent_2br_usd ? `$${a.rent_2br_usd[0]}~${a.rent_2br
 		<strong>더 글로벌 시티</strong>, 투티엠 최고가 <strong>메트로폴</strong>, 강변 프리미엄
 		<strong>엠파이어시티</strong>가 분양 중이고, 서부(떤푸·빈떤)의 셀라돈·미즈키파크는 상대적 가성비 분양이에요.
 	</p>
-	<div class="cg-box cg-tip"><span class="cg-title">💡 분양가 감 잡기</span><p>호치민 2026년 <b>1차(분양) 평균이 ㎡당 약 $7,200(약 187백만 동)</b>이고, 투득 프리미엄은 ㎡당 $15,000(약 390백만 동)을 넘기도 해요. 가성비 신도시(그랜드파크·미즈키)는 ㎡당 $1,600~2,600(약 42~68백만 동)으로 훨씬 낮습니다.</p></div>
+	<div class="cg-box cg-tip"><span class="cg-title">💡 분양가 감 잡기 (원화)</span><p>호치민 2026년 <b>1차(분양) 평균이 ㎡당 약 $7,200 = 약 994만원</b>이고, 투득 프리미엄은 ㎡당 $15,000(약 2,070만원)을 넘기도 해요. 가성비 신도시(그랜드파크·미즈키)는 ㎡당 $1,600~2,600(약 221만~359만원)으로 훨씬 낮습니다. <b>84㎡ 기준</b>으로 보면 가성비 단지가 약 1억9천만~3억원, 평균가 단지는 약 8억원대가 됩니다.</p></div>
 
 	<h2>교민들이 살기 좋은 아파트는 어디인가요?</h2>
 	<p>
@@ -84,7 +84,7 @@ const rentStr = (a: any) => a.rent_2br_usd ? `$${a.rent_2br_usd[0]}~${a.rent_2br
 	<h2>자주 묻는 질문 (FAQ)</h2>
 	<p><strong>Q. 호치민에서 교민이 가장 많이 사는 아파트 지역은 어디인가요?</strong> 7군 푸미흥이 대표 한인타운입니다. 한국국제학교·한국병원·한인마트가 모여 있어요. 그다음으로 2군 타오디엔, 빈타인(빈홈즈 센트럴파크)에 교민이 많습니다.</p>
 	<p><strong>Q. 9군(투득) 빈홈즈 그랜드파크 월세는 얼마인가요?</strong> 2룸 기준 대략 월 $280~880(약 39만~121만원)로 도심보다 저렴한 편입니다. 초대형 신도시라 분양 물량도 많습니다. 시점 기준입니다.</p>
-	<p><strong>Q. 호치민 신규 분양가는 ㎡당 얼마인가요?</strong> 2026년 1차(분양) 평균이 ㎡당 약 $7,200(약 187백만 동)이고, 투득 프리미엄은 ㎡당 $15,000을 넘기도 합니다. 가성비 신도시는 ㎡당 $1,600~2,600 수준입니다.</p>
+	<p><strong>Q. 호치민 신규 분양가는 ㎡당 얼마인가요?</strong> 2026년 1차(분양) 평균이 ㎡당 약 $7,200, 한국 돈으로 약 994만원입니다. 투득 프리미엄은 ㎡당 약 2,070만원을 넘기도 하고, 가성비 신도시는 약 221만~359만원 수준이에요. 84㎡ 기준이면 가성비 단지 약 1억9천만~3억원, 평균가 단지 약 8억원대입니다.</p>
 	<p><strong>Q. 호치민 2룸 아파트 월세 범위는요?</strong> 교민 인기 단지 기준 대략 월 $280~2,800(약 39만~386만원)로 폭이 넓습니다. 외곽·구축은 낮고, 투티엠 프리미엄은 높습니다.</p>
 
 	<p>
@@ -131,7 +131,8 @@ const rentStr = (a: any) => a.rent_2br_usd ? `$${a.rent_2br_usd[0]}~${a.rent_2br
 			}
 			if (a.sale_per_m2_usd) {
 				html += '<b style="color:#12b981">분양가</b> ㎡당 $' + a.sale_per_m2_usd[0].toLocaleString() + '~' + a.sale_per_m2_usd[1].toLocaleString()
-					+ ' <span style="color:#888">(약 ' + mildong(a.sale_per_m2_usd[0]) + '~' + mildong(a.sale_per_m2_usd[1]) + '백만동)</span><br>';
+					+ ' <span style="color:#888">(약 ' + won(a.sale_per_m2_usd[0]).toLocaleString() + '만~' + won(a.sale_per_m2_usd[1]).toLocaleString() + '만원)</span><br>'
+					+ '<span style="color:#12b981;font-size:11.5px">84㎡ 환산 약 ' + Math.round(won(a.sale_per_m2_usd[0]) * 84 / 10000) + '억~' + Math.round(won(a.sale_per_m2_usd[1]) * 84 / 10000) + '억원</span><br>';
 			}
 			html += '<span style="color:#555;font-size:12px">' + a.desc + '</span></div>';
 			m.bindPopup(html);
