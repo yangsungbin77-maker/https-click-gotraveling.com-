@@ -1,0 +1,32 @@
+{
+  "type": "info",
+  "keyword": "호치민 1군 분짜 맛집",
+  "note": "이름 나열 대신 '고르는 법' 각도(vietnam-restaurant-finding 성공 패턴 계승). 실재 스팟은 다중출처 근거 + 시점기준 헤지. 버려진 옛 URL /호치민-1군-분짜-맛집/ 회수용 신규 글.",
+  "serp": [
+    { "url": "https://www.kkday.com/ko/blog/25793/asia-vietnam-hochiminh-best-restaurant", "opened": true, "note": "KKday 공식블로그 '2025 호치민 1군 맛집 BEST 8'. 대형 플랫폼, 이름 나열형. 고르는 법은 없음=우리 차별화 지점." },
+    { "url": "https://vinwonders.com/en/wonderpedia/news/restaurants-in-district-1-saigon/", "opened": true, "note": "Vinwonders 1군 맛집 21곳. 종합 나열, 분짜 개별 심화 없음." },
+    { "url": "https://brunch.co.kr/@kkday/165", "opened": true, "note": "brunch 호치민 맛집 총정리. 개인 매거진형, 리스트 중심." },
+    { "url": "https://funktionalflow.com/호치민-맛집/", "opened": true, "note": "개인 블로그 '호치민 맛집 베스트10 1/2/4군'. 개인 블로그가 1페이지에 낌=진입 가능 신호(필터①)." },
+    { "url": "https://kr.trip.com/blog/Ho-Chi-Minh-place/", "opened": true, "note": "트립닷컴 지역별 인기 맛집 총정리. 대형, 나열형." },
+    { "url": "https://kr.trip.com/moments/detail/ho-chi-minh-city-434-131764523/", "opened": true, "note": "트립닷컴 모먼트 '호치민 분짜 맛집 소개'. 꾸안넴 등 언급, 개인 후기형." },
+    { "url": "https://kr.trip.com/guide/food/ho-chi-minh-local-restaurants.html", "opened": true, "note": "트립닷컴 로컬 맛집 가이드. 로컬 vs 관광객 구분 언급." },
+    { "url": "https://steemit.com/tasteem/@ramengirl/tasteem-f5d731", "opened": true, "note": "Steemit 개인 후기 '로컬이 추천한 분짜 맛집'. 골목 로컬집 각도." },
+    { "url": "https://wanderlog.com/ko/list/geoCategory/737/호치민시의-최고의-레스토랑", "opened": true, "note": "Wanderlog 호치민 50 레스토랑. 집계형, 개별 분짜 심화 없음." },
+    { "url": "https://www.tiktok.com/discover/호치민-맛집-1군", "opened": true, "note": "틱톡 discover. 영상 위주라 텍스트 SERP엔 약함=텍스트 콘텐츠로 승부 가능." }
+  ],
+  "factcheck": [
+    { "claim": "분짜는 숯불 돼지고기 완자·삼겹살을 새콤달콤한 느억맘 국물에 적셔 분(쌀국수)·향채소와 먹는 하노이식 음식", "sources": ["https://kr.trip.com/moments/detail/ho-chi-minh-city-434-131764523/", "https://en.wikipedia.org/wiki/B%C3%BAn_ch%E1%BA%A3"] },
+    { "claim": "호치민 로컬 분짜 한 그릇 가격은 대략 3만~5만동(분팃느엉 3만동·분짜바빈 4만동 언급, 한화 약 1,600~2,700원)", "sources": ["https://www.kkday.com/ko/blog/25793/asia-vietnam-hochiminh-best-restaurant", "https://kr.trip.com/moments/detail/ho-chi-minh-city-434-131764523/"] },
+    { "claim": "분짜(국물에 적셔 먹기)와 분팃느엉(소스 부어 비벼 먹기)은 구성은 비슷하나 먹는 방식이 다름", "sources": ["https://kr.trip.com/guide/food/ho-chi-minh-local-restaurants.html", "https://steemit.com/tasteem/@ramengirl/tasteem-f5d731"] },
+    { "claim": "꾸안넴(Quán Nem)은 여행 매체에서 자주 언급되며 고기를 미리 구워 제공하고 외국인 손님 비중이 높아 피크타임 웨이팅이 있음", "sources": ["https://www.kkday.com/ko/blog/25793/asia-vietnam-hochiminh-best-restaurant", "https://kr.trip.com/moments/detail/ho-chi-minh-city-434-131764523/"] },
+    { "claim": "부이비엔 거리(1군, 145번지 등)에 분짜집이 있으며 관광 동선이라 접근성은 좋으나 로컬 대비 가격이 오를 수 있음", "sources": ["https://kr.trip.com/blog/Ho-Chi-Minh-place/", "https://www.kkday.com/ko/blog/25793/asia-vietnam-hochiminh-best-restaurant"] }
+  ],
+  "variables": {
+    "keyword": "호치민 1군 분짜 맛집",
+    "headline_finding": "이름 나열 대신 '관광객집 거르고 로컬 고르는 기준'을 준다(현지어 리뷰·점심 현지손님 신호)",
+    "price_range": "로컬 분짜 3만~5만동(약 1,600~2,700원, 시점 기준)",
+    "decision_frame": "목적(편안/현지맛/가성비)→노릴 유형→확인 신호 3열 결정표",
+    "recovery": "옛 URL /호치민-1군-분짜-맛집/ 을 이 글로 301 회수 예정"
+  },
+  "hermes_score": 93
+}
