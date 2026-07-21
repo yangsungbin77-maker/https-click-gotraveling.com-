@@ -5,14 +5,17 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { getCollection } from 'astro:content';
-import { categoryOf } from '../categories';
+import { CATEGORIES, categoryOf } from '../categories';
 import FormattedDate from '../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
-const featured = posts[0];
-const rest = posts.slice(1, 7);
+const lead = posts[0];
+const rest = posts.slice(1, 13);
+
+// 카테고리별 글 수 — 얼마나 있는지 보여주면 탐색으로 이어진다
+const catCounts = CATEGORIES.map((c) => ({ ...c, count: c.posts.length }));
 ---
 
 <!doctype html>
@@ -22,463 +25,315 @@ const rest = posts.slice(1, 7);
 	</head>
 	<body>
 		<Header />
-		<main>
-			<section class="hero">
-				<div class="hero-inner">
-					<div class="hero-copy">
-						<p class="eyebrow">10.823°N 106.630°E — HO CHI MINH DESK</p>
-						<h1 class="hero-title">직접 걷고, 먹고, 쓰는<br /><em>여행 안내서</em></h1>
-						<p class="lead">{SITE_DESCRIPTION}</p>
-						<div class="hero-actions">
-							<a href="/blog" class="btn">최신 글 보기</a>
-							<a href="/about" class="btn-ghost btn">소개</a>
-						</div>
-						<ul class="trust" aria-label="이 블로그의 약속">
-							<li>현지에서 직접 정리한 여행 정보</li>
-							<li>항공·숙소 절약 팁</li>
-							<li>매주 업데이트</li>
-						</ul>
-					</div>
-					<div class="hero-stamp" aria-hidden="true">
-						<svg viewBox="0 0 220 220" width="100%" height="100%">
-							<defs>
-								<path id="stamp-orbit" d="M110,110 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" />
-							</defs>
-							<g class="stamp-spin">
-								<circle cx="110" cy="110" r="103" fill="none" stroke="var(--lacquer)" stroke-width="2" stroke-dasharray="3 6" />
-								<circle cx="110" cy="110" r="66" fill="none" stroke="var(--lacquer)" stroke-width="1.6" />
-								<text class="stamp-text" font-size="13" letter-spacing="4.5">
-									<textPath href="#stamp-orbit">CLICK GO TRAVELING ✶ HO CHI MINH ✶ VIETNAM ✶</textPath>
-								</text>
-								<path d="M110 82l7.6 17.1 18.4 1.6-14 12 4.1 18-16-9.8-16 9.8 4.1-18-14-12 18.4-1.6z" fill="var(--lacquer)" />
-								<text x="110" y="162" text-anchor="middle" class="stamp-sub" font-size="11" letter-spacing="2.5">ARRIVÉE</text>
-							</g>
-						</svg>
-					</div>
-				</div>
-				<div class="tile-band" aria-hidden="true">
-					<svg width="100%" height="100%" preserveAspectRatio="none">
-						<defs>
-							<pattern id="gach-bong" width="56" height="56" patternUnits="userSpaceOnUse">
-								<rect width="56" height="56" fill="var(--bg-elev-2)" />
-								<circle cx="0" cy="0" r="16" fill="none" stroke="var(--accent)" stroke-width="1.6" />
-								<circle cx="56" cy="0" r="16" fill="none" stroke="var(--accent)" stroke-width="1.6" />
-								<circle cx="0" cy="56" r="16" fill="none" stroke="var(--accent)" stroke-width="1.6" />
-								<circle cx="56" cy="56" r="16" fill="none" stroke="var(--accent)" stroke-width="1.6" />
-								<rect x="21.5" y="21.5" width="13" height="13" transform="rotate(45 28 28)" fill="var(--lacquer)" />
-								<circle cx="28" cy="28" r="2.6" fill="var(--gold)" />
-							</pattern>
-						</defs>
-						<rect width="100%" height="100%" fill="url(#gach-bong)" />
-					</svg>
-				</div>
+		<main id="main">
+			{/* 인트로 — 한 줄. 첫 화면을 잡아먹지 않는다 */}
+			<section class="intro">
+				<h1>호치민·다낭 여행, 현지에서 직접 씁니다</h1>
+				<p>{SITE_DESCRIPTION}</p>
 			</section>
 
+			{/* 최신 글 — 가로형 리드 카드 */}
 			{
-				featured && (
-					<a href={`/${featured.id}/`} class="featured" aria-label={`최신 글: ${featured.data.title}`}>
-						{featured.data.heroImage && (
-							<div class="pass-image">
-								<Image src={featured.data.heroImage} width={1200} height={600} alt={featured.data.title} />
-								<span class="stamp-mini">최신 글</span>
+				lead && (
+					<article class="lead">
+						<a href={`/${lead.id}/`} class="lead-link">
+							{lead.data.heroImage && (
+								<div class="lead-media">
+									<Image
+										src={lead.data.heroImage}
+										width={880}
+										height={495}
+										alt=""
+										loading="eager"
+									/>
+								</div>
+							)}
+							<div class="lead-body">
+								<span class="kicker">
+									최신 글
+									{categoryOf(lead.id) && <> · {categoryOf(lead.id)!.label}</>}
+								</span>
+								<h2>{lead.data.title}</h2>
+								<p>{lead.data.description}</p>
+								<span class="meta"><FormattedDate date={lead.data.pubDate} /></span>
 							</div>
-						)}
-						<div class="pass-divider" aria-hidden="true" />
-						<div class="featured-body">
-							<span class="route">ICN ✈ SGN · DIRECT</span>
-							<h2>{featured.data.title}</h2>
-							<p>{featured.data.description}</p>
-							<span class="meta">
-								<FormattedDate date={featured.data.pubDate} /> · 읽어보기 →
-							</span>
-						</div>
-					</a>
+						</a>
+					</article>
 				)
 			}
 
+			{/* 애드센스 슬롯 — 재승인 후 이 안에 코드만 삽입 */}
+			<div class="ad-slot" data-ad-slot="home-top"></div>
+
+			{/* 주제별 찾기 */}
+			<section class="browse" aria-labelledby="browse-h">
+				<h2 id="browse-h" class="section-title">주제별로 찾기</h2>
+				<ul class="browse-list">
+					{
+						catCounts.map((c) => (
+							<li>
+								<a href={`/category/${c.slug}/`} class="browse-item">
+									<span class="browse-label">{c.label}</span>
+									<span class="browse-count">{c.count}</span>
+								</a>
+							</li>
+						))
+					}
+					<li>
+						<a href="/vietnam-realestate/" class="browse-item">
+							<span class="browse-label">부동산 시세</span>
+							<span class="browse-count browse-count--new">지도</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			{/* 글 목록 */}
 			{
 				rest.length > 0 && (
-					<>
+					<section aria-labelledby="latest-h">
 						<div class="section-head">
-							<h2>더 많은 글</h2>
+							<h2 id="latest-h" class="section-title">최근 글</h2>
 							<a href="/blog" class="more">전체 보기 →</a>
 						</div>
 						<ul class="grid">
-							{rest.map((post) => {
+							{rest.map((post, i) => {
 								const cat = categoryOf(post.id);
 								return (
 									<li>
 										<a href={`/${post.id}/`} class="card">
 											{post.data.heroImage && (
-												<div class="card-image">
-													<Image src={post.data.heroImage} width={600} height={300} alt={post.data.title} />
-													{cat && <span class="card-cat">{cat.emoji} {cat.label}</span>}
+												<div class="card-media">
+													<Image
+														src={post.data.heroImage}
+														width={560}
+														height={315}
+														alt=""
+														loading={i < 3 ? 'eager' : 'lazy'}
+													/>
 												</div>
 											)}
 											<div class="card-body">
+												{cat && <span class="card-cat">{cat.label}</span>}
 												<h3>{post.data.title}</h3>
 												<p>{post.data.description}</p>
-												<span class="meta">
-													<FormattedDate date={post.data.pubDate} />
-												</span>
+												<span class="meta"><FormattedDate date={post.data.pubDate} /></span>
 											</div>
 										</a>
 									</li>
 								);
 							})}
 						</ul>
-					</>
+					</section>
 				)
 			}
+
+			<div class="ad-slot" data-ad-slot="home-bottom"></div>
 		</main>
 		<Footer />
 	</body>
 </html>
 
 <style>
-	/* 히어로 — 종이 위 활자 + 입국 스탬프 + 타일 밴드 */
-	.hero {
-		position: relative;
-		border: 1px solid var(--border);
-		border-radius: var(--radius);
-		background: var(--bg-elev);
-		overflow: hidden;
-		margin-bottom: 2.5rem;
-		isolation: isolate;
+	/* ── 인트로 ─────────────────────────── */
+	.intro {
+		padding: var(--s2) 0 var(--s5);
+		border-bottom: 1px solid var(--border);
+		margin-bottom: var(--s6);
 	}
-	.hero-inner {
-		display: grid;
-		grid-template-columns: 1fr auto;
-		align-items: center;
-		gap: 2rem;
-		padding: clamp(2.2rem, 5vw, 3.5rem) clamp(1.4rem, 4vw, 3rem) 5.5rem;
+	.intro h1 {
+		font-size: clamp(1.6rem, 4vw, 2.2rem);
+		margin: 0 0 0.35rem;
 	}
-	.eyebrow {
-		font-family: var(--font-mono);
-		font-size: 0.78rem;
-		font-weight: 600;
-		letter-spacing: 0.16em;
-		color: var(--accent-dim);
-		margin: 0 0 1.1rem;
-	}
-	.hero-title {
-		font-size: clamp(2.2rem, 5.2vw, 3.6rem);
-		line-height: 1.25;
-		margin: 0 0 1.1rem;
-	}
-	.hero-title em {
-		font-style: normal;
-		color: var(--lacquer);
-	}
-	.lead {
+	.intro p {
 		color: var(--text-muted);
-		font-size: 1.1rem;
-		max-width: 36ch;
-		margin-bottom: 1.6rem;
-	}
-	.hero-actions {
-		display: flex;
-		gap: 0.8rem;
-		flex-wrap: wrap;
-	}
-	.trust {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.4rem 1.3rem;
-		list-style: none;
-		padding: 0;
-		margin: 1.7rem 0 0;
-		font-size: 0.82rem;
-		color: var(--text-dim);
-	}
-	.trust li {
-		position: relative;
-		padding-left: 0.95rem;
-	}
-	.trust li::before {
-		content: '';
-		position: absolute;
-		left: 0;
-		top: 0.5em;
-		width: 6px;
-		height: 6px;
-		border-radius: 50%;
-		background: var(--accent);
+		margin: 0;
+		max-width: 60ch;
+		font-size: 1rem;
 	}
 
-	/* 입국 스탬프 — 천천히 회전 */
-	.hero-stamp {
-		width: clamp(150px, 20vw, 210px);
-		opacity: 0.9;
-		transform: rotate(-8deg);
-	}
-	.stamp-spin {
-		transform-origin: 110px 110px;
-		animation: spin 60s linear infinite;
-	}
-	.stamp-text {
-		font-family: var(--font-mono);
-		font-weight: 700;
-		fill: var(--lacquer);
-	}
-	.stamp-sub {
-		font-family: var(--font-mono);
-		font-weight: 600;
-		fill: var(--lacquer);
-	}
-	@keyframes spin {
-		to { transform: rotate(360deg); }
-	}
-
-	/* 타일 밴드 — 사이공 시멘트 타일(응아봉) 스트립 */
-	.tile-band {
-		position: absolute;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		height: 46px;
-		border-top: 1px solid var(--border);
-		opacity: 0.9;
-	}
-
-	/* 볼드는 여기까지 — 페이지 로드 스태거 */
-	.eyebrow,
-	.hero-title,
-	.lead,
-	.hero-actions,
-	.trust,
-	.hero-stamp {
-		animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
-	}
-	.hero-title { animation-delay: 0.06s; }
-	.lead { animation-delay: 0.12s; }
-	.hero-actions { animation-delay: 0.18s; }
-	.trust { animation-delay: 0.24s; }
-	.hero-stamp { animation-delay: 0.15s; }
-
-	@keyframes rise {
-		from { opacity: 0; transform: translateY(14px); }
-		to { opacity: 1; transform: translateY(0); }
-	}
-
-	@media (max-width: 760px) {
-		.hero-inner {
-			grid-template-columns: 1fr;
-			padding-bottom: 5rem;
-		}
-		.hero-stamp {
-			position: absolute;
-			top: 1.2rem;
-			right: 1.2rem;
-			width: 108px;
-			opacity: 0.55;
-		}
-		.tile-band { height: 34px; }
-	}
-	@media (prefers-reduced-motion: reduce) {
-		.eyebrow,
-		.hero-title,
-		.lead,
-		.hero-actions,
-		.trust,
-		.hero-stamp { animation: none; }
-		.stamp-spin { animation: none; }
-	}
-
-	/* 최신 글 — 볼딩패스 카드 */
-	.featured {
+	/* ── 리드 카드 ───────────────────────── */
+	.lead { margin-bottom: var(--s6); }
+	.lead-link {
 		display: grid;
-		grid-template-columns: minmax(220px, 340px) auto 1fr;
-		background: var(--bg-elev);
-		border: 1px solid var(--border);
+		grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+		gap: var(--s6);
+		align-items: center;
+		color: inherit;
+	}
+	.lead-media {
 		border-radius: var(--radius);
 		overflow: hidden;
-		margin-bottom: 3rem;
-		transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+		background: var(--bg-elev-2);
+		aspect-ratio: 16 / 9;   /* 자리를 미리 잡아 레이아웃 밀림(CLS) 방지 */
 	}
-	.featured:hover {
-		border-color: var(--accent);
-		transform: translateY(-2px);
-		box-shadow: 0 16px 40px rgba(35, 50, 41, 0.16);
-	}
-	.pass-image {
-		position: relative;
-		overflow: hidden;
-	}
-	.pass-image img {
+	.lead-media img {
 		display: block;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
 		border-radius: 0;
-		transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+		transition: transform 0.4s ease;
 	}
-	.featured:hover .pass-image img { transform: scale(1.04); }
-	.stamp-mini {
-		position: absolute;
-		top: 0.9rem;
-		left: 0.9rem;
-		padding: 0.3em 0.8em;
-		font-family: var(--font-mono);
-		font-size: 0.72rem;
+	.lead-link:hover .lead-media img { transform: scale(1.03); }
+	.kicker {
+		display: inline-block;
+		font-size: 0.82rem;
 		font-weight: 700;
-		letter-spacing: 0.12em;
-		color: var(--lacquer);
-		background: rgba(252, 248, 238, 0.92);
-		border: 1.6px solid var(--lacquer);
-		border-radius: 4px;
-		transform: rotate(-5deg);
-	}
-	/* 천공선 — 위아래 노치 + 점선 */
-	.pass-divider {
-		position: relative;
-		width: 0;
-		border-left: 2px dashed var(--border-strong);
-		margin: 1.2rem 0;
-	}
-	.pass-divider::before,
-	.pass-divider::after {
-		content: '';
-		position: absolute;
-		left: -11px;
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background: var(--bg);
-		border: 1px solid var(--border);
-	}
-	.pass-divider::before { top: -1.2rem; }
-	.pass-divider::after { bottom: -1.2rem; }
-	.featured-body {
-		padding: 2rem 2.2rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	.route {
-		font-family: var(--font-mono);
-		font-size: 0.78rem;
-		font-weight: 700;
-		letter-spacing: 0.14em;
 		color: var(--accent-dim);
-		margin-bottom: 0.7rem;
+		margin-bottom: 0.6rem;
 	}
-	.featured h2 {
-		margin: 0 0 0.6rem;
-		font-size: clamp(1.5rem, 3.2vw, 2.1rem);
+	.lead-body h2 {
+		font-size: clamp(1.35rem, 2.6vw, 1.9rem);
+		margin: 0 0 0.5rem;
 	}
-	.featured p {
+	.lead-link:hover h2 { color: var(--accent-dim); }
+	.lead-body p {
 		color: var(--text-muted);
-		margin-bottom: 1rem;
+		margin: 0 0 0.8rem;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
 	}
 
+	.meta {
+		display: block;
+		font-size: 0.85rem;
+		color: var(--text-dim);
+		font-variant-numeric: tabular-nums;
+	}
+
+	/* ── 주제별 찾기 ─────────────────────── */
+	.browse { margin-bottom: var(--s7); }
+	.section-title {
+		font-size: 1.15rem;
+		font-weight: 800;
+		margin: 0 0 var(--s4);
+	}
+	.browse-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--s2);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.browse-item {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5em;
+		min-height: 44px;
+		padding: 0.5em 1em;
+		border: 1px solid var(--border);
+		border-radius: 999px;
+		color: var(--text);
+		font-weight: 600;
+		background: #fff;
+		transition: border-color 0.15s ease, background 0.15s ease;
+	}
+	.browse-item:hover {
+		border-color: var(--accent-border);
+		background: var(--accent-soft);
+		color: var(--accent-dim);
+	}
+	.browse-count {
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: var(--text-dim);
+		background: var(--bg-elev-2);
+		border-radius: 999px;
+		padding: 0.1em 0.55em;
+		font-variant-numeric: tabular-nums;
+	}
+	.browse-count--new { color: var(--accent-dim); background: var(--accent-soft); }
+
+	/* ── 목록 ───────────────────────────── */
 	.section-head {
 		display: flex;
 		align-items: baseline;
 		justify-content: space-between;
-		margin-bottom: 1.4rem;
+		gap: var(--s4);
+		margin-bottom: var(--s4);
 	}
-	.section-head h2 {
-		margin: 0;
-		position: relative;
-		padding-left: 1.1rem;
+	.more {
+		font-weight: 600;
+		font-size: 0.92rem;
+		white-space: nowrap;
+		display: inline-flex;
+		align-items: center;
+		min-height: 44px;
 	}
-	.section-head h2::before {
-		content: '';
-		position: absolute;
-		left: 0;
-		top: 50%;
-		width: 9px;
-		height: 9px;
-		background: var(--lacquer);
-		transform: translateY(-50%) rotate(45deg);
-	}
-	.more { font-weight: 600; font-size: 0.95rem; }
 
 	.grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: var(--s5);
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-		gap: 1.2rem;
 	}
 	.card {
-		position: relative;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
-		background: var(--bg-elev);
-		border: 1px solid var(--border);
-		border-radius: var(--radius);
+		color: inherit;
+	}
+	.card-media {
+		border-radius: var(--radius-sm);
 		overflow: hidden;
-		transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+		background: var(--bg-elev-2);
+		aspect-ratio: 16 / 9;
+		margin-bottom: 0.85rem;
 	}
-	.card::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 3px;
-		background: linear-gradient(90deg, var(--accent), transparent 70%);
-		opacity: 0;
-		transition: opacity 0.2s ease;
-		z-index: 2;
-	}
-	.card:hover {
-		border-color: var(--accent);
-		transform: translateY(-3px);
-		box-shadow: 0 16px 38px rgba(35, 50, 41, 0.14);
-	}
-	.card:hover::before { opacity: 1; }
-	.card-image {
-		position: relative;
-		overflow: hidden;
-		border-bottom: 1px solid var(--border);
-	}
-	.card-image img {
+	.card-media img {
 		display: block;
 		width: 100%;
-		aspect-ratio: 2 / 1;
+		height: 100%;
 		object-fit: cover;
 		border-radius: 0;
-		transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+		transition: transform 0.4s ease;
 	}
-	.card:hover .card-image img { transform: scale(1.05); }
+	.card:hover .card-media img { transform: scale(1.04); }
+	.card-body { display: flex; flex-direction: column; flex: 1; }
 	.card-cat {
-		position: absolute;
-		top: 0.7rem;
-		left: 0.7rem;
-		padding: 0.2em 0.7em;
-		font-size: 0.75rem;
+		font-size: 0.78rem;
 		font-weight: 700;
-		color: var(--text);
-		background: rgba(252, 248, 238, 0.92);
-		border: 1px solid var(--border);
-		border-radius: 999px;
-	}
-	.card-body {
-		display: flex;
-		flex-direction: column;
-		flex: 1;
-		padding: 1.5rem;
+		color: var(--accent-dim);
+		margin-bottom: 0.3rem;
 	}
 	.card h3 {
-		margin: 0 0 0.5rem;
-		font-size: 1.22rem;
+		font-size: 1.05rem;
+		line-height: 1.45;
+		margin: 0 0 0.4rem;
 	}
+	.card:hover h3 { color: var(--accent-dim); }
 	.card p {
 		color: var(--text-muted);
-		font-size: 0.95rem;
-		margin-bottom: 1rem;
-		flex: 1;
+		font-size: 0.93rem;
+		line-height: 1.6;
+		margin: 0 0 0.7rem;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
 	}
-	.meta {
-		font-family: var(--font-mono);
-		color: var(--text-dim);
-		font-size: 0.82rem;
-		font-weight: 600;
-		letter-spacing: 0.03em;
+	.card .meta { margin-top: auto; }
+
+	/* ── 반응형 ─────────────────────────── */
+	@media (max-width: 900px) {
+		.lead-link { grid-template-columns: 1fr; gap: var(--s4); }
+		.grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	}
+	@media (max-width: 560px) {
+		.grid { grid-template-columns: 1fr; gap: var(--s5); }
+		.intro { padding-top: 0; }
+		/* 모바일은 가로형 카드 — 한 화면에 더 많은 글이 들어간다 */
+		.card { flex-direction: row; gap: var(--s3); align-items: flex-start; }
+		.card-media { flex: 0 0 132px; margin-bottom: 0; }
+		.card h3 { font-size: 0.98rem; }
+		.card p { display: none; }
 	}
 </style>

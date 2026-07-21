@@ -4,7 +4,7 @@ const today = new Date();
 
 <footer>
 	<div class="inner">
-		<span class="brand"><span class="logo">✈️</span> 클릭고트래블링</span>
+		<span class="brand">클릭고트래블링</span>
 		<nav class="links">
 			<a href="/">홈</a>
 			<a href="/blog">전체 글</a>
@@ -20,11 +20,11 @@ const today = new Date();
 	footer {
 		border-top: 1px solid var(--border);
 		margin-top: 4rem;
-		background: var(--bg-elev-2);
+		background: var(--bg-sunken);
 	}
 	.inner {
 		width: var(--maxw);
-		max-width: calc(100% - 2.5em);
+		max-width: calc(100% - 2rem);
 		margin: 0 auto;
 		padding: 2rem 0 3rem;
 		display: flex;
@@ -35,7 +35,7 @@ const today = new Date();
 	}
 	.brand {
 		font-family: var(--font-heading);
-		font-weight: 900;
+		font-weight: 800;
 		color: var(--text);
 	}
 	.links { display: flex; gap: 1.2rem; flex-wrap: wrap; }
@@ -45,5 +45,11 @@ const today = new Date();
 		font-size: 0.9rem;
 	}
 	.links a:hover { color: var(--accent); }
+	@media (max-width: 720px) {
+		/* 모바일 터치 타깃 확보 */
+		.links { gap: 0.2rem 0.8rem; }
+		.links a { display: inline-flex; align-items: center; min-height: 44px; }
+		.inner { padding: 1.5rem 0 2rem; }
+	}
 	.copy { color: var(--text-dim); font-size: 0.85rem; }
 </style>

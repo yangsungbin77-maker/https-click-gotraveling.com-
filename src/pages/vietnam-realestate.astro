@@ -29,10 +29,10 @@ const rentStr = (a: any) => a.rent_2br_usd ? `$${a.rent_2br_usd[0]}~${a.rent_2br
 		<button class="apt-filter is-on" data-f="all">전체</button>
 		<button class="apt-filter" data-f="korean">🇰🇷 교민 살기 좋은 곳</button>
 		<button class="apt-filter" data-f="sale">🏗️ 분양 중</button>
-		<span style="margin-left:auto;font-size:.8rem;color:var(--dim,#8b98a9)">🔴최상 🟠상 🔵중 ⚪하 · 점선=분양중</span>
+		<span style="margin-left:auto;font-size:.8rem;color:var(--text-dim)">🔴최상 🟠상 🔵중 ⚪하 · 점선=분양중</span>
 	</div>
 
-	<div id="apt-map" style="height:480px;width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--border,#253040);z-index:0"></div>
+	<div id="apt-map" style="height:480px;width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--border);z-index:0"></div>
 
 	<h2>교민 인기 아파트·분양 시세 한눈에 보기</h2>
 	<p>2룸·3룸 <strong>월세</strong>와 <strong>분양가(㎡당)</strong> 기준입니다(시점·단지별 편차 큼). 한국 돈은 환율 환산 참고값이에요.</p>
@@ -44,9 +44,9 @@ const rentStr = (a: any) => a.rent_2br_usd ? `$${a.rent_2br_usd[0]}~${a.rent_2br
 				<tr>
 					<td><strong>{a.name_kr}</strong></td>
 					<td>{a.district_kr}</td>
-					<td>{a.rent_2br_usd ? (<span>${a.rent_2br_usd[0]}~{a.rent_2br_usd[1]}<br/><span style="color:#8b98a9;font-size:.85em">약 {won(a.rent_2br_usd[0])}~{won(a.rent_2br_usd[1])}만원</span></span>) : '—'}</td>
-					<td>{a.rent_3br_usd ? (<span>${a.rent_3br_usd[0]}~{a.rent_3br_usd[1]}<br/><span style="color:#8b98a9;font-size:.85em">약 {won(a.rent_3br_usd[0])}~{won(a.rent_3br_usd[1])}만원</span></span>) : '—'}</td>
-					<td>{a.sale_per_m2_usd ? (<span>${a.sale_per_m2_usd[0].toLocaleString()}~{a.sale_per_m2_usd[1].toLocaleString()}<br/><span style="color:#8b98a9;font-size:.85em">약 {won(a.sale_per_m2_usd[0]).toLocaleString()}만~{won(a.sale_per_m2_usd[1]).toLocaleString()}만원</span></span>) : '—'}</td>
+					<td>{a.rent_2br_usd ? (<span>${a.rent_2br_usd[0]}~{a.rent_2br_usd[1]}<br/><span style="color:var(--text-dim);font-size:.85em">약 {won(a.rent_2br_usd[0])}~{won(a.rent_2br_usd[1])}만원</span></span>) : '—'}</td>
+					<td>{a.rent_3br_usd ? (<span>${a.rent_3br_usd[0]}~{a.rent_3br_usd[1]}<br/><span style="color:var(--text-dim);font-size:.85em">약 {won(a.rent_3br_usd[0])}~{won(a.rent_3br_usd[1])}만원</span></span>) : '—'}</td>
+					<td>{a.sale_per_m2_usd ? (<span>${a.sale_per_m2_usd[0].toLocaleString()}~{a.sale_per_m2_usd[1].toLocaleString()}<br/><span style="color:var(--text-dim);font-size:.85em">약 {won(a.sale_per_m2_usd[0]).toLocaleString()}만~{won(a.sale_per_m2_usd[1]).toLocaleString()}만원</span></span>) : '—'}</td>
 					<td>{a.status === '분양중' ? '🏗️ 분양중' : '완공'} · 교민 {a.korean}</td>
 				</tr>
 			))}
@@ -147,22 +147,22 @@ const rentStr = (a: any) => a.rent_2br_usd ? `$${a.rent_2br_usd[0]}~${a.rent_2br
 			var color = colors[a.korean] || '#3b82f6';
 			var isSale = a.status === '분양중';
 			var m = L.circleMarker([a.lat, a.lng], {
-				radius: 11, color: isSale ? '#12b981' : '#fff', weight: isSale ? 3 : 2,
+				radius: 11, color: isSale ? '#0f6e63' : '#fff', weight: isSale ? 3 : 2,
 				dashArray: isSale ? '4 3' : null, fillColor: color, fillOpacity: 0.95
 			}).addTo(map);
 			var html = '<div style="min-width:200px">'
 				+ '<img src="' + a.img + '" alt="' + a.name_kr + '" style="width:100%;height:88px;object-fit:cover;border-radius:8px;margin-bottom:6px">'
 				+ '<b style="font-size:14px">' + a.name_kr + '</b>'
-				+ (isSale ? ' <span style="color:#12b981;font-size:11px;font-weight:700">🏗️분양중</span>' : '') + '<br>'
+				+ (isSale ? ' <span style="color:#0f6e63;font-size:11px;font-weight:700">🏗️분양중</span>' : '') + '<br>'
 				+ '<span style="color:#666">' + a.district_kr + ' · 교민 ' + a.korean + '</span><hr style="margin:6px 0">';
 			if (a.rent_2br_usd) {
 				html += '<b>2룸</b> $' + a.rent_2br_usd[0] + '~' + a.rent_2br_usd[1] + ' <span style="color:#888">(약 ' + won(a.rent_2br_usd[0]) + '~' + won(a.rent_2br_usd[1]) + '만원)</span><br>'
 					+ '<b>3룸</b> $' + a.rent_3br_usd[0] + '~' + a.rent_3br_usd[1] + ' <span style="color:#888">(약 ' + won(a.rent_3br_usd[0]) + '~' + won(a.rent_3br_usd[1]) + '만원)</span><br>';
 			}
 			if (a.sale_per_m2_usd) {
-				html += '<b style="color:#12b981">분양가</b> ㎡당 $' + a.sale_per_m2_usd[0].toLocaleString() + '~' + a.sale_per_m2_usd[1].toLocaleString()
+				html += '<b style="color:#0f6e63">분양가</b> ㎡당 $' + a.sale_per_m2_usd[0].toLocaleString() + '~' + a.sale_per_m2_usd[1].toLocaleString()
 					+ ' <span style="color:#888">(약 ' + won(a.sale_per_m2_usd[0]).toLocaleString() + '만~' + won(a.sale_per_m2_usd[1]).toLocaleString() + '만원)</span><br>'
-					+ '<span style="color:#12b981;font-size:11.5px">84㎡ 환산 약 ' + Math.round(won(a.sale_per_m2_usd[0]) * 84 / 10000) + '억~' + Math.round(won(a.sale_per_m2_usd[1]) * 84 / 10000) + '억원</span><br>';
+					+ '<span style="color:#0f6e63;font-size:11.5px">84㎡ 환산 약 ' + Math.round(won(a.sale_per_m2_usd[0]) * 84 / 10000) + '억~' + Math.round(won(a.sale_per_m2_usd[1]) * 84 / 10000) + '억원</span><br>';
 			}
 			html += '<span style="color:#555;font-size:12px">' + a.desc + '</span></div>';
 			m.bindPopup(html);
@@ -185,23 +185,26 @@ const rentStr = (a: any) => a.rent_2br_usd ? `$${a.rent_2br_usd[0]}~${a.rent_2br
 </script>
 
 <style is:global>
+	/* 필터 버튼 — 터치 타깃 44px 확보 */
 	.apt-filter {
-		background: var(--panel, #141a24); border: 1px solid var(--border, #253040);
-		color: var(--text, #e6edf3); padding: 7px 14px; border-radius: 20px;
-		font-weight: 600; font-size: .88rem; cursor: pointer;
+		background: #fff; border: 1px solid var(--border);
+		color: var(--text); padding: 0.55em 1em; min-height: 44px; border-radius: 999px;
+		font-weight: 600; font-size: .9rem; cursor: pointer;
+		transition: background .15s ease, border-color .15s ease, color .15s ease;
 	}
-	.apt-filter.is-on { background: #4f8ff7; border-color: #4f8ff7; color: #0b0f17; }
+	.apt-filter:hover { background: var(--accent-soft); border-color: var(--accent-border); color: var(--accent-dim); }
+	.apt-filter.is-on { background: var(--accent); border-color: var(--accent); color: #fff; }
 	.leaflet-popup-content { margin: 10px 12px; line-height: 1.45; }
 
 	.apt-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; margin: 1rem 0 1.6rem; }
-	.apt-card { background: var(--panel, #141a24); border: 1px solid var(--border, #253040); border-radius: 14px; overflow: hidden; }
-	.apt-card img { width: 100%; height: 128px; object-fit: cover; display: block; margin: 0; }
+	.apt-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+	.apt-card img { width: 100%; height: 128px; object-fit: cover; display: block; margin: 0; border-radius: 0; }
 	.apt-card-b { padding: 11px 13px 13px; }
-	.apt-card-t { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: .96rem; }
-	.apt-badge { font-size: .68rem; font-weight: 700; color: #12b981; background: rgba(18,185,129,.14); padding: 2px 7px; border-radius: 6px; }
-	.apt-card-d { font-size: .78rem; color: var(--dim, #8b98a9); margin: 3px 0 7px; }
-	.apt-card-p { font-size: .84rem; font-weight: 600; }
-	.apt-card-s { font-size: .8rem; color: #12b981; font-weight: 600; margin-top: 3px; }
+	.apt-card-t { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: .96rem; font-weight: 700; }
+	.apt-badge { font-size: .68rem; font-weight: 700; color: var(--accent-dim); background: var(--accent-soft); padding: 2px 7px; border-radius: 6px; }
+	.apt-card-d { font-size: .78rem; color: var(--text-dim); margin: 3px 0 7px; }
+	.apt-card-p { font-size: .84rem; font-weight: 600; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+	.apt-card-s { font-size: .8rem; color: var(--accent-dim); font-weight: 700; margin-top: 3px; font-variant-numeric: tabular-nums; }
 	.apt-card-g { margin-top: 8px; display: flex; gap: 5px; flex-wrap: wrap; }
-	.apt-card-g span { font-size: .7rem; color: var(--dim, #8b98a9); background: rgba(79,143,247,.10); padding: 2px 7px; border-radius: 5px; }
+	.apt-card-g span { font-size: .7rem; color: var(--text-dim); background: var(--bg-elev-2); padding: 2px 7px; border-radius: 5px; }
 </style>

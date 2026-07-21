@@ -116,12 +116,12 @@ if (type === 'article') {
 
 <Font cssVariable="--font-atkinson" preload />
 
-<!-- 에디토리얼 한글 명조(제목용) -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<!-- 본문/제목 공통 한글 산세리프.
+     동적 서브셋이라 실제로 쓰인 글자 조각만 내려받는다(모바일 부담 최소). -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 <link
-	href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700;900&display=swap"
 	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
 />
 
 <!-- Canonical URL -->

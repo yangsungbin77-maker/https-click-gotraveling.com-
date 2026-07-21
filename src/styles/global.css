@@ -1,42 +1,52 @@
 /*
-  클릭고트래블링 "인도차이나 에디토리얼" 테마 — 전역 스타일
-  사이공에서 인쇄한 여행 안내서: 실크 페이퍼 + 정글 잉크 + 제이드 + 라커 레드
+  클릭고트래블링 — 콘텐츠 우선 미니멀
+  원칙: 장식보다 정보. 흰 종이 위 진한 글자, 강조색 하나, 첫 화면부터 글.
+  모바일 우선 · 애드센스 슬롯 확보 · 탐색 동선 강화
 */
 
 :root {
-	--bg: #f3eddc;
-	--bg-elev: #fcf8ee;
-	--bg-elev-2: #eae0c6;
-	--border: #d9cca8;
-	--border-strong: #b3a276;
+	/* 표면 — 흰 배경에 카드가 확실히 구분되도록 */
+	--bg: #ffffff;
+	--bg-elev: #ffffff;
+	--bg-elev-2: #f4f5f7;
+	--bg-sunken: #fafbfc;
+	--border: #e3e6ea;
+	--border-strong: #c7ccd3;
 
-	--text: #233229;
-	--text-muted: #56655a;
-	--text-dim: #8b9078;
+	/* 텍스트 — 본문 4.5:1 이상 확보 */
+	/* 회색 배경(#f4f5f7·#fafbfc) 위에서도 4.5:1을 넘기는 값으로 실측 보정 */
+	--text: #16191d;
+	--text-muted: #4d5560;
+	--text-dim: #5b6470;
 
-	--accent: #1a6f4e;
-	--accent-dim: #12553a;
-	--accent-ink: #f6f1e0;
-	--accent-glow: rgba(26, 111, 78, 0.22);
+	/* 강조색 하나만. 여행/신뢰 = 딥 티얼 */
+	--accent: #0f6e63;      /* 흰 배경 대비 5.4:1 → 링크·버튼 텍스트 안전 */
+	--accent-dim: #0a534b;
+	--accent-ink: #ffffff;
+	--accent-soft: #e7f2f0;
+	--accent-border: #b9d9d3;
 
-	--lacquer: #b23a21;
-	--gold: #c99232;
+	/* 보조(경고·신선도 표시 등 최소 사용) */
+	--hot: #b3341f;
 
-	--radius: 14px;
-	--radius-sm: 10px;
-	--maxw: 1120px;
-	--font-heading: "Noto Serif KR", "Pretendard", var(--font-atkinson), serif;
-	--font-body: var(--font-atkinson), "Pretendard", system-ui, sans-serif;
+	--radius: 12px;
+	--radius-sm: 8px;
+	--maxw: 1140px;
+
+	/* 간격 스케일 4/8 리듬 */
+	--s1: 0.25rem; --s2: 0.5rem; --s3: 0.75rem; --s4: 1rem;
+	--s5: 1.5rem; --s6: 2rem; --s7: 3rem; --s8: 4rem;
+
+	--font-heading: "Pretendard Variable", "Pretendard", var(--font-atkinson), system-ui, sans-serif;
+	--font-body: "Pretendard Variable", "Pretendard", var(--font-atkinson), system-ui, sans-serif;
 	--font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+	--shadow-sm: 0 1px 2px rgba(22, 25, 29, 0.06);
+	--shadow-md: 0 4px 16px rgba(22, 25, 29, 0.09);
 }
 
-* {
-	box-sizing: border-box;
-}
-
-html {
-	scroll-behavior: smooth;
-}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
 body {
 	font-family: var(--font-body);
@@ -44,14 +54,9 @@ body {
 	padding: 0;
 	text-align: left;
 	background: var(--bg);
-	background-image:
-		radial-gradient(900px 420px at 85% -10%, rgba(201, 146, 50, 0.1), transparent 60%),
-		radial-gradient(700px 380px at -5% 0%, rgba(26, 111, 78, 0.07), transparent 55%);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	color: var(--text);
-	font-size: 18px;
-	line-height: 1.75;
+	font-size: 17px;
+	line-height: 1.7;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	-webkit-font-smoothing: antialiased;
@@ -60,23 +65,23 @@ body {
 
 main {
 	width: var(--maxw);
-	max-width: calc(100% - 2.5em);
+	max-width: calc(100% - 2rem);
 	margin: auto;
-	padding: 3.5rem 0 2rem;
+	padding: var(--s6) 0 var(--s7);
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 0.6rem 0;
+	margin: 0 0 0.5rem 0;
 	color: var(--text);
-	line-height: 1.2;
+	line-height: 1.3;
 	font-family: var(--font-heading);
-	font-weight: 900;
-	letter-spacing: -0.01em;
+	font-weight: 700;
+	letter-spacing: -0.02em;
 }
-h1 { font-size: 2.6rem; }
-h2 { font-size: 1.9rem; }
-h3 { font-size: 1.45rem; }
-h4 { font-size: 1.2rem; }
+h1 { font-size: 2.25rem; line-height: 1.25; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.08rem; }
 
 strong, b { font-weight: 700; color: var(--text); }
 
@@ -87,8 +92,18 @@ a {
 }
 a:hover { color: var(--accent-dim); }
 
+/* 키보드 포커스는 절대 지우지 않는다 */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+	border-radius: 4px;
+}
+
 p { margin-bottom: 1.1em; }
-.prose p { margin-bottom: 1.6em; }
+.prose p { margin-bottom: 1.5em; }
 
 textarea, input { font-size: 16px; }
 table { width: 100%; }
@@ -100,90 +115,98 @@ img {
 }
 
 code {
-	padding: 2px 7px;
+	padding: 2px 6px;
 	background-color: var(--bg-elev-2);
 	border: 1px solid var(--border);
-	border-radius: 6px;
+	border-radius: 5px;
 	font-size: 0.9em;
-	color: #6b4a16;
+	color: var(--accent-dim);
 }
 pre {
-	padding: 1.4em;
+	padding: 1.2em;
 	border-radius: var(--radius-sm);
-	background: #2a382f !important;
-	border: 1px solid var(--border-strong);
+	background: #16191d !important;
 	overflow-x: auto;
 }
-pre > code {
-	all: unset;
-	color: #ede6d2;
-}
+pre > code { all: unset; color: #e8eaed; }
 
 blockquote {
-	border-left: 3px solid var(--lacquer);
-	background: var(--bg-elev);
-	padding: 0.6em 1.2em;
+	border-left: 3px solid var(--accent);
+	background: var(--bg-sunken);
+	padding: 0.8em 1.2em;
 	margin: 0 0 1.4em;
 	border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 	color: var(--text-muted);
-	font-style: italic;
 }
 
-hr {
-	border: none;
-	border-top: 1px solid var(--border);
-	margin: 2.5rem 0;
-}
+hr { border: none; border-top: 1px solid var(--border); margin: var(--s6) 0; }
 
-/* 제이드 필 버튼 */
+/* ── 버튼 ─────────────────────────────── */
 .btn {
 	display: inline-flex;
 	align-items: center;
+	justify-content: center;
 	gap: 0.5em;
-	padding: 0.7em 1.4em;
-	border-radius: 999px;
+	min-height: 44px;              /* 터치 타깃 */
+	padding: 0.6em 1.3em;
+	border-radius: var(--radius-sm);
 	font-weight: 700;
+	font-size: 0.98rem;
 	background: var(--accent);
 	color: var(--accent-ink) !important;
 	border: 1px solid var(--accent);
-	box-shadow: 0 1px 0 rgba(35, 50, 41, 0.15);
-	transition: background 0.15s ease, box-shadow 0.2s ease, transform 0.1s ease;
+	cursor: pointer;
+	transition: background 0.15s ease, border-color 0.15s ease;
 }
-.btn:hover {
-	background: var(--accent-dim);
-	box-shadow: 0 10px 24px rgba(26, 111, 78, 0.28);
-	transform: translateY(-1px);
-	color: var(--accent-ink) !important;
-}
+.btn:hover { background: var(--accent-dim); border-color: var(--accent-dim); }
 .btn-ghost {
 	background: transparent;
 	color: var(--accent) !important;
 	border: 1px solid var(--border-strong);
 }
-.btn-ghost:hover {
-	background: rgba(26, 111, 78, 0.07);
-	border-color: var(--accent);
-	box-shadow: none;
-}
+.btn-ghost:hover { background: var(--accent-soft); border-color: var(--accent-border); }
 
-/* 태그 칩 */
+/* ── 칩 / 태그 ─────────────────────────── */
 .tag {
 	display: inline-block;
-	padding: 0.25em 0.8em;
+	padding: 0.22em 0.7em;
 	font-size: 0.78rem;
 	font-weight: 700;
-	letter-spacing: 0.02em;
-	color: var(--accent);
-	background: rgba(26, 111, 78, 0.09);
-	border: 1px solid rgba(26, 111, 78, 0.28);
+	color: var(--accent-dim);
+	background: var(--accent-soft);
+	border: 1px solid var(--accent-border);
 	border-radius: 999px;
 }
 
+/* ── 광고 슬롯 ─────────────────────────────
+   재승인 후 이 안에 애드센스 코드만 넣으면 됨.
+   미리 자리를 잡아둬야 광고가 붙을 때 레이아웃이 밀리지 않는다(CLS 방지). */
+.ad-slot {
+	display: block;
+	width: 100%;
+	margin: var(--s6) auto;
+	min-height: 100px;
+	text-align: center;
+	overflow: hidden;
+}
+.ad-slot--inline { max-width: 760px; }
+.ad-slot:empty { display: none; }   /* 광고 없을 땐 빈 공간 만들지 않음 */
+
 @media (max-width: 720px) {
-	body { font-size: 17px; }
-	h1 { font-size: 2.1rem; }
-	h2 { font-size: 1.6rem; }
-	main { padding: 2rem 0 1rem; }
+	body { font-size: 16px; }
+	h1 { font-size: 1.8rem; }
+	h2 { font-size: 1.35rem; }
+	h3 { font-size: 1.12rem; }
+	main { padding: var(--s5) 0 var(--s6); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+	}
+	html { scroll-behavior: auto; }
 }
 
 .sr-only {
@@ -194,8 +217,23 @@ hr {
 	height: 1px;
 	width: 1px;
 	overflow: hidden;
-	clip: rect(1px 1px 1px 1px);
 	clip: rect(1px, 1px, 1px, 1px);
 	clip-path: inset(50%);
 	white-space: nowrap;
+}
+
+/* 키보드 사용자용 본문 바로가기 */
+.skip-link {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	z-index: 100;
+	padding: 0.7em 1.2em;
+	background: var(--accent);
+	color: #fff;
+	border-radius: 0 0 var(--radius-sm) 0;
+}
+.skip-link:focus {
+	left: 0;
+	color: #fff;
 }
