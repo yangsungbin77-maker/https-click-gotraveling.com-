@@ -3,70 +3,89 @@ import Layout from '../layouts/BlogPost.astro';
 import aptData from '../data/apartments.json';
 
 const rate = aptData.rate_krw_per_usd;
-const won = (usd: number) => Math.round((usd * rate) / 10000); // 만원 단위
+const vnd = aptData.rate_vnd_per_usd;
+const won = (usd: number) => Math.round((usd * rate) / 10000); // 만원
+const mildong = (usd: number) => Math.round((usd * vnd) / 1000000); // 백만동
 const gradeColor: Record<string, string> = { '최상': '#e0564f', '상': '#e8a838', '중': '#3b82f6', '하': '#8b98a9' };
+const rentStr = (a: any) => a.rent_2br_usd ? `$${a.rent_2br_usd[0]}~${a.rent_2br_usd[1]}` : '분양 문의';
 ---
 
 <Layout
-	title="호치민 아파트 시세 지도 — 교민 인기 아파트 2룸·3룸 월세 (동·원)"
-	description="호치민 교민 인기 아파트의 2룸·3룸 월세 시세를 지도에서 한눈에. 푸미흥·타오디엔·빈홈즈·엠파이어시티 등 위치와 가격을 베트남 동·한국 돈으로 정리했습니다. 정보 제공 목적, 시점 기준."
+	title="호치민 아파트 시세·분양 지도 — 교민 인기 아파트 2룸·3룸 월세·분양가 (동·원)"
+	description="호치민 교민 인기 아파트와 신규 분양 단지를 지도에서 한눈에. 푸미흥·타오디엔·빈홈즈·9군 그랜드파크·투티엠 분양까지 2룸·3룸 월세와 분양가를 베트남 동·한국 돈으로 정리했습니다. 정보 제공 목적, 시점 기준."
 	pubDate={new Date('July 21 2026')}
 >
 	<p>
-		호치민에서 <strong>어디에 어떤 아파트가 얼마인지</strong> 지도로 한눈에 보고 싶으시죠? 저도 이 동네
-		저 동네 시세를 따로따로 찾느라 한참 헤맸어요. 그래서 <strong>교민이 많이 사는 인기 아파트</strong>를
-		지도에 모으고, 2룸·3룸 월세를 <strong>베트남 동·한국 돈</strong>으로 정리했습니다. 핀을 눌러보세요.
+		호치민에서 <strong>어디에 어떤 아파트가 얼마인지</strong>, 그리고 <strong>지금 분양 중인 단지</strong>는
+		어딘지 지도로 한눈에 보고 싶으시죠? 그래서 교민이 많이 사는 아파트부터 9군 그랜드파크·투티엠 신규 분양까지
+		지도에 모으고, 2룸·3룸 월세와 분양가를 <strong>베트남 동·한국 돈</strong>으로 정리했어요. 핀을 눌러보세요.
 	</p>
 
-	<div class="cg-box cg-warn"><span class="cg-title">⚠️ 먼저 알아두세요</span><p>정보 제공 목적이며 중개·투자자문이 아닙니다. 가격은 <b>{aptData.updated} 시점의 참고 범위</b>로, 층·전망·가구·계약조건에 따라 크게 달라집니다. 환율 $1≈{rate.toLocaleString()}원 기준. 실제 계약은 현지 공식정보·전문가 확인이 필요합니다.</p></div>
+	<div class="cg-box cg-warn"><span class="cg-title">⚠️ 먼저 알아두세요</span><p>정보 제공 목적이며 중개·투자자문이 아닙니다. 가격은 <b>{aptData.updated} 시점의 참고 범위</b>로, 층·전망·가구·계약조건에 따라 크게 달라집니다. 환율 $1≈{rate.toLocaleString()}원·$1≈{vnd.toLocaleString()}동 기준. 실제 계약은 현지 공식정보·전문가 확인이 필요합니다.</p></div>
 
-	<div style="display:flex;gap:8px;flex-wrap:wrap;margin:0.6rem 0">
+	<div style="display:flex;gap:8px;flex-wrap:wrap;margin:0.6rem 0;align-items:center">
 		<button class="apt-filter is-on" data-f="all">전체</button>
 		<button class="apt-filter" data-f="korean">🇰🇷 교민 살기 좋은 곳</button>
-		<span style="margin-left:auto;font-size:.82rem;color:var(--dim,#8b98a9);align-self:center">🔴최상 🟠상 🔵중 ⚪하 (교민 밀집도)</span>
+		<button class="apt-filter" data-f="sale">🏗️ 분양 중</button>
+		<span style="margin-left:auto;font-size:.8rem;color:var(--dim,#8b98a9)">🔴최상 🟠상 🔵중 ⚪하 · 점선=분양중</span>
 	</div>
 
-	<div id="apt-map" style="height:460px;width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--border,#253040);z-index:0"></div>
+	<div id="apt-map" style="height:480px;width:100%;border-radius:14px;overflow:hidden;border:1px solid var(--border,#253040);z-index:0"></div>
 
-	<h2>교민 인기 아파트 시세 한눈에 보기</h2>
-	<p>2룸·3룸 <strong>월세</strong> 기준입니다(시점·단지별 편차 큼). 한국 돈은 환율로 환산한 참고값이에요.</p>
+	<h2>교민 인기 아파트·분양 시세 한눈에 보기</h2>
+	<p>2룸·3룸 <strong>월세</strong>와 <strong>분양가(㎡당)</strong> 기준입니다(시점·단지별 편차 큼). 한국 돈은 환율 환산 참고값이에요.</p>
 
 	<table>
-		<thead><tr><th>아파트</th><th>지역</th><th>2룸 월세</th><th>3룸 월세</th><th>교민</th></tr></thead>
+		<thead><tr><th>단지</th><th>지역</th><th>2룸 월세</th><th>3룸 월세</th><th>분양가(㎡당)</th><th>상태</th></tr></thead>
 		<tbody>
 			{aptData.apartments.map((a) => (
 				<tr>
 					<td><strong>{a.name_kr}</strong></td>
 					<td>{a.district_kr}</td>
-					<td>${a.rent_2br_usd[0]}~{a.rent_2br_usd[1]}<br/><span style="color:#8b98a9;font-size:.85em">약 {won(a.rent_2br_usd[0])}~{won(a.rent_2br_usd[1])}만원</span></td>
-					<td>${a.rent_3br_usd[0]}~{a.rent_3br_usd[1]}<br/><span style="color:#8b98a9;font-size:.85em">약 {won(a.rent_3br_usd[0])}~{won(a.rent_3br_usd[1])}만원</span></td>
-					<td>{a.korean}</td>
+					<td>{a.rent_2br_usd ? (<span>${a.rent_2br_usd[0]}~{a.rent_2br_usd[1]}<br/><span style="color:#8b98a9;font-size:.85em">약 {won(a.rent_2br_usd[0])}~{won(a.rent_2br_usd[1])}만원</span></span>) : '—'}</td>
+					<td>{a.rent_3br_usd ? (<span>${a.rent_3br_usd[0]}~{a.rent_3br_usd[1]}<br/><span style="color:#8b98a9;font-size:.85em">약 {won(a.rent_3br_usd[0])}~{won(a.rent_3br_usd[1])}만원</span></span>) : '—'}</td>
+					<td>{a.sale_per_m2_usd ? (<span>${a.sale_per_m2_usd[0].toLocaleString()}~{a.sale_per_m2_usd[1].toLocaleString()}<br/><span style="color:#8b98a9;font-size:.85em">약 {mildong(a.sale_per_m2_usd[0])}~{mildong(a.sale_per_m2_usd[1])}백만동</span></span>) : '—'}</td>
+					<td>{a.status === '분양중' ? '🏗️ 분양중' : '완공'} · 교민 {a.korean}</td>
 				</tr>
 			))}
 		</tbody>
 	</table>
 
+	<h2>9군·투득 신도시는 어떤가요?</h2>
+	<p>
+		결론부터 말하면요, <strong>9군(현 투득시)의 빈홈즈 그랜드파크</strong>가 요즘 분양 물량이 가장 많은
+		초대형 신도시예요. 271ha 부지에 자체 몰·학교·중앙공원이 있고, 도심보다 저렴해서 가성비를 원하는
+		분들이 많이 봅니다. 다만 도심(1·2·7군)보다 이동 거리가 있어 <strong>메트로 개통 여부</strong>가 관건이에요.
+	</p>
+
+	<h2>지금 분양 중인 단지는 어디인가요?</h2>
+	<p>
+		신규 분양은 <strong>투득시(옛 2·9군)와 투티엠</strong>에 몰려 있습니다. 대표적으로 Masterise의
+		<strong>더 글로벌 시티</strong>, 투티엠 최고가 <strong>메트로폴</strong>, 강변 프리미엄
+		<strong>엠파이어시티</strong>가 분양 중이고, 서부(떤푸·빈떤)의 셀라돈·미즈키파크는 상대적 가성비 분양이에요.
+	</p>
+	<div class="cg-box cg-tip"><span class="cg-title">💡 분양가 감 잡기</span><p>호치민 2026년 <b>1차(분양) 평균이 ㎡당 약 $7,200(약 187백만 동)</b>이고, 투득 프리미엄은 ㎡당 $15,000(약 390백만 동)을 넘기도 해요. 가성비 신도시(그랜드파크·미즈키)는 ㎡당 $1,600~2,600(약 42~68백만 동)으로 훨씬 낮습니다.</p></div>
+
 	<h2>교민들이 살기 좋은 아파트는 어디인가요?</h2>
 	<p>
-		결론부터 말하면요, <strong>7군 푸미흥</strong>이 한인타운입니다. 한국국제학교·한국병원·한인마트가
-		모여 있어 정착 편의가 가장 좋아요. <strong>2군 타오디엔</strong>은 외국인·서양인이 밀집한 세련된
-		지역, <strong>빈타인(빈홈즈 센트럴파크)</strong>은 랜드마크81을 낀 강변 신축으로 교민이 많습니다.
+		<strong>7군 푸미흥</strong>이 한인타운입니다. 한국국제학교·한국병원·한인마트가 모여 정착 편의가 가장
+		좋아요. <strong>2군 타오디엔</strong>은 외국인·서양인 밀집 지역, <strong>빈타인(빈홈즈 센트럴파크)</strong>은
+		랜드마크81을 낀 강변 신축으로 교민이 많습니다. 지도의 <b>🇰🇷 교민 살기 좋은 곳</b> 버튼으로 걸러 볼 수 있어요.
 	</p>
-	<div class="cg-box cg-tip"><span class="cg-title">💡 고르는 기준</span><p><b>정착 편의(한국 인프라)</b>가 1순위면 푸미흥, <b>세련된 외국인 상권</b>이면 타오디엔, <b>신축·조망</b>이면 빈홈즈·엠파이어시티예요. 가성비를 원하면 2군 더 선 애비뉴나 외곽 셀라돈 시티를 봅니다.</p></div>
 
 	<h2>계약할 때 알아둘 점</h2>
 	<p>
 		호치민 월세는 <strong>보증금이 보통 2개월치</strong>이고, 전기세는 따로 내는 게 일반적이에요(에어컨
-		많이 쓰면 월 $50~$100). 관리비는 단지마다 다르고 인터넷은 보통 포함됩니다. 외국인 아파트 소유엔
-		단지별 비율 제한 같은 규정이 있으니, 매매는 특히 현지 확인이 필요해요.
+		많이 쓰면 월 $50~$100). 관리비는 단지마다 다르고 인터넷은 보통 포함됩니다. 외국인은 단지별 분양 비율
+		제한 등 규정이 있으니, 특히 분양·매매는 현지 확인이 꼭 필요해요.
 	</p>
-	<div class="cg-box cg-danger"><span class="cg-title">🚨 꼭 확인</span><p>이 지도의 가격은 참고용입니다. 실제 매물·계약은 반드시 현지 공식 정보와 자격 있는 전문가를 통해 확인하세요. 특정 단지 매매·투자를 권유하지 않습니다.</p></div>
+	<div class="cg-box cg-danger"><span class="cg-title">🚨 꼭 확인</span><p>이 지도의 가격은 참고용입니다. 실제 매물·분양·계약은 반드시 현지 공식 정보와 자격 있는 전문가를 통해 확인하세요. 특정 단지 매매·분양·투자를 권유하지 않습니다.</p></div>
 
 	<h2>자주 묻는 질문 (FAQ)</h2>
 	<p><strong>Q. 호치민에서 교민이 가장 많이 사는 아파트 지역은 어디인가요?</strong> 7군 푸미흥이 대표 한인타운입니다. 한국국제학교·한국병원·한인마트가 모여 있어요. 그다음으로 2군 타오디엔, 빈타인(빈홈즈 센트럴파크)에 교민이 많습니다.</p>
-	<p><strong>Q. 호치민 2룸 아파트 월세는 얼마인가요?</strong> 교민 인기 단지 기준 대략 월 $450~2,200(약 62만~304만원)로 폭이 넓습니다. 외곽·구축(셀라돈)은 $450대, 프리미엄(엠파이어시티)은 $1,580 이상입니다. 시점 기준입니다.</p>
-	<p><strong>Q. 호치민 3룸 아파트 월세는요?</strong> 대략 월 $700~3,200(약 97만~442만원) 선입니다. 단지·층·전망에 따라 차이가 큽니다.</p>
-	<p><strong>Q. 월세 계약 시 보증금은 얼마인가요?</strong> 보통 2개월치입니다. 전기세는 별도, 관리비는 단지별로 다르며 인터넷은 대개 포함됩니다.</p>
+	<p><strong>Q. 9군(투득) 빈홈즈 그랜드파크 월세는 얼마인가요?</strong> 2룸 기준 대략 월 $280~880(약 39만~121만원)로 도심보다 저렴한 편입니다. 초대형 신도시라 분양 물량도 많습니다. 시점 기준입니다.</p>
+	<p><strong>Q. 호치민 신규 분양가는 ㎡당 얼마인가요?</strong> 2026년 1차(분양) 평균이 ㎡당 약 $7,200(약 187백만 동)이고, 투득 프리미엄은 ㎡당 $15,000을 넘기도 합니다. 가성비 신도시는 ㎡당 $1,600~2,600 수준입니다.</p>
+	<p><strong>Q. 호치민 2룸 아파트 월세 범위는요?</strong> 교민 인기 단지 기준 대략 월 $280~2,800(약 39만~386만원)로 폭이 넓습니다. 외곽·구축은 낮고, 투티엠 프리미엄은 높습니다.</p>
 
 	<p>
 		호치민 생활이 처음이라면 <a href="/vietnam-restaurant-finding/">현지 맛집 찾는 법</a>,
@@ -76,36 +95,47 @@ const gradeColor: Record<string, string> = { '최상': '#e0564f', '상': '#e8a83
 
 	<h2>참고 출처</h2>
 	<p>
-		시세는 <a href="https://vietnamrenty.com/market-report/hcmc-apartment-rental-market-report-h1-2026/" target="_blank" rel="noopener">VietnamRenty 임대시장 리포트</a>,
-		<a href="https://www.vinahanin.com/index.php?mid=apt" target="_blank" rel="noopener">비나한인 호치민 임대정보</a>,
-		<a href="https://bambooroutes.com/blogs/news/ho-chi-minh-city-housing-prices" target="_blank" rel="noopener">Bamboo Routes</a> 등 공개 자료를 시점 기준으로 정리했습니다. 값은 변동되니 최신 정보는 각 출처에서 확인하세요.
+		시세·분양가는 <a href="https://vietnamrenty.com/market-report/hcmc-apartment-rental-market-report-h1-2026/" target="_blank" rel="noopener">VietnamRenty 임대시장 리포트</a>,
+		<a href="https://www.cushmanwakefield.com/en/vietnam/insights/ho-chi-minh-city-marketbeat/residential-marketbeat" target="_blank" rel="noopener">Cushman &amp; Wakefield HCMC 리포트</a>,
+		<a href="https://bambooroutes.com/blogs/news/ho-chi-minh-city-housing-prices" target="_blank" rel="noopener">Bamboo Routes</a>,
+		<a href="https://www.vinahanin.com/index.php?mid=apt" target="_blank" rel="noopener">비나한인</a> 등 공개 자료를 시점 기준으로 정리했습니다. 값은 변동되니 최신 정보는 각 출처에서 확인하세요.
 	</p>
 </Layout>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-<script define:vars={{ apts: aptData.apartments, rate, colors: gradeColor }} is:inline>
+<script define:vars={{ apts: aptData.apartments, rate, vnd, colors: gradeColor }} is:inline>
 	(function init() {
 		if (typeof L === 'undefined') { return setTimeout(init, 100); }
-		var map = L.map('apt-map', { scrollWheelZoom: false }).setView([10.782, 106.73], 12);
+		var map = L.map('apt-map', { scrollWheelZoom: false }).setView([10.79, 106.74], 11);
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 			maxZoom: 18, attribution: '© OpenStreetMap'
 		}).addTo(map);
-		var won = function (usd) { return Math.round((usd * rate) / 10000); };
+		var won = function (u) { return Math.round((u * rate) / 10000); };
+		var mildong = function (u) { return Math.round((u * vnd) / 1000000); };
 		var markers = [];
 		apts.forEach(function (a) {
 			var color = colors[a.korean] || '#3b82f6';
+			var isSale = a.status === '분양중';
 			var m = L.circleMarker([a.lat, a.lng], {
-				radius: 11, color: '#fff', weight: 2, fillColor: color, fillOpacity: 0.95
+				radius: 11, color: isSale ? '#12b981' : '#fff', weight: isSale ? 3 : 2,
+				dashArray: isSale ? '4 3' : null, fillColor: color, fillOpacity: 0.95
 			}).addTo(map);
-			var html = '<div style="min-width:180px">'
-				+ '<b style="font-size:14px">' + a.name_kr + '</b><br>'
-				+ '<span style="color:#666">' + a.district_kr + ' · 교민 ' + a.korean + '</span><hr style="margin:6px 0">'
-				+ '<b>2룸</b> $' + a.rent_2br_usd[0] + '~' + a.rent_2br_usd[1] + ' <span style="color:#888">(약 ' + won(a.rent_2br_usd[0]) + '~' + won(a.rent_2br_usd[1]) + '만원)</span><br>'
-				+ '<b>3룸</b> $' + a.rent_3br_usd[0] + '~' + a.rent_3br_usd[1] + ' <span style="color:#888">(약 ' + won(a.rent_3br_usd[0]) + '~' + won(a.rent_3br_usd[1]) + '만원)</span><br>'
-				+ '<span style="color:#555;font-size:12px">' + a.desc + '</span></div>';
+			var html = '<div style="min-width:190px">'
+				+ '<b style="font-size:14px">' + a.name_kr + '</b>'
+				+ (isSale ? ' <span style="color:#12b981;font-size:11px;font-weight:700">🏗️분양중</span>' : '') + '<br>'
+				+ '<span style="color:#666">' + a.district_kr + ' · 교민 ' + a.korean + '</span><hr style="margin:6px 0">';
+			if (a.rent_2br_usd) {
+				html += '<b>2룸</b> $' + a.rent_2br_usd[0] + '~' + a.rent_2br_usd[1] + ' <span style="color:#888">(약 ' + won(a.rent_2br_usd[0]) + '~' + won(a.rent_2br_usd[1]) + '만원)</span><br>'
+					+ '<b>3룸</b> $' + a.rent_3br_usd[0] + '~' + a.rent_3br_usd[1] + ' <span style="color:#888">(약 ' + won(a.rent_3br_usd[0]) + '~' + won(a.rent_3br_usd[1]) + '만원)</span><br>';
+			}
+			if (a.sale_per_m2_usd) {
+				html += '<b style="color:#12b981">분양가</b> ㎡당 $' + a.sale_per_m2_usd[0].toLocaleString() + '~' + a.sale_per_m2_usd[1].toLocaleString()
+					+ ' <span style="color:#888">(약 ' + mildong(a.sale_per_m2_usd[0]) + '~' + mildong(a.sale_per_m2_usd[1]) + '백만동)</span><br>';
+			}
+			html += '<span style="color:#555;font-size:12px">' + a.desc + '</span></div>';
 			m.bindPopup(html);
-			m._korean = a.korean;
+			m._korean = a.korean; m._sale = isSale;
 			markers.push(m);
 		});
 		var btns = document.querySelectorAll('.apt-filter');
@@ -115,7 +145,7 @@ const gradeColor: Record<string, string> = { '최상': '#e0564f', '상': '#e8a83
 				b.classList.add('is-on');
 				var f = b.getAttribute('data-f');
 				markers.forEach(function (m) {
-					var show = (f === 'all') || (m._korean === '최상' || m._korean === '상');
+					var show = (f === 'all') || (f === 'korean' && (m._korean === '최상' || m._korean === '상')) || (f === 'sale' && m._sale);
 					if (show) { m.addTo(map); } else { map.removeLayer(m); }
 				});
 			});
