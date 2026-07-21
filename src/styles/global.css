@@ -1,28 +1,33 @@
 /*
-  클릭고트래블링 다크 트래블 테마 — 전역 스타일 (스카이블루 포인트)
+  클릭고트래블링 "인도차이나 에디토리얼" 테마 — 전역 스타일
+  사이공에서 인쇄한 여행 안내서: 실크 페이퍼 + 정글 잉크 + 제이드 + 라커 레드
 */
 
 :root {
-	--bg: #0b0e14;
-	--bg-elev: #141a26;
-	--bg-elev-2: #1b2230;
-	--border: #242c3d;
-	--border-strong: #344056;
+	--bg: #f3eddc;
+	--bg-elev: #fcf8ee;
+	--bg-elev-2: #eae0c6;
+	--border: #d9cca8;
+	--border-strong: #b3a276;
 
-	--text: #e7ebf3;
-	--text-muted: #9aa6bd;
-	--text-dim: #6b7689;
+	--text: #233229;
+	--text-muted: #56655a;
+	--text-dim: #8b9078;
 
-	--accent: #2f9bff;
-	--accent-dim: #1f7fe0;
-	--accent-ink: #04101f;
-	--accent-glow: rgba(47, 155, 255, 0.35);
+	--accent: #1a6f4e;
+	--accent-dim: #12553a;
+	--accent-ink: #f6f1e0;
+	--accent-glow: rgba(26, 111, 78, 0.22);
+
+	--lacquer: #b23a21;
+	--gold: #c99232;
 
 	--radius: 14px;
 	--radius-sm: 10px;
 	--maxw: 1120px;
-	--font-heading: var(--font-atkinson), "Pretendard", system-ui, sans-serif;
+	--font-heading: "Noto Serif KR", "Pretendard", var(--font-atkinson), serif;
 	--font-body: var(--font-atkinson), "Pretendard", system-ui, sans-serif;
+	--font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 }
 
 * {
@@ -40,8 +45,8 @@ body {
 	text-align: left;
 	background: var(--bg);
 	background-image:
-		radial-gradient(900px 400px at 80% -8%, rgba(47, 155, 255, 0.12), transparent 60%),
-		radial-gradient(700px 360px at 0% 0%, rgba(120, 200, 255, 0.08), transparent 55%);
+		radial-gradient(900px 420px at 85% -10%, rgba(201, 146, 50, 0.1), transparent 60%),
+		radial-gradient(700px 380px at -5% 0%, rgba(26, 111, 78, 0.07), transparent 55%);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	color: var(--text);
@@ -62,25 +67,25 @@ main {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 0.6rem 0;
-	color: #fff;
-	line-height: 1.15;
+	color: var(--text);
+	line-height: 1.2;
 	font-family: var(--font-heading);
-	font-weight: 800;
-	letter-spacing: -0.02em;
+	font-weight: 900;
+	letter-spacing: -0.01em;
 }
 h1 { font-size: 2.6rem; }
 h2 { font-size: 1.9rem; }
 h3 { font-size: 1.45rem; }
 h4 { font-size: 1.2rem; }
 
-strong, b { font-weight: 700; color: #fff; }
+strong, b { font-weight: 700; color: var(--text); }
 
 a {
 	color: var(--accent);
 	text-decoration: none;
 	transition: color 0.15s ease;
 }
-a:hover { color: #7dbcff; }
+a:hover { color: var(--accent-dim); }
 
 p { margin-bottom: 1.1em; }
 .prose p { margin-bottom: 1.6em; }
@@ -100,22 +105,22 @@ code {
 	border: 1px solid var(--border);
 	border-radius: 6px;
 	font-size: 0.9em;
-	color: #bcd9ff;
+	color: #6b4a16;
 }
 pre {
 	padding: 1.4em;
 	border-radius: var(--radius-sm);
-	background: #0d1119 !important;
-	border: 1px solid var(--border);
+	background: #2a382f !important;
+	border: 1px solid var(--border-strong);
 	overflow-x: auto;
 }
 pre > code {
 	all: unset;
-	color: var(--text);
+	color: #ede6d2;
 }
 
 blockquote {
-	border-left: 3px solid var(--accent);
+	border-left: 3px solid var(--lacquer);
 	background: var(--bg-elev);
 	padding: 0.6em 1.2em;
 	margin: 0 0 1.4em;
@@ -130,7 +135,7 @@ hr {
 	margin: 2.5rem 0;
 }
 
-/* 네온 버튼 */
+/* 제이드 필 버튼 */
 .btn {
 	display: inline-flex;
 	align-items: center;
@@ -141,11 +146,12 @@ hr {
 	background: var(--accent);
 	color: var(--accent-ink) !important;
 	border: 1px solid var(--accent);
-	box-shadow: 0 0 0 rgba(47, 155, 255, 0);
-	transition: box-shadow 0.2s ease, transform 0.1s ease;
+	box-shadow: 0 1px 0 rgba(35, 50, 41, 0.15);
+	transition: background 0.15s ease, box-shadow 0.2s ease, transform 0.1s ease;
 }
 .btn:hover {
-	box-shadow: 0 8px 26px var(--accent-glow);
+	background: var(--accent-dim);
+	box-shadow: 0 10px 24px rgba(26, 111, 78, 0.28);
 	transform: translateY(-1px);
 	color: var(--accent-ink) !important;
 }
@@ -155,6 +161,7 @@ hr {
 	border: 1px solid var(--border-strong);
 }
 .btn-ghost:hover {
+	background: rgba(26, 111, 78, 0.07);
 	border-color: var(--accent);
 	box-shadow: none;
 }
@@ -167,8 +174,8 @@ hr {
 	font-weight: 700;
 	letter-spacing: 0.02em;
 	color: var(--accent);
-	background: rgba(47, 155, 255, 0.1);
-	border: 1px solid rgba(47, 155, 255, 0.25);
+	background: rgba(26, 111, 78, 0.09);
+	border: 1px solid rgba(26, 111, 78, 0.28);
 	border-radius: 999px;
 }
 

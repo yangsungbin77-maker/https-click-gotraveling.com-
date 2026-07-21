@@ -101,8 +101,8 @@ const currentSlug = Astro.url.pathname.replace(/^\/|\/$/g, '');
 				overflow: hidden;
 			}
 			.prose :global(thead th) {
-				background: rgba(47, 155, 255, 0.13);
-				color: #fff;
+				background: rgba(26, 111, 78, 0.12);
+				color: var(--text);
 				font-weight: 700;
 				text-align: left;
 			}
@@ -113,8 +113,8 @@ const currentSlug = Astro.url.pathname.replace(/^\/|\/$/g, '');
 				border-right: 1px solid var(--border);
 				vertical-align: top;
 			}
-			.prose :global(tbody tr:nth-child(even)) { background: rgba(255, 255, 255, 0.025); }
-			.prose :global(tbody tr:hover) { background: rgba(47, 155, 255, 0.06); }
+			.prose :global(tbody tr:nth-child(even)) { background: rgba(35, 50, 41, 0.03); }
+			.prose :global(tbody tr:hover) { background: rgba(26, 111, 78, 0.06); }
 			.prose :global(tr:last-child td) { border-bottom: none; }
 			.prose :global(th:last-child),
 			.prose :global(td:last-child) { border-right: none; }
@@ -134,10 +134,10 @@ const currentSlug = Astro.url.pathname.replace(/^\/|\/$/g, '');
 			.prose :global(.cg-box .cg-title) {
 				display: block;
 				font-weight: 800;
-				color: #fff;
+				color: var(--text);
 				margin-bottom: 0.35em;
 			}
-			.prose :global(.cg-summary) { border-left-color: var(--accent); background: rgba(47, 155, 255, 0.08); }
+			.prose :global(.cg-summary) { border-left-color: var(--accent); background: rgba(26, 111, 78, 0.07); }
 			.prose :global(.cg-tip)     { border-left-color: #34d399; background: rgba(52, 211, 153, 0.08); }
 			.prose :global(.cg-warn)    { border-left-color: #fbbf24; background: rgba(251, 191, 36, 0.09); }
 			.prose :global(.cg-danger)  { border-left-color: #f87171; background: rgba(248, 113, 113, 0.10); }
