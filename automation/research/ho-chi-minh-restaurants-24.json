@@ -1,0 +1,168 @@
+{
+  "type": "review",
+  "keyword": "호치민 맛집",
+  "note": "리스티클 24곳을 '이름 나열'이 아니라 군(郡)·시간대·미쉐린 등재 여부로 재분류한 각도. 상위 SERP 전부가 군 표기 오류·가격 미표기·동선 부재라 그 세 갭을 정보 게인으로 잡음. 구역은 교차확인된 곳만 표기하고 나머지는 공란으로 남기는 정직 설계. 헤르메스 독립 심판 5회 루프(77→78→87→89→91). 심판이 잡아낸 핵심 결함=코스 총예산 합산 오류, 2025년 7월 군 폐지 미반영(현 투득 오기), 껌땀·후띠우 공백, 위치 미확인 10곳. 볼드버그 지적 2회는 dist 실측으로 오탐 확인.",
+  "serp": [
+    {
+      "url": "https://kr.trip.com/guide/food/ho-chi-minh-local-restaurants.html",
+      "opened": true,
+      "note": "트립닷컴 로컬 맛집 가이드. 음식별·지역별 구성이나 가격 전무·동선 없음·대기시간 없음. 대형 도메인이지만 실행정보 부실."
+    },
+    {
+      "url": "https://kr.trip.com/blog/Ho-Chi-Minh-place/",
+      "opened": true,
+      "note": "트립닷컴 지역별 총정리 8곳. 군 표기는 있으나 가격 전무·추천 동선 없음. 포호아 파스퇴르를 3군으로 정확히 표기(교차확인용)."
+    },
+    {
+      "url": "https://www.hcmforyou.com/post/호치민-맛집-추천-2026",
+      "opened": true,
+      "note": "최강 경쟁글. 주소·가격대(만동) 표기 + '결국 동선' 섹션까지 보유. 다만 카페·디저트 전무, 3/5군 누락, 미쉐린 미언급 = 우리 갭."
+    },
+    {
+      "url": "https://funktionalflow.com/호치민-맛집/",
+      "opened": true,
+      "note": "개인 블로그 베스트10, 약 1만자. 개인 블로그가 1페이지에 낌=진입 가능 신호(필터①). 군 표기 있음(꾸안웃웃 2군·꾸안부이 2군). 시간대·미쉐린 없음."
+    },
+    {
+      "url": "https://www.siksinhot.com/toplists/best/061487_HoChiMinh",
+      "opened": true,
+      "note": "식신 호치민 25곳. 카테고리 5분류는 참고할 만하나 위치가 '베트남-호치민' 수준으로 뭉개짐. 가격도 1곳만 표기."
+    },
+    {
+      "url": "https://brunch.co.kr/@kkday/165",
+      "opened": true,
+      "note": "브런치 에디터 방문기 8곳. 주소·영업시간은 있으나 가격 없음. 끼에우바오·꾸안넴 1군 확인 출처."
+    },
+    {
+      "url": "https://www.tripstore.kr/blog/호치민-관광지도-1군-도보-동선-최적화",
+      "opened": true,
+      "note": "1군 도보 동선 글. 명소 반경 1km·도보 10~15분 간격 확인. 맛집은 아예 다루지 않음 = 맛집+동선 결합이 빈자리."
+    },
+    {
+      "url": "https://www.tripstore.kr/blog/호치민-지도-여행-코스",
+      "opened": true,
+      "note": "군별 성격·1군에서의 이동시간(타오디엔 15~20분·3군 10~15분·7군 30분) 확인. 우리 '군 이동 표'의 근거."
+    },
+    {
+      "url": "https://kr.trip.com/moments/theme/poi-the-cafe-apartment-37152842-restaurants-993134",
+      "opened": true,
+      "note": "카페 아파트먼트 42 Nguyen Hue·엘리베이터 3,000~5,000동 주장. 다른 출처는 엘리베이터 없음이라 충돌 → 우리 글에서 단정 회피 처리."
+    },
+    {
+      "url": "https://tansonnhathotelgroup.com/en/74-michelin-restaurants-and-eateries-in-ho-chi-minh-city-the-most-up-to-date-and-complete-list/",
+      "opened": true,
+      "note": "호치민 미쉐린 74곳(스타3·빕구르망24·셀렉티드47) 및 반쎄오46A·포호아 파스퇴르 빕구르망 확인."
+    },
+    {
+      "url": "https://www.kkday.com/ko/blog/25793/asia-vietnam-hochiminh-best-restaurant",
+      "opened": false,
+      "note": "KKday 공식블로그 1군 BEST 8. HTTP 403으로 직접 열기 실패, 검색 스니펫으로만 구성 확인(이름 나열형)."
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/ho-chi-minh/ho-chi-minh_2978179/restaurant/banh-xeo-46a",
+      "opened": false,
+      "note": "미쉐린 공식 개별 레스토랑 페이지. HTTP 403 차단 → 공식 발표 기사와 3자 집계로 대체 교차확인."
+    }
+  ],
+  "factcheck": [
+    {
+      "claim": "포 호아 파스퇴르는 1군이 아니라 3군(260C Pasteur, P.8, Q.3) 소재이며 1968년 개업, 미쉐린 빕구르망 등재",
+      "sources": [
+        "https://danielfooddiary.com/2024/02/27/phohoapasteur/",
+        "https://tansonnhathotelgroup.com/en/74-michelin-restaurants-and-eateries-in-ho-chi-minh-city-the-most-up-to-date-and-complete-list/",
+        "https://kr.trip.com/blog/Ho-Chi-Minh-place/"
+      ]
+    },
+    {
+      "claim": "반쎄오 46A는 1군 Đinh Công Tráng 소재의 미쉐린 빕구르망 업소이며 70년 넘게 영업",
+      "sources": [
+        "https://guide.michelin.com/us/en/ho-chi-minh/ho-chi-minh_2978179/restaurant/banh-xeo-46a",
+        "https://www.hcmforyou.com/post/호치민-맛집-추천-2026",
+        "https://tansonnhathotelgroup.com/en/74-michelin-restaurants-and-eateries-in-ho-chi-minh-city-the-most-up-to-date-and-complete-list/"
+      ]
+    },
+    {
+      "claim": "2025 미쉐린 가이드 베트남(하노이·호치민·다낭)은 1스타 9곳·그린스타 2곳·빕구르망 63곳 포함 총 181곳",
+      "sources": [
+        "https://guide.michelin.com/us/en/article/michelin-guide-ceremony/michelin-guide-vietnam-2025",
+        "https://danangfantasticity.com/en/michelin-guide-2024-en/the-2025-michelin-guide-ha-noi-ho-chi-minh-da-nang"
+      ]
+    },
+    {
+      "claim": "반미 후인 호아는 1군 26 Lê Thị Riêng(P. Bến Thành) 소재, 가격 5만~6만5천 동대로 안내되며 35년 이상 영업",
+      "sources": [
+        "https://www.foody.vn/ho-chi-minh/banh-mi-huynh-hoa-banh-mi-pate-26-le-thi-rieng",
+        "https://saigonesebaguette.vn/banh-mi-huynh-hoa-saigon/"
+      ]
+    },
+    {
+      "claim": "2026년 7월 시점 환율은 1 VND ≈ 0.057 KRW로, 1만 동이 대략 570원",
+      "sources": [
+        "https://www.valutafx.com/ko/과거환율/vnd-krw-2026-07-08",
+        "https://www.exchange-rates.org/exchange-rate-history/vnd-krw-2026"
+      ]
+    },
+    {
+      "claim": "1군 기준 이동시간은 타오디엔(2군) 차량 15~20분, 3군 10~15분, 7군 푸미흥 30분 안팎",
+      "sources": [
+        "https://www.tripstore.kr/blog/호치민-지도-여행-코스",
+        "https://www.tripstore.kr/blog/호치민-관광지도-1군-도보-동선-최적화"
+      ]
+    },
+    {
+      "claim": "카페 아파트먼트는 42 Nguyễn Huệ(1군) 소재이나 엘리베이터 유무·이용료는 출처마다 상충(3,000~5,000동 주장 vs 엘리베이터 없음)",
+      "sources": [
+        "https://kr.trip.com/moments/theme/poi-the-cafe-apartment-37152842-restaurants-993134",
+        "https://triple.guide/attractions/abcf051f-7403-4ab6-b3de-82f99bea6463"
+      ]
+    },
+    {
+      "claim": "벱 메 인은 2016년 1군 136 Lê Thánh Tôn 골목에서 시작했고 미쉐린 가이드에 이름이 올랐다",
+      "sources": [
+        "https://www.hcmforyou.com/post/호치민-맛집-추천-2026",
+        "https://kr.trip.com/blog/Ho-Chi-Minh-place/"
+      ]
+    },
+    {
+      "claim": "2021년 1월 1일 옛 2군·9군·투득군이 투득시(Thu Duc City)로 통합되어 타오디엔은 행정구역상 투득 소속. 즉 '2군'은 현재 공식 행정 명칭이 아니라 관습적 호칭",
+      "sources": [
+        "https://maisonoffice.vn/en/news/districts-in-saigon/",
+        "https://vietnamnews.vn/society/840288/hcm-city-announces-establishment-of-new-thu-duc-city.html",
+        "https://vietnamnet.vn/en/reorganizing-ho-chi-minh-city-no-more-districts-and-suburban-divisions-2383738.html"
+      ]
+    },
+    {
+      "claim": "2025년 7월 1일 베트남 2단계 행정체계 개편으로 군(district) 단위가 전국에서 폐지됐고, 호치민 22개 군은 방(phường)으로 재편(옛 1군→사이공·벤탄·탄딘·꺼우옹란 등, 옛 3군→반꼬·수언호아·니에우록 등), 투득시도 해체 — 따라서 '1군·2군'은 관습 호칭이며 '현 투득'은 오기",
+      "sources": [
+        "https://vietcetera.com/en/a-post-merger-guide-to-ho-chi-minh-city-understanding-the-city",
+        "https://vietnamnet.vn/en/from-july-1-87-cities-across-vietnam-will-no-longer-exist-2411918.html",
+        "https://eastasiaforum.org/2025/09/03/vietnam-redraws-its-administrative-map/"
+      ]
+    },
+    {
+      "claim": "껌땀(cơm tấm)과 후띠우(hủ tiếu)는 호치민 시그니처인데 이 24곳 목록에 없어 별도 안내 필요. 껌땀 바기엔은 미쉐린 행사 이후 방문객이 늘었다고 보도됨",
+      "sources": [
+        "https://www.hcmforyou.com/post/호치민-맛집-추천-2026",
+        "https://home.vn/thread/khach-toi-com-tam-ba-ghien-pho-hoa-pasteur-tang-sau-su-kien-michelin.351843721061656",
+        "https://kr.trip.com/guide/food/ho-chi-minh-local-restaurants.html"
+      ]
+    },
+    {
+      "claim": "반쎄오 46A의 '70년' 연혁은 미쉐린 소개문의 'over seven decades' 표현에 근거하며 베트남 매체도 '7십년(bảy thập kỷ)'으로 소개 — 단정 대신 출처 인용형으로 표기",
+      "sources": [
+        "https://guide.michelin.com/us/en/ho-chi-minh/ho-chi-minh_2978179/restaurant/banh-xeo-46a",
+        "https://www.sgtiepthi.vn/thu-vi-banh-xeo-bay-thap-ky-duoc-michelin-bib-gourmand/"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "호치민 맛집",
+    "headline_finding": "상위 리스티클이 공통으로 빠뜨린 건 '군(郡) 정확도'다. 포 호아 파스퇴르를 1군으로 적은 글이 다수인데 실제는 3군 260C Pasteur — 이 한 줄이 아침 동선을 통째로 꼬이게 한다.",
+    "district_map": "1군 도심 도보권 / 2군 타오디엔 15~20분 / 3군 10~15분 / 4군 10분 / 7군 30분",
+    "price_range": "로컬 한 끼 3만~9만 동(약 1,700~5,100원), 카페 4만~8만 동, 관광 동선 식당 15만~30만 동 — 2026년 7월 환율 1만동≈570원 기준",
+    "michelin_flag": "24곳 중 반쎄오 46A·포 호아 파스퇴르가 빕구르망, 벱 메 인이 미쉐린 가이드 언급. 2025 베트남 셀렉션은 총 181곳·빕구르망 63곳",
+    "time_slot_frame": "24곳을 아침(해장 쌀국수)·점심(로컬)·오후(카페)·저녁(다이닝)·야식(반미·바) 5개 슬롯으로 배치해 하루 코스 3종으로 압축",
+    "honesty_gap": "구역이 교차확인된 12곳만 군을 표기하고 나머지는 공란 유지. 카페 아파트먼트 엘리베이터는 출처 충돌을 그대로 밝힘(경쟁글은 3,000동으로 단정)"
+  },
+  "hermes_score": 91
+}
