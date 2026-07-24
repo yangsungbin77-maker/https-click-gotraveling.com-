@@ -1,0 +1,76 @@
+{
+  "updated": "2026-07-24",
+  "note": "호치민 여행 코스 단일 데이터소스. 이 파일만 수정하면 /hochiminh-course/ 페이지가 자동 갱신됩니다. 좌표는 지도 표시용 참고값이며, 각 지점의 정확한 위치는 map 링크(이름 검색)로 연결됩니다.",
+  "city_center": [10.7785, 106.6995],
+  "courses": [
+    {
+      "id": "walk1",
+      "name": "1군 반나절 도보",
+      "emoji": "🚶",
+      "color": "#166534",
+      "tagline": "처음 호치민이라면 이 코스부터",
+      "duration": "약 4~5시간",
+      "best_time": "오전 8~9시 출발 (한낮 더위 피하기)",
+      "transport": "전 구간 도보",
+      "summary": "호치민 관광의 90%가 몰린 1군 핵심을 걸어서 잇는 기본 코스입니다. 벤탄시장을 기준점으로 잡고 성당·우체국까지 북상한 뒤, 응우옌후에로 내려와 마무리합니다.",
+      "stops": [
+        { "n": 1, "name": "벤탄시장", "name_en": "Ben Thanh Market, Ho Chi Minh City", "lat": 10.7725, "lng": 106.6983, "stay": "40분", "cost": "무료 (쇼핑 별도)", "photo": false, "tip": "코스의 기준점. 라탄백·건망고·커피를 사되 부른 값의 절반부터 흥정하세요. 통로가 좁고 더워서 오전이 훨씬 편합니다." },
+        { "n": 2, "name": "통일궁", "name_en": "Independence Palace, Ho Chi Minh City", "lat": 10.7772, "lng": 106.6954, "stay": "50분", "cost": "입장료 있음", "photo": false, "tip": "옛 남베트남 대통령궁이자 통일이 선언된 역사 현장. 벤탄시장에서 도보 약 10분입니다." },
+        { "n": 3, "name": "노트르담 대성당", "name_en": "Notre-Dame Cathedral Basilica of Saigon", "lat": 10.7797, "lng": 106.699, "stay": "20분", "cost": "무료", "photo": true, "tip": "붉은 벽돌 고딕 외관이 포인트. 시기별로 보수 공사가 있어 외관 위주로 보는 편이 안전합니다. 맞은편에서 찍으면 전체가 담깁니다." },
+        { "n": 4, "name": "중앙우체국", "name_en": "Saigon Central Post Office", "lat": 10.7799, "lng": 106.6994, "stay": "30분", "cost": "무료", "photo": true, "tip": "성당과 길 하나를 두고 마주 봐서 세트로 봅니다. 내부의 옛 사이공 지도 벽화와 아치 천장이 진짜 포토존이에요. 흔히 알려진 것과 달리 에펠이 아니라 알프레드 폴홍스 설계입니다." },
+        { "n": 5, "name": "응우옌후에·카페 아파트먼트", "name_en": "The Cafe Apartment, 42 Nguyen Hue", "lat": 10.7743, "lng": 106.7041, "stay": "1시간", "cost": "엘리베이터 1인 약 3,000동", "photo": true, "tip": "1960년대 아파트를 층층이 카페로 개조한 핫플. 아래에서 올려 찍거나 발코니에서 응우옌후에 거리를 내려다보는 컷이 인기입니다." },
+        { "n": 6, "name": "부이비엔 거리", "name_en": "Bui Vien Street, Ho Chi Minh City", "lat": 10.7669, "lng": 106.6931, "stay": "저녁 일정", "cost": "무료 (식음료 별도)", "photo": true, "tip": "해가 진 뒤가 제맛이라 저녁으로 빼는 걸 권합니다. 오토바이 통행과 호객이 많으니 가방은 앞으로 메세요." }
+      ]
+    },
+    {
+      "id": "night",
+      "name": "야경·나이트",
+      "emoji": "🌃",
+      "color": "#b23a21",
+      "tagline": "해가 지고 나서 진짜가 시작되는 구간",
+      "duration": "약 3~4시간",
+      "best_time": "오후 5시 이후 (일몰 전 전망대 도착)",
+      "transport": "도보 + 마지막만 그랩",
+      "summary": "일몰을 전망대에서 맞고, 조명이 켜진 보행자 거리를 지나 야시장·나이트 스트리트로 내려오는 저녁 동선입니다. 낮 코스와 겹치지 않게 짰습니다.",
+      "stops": [
+        { "n": 1, "name": "비텍스코 사이공 스카이덱", "name_en": "Bitexco Financial Tower Saigon Skydeck", "lat": 10.7717, "lng": 106.7043, "stay": "1시간", "cost": "전망대 입장료", "photo": true, "tip": "1군 49층 전망대라 도보 코스에 그대로 붙일 수 있습니다. 일몰 30분 전에 올라가면 낮·노을·야경을 한 번에 봅니다." },
+        { "n": 2, "name": "사이공 오페라하우스", "name_en": "Saigon Opera House, Ho Chi Minh City", "lat": 10.7765, "lng": 106.703, "stay": "20분", "cost": "외관 무료", "photo": true, "tip": "야간 조명이 켜진 프랑스풍 외관이 예쁩니다. 공연을 볼 게 아니라면 외관 사진만 담고 지나가도 충분해요." },
+        { "n": 3, "name": "응우옌후에 보행자 거리", "name_en": "Nguyen Hue Walking Street", "lat": 10.7745, "lng": 106.7035, "stay": "1시간", "cost": "무료", "photo": true, "tip": "시청 앞 보행자 거리로 야간 조명과 분수쇼가 볼거리입니다. 주말 저녁엔 거리 공연도 자주 열려요." },
+        { "n": 4, "name": "부이비엔 거리", "name_en": "Bui Vien Street, Ho Chi Minh City", "lat": 10.7669, "lng": 106.6931, "stay": "1시간+", "cost": "식음료 별도", "photo": true, "tip": "네온사인 거리 자체가 배경입니다. 소매치기 주의 구간이라 휴대폰은 손에 들지 말고 주머니에 넣으세요." }
+      ]
+    },
+    {
+      "id": "history",
+      "name": "역사·박물관",
+      "emoji": "🏛️",
+      "color": "#8a5a1b",
+      "tagline": "베트남 근현대사를 반나절로",
+      "duration": "약 4시간",
+      "best_time": "오전 (박물관은 점심시간 휴관 확인)",
+      "transport": "도보 + 핑크성당만 그랩",
+      "summary": "통일궁과 전쟁증적박물관으로 근현대사를 훑고, 3군 핑크성당까지 올라갔다 내려오는 코스입니다. 사진보다 이야기를 원하는 분께 맞습니다.",
+      "stops": [
+        { "n": 1, "name": "통일궁", "name_en": "Independence Palace, Ho Chi Minh City", "lat": 10.7772, "lng": 106.6954, "stay": "1시간", "cost": "입장료 있음", "photo": false, "tip": "지하 벙커와 작전실이 하이라이트입니다. 한국어 오디오가이드 유무는 현장에서 확인하세요." },
+        { "n": 2, "name": "전쟁증적박물관", "name_en": "War Remnants Museum, Ho Chi Minh City", "lat": 10.7797, "lng": 106.6922, "stay": "1시간 30분", "cost": "입장료 있음", "photo": false, "tip": "전시 수위가 상당히 높습니다. 아이와 동행이라면 관람 구역을 미리 정하는 편이 좋아요. 야외 전시장에 실물 군용기·전차가 있습니다." },
+        { "n": 3, "name": "떤딘 성당 (핑크성당)", "name_en": "Tan Dinh Church, Ho Chi Minh City", "lat": 10.7889, "lng": 106.6906, "stay": "30분", "cost": "무료", "photo": true, "tip": "온통 분홍색 외관으로 유명한 3군 성당입니다. 큰길가라 차도를 등지고 찍어야 전체가 담기고, 내부는 미사 시간을 피해 조용히 둘러보세요." },
+        { "n": 4, "name": "벤탄시장", "name_en": "Ben Thanh Market, Ho Chi Minh City", "lat": 10.7725, "lng": 106.6983, "stay": "40분", "cost": "무료 (쇼핑 별도)", "photo": false, "tip": "돌아오는 길에 기념품과 늦은 점심을 해결하기 좋습니다." }
+      ]
+    },
+    {
+      "id": "riverview",
+      "name": "강변·전망",
+      "emoji": "🌆",
+      "color": "#1d5f8a",
+      "tagline": "도심을 벗어나 높이와 물을 보는 반나절",
+      "duration": "약 3시간",
+      "best_time": "늦은 오후 (일몰 겨냥)",
+      "transport": "그랩 이동 위주",
+      "summary": "1군 바깥의 랜드마크81 일대와 강변을 도는 코스입니다. 1군이 지루해질 때, 혹은 2일차 오후에 넣기 좋습니다.",
+      "stops": [
+        { "n": 1, "name": "랜드마크81 전망대", "name_en": "Landmark 81 SkyView, Ho Chi Minh City", "lat": 10.7947, "lng": 106.7218, "stay": "1시간 30분", "cost": "전망대 입장료", "photo": true, "tip": "베트남 최고층 건물 전망대입니다. 비텍스코와 둘 중 하나만 고른다면 높이는 여기, 1군 접근성은 비텍스코예요." },
+        { "n": 2, "name": "빈홈 센트럴파크 강변공원", "name_en": "Vinhomes Central Park, Ho Chi Minh City", "lat": 10.7936, "lng": 106.7206, "stay": "1시간", "cost": "무료", "photo": true, "tip": "랜드마크81 발치의 사이공 강변 공원입니다. 해질 무렵 산책로에서 타워를 올려다보는 구도가 잘 나옵니다." },
+        { "n": 3, "name": "타오디엔 (2군 카페촌)", "name_en": "Thao Dien, Thu Duc City, Ho Chi Minh City", "lat": 10.8035, "lng": 106.737, "stay": "1시간 30분", "cost": "카페 이용료", "photo": true, "tip": "서양인 거주 구역이라 브런치 카페와 편집숍이 몰려 있습니다. 특정 가게보다 골목을 걸으며 고르는 편이 실패가 적어요." }
+      ]
+    }
+  ]
+}

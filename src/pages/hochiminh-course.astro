@@ -1,0 +1,367 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+import courseData from '../data/courses.json';
+
+const courses = courseData.courses;
+const center = courseData.city_center;
+const mapsDir = (c: any) =>
+	'https://www.google.com/maps/dir/' + c.stops.map((s: any) => encodeURIComponent(s.name_en)).join('/');
+const mapsSearch = (s: any) =>
+	'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(s.name_en);
+const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
+---
+
+<Layout
+	title="호치민 여행 코스 지도 — 도보·야경·역사·전망 4개 코스를 지도에서 바로"
+	description="호치민 여행 코스를 지도 위에서 골라보세요. 1군 반나절 도보, 야경 나이트, 역사·박물관, 강변·전망까지 4개 코스의 순서와 소요시간, 체류시간과 팁을 지점마다 정리했습니다. 구글 지도로 코스 전체를 한 번에 열 수 있어요."
+	pubDate={new Date('July 24 2026')}
+>
+	<p>
+		호치민은 <strong>어디를 가느냐보다 어떤 순서로 도느냐</strong>가 훨씬 중요합니다. 관광지가 1군에
+		몰려 있어서 순서만 잘 잡으면 걸어서 반나절에 끝나고, 잘못 잡으면 같은 길을 두 번 걷게 되거든요.
+		그래서 성격이 다른 <strong>코스 {courses.length}개</strong>를 지도에 그리고, 지점
+		{totalStops}곳마다 체류시간과 팁을 붙였습니다. 위 탭으로 코스를 바꿔가며 보세요.
+	</p>
+
+	<div class="cg-box cg-tip"><span class="cg-title">💡 이렇게 쓰세요</span><p>왼쪽 목록을 누르면 지도가 그 지점으로 이동합니다. 코스마다 <b>구글 지도로 전체 열기</b> 버튼이 있어서, 스마트폰에서 누르면 그 순서 그대로 길안내가 열려요. 핀 위치는 <b>표시용 참고값</b>이라 정확한 위치는 각 지점의 지도 링크로 확인하세요.</p></div>
+
+	<div class="crs-tabs">
+		{courses.map((c, i) => (
+			<button class={`crs-tab${i === 0 ? ' is-on' : ''}`} data-c={c.id} type="button">
+				<span class="crs-tab-e">{c.emoji}</span>
+				<span class="crs-tab-n">{c.name}</span>
+				<span class="crs-tab-d">{c.duration}</span>
+			</button>
+		))}
+	</div>
+
+	{courses.map((c, i) => (
+		<div class={`crs-head${i === 0 ? '' : ' is-hide'}`} data-head={c.id}>
+			<p class="crs-tagline">{c.emoji} <strong>{c.name}</strong> — {c.tagline}</p>
+			<div class="crs-meta">
+				<span>⏱ {c.duration}</span>
+				<span>🕘 {c.best_time}</span>
+				<span>🚕 {c.transport}</span>
+				<a href={mapsDir(c)} target="_blank" rel="noopener" class="crs-gmap">📍 구글 지도로 전체 열기</a>
+			</div>
+		</div>
+	))}
+
+	<div class="crs-app">
+		<div class="crs-list" id="crs-list">
+			{courses.map((c, ci) => c.stops.map((s, si) => (
+				<button
+					class={`crs-item${ci === 0 ? '' : ' is-hide'}`}
+					data-c={c.id}
+					data-i={si}
+					type="button"
+				>
+					<span class="crs-item-top">
+						<i class="crs-num" style={`background:${c.color}`}>{s.n}</i>
+						<strong>{s.name}</strong>
+						{s.photo && <em class="crs-photo">📷 포토스팟</em>}
+					</span>
+					<span class="crs-item-m">머무는 시간 {s.stay} · {s.cost}</span>
+					<span class="crs-item-t">{s.tip}</span>
+				</button>
+			)))}
+		</div>
+		<div id="crs-map" class="crs-map"></div>
+	</div>
+
+	<h2>코스별로 뭐가 다른가요?</h2>
+	<p>같은 도시라도 목적에 따라 도는 순서가 완전히 달라집니다. 네 코스의 성격을 한 줄로 갈라두면 이렇습니다.</p>
+
+	<table>
+		<thead><tr><th>코스</th><th>소요</th><th>이동</th><th>이런 분께</th></tr></thead>
+		<tbody>
+			{courses.map((c) => (
+				<tr>
+					<td><strong>{c.emoji} {c.name}</strong></td>
+					<td>{c.duration}</td>
+					<td>{c.transport}</td>
+					<td>{c.tagline}</td>
+				</tr>
+			))}
+		</tbody>
+	</table>
+
+	{courses.map((c) => (
+		<>
+			<h3>{c.emoji} {c.name}</h3>
+			<p>{c.summary}</p>
+			<ol class="crs-ol">
+				{c.stops.map((s) => (
+					<li>
+						<a href={mapsSearch(s)} target="_blank" rel="noopener"><strong>{s.name}</strong></a>
+						<span class="crs-ol-m"> · {s.stay} · {s.cost}</span>
+						<br /><span class="crs-ol-t">{s.tip}</span>
+					</li>
+				))}
+			</ol>
+		</>
+	))}
+
+	<h2>1일차·2일차로 짠다면 어떻게 묶나요?</h2>
+	<p>
+		결론부터 말하면요, <strong>1일차는 도보 + 야경, 2일차는 역사 또는 전망</strong>이 가장 안 겹칩니다.
+		1일차 오전에 1군 반나절 도보를 돌고 낮 더위를 카페에서 피한 뒤, 오후 5시부터 야경 코스로 이어가면
+		하루가 자연스럽게 채워져요. 부이비엔이 두 코스에 모두 들어 있는데 <strong>야경 코스 쪽에서만
+		가는 걸</strong> 권합니다. 낮에는 그냥 좁은 거리일 뿐이거든요.
+	</p>
+	<p>
+		2일차는 취향으로 갈립니다. 이야기를 좋아하면 역사·박물관 코스, 사진과 뷰를 원하면 강변·전망
+		코스예요. 두 코스 모두 반나절이라 오전·오후로 하나씩 붙여도 됩니다.
+	</p>
+
+	<div class="cg-box cg-warn"><span class="cg-title">⚠️ 낮 더위와 소매치기</span><p>호치민 낮 1~3시는 야외 일정을 넣지 마세요. 실내 카페·박물관·쇼핑몰로 돌리는 게 체력 관리의 핵심입니다. 부이비엔·벤탄시장 같은 번화가는 오토바이 통행과 소매치기가 있으니 가방은 앞으로 메고 휴대폰은 손에 들지 마세요.</p></div>
+
+	<h2>이동은 뭘로 하나요?</h2>
+	<p>
+		1군 안은 <strong>도보가 기본</strong>이고, 군을 넘어가면 <strong>그랩</strong>(Grab)이 가장 편하고
+		요금이 투명합니다. 짧은 시내 이동은 보통 몇천 원 수준이에요. 2024년 말 개통한 메트로 1호선도
+		벤탄에서 출발하니 노선은 <a href="/vietnam-metro-lines/">베트남 지하철 총정리</a>에서 확인하세요.
+		자세한 군별 성격과 지도는 <a href="/ho-chi-minh-map-travel-course/">호치민 지도 완벽정리</a>에
+		따로 정리해뒀습니다.
+	</p>
+
+	<h2>자주 묻는 질문 (FAQ)</h2>
+	<p><strong>Q. 호치민 여행 코스는 며칠이면 충분한가요?</strong> 1군 관광만이라면 2일이면 넉넉합니다. 1일차에 도보 코스와 야경 코스, 2일차에 역사 또는 전망 코스를 넣으면 주요 명소가 대부분 소화됩니다. 3일 이상이면 메콩델타·꾸찌터널 같은 근교 투어를 붙이는 편이에요.</p>
+	<p><strong>Q. 호치민 1군 도보 코스는 얼마나 걸리나요?</strong> 벤탄시장에서 출발해 통일궁·노트르담 성당·중앙우체국을 거쳐 응우옌후에까지 약 4~5시간입니다. 체류시간을 포함한 값이고, 걷는 거리 자체는 길지 않습니다.</p>
+	<p><strong>Q. 부이비엔은 언제 가야 하나요?</strong> 해가 진 뒤가 제맛입니다. 낮에 가면 볼거리가 거의 없어서 야경 코스에 넣는 걸 권합니다.</p>
+	<p><strong>Q. 전망대는 비텍스코와 랜드마크81 중 어디가 나은가요?</strong> 높이는 랜드마크81(81층), 1군 도보 코스와의 접근성은 비텍스코(49층)가 낫습니다. 하나만 고른다면 일정이 1군 위주일 때는 비텍스코, 강변까지 나갈 계획이면 랜드마크81입니다.</p>
+	<p><strong>Q. 코스 순서를 스마트폰으로 그대로 열 수 있나요?</strong> 각 코스의 '구글 지도로 전체 열기' 버튼을 누르면 그 순서대로 길안내가 열립니다. 개별 지점은 아래 목록의 장소 이름을 눌러 지도에서 확인할 수 있어요.</p>
+
+	<p>
+		코스를 정했다면 먹을 것도 미리 골라두면 좋습니다.
+		<a href="/ho-chi-minh-restaurants-24/">호치민 맛집 정리</a>와
+		<a href="/vietnam-rice-noodle-types/">베트남 쌀국수 종류</a>,
+		현지에서 쓸 <a href="/travel-vietnamese-phrases/">여행 베트남어 표현</a>도 함께 보세요.
+		장기 체류나 이주를 생각한다면 <a href="/vietnam-realestate/">호치민 아파트 시세 지도</a>도 있습니다.
+	</p>
+
+	<p style="font-size:.86rem;color:var(--text-dim)">
+		※ 지도 핀 좌표는 표시용 참고값이며 입장료·운영시간은 시점에 따라 변동됩니다. 방문 전 각 지점의
+		공식 정보를 확인하세요. 최종 갱신 {courseData.updated}.
+	</p>
+</Layout>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script is:inline src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script define:vars={{ courses, center }} is:inline>
+	(function init() {
+		if (typeof L === 'undefined') { return setTimeout(init, 100); }
+		var el = document.getElementById('crs-map');
+		if (!el || el._built) { return; }
+		el._built = true;
+
+		// fadeAnimation을 켜두면 팝업이 프레임 타이밍에 기대어 나타난다.
+		// 배경 탭처럼 애니메이션이 멈춘 환경에서는 opacity가 0에 멈춰 안 보이므로 끈다.
+		var map = L.map('crs-map', { scrollWheelZoom: false, fadeAnimation: false }).setView(center, 13);
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 19, attribution: '© OpenStreetMap'
+		}).addTo(map);
+
+		var layers = {};   // courseId -> {markers:[], line:L.Polyline}
+		var activeId = courses[0].id;
+
+		courses.forEach(function (c) {
+			var pts = c.stops.map(function (s) { return [s.lat, s.lng]; });
+			var line = L.polyline(pts, { color: c.color, weight: 5, opacity: 0.8, dashArray: '1,0' });
+			var markers = c.stops.map(function (s, i) {
+				var icon = L.divIcon({
+					className: 'crs-pin',
+					html: '<span class="crs-pin-n" style="background:' + c.color + '">' + s.n + '</span>'
+						+ '<span class="crs-pin-t">' + s.name + '</span>',
+					iconSize: null, iconAnchor: [16, 16]
+				});
+				var m = L.marker([s.lat, s.lng], { icon: icon, riseOnHover: true });
+				var q = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(s.name_en);
+				// autoPan을 끄지 않으면 팝업이 지도를 밀어 flyTo와 충돌한다.
+				// 어차피 flyTo가 마커를 화면 중앙에 놓으므로 필요 없다.
+				m.bindPopup(
+					'<div style="min-width:200px">'
+					+ '<b style="font-size:14px">' + s.n + '. ' + s.name + '</b>'
+					+ (s.photo ? ' <span style="color:#b23a21;font-size:11px;font-weight:700">📷</span>' : '')
+					+ '<hr style="margin:6px 0">'
+					+ '<span style="color:#666;font-size:12px">머무는 시간 ' + s.stay + ' · ' + s.cost + '</span><br>'
+					+ '<span style="color:#555;font-size:12px;line-height:1.5">' + s.tip + '</span><br>'
+					+ '<a href="' + q + '" target="_blank" rel="noopener" style="font-size:12px;font-weight:700">📍 지도에서 이 장소 열기</a>'
+					+ '</div>',
+					{ autoPan: false }
+				);
+				m.on('click', function () { activate(c.id, i, false); });
+				m._i = i;
+				return m;
+			});
+			layers[c.id] = { markers: markers, line: line, pts: pts };
+		});
+
+		function show(id) {
+			// 마커를 removeLayer 해도 이미 열려 있던 팝업은 지도에 남는다.
+			// 코스를 바꿀 때마다 닫아주지 않으면 팝업이 계속 쌓인다.
+			map.closePopup();
+			Object.keys(layers).forEach(function (k) {
+				var L2 = layers[k];
+				if (k === id) {
+					L2.line.addTo(map);
+					L2.markers.forEach(function (m) { m.addTo(map); });
+				} else {
+					if (map.hasLayer(L2.line)) { map.removeLayer(L2.line); }
+					L2.markers.forEach(function (m) {
+						// 마커를 지우기 전에 그 마커의 팝업을 반드시 먼저 닫는다.
+						// 안 닫고 removeLayer 하면 팝업만 지도에 고아로 남아 계속 쌓인다.
+						m.closePopup();
+						if (map.hasLayer(m)) { map.removeLayer(m); }
+					});
+				}
+			});
+			activeId = id;
+			map.fitBounds(L.latLngBounds(layers[id].pts).pad(0.28));
+		}
+
+		function activate(id, i, fly) {
+			var items = document.querySelectorAll('.crs-item');
+			items.forEach(function (it) {
+				it.classList.toggle('is-active',
+					it.getAttribute('data-c') === id && Number(it.getAttribute('data-i')) === i);
+			});
+			layers[id].markers.forEach(function (m) {
+				var e = m.getElement();
+				if (e) { e.classList.toggle('is-active', m._i === i); }
+			});
+			var mk = layers[id].markers[i];
+			// 팝업은 flyTo '앞에서' 연다. 애니메이션 도중에 열면 삼켜지고,
+			// 배경 탭처럼 requestAnimationFrame이 멈춘 환경에서는 moveend가
+			// 아예 오지 않아 팝업이 영영 안 열린다. moveend는 보조로만 쓴다.
+			mk.openPopup();
+			if (fly) {
+				map.flyTo(mk.getLatLng(), Math.max(map.getZoom(), 15), { duration: 0.7 });
+				map.once('moveend', function () { mk.openPopup(); });
+			}
+			var it = document.querySelector('.crs-item.is-active');
+			if (it && it.scrollIntoView) { it.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); }
+		}
+
+		document.querySelectorAll('.crs-item').forEach(function (it) {
+			it.addEventListener('click', function () {
+				activate(it.getAttribute('data-c'), Number(it.getAttribute('data-i')), true);
+			});
+		});
+
+		var tabs = document.querySelectorAll('.crs-tab');
+		tabs.forEach(function (b) {
+			b.addEventListener('click', function () {
+				var id = b.getAttribute('data-c');
+				tabs.forEach(function (x) { x.classList.remove('is-on'); });
+				b.classList.add('is-on');
+				document.querySelectorAll('.crs-item').forEach(function (it) {
+					it.classList.toggle('is-hide', it.getAttribute('data-c') !== id);
+					it.classList.remove('is-active');
+				});
+				document.querySelectorAll('.crs-head').forEach(function (h) {
+					h.classList.toggle('is-hide', h.getAttribute('data-head') !== id);
+				});
+				show(id);
+			});
+		});
+
+		show(activeId);
+		setTimeout(function () { map.invalidateSize(); }, 200);
+	})();
+</script>
+
+<style is:global>
+	/* ── 코스 탭 ── */
+	.crs-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 1rem 0 .8rem; }
+	.crs-tab {
+		flex: 1 1 140px; background: #fff; border: 1px solid var(--border);
+		color: var(--text); padding: .6em .8em; min-height: 44px; border-radius: 12px;
+		cursor: pointer; font: inherit; text-align: left; line-height: 1.25;
+		transition: background .15s ease, border-color .15s ease;
+	}
+	.crs-tab:hover { background: var(--accent-soft); border-color: var(--accent-border); }
+	.crs-tab.is-on { background: var(--accent); border-color: var(--accent); color: #fff; }
+	.crs-tab-e { font-size: 1.05rem; margin-right: 4px; }
+	.crs-tab-n { font-weight: 700; font-size: .92rem; }
+	.crs-tab-d { display: block; font-size: .74rem; opacity: .75; margin-top: 2px; }
+
+	/* ── 코스 헤더 ── */
+	.crs-head.is-hide { display: none; }
+	.crs-tagline { margin: .2rem 0 .5rem; font-size: .98rem; }
+	.crs-meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: .6rem; }
+	.crs-meta > span {
+		font-size: .8rem; color: var(--text-muted);
+		background: var(--bg-elev-2); padding: 4px 10px; border-radius: 999px;
+	}
+	.crs-gmap {
+		margin-left: auto; font-size: .82rem; font-weight: 700;
+		background: var(--accent-soft); color: var(--accent-dim);
+		padding: 7px 12px; border-radius: 999px; text-decoration: none;
+		border: 1px solid var(--accent-border);
+	}
+	.crs-gmap:hover { background: var(--accent); color: #fff; }
+
+	/* ── 목록 + 지도 앱 레이아웃 ── */
+	.crs-app {
+		display: grid; grid-template-columns: 320px 1fr; gap: 0;
+		height: 600px; margin: .4rem 0 1.4rem;
+		border: 1px solid var(--border); border-radius: 14px; overflow: hidden;
+		background: #fff;
+		width: min(1120px, calc(100vw - 32px));
+		position: relative; left: 50%; transform: translateX(-50%);
+	}
+	.crs-list { overflow-y: auto; border-right: 1px solid var(--border); background: var(--bg); }
+	.crs-item {
+		display: block; width: 100%; text-align: left; cursor: pointer;
+		background: #fff; border: 0; border-bottom: 1px solid var(--border);
+		padding: 11px 13px; font: inherit; color: var(--text);
+		transition: background .12s ease;
+	}
+	.crs-item.is-hide { display: none; }
+	.crs-item:hover { background: var(--accent-soft); }
+	.crs-item.is-active { background: var(--accent-soft); box-shadow: inset 3px 0 0 var(--accent); }
+	.crs-item-top { display: flex; align-items: center; gap: 7px; font-size: .94rem; }
+	.crs-num {
+		width: 21px; height: 21px; border-radius: 50%; flex: none; color: #fff;
+		display: flex; align-items: center; justify-content: center;
+		font-size: 12px; font-weight: 800; font-style: normal;
+	}
+	.crs-photo {
+		font-style: normal; font-size: .67rem; font-weight: 700; margin-left: auto;
+		color: #b23a21; background: rgba(178, 58, 33, .1); padding: 2px 6px; border-radius: 5px;
+	}
+	.crs-item-m { display: block; font-size: .76rem; color: var(--text-dim); margin: 4px 0 5px; }
+	.crs-item-t { display: block; font-size: .8rem; color: var(--text-muted); line-height: 1.5; }
+	.crs-map { height: 100%; width: 100%; z-index: 0; }
+
+	/* ── 지도 핀 ── */
+	.crs-pin { display: flex; align-items: center; gap: 5px; white-space: nowrap; cursor: pointer; }
+	.crs-pin-n {
+		width: 27px; height: 27px; border-radius: 50%; color: #fff; flex: none;
+		display: flex; align-items: center; justify-content: center;
+		font-size: 14px; font-weight: 800; border: 2px solid #fff;
+		box-shadow: 0 1px 5px rgba(0, 0, 0, .4);
+		transition: transform .12s ease;
+	}
+	.crs-pin-t {
+		background: rgba(255, 255, 255, .93); border-radius: 6px; padding: 2px 7px;
+		font-size: 11.5px; font-weight: 700; color: var(--text);
+		box-shadow: 0 1px 4px rgba(35, 50, 41, .2);
+	}
+	.crs-pin:hover .crs-pin-n { transform: scale(1.12); }
+	.crs-pin.is-active .crs-pin-n { transform: scale(1.2); box-shadow: 0 0 0 4px rgba(22, 101, 52, .28); }
+
+	/* ── 본문 코스 목록 ── */
+	.crs-ol { padding-left: 1.2rem; }
+	.crs-ol li { margin-bottom: .7rem; }
+	.crs-ol-m { font-size: .84rem; color: var(--text-dim); }
+	.crs-ol-t { font-size: .88rem; color: var(--text-muted); line-height: 1.6; }
+
+	@media (max-width: 760px) {
+		.crs-app { grid-template-columns: 1fr; grid-template-rows: 46vh 1fr; height: auto; }
+		.crs-map { order: -1; height: 46vh; }
+		.crs-list { border-right: 0; border-top: 1px solid var(--border); max-height: 340px; }
+		.crs-gmap { margin-left: 0; width: 100%; text-align: center; }
+	}
+</style>
