@@ -2,31 +2,37 @@
 import Layout from '../layouts/BlogPost.astro';
 import courseData from '../data/courses.json';
 
-const courses = courseData.courses;
-const center = courseData.city_center;
+export function getStaticPaths() {
+	return courseData.cities.map((city) => ({
+		params: { city: city.slug },
+		props: { city },
+	}));
+}
+
+const { city } = Astro.props;
+const courses = city.courses;
+const center = city.center;
+const others = courseData.cities.filter((c) => c.slug !== city.slug);
+
 const mapsDir = (c: any) =>
 	'https://www.google.com/maps/dir/' + c.stops.map((s: any) => encodeURIComponent(s.name_en)).join('/');
 const mapsSearch = (s: any) =>
 	'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(s.name_en);
-const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
+const totalStops = courses.reduce((n: number, c: any) => n + c.stops.length, 0);
+const shortest = courses.reduce((a: any, b: any) => (a.stops.length <= b.stops.length ? a : b));
 ---
 
-<Layout
-	title="호치민 여행 코스 지도 — 도보·야경·역사·전망 4개 코스를 지도에서 바로"
-	description="호치민 여행 코스를 지도 위에서 골라보세요. 1군 반나절 도보, 야경 나이트, 역사·박물관, 강변·전망까지 4개 코스의 순서와 소요시간, 체류시간과 팁을 지점마다 정리했습니다. 구글 지도로 코스 전체를 한 번에 열 수 있어요."
-	pubDate={new Date('July 24 2026')}
->
+<Layout title={city.title} description={city.description} pubDate={new Date('July 24 2026')}>
+	<p set:html={city.intro} />
 	<p>
-		호치민은 <strong>어디를 가느냐보다 어떤 순서로 도느냐</strong>가 훨씬 중요합니다. 관광지가 1군에
-		몰려 있어서 순서만 잘 잡으면 걸어서 반나절에 끝나고, 잘못 잡으면 같은 길을 두 번 걷게 되거든요.
 		그래서 성격이 다른 <strong>코스 {courses.length}개</strong>를 지도에 그리고, 지점
-		{totalStops}곳마다 체류시간과 팁을 붙였습니다. 위 탭으로 코스를 바꿔가며 보세요.
+		{totalStops}곳마다 체류시간과 팁을 붙였습니다. 아래 탭으로 코스를 바꿔가며 보세요.
 	</p>
 
 	<div class="cg-box cg-tip"><span class="cg-title">💡 이렇게 쓰세요</span><p>왼쪽 목록을 누르면 지도가 그 지점으로 이동합니다. 코스마다 <b>구글 지도로 전체 열기</b> 버튼이 있어서, 스마트폰에서 누르면 그 순서 그대로 길안내가 열려요. 핀 위치는 <b>표시용 참고값</b>이라 정확한 위치는 각 지점의 지도 링크로 확인하세요.</p></div>
 
 	<div class="crs-tabs">
-		{courses.map((c, i) => (
+		{courses.map((c: any, i: number) => (
 			<button class={`crs-tab${i === 0 ? ' is-on' : ''}`} data-c={c.id} type="button">
 				<span class="crs-tab-e">{c.emoji}</span>
 				<span class="crs-tab-n">{c.name}</span>
@@ -35,7 +41,7 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 		))}
 	</div>
 
-	{courses.map((c, i) => (
+	{courses.map((c: any, i: number) => (
 		<div class={`crs-head${i === 0 ? '' : ' is-hide'}`} data-head={c.id}>
 			<p class="crs-tagline">{c.emoji} <strong>{c.name}</strong> — {c.tagline}</p>
 			<div class="crs-meta">
@@ -49,13 +55,8 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 
 	<div class="crs-app">
 		<div class="crs-list" id="crs-list">
-			{courses.map((c, ci) => c.stops.map((s, si) => (
-				<button
-					class={`crs-item${ci === 0 ? '' : ' is-hide'}`}
-					data-c={c.id}
-					data-i={si}
-					type="button"
-				>
+			{courses.map((c: any, ci: number) => c.stops.map((s: any, si: number) => (
+				<button class={`crs-item${ci === 0 ? '' : ' is-hide'}`} data-c={c.id} data-i={si} type="button">
 					<span class="crs-item-top">
 						<i class="crs-num" style={`background:${c.color}`}>{s.n}</i>
 						<strong>{s.name}</strong>
@@ -69,13 +70,13 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 		<div id="crs-map" class="crs-map"></div>
 	</div>
 
-	<h2>코스별로 뭐가 다른가요?</h2>
-	<p>같은 도시라도 목적에 따라 도는 순서가 완전히 달라집니다. 네 코스의 성격을 한 줄로 갈라두면 이렇습니다.</p>
+	<h2>{city.name} 코스별로 뭐가 다른가요?</h2>
+	<p>같은 도시라도 목적에 따라 도는 순서가 완전히 달라집니다. {courses.length}개 코스의 성격을 한 줄로 갈라두면 이렇습니다.</p>
 
 	<table>
 		<thead><tr><th>코스</th><th>소요</th><th>이동</th><th>이런 분께</th></tr></thead>
 		<tbody>
-			{courses.map((c) => (
+			{courses.map((c: any) => (
 				<tr>
 					<td><strong>{c.emoji} {c.name}</strong></td>
 					<td>{c.duration}</td>
@@ -86,12 +87,12 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 		</tbody>
 	</table>
 
-	{courses.map((c) => (
+	{courses.map((c: any) => (
 		<>
 			<h3>{c.emoji} {c.name}</h3>
 			<p>{c.summary}</p>
 			<ol class="crs-ol">
-				{c.stops.map((s) => (
+				{c.stops.map((s: any) => (
 					<li>
 						<a href={mapsSearch(s)} target="_blank" rel="noopener"><strong>{s.name}</strong></a>
 						<span class="crs-ol-m"> · {s.stay} · {s.cost}</span>
@@ -102,47 +103,35 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 		</>
 	))}
 
-	<h2>1일차·2일차로 짠다면 어떻게 묶나요?</h2>
-	<p>
-		결론부터 말하면요, <strong>1일차는 도보 + 야경, 2일차는 역사 또는 전망</strong>이 가장 안 겹칩니다.
-		1일차 오전에 1군 반나절 도보를 돌고 낮 더위를 카페에서 피한 뒤, 오후 5시부터 야경 코스로 이어가면
-		하루가 자연스럽게 채워져요. 부이비엔이 두 코스에 모두 들어 있는데 <strong>야경 코스 쪽에서만
-		가는 걸</strong> 권합니다. 낮에는 그냥 좁은 거리일 뿐이거든요.
-	</p>
-	<p>
-		2일차는 취향으로 갈립니다. 이야기를 좋아하면 역사·박물관 코스, 사진과 뷰를 원하면 강변·전망
-		코스예요. 두 코스 모두 반나절이라 오전·오후로 하나씩 붙여도 됩니다.
-	</p>
-
-	<div class="cg-box cg-warn"><span class="cg-title">⚠️ 낮 더위와 소매치기</span><p>호치민 낮 1~3시는 야외 일정을 넣지 마세요. 실내 카페·박물관·쇼핑몰로 돌리는 게 체력 관리의 핵심입니다. 부이비엔·벤탄시장 같은 번화가는 오토바이 통행과 소매치기가 있으니 가방은 앞으로 메고 휴대폰은 손에 들지 마세요.</p></div>
-
-	<h2>이동은 뭘로 하나요?</h2>
-	<p>
-		1군 안은 <strong>도보가 기본</strong>이고, 군을 넘어가면 <strong>그랩</strong>(Grab)이 가장 편하고
-		요금이 투명합니다. 짧은 시내 이동은 보통 몇천 원 수준이에요. 2024년 말 개통한 메트로 1호선도
-		벤탄에서 출발하니 노선은 <a href="/vietnam-metro-lines/">베트남 지하철 총정리</a>에서 확인하세요.
-		자세한 군별 성격과 지도는 <a href="/ho-chi-minh-map-travel-course/">호치민 지도 완벽정리</a>에
-		따로 정리해뒀습니다.
-	</p>
+	<h2>다른 도시 코스도 지도로 보기</h2>
+	<p>같은 방식으로 베트남 주요 도시 코스를 지도에 정리해뒀습니다. 도시를 묶어 다닐 계획이면 함께 보세요.</p>
+	<div class="crs-city-grid">
+		{others.map((o: any) => (
+			<a href={`/${o.slug}-course/`} class="crs-city">
+				<span class="crs-city-e">{o.emoji}</span>
+				<span class="crs-city-n">{o.name}</span>
+				<span class="crs-city-d">코스 {o.courses.length}개 · 지점 {o.courses.reduce((n: number, c: any) => n + c.stops.length, 0)}곳</span>
+			</a>
+		))}
+	</div>
 
 	<h2>자주 묻는 질문 (FAQ)</h2>
-	<p><strong>Q. 호치민 여행 코스는 며칠이면 충분한가요?</strong> 1군 관광만이라면 2일이면 넉넉합니다. 1일차에 도보 코스와 야경 코스, 2일차에 역사 또는 전망 코스를 넣으면 주요 명소가 대부분 소화됩니다. 3일 이상이면 메콩델타·꾸찌터널 같은 근교 투어를 붙이는 편이에요.</p>
-	<p><strong>Q. 호치민 1군 도보 코스는 얼마나 걸리나요?</strong> 벤탄시장에서 출발해 통일궁·노트르담 성당·중앙우체국을 거쳐 응우옌후에까지 약 4~5시간입니다. 체류시간을 포함한 값이고, 걷는 거리 자체는 길지 않습니다.</p>
-	<p><strong>Q. 부이비엔은 언제 가야 하나요?</strong> 해가 진 뒤가 제맛입니다. 낮에 가면 볼거리가 거의 없어서 야경 코스에 넣는 걸 권합니다.</p>
-	<p><strong>Q. 전망대는 비텍스코와 랜드마크81 중 어디가 나은가요?</strong> 높이는 랜드마크81(81층), 1군 도보 코스와의 접근성은 비텍스코(49층)가 낫습니다. 하나만 고른다면 일정이 1군 위주일 때는 비텍스코, 강변까지 나갈 계획이면 랜드마크81입니다.</p>
-	<p><strong>Q. 코스 순서를 스마트폰으로 그대로 열 수 있나요?</strong> 각 코스의 '구글 지도로 전체 열기' 버튼을 누르면 그 순서대로 길안내가 열립니다. 개별 지점은 아래 목록의 장소 이름을 눌러 지도에서 확인할 수 있어요.</p>
+	<p><strong>Q. {city.name} 여행 코스는 어떻게 짜야 하나요?</strong> {city.wrap} 이 페이지의 코스 {courses.length}개는 성격이 겹치지 않게 나눠뒀으니, 하루에 하나씩 배정하면 동선이 꼬이지 않습니다.</p>
+	<p><strong>Q. 하루에 코스 몇 개를 넣을 수 있나요?</strong> 반나절짜리 코스라면 오전·오후로 두 개까지가 현실적입니다. '하루 전체'로 표시된 코스는 이동 시간이 길어 단독으로 잡으세요. 가장 짧은 코스는 {shortest.emoji} {shortest.name}({shortest.duration})입니다.</p>
+	<p><strong>Q. 코스 순서를 스마트폰으로 그대로 열 수 있나요?</strong> 각 코스의 '구글 지도로 전체 열기' 버튼을 누르면 그 순서대로 길안내가 열립니다. 개별 지점은 위 목록의 장소 이름을 눌러 지도에서 확인할 수 있어요.</p>
+	<p><strong>Q. 지도의 핀 위치가 정확한가요?</strong> 핀은 코스 동선을 한눈에 보여주기 위한 표시용 참고값입니다. 실제 방문 시에는 각 지점의 지도 링크(장소 이름 검색)로 확인하는 게 정확합니다.</p>
 
 	<p>
-		코스를 정했다면 먹을 것도 미리 골라두면 좋습니다.
-		<a href="/ho-chi-minh-restaurants-24/">호치민 맛집 정리</a>와
-		<a href="/vietnam-rice-noodle-types/">베트남 쌀국수 종류</a>,
-		현지에서 쓸 <a href="/travel-vietnamese-phrases/">여행 베트남어 표현</a>도 함께 보세요.
-		장기 체류나 이주를 생각한다면 <a href="/vietnam-realestate/">호치민 아파트 시세 지도</a>도 있습니다.
+		여행 준비는 <a href="/vietnam-travel-checklist/">베트남 여행 준비물 체크리스트</a>,
+		먹을 것은 <a href="/vietnam-street-food-noodles/">베트남 음식 총정리</a>와
+		<a href="/vietnam-rice-noodle-types/">쌀국수 종류</a>,
+		현지에서 쓸 말은 <a href="/travel-vietnamese-phrases/">여행 베트남어 표현</a>에 정리해뒀습니다.
+		이동은 <a href="/vietnam-metro-lines/">베트남 지하철 총정리</a>를 참고하세요.
 	</p>
 
 	<p style="font-size:.86rem;color:var(--text-dim)">
-		※ 지도 핀 좌표는 표시용 참고값이며 입장료·운영시간은 시점에 따라 변동됩니다. 방문 전 각 지점의
-		공식 정보를 확인하세요. 최종 갱신 {courseData.updated}.
+		※ 지도 핀 좌표는 표시용 참고값이며 입장료·운영시간·개방 여부는 시점에 따라 변동됩니다.
+		방문 전 각 지점의 공식 정보를 확인하세요. 최종 갱신 {courseData.updated}.
 	</p>
 </Layout>
 
@@ -162,12 +151,12 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 			maxZoom: 19, attribution: '© OpenStreetMap'
 		}).addTo(map);
 
-		var layers = {};   // courseId -> {markers:[], line:L.Polyline}
+		var layers = {};
 		var activeId = courses[0].id;
 
 		courses.forEach(function (c) {
 			var pts = c.stops.map(function (s) { return [s.lat, s.lng]; });
-			var line = L.polyline(pts, { color: c.color, weight: 5, opacity: 0.8, dashArray: '1,0' });
+			var line = L.polyline(pts, { color: c.color, weight: 5, opacity: 0.8 });
 			var markers = c.stops.map(function (s, i) {
 				var icon = L.divIcon({
 					className: 'crs-pin',
@@ -209,8 +198,6 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 				} else {
 					if (map.hasLayer(L2.line)) { map.removeLayer(L2.line); }
 					L2.markers.forEach(function (m) {
-						// 마커를 지우기 전에 그 마커의 팝업을 반드시 먼저 닫는다.
-						// 안 닫고 removeLayer 하면 팝업만 지도에 고아로 남아 계속 쌓인다.
 						m.closePopup();
 						if (map.hasLayer(m)) { map.removeLayer(m); }
 					});
@@ -272,7 +259,6 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 </script>
 
 <style is:global>
-	/* ── 코스 탭 ── */
 	.crs-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin: 1rem 0 .8rem; }
 	.crs-tab {
 		flex: 1 1 140px; background: #fff; border: 1px solid var(--border);
@@ -286,7 +272,6 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 	.crs-tab-n { font-weight: 700; font-size: .92rem; }
 	.crs-tab-d { display: block; font-size: .74rem; opacity: .75; margin-top: 2px; }
 
-	/* ── 코스 헤더 ── */
 	.crs-head.is-hide { display: none; }
 	.crs-tagline { margin: .2rem 0 .5rem; font-size: .98rem; }
 	.crs-meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: .6rem; }
@@ -302,7 +287,6 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 	}
 	.crs-gmap:hover { background: var(--accent); color: #fff; }
 
-	/* ── 목록 + 지도 앱 레이아웃 ── */
 	.crs-app {
 		display: grid; grid-template-columns: 320px 1fr; gap: 0;
 		height: 600px; margin: .4rem 0 1.4rem;
@@ -335,7 +319,6 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 	.crs-item-t { display: block; font-size: .8rem; color: var(--text-muted); line-height: 1.5; }
 	.crs-map { height: 100%; width: 100%; z-index: 0; }
 
-	/* ── 지도 핀 ── */
 	.crs-pin { display: flex; align-items: center; gap: 5px; white-space: nowrap; cursor: pointer; }
 	.crs-pin-n {
 		width: 27px; height: 27px; border-radius: 50%; color: #fff; flex: none;
@@ -352,11 +335,25 @@ const totalStops = courses.reduce((n, c) => n + c.stops.length, 0);
 	.crs-pin:hover .crs-pin-n { transform: scale(1.12); }
 	.crs-pin.is-active .crs-pin-n { transform: scale(1.2); box-shadow: 0 0 0 4px rgba(22, 101, 52, .28); }
 
-	/* ── 본문 코스 목록 ── */
 	.crs-ol { padding-left: 1.2rem; }
 	.crs-ol li { margin-bottom: .7rem; }
 	.crs-ol-m { font-size: .84rem; color: var(--text-dim); }
 	.crs-ol-t { font-size: .88rem; color: var(--text-muted); line-height: 1.6; }
+
+	/* 다른 도시 카드 */
+	.crs-city-grid {
+		display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+		gap: 10px; margin: 1rem 0 1.6rem;
+	}
+	.crs-city {
+		display: block; text-decoration: none; background: #fff;
+		border: 1px solid var(--border); border-radius: 12px; padding: 13px;
+		transition: background .15s ease, border-color .15s ease;
+	}
+	.crs-city:hover { background: var(--accent-soft); border-color: var(--accent-border); }
+	.crs-city-e { font-size: 1.5rem; display: block; }
+	.crs-city-n { display: block; font-weight: 700; font-size: 1rem; color: var(--text); margin-top: 4px; }
+	.crs-city-d { display: block; font-size: .76rem; color: var(--text-dim); margin-top: 2px; }
 
 	@media (max-width: 760px) {
 		.crs-app { grid-template-columns: 1fr; grid-template-rows: 46vh 1fr; height: auto; }
