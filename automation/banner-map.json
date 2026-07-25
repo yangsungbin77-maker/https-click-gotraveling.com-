@@ -1,0 +1,8 @@
+[
+  { "pattern": "항공|비행기|공항|수하물|마일리지|환승", "file": "banner-01-airplane.png" },
+  { "pattern": "리조트|호텔|숙소|풀빌라|바다|해변|섬", "file": "banner-02-resort.png" },
+  { "pattern": "도시|시내|맛집|카페|쇼핑|야시장|시장", "file": "banner-03-city.png" },
+  { "pattern": "산|트레킹|등산|자연|국립공원", "file": "banner-04-mountain.png" },
+  { "pattern": "준비물|체크리스트|비자|환전|유심|보험|짐싸기|팁", "file": "banner-05-prep.png" },
+  { "pattern": "축제|페스티벌|열기구|이벤트", "file": "banner-06-balloons.png" }
+]
