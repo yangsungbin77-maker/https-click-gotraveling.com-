@@ -1,0 +1,78 @@
+{
+  "type": "howto",
+  "keyword_filter": {
+    "keyword": "캐리어 짐싸는법",
+    "competition": {
+      "method": "serp-scan",
+      "evidence": "구글 상위에 코스모폴리탄·여행톡톡 외에 티스토리 개인 블로그(clark512), 아하 Q&A, 다음 개인 채널이 1페이지에 섞여 있음 — 대형 매체 독점 아님, 신생 사이트 진입 가능 신호",
+      "pass": true
+    },
+    "demand": {
+      "method": "autocomplete",
+      "evidence": "구글 자동완성에 '캐리어 짐싸는법' 직접 노출, 연관으로 '짐싸기 꿀팁'·'짐싸기 팁'·'일본여행 짐싸기'·'캐리어 짐 정리' 확인(suggestqueries API 실측)",
+      "pass": true
+    },
+    "intent": {
+      "method": "serp-scan",
+      "evidence": "상위 10개가 전부 정보성 팁 기사·블로그·Q&A(쇼핑탭·지도팩 없음) — 블로그 글이 노출되는 정보성 키워드",
+      "pass": true
+    }
+  },
+  "serp": [
+    { "url": "https://www.cosmopolitan.co.kr/article/1881387", "opened": true, "note": "짐싸기 팁 10 — 계획·롤링·파우치·70~80%룰·신발틈새. 약 1500자, 팁별 설명 짧고 배치도·표 없음" },
+    { "url": "https://v.daum.net/v/Yqk4So6FvI", "opened": true, "note": "체크리스트+휴대/위탁 나누기+옷·신발·세면 짐싸기. 2500~3000자. 차트·표 없음, 실행 방법 부족" },
+    { "url": "https://www.cosmopolitan.co.kr/article/1884265", "opened": true, "note": "팁 9 — 롤업·무게배치·신발수납·에코백. 회원가입 유도로 전문 접근 제한" },
+    { "url": "https://clark512.zerodustaustralia.com/8", "opened": true, "note": "티스토리 개인 블로그(경쟁 근거). 롤링+고무줄·Z플립·파우치·3-1-1규정·재패킹. 3000~3500자로 가장 충실, 항공사별 비교는 부족" },
+    { "url": "https://www.a-ha.io/questions/411b906746008f54a52202639edf1241", "opened": true, "note": "옷 부피 줄이기 Q&A — 압축팩·롤링이 채택 답변" },
+    { "url": "https://www.a-ha.io/questions/4d538a3001c2618d89a0828fb6733b25", "opened": true, "note": "캐리어 노하우 Q&A — 손압축 압축팩 필수 조언" },
+    { "url": "https://brunch.co.kr/keyword/%EC%BA%90%EB%A6%AC%EC%96%B4", "opened": true, "note": "브런치 키워드 페이지 — 글 목록 미로드, 직접 경쟁글 아님" },
+    { "url": "https://fly.a-parkshome.com/entry/대한항공-기내-수화물-규정-무게-액체-금지-물품", "opened": true, "note": "기내 10kg·115cm, 액체 100ml/1L 지퍼백, 배터리 160Wh 등 규정 상세(팩트 출처 겸)" },
+    { "url": "https://namu.wiki/w/여행/짐 싸기", "opened": false, "note": "403 차단(jina 우회도 실패)" },
+    { "url": "https://www.tourtoctoc.com/news/articleView.html?idxno=518", "opened": false, "note": "403 차단" },
+    { "url": "https://www.tourtoctoc.com/news/articleView.html?idxno=1833", "opened": false, "note": "403 차단(승무원 팁 10)" },
+    { "url": "https://www.koreanair.com/contents/plan-your-travel/baggage/checked-baggage/free-baggage", "opened": false, "note": "403 — WebSearch 공식 발췌로 대체(기내 10kg·미주 2개×23kg·158cm)" }
+  ],
+  "serp_gap": "상위 글 공통 항목 = 롤링·무거운것 아래·신발 수납·파우치·70~80%룰·압축팩. 갭 = ①캐리어 구역별 배치를 그림으로 보여주는 글 없음(우리는 배치도 다이어그램 제작) ②압축팩 vs 패킹큐브 결정표 없음 ③귀국 재패킹 커버 거의 없음(clark512만) ④수하물 무게 규정과 짐싸기를 연결한 글 부족 — 이 4개를 채움",
+  "factcheck": [
+    {
+      "claim": "국제선 기내 반입 액체는 개별 용기 100ml 이하, 1인당 1L 투명 지퍼백 1개",
+      "sources": [
+        "https://fly.a-parkshome.com/entry/대한항공-기내-수화물-규정-무게-액체-금지-물품",
+        "자사 기존 검증 글 /carry-on-prohibited-items/ (발행 시 공식 출처 교차확인 완료)",
+        "https://clark512.zerodustaustralia.com/8 (3-1-1 규정 일치)"
+      ]
+    },
+    {
+      "claim": "보조배터리는 위탁수하물 금지, 기내 반입만 가능",
+      "sources": [
+        "https://fly.a-parkshome.com/entry/대한항공-기내-수화물-규정-무게-액체-금지-물품",
+        "자사 기존 검증 글 /carry-on-prohibited-items/ (2026년 기내 보관 규정 포함)"
+      ]
+    },
+    {
+      "claim": "대한항공 이코노미 기내 수하물 총 10kg 이내, 국제선 무료 위탁은 노선별 상이(대체로 23kg 안팎, 미주 2개×23kg)",
+      "sources": [
+        "koreanair.com 공식 무료수하물 페이지(WebSearch 발췌 — 가방1+소지품1 10kg, 미주 2개 23kg, 158cm)",
+        "https://fly.a-parkshome.com/entry/대한항공-기내-수화물-규정-무게-액체-금지-물품 (10kg·115cm 일치)"
+      ],
+      "hedge": "본문에서는 '항공사·노선마다 다름, 2026년 8월 시점 기준, 본인 예약 확인'으로 헤지"
+    },
+    {
+      "claim": "캐리어는 전체 용량의 70~80%만 채우는 것이 권장",
+      "sources": [
+        "https://www.cosmopolitan.co.kr/article/1881387",
+        "https://v.daum.net/v/Yqk4So6FvI"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "캐리어 짐싸는법",
+    "cluster": ["여행 짐싸기", "캐리어 짐 정리", "짐싸기 꿀팁", "옷 부피 줄이기", "압축팩", "패킹큐브", "기내 수하물", "위탁수하물 무게", "기내 반입 액체류", "여행 준비물 체크리스트"],
+    "headline_finding": "상위 가이드 10편의 공통 원칙(롤링·바퀴쪽 무게·70~80%룰)을 배치도 1장과 7단계 순서표로 통합",
+    "unique_asset": "자체 제작 캐리어 단면 배치도 다이어그램 + 압축팩 vs 패킹큐브 결정표 + 귀국 재패킹 섹션",
+    "internal_links": ["/danang-rainy-season/", "/carry-on-prohibited-items/"],
+    "external_link": "https://www.airport.kr/ (인천국제공항 공식 — assignment의 visitkorea가 주제 불일치라 sources.json 내 공항 출처로 교체)"
+  },
+  "hermes_score": 98,
+  "score_history": [89, 98]
+}

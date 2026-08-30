@@ -58,6 +58,7 @@ export const CATEGORIES: Category[] = [
 		emoji: '🧳',
 		blurb: '항공권·LCC·유심/이심·기내반입·첫 해외여행 체크리스트부터 제주 국내 코스까지, 나라 상관없이 쓰는 여행 준비 정보입니다.',
 		posts: [
+			'carrier-packing-guide',
 			'cheap-flight-tickets-tips',
 			'lcc-airline-tips',
 			'usim-esim-difference',
