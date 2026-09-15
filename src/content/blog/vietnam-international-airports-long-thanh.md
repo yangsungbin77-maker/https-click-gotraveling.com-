@@ -17,7 +17,10 @@ heroImage: '../../assets/pool/banner-01-airplane.png'
 
 첫째, 호치민에서 롱탄으로 가는 길이 2군(투득) 방향이에요. 호치민–롱탄–저우저이 고속도로가 투득에서 시작해 동나이로 빠져나갑니다. 둘째, 계획 중인 공항 메트로가 2군의 투티엠에서 출발해요. 베트남넷 2025년 12월 보도 기준으로 투티엠–롱탄 메트로는 길이 42km, 역 약 20개, 목표 소요 시간 40분, 공사 기간 2025~2031년으로 잡혀 있습니다. 셋째, 호치민이 2025년 행정 통합(빈즈엉·바리아붕따우 편입)으로 커지면서 동나이 경계까지 생활권이 이어져 보이는 것도 한몫해요.
 
-정리하면 이렇습니다. **공항은 동나이성, 관문은 2군**(투득·투티엠)이에요. 호치민 시내 숙소에서 롱탄까지는 떤선녓(시내 7km)보다 훨씬 멀다는 걸 먼저 머리에 넣어두는 게 좋습니다.
+정리하면 이렇습니다. **공항은 동나이성, 관문은 2군**(투득·투티엠)이에요. 호치민 시내 숙소에서 롱탄까지는 떤선녓(시내 7km)보다 훨씬 멀다는 걸 먼저 머리에 넣어두는 게 좋습니다. 아래 지도를 축소해 보면 왼쪽 호치민 시내와 오른쪽 롱탄 공항 사이 거리가 한눈에 들어와요.
+
+<div style="position:relative;padding-bottom:62%;height:0;overflow:hidden;border-radius:12px;border:1px solid #ddd6cc;margin:1.2rem 0;"><iframe src="https://maps.google.com/maps?q=Long+Thanh+International+Airport,+Dong+Nai,+Vietnam&z=10&hl=ko&output=embed" title="롱탄 국제공항 위치 구글 지도" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<p style="font-size:0.9rem;color:#6e7680;margin-top:-0.6rem;">▲ 롱탄 국제공항(LTH) 위치. 지도를 한 단계 축소하면 서쪽 약 40km 지점에 호치민 시내가 보입니다. <a href="https://www.google.com/maps/search/?api=1&query=Long+Thanh+International+Airport" target="_blank" rel="noopener">구글 지도 앱에서 열기</a></p>
 
 ## 롱탄 국제공항은 언제 여나요?
 
@@ -74,6 +77,9 @@ heroImage: '../../assets/pool/banner-01-airplane.png'
 한국에서 가는 국제선은 3터미널이 아니라 기존 국제선 터미널을 그대로 써요. 헷갈리기 쉬운 게, 호치민에서 하노이·다낭으로 국내선을 갈아탈 때는 대개 3터미널로 이동해야 하고, 푸꾸옥처럼 항공사에 따라 기존 터미널을 쓰는 노선도 있으니 탑승권의 터미널 표기를 확인하세요. 터미널 사이가 걸어서 갈 거리는 아니니 환승 시간을 넉넉히 잡는 게 안전합니다.
 
 시내 접근성은 여전히 떤선녓의 최대 장점이에요. 트립스토어 정리 기준으로 1군 시내까지 약 7km라 그랩으로 30분 안팎, 요금은 1만 원이 안 되는 수준입니다. 롱탄 개항 뒤에도 한국 직항이 당분간 여기서 뜨는 건 여행자 입장에선 오히려 다행이에요. 1군 도보 코스는 [호치민 지도 완벽정리](/ho-chi-minh-map-travel-course/)에 담아 뒀습니다.
+
+<div style="position:relative;padding-bottom:62%;height:0;overflow:hidden;border-radius:12px;border:1px solid #ddd6cc;margin:1.2rem 0;"><iframe src="https://maps.google.com/maps?q=Tan+Son+Nhat+International+Airport,+Ho+Chi+Minh+City&z=12&hl=ko&output=embed" title="떤선녓 국제공항 위치 구글 지도" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<p style="font-size:0.9rem;color:#6e7680;margin-top:-0.6rem;">▲ 떤선녓 국제공항(SGN). 남동쪽으로 약 7km 내려가면 1군 벤탄시장이에요. <a href="https://www.google.com/maps/search/?api=1&query=Tan+Son+Nhat+International+Airport" target="_blank" rel="noopener">구글 지도 앱에서 열기</a></p>
 
 ## 베트남 국제공항 11곳, 어디에 있고 시내까지 얼마나 걸리나요?
 
