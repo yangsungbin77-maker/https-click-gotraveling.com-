@@ -1,0 +1,211 @@
+{
+  "type": "info",
+  "keyword_filter": {
+    "keyword": "베트남 국제공항",
+    "competition": {
+      "method": "serp-scan",
+      "evidence": "구글 상위 = 트립스토어 블로그(5개 공항, 롱탄 미언급)·somethingstravel 개인 블로그(23개 목록 1,500자, 롱탄 미언급)·나무위키·vietnam.vn 번역 뉴스. 개인 블로그 2곳이 1페이지에 있고 둘 다 롱탄 신공항을 안 다뤄 갭이 큼",
+      "pass": true
+    },
+    "demand": {
+      "method": "autocomplete",
+      "evidence": "구글 자동완성 '베트남 국제공항' 10건(위치·롱탄·노이바이·빈·떤선녓·다낭·하노이·호치민·깜란), '롱탄 공항' 10건(개항·위치·연결 철도·오픈·호치민 롱탄 공항 개항), '롱탄 국제공항' 5건(위치·개항·지도)",
+      "pass": true
+    },
+    "intent": {
+      "method": "serp-scan",
+      "evidence": "상위가 정보성 블로그·위키·뉴스이고 쇼핑·지도팩 없음. 자동완성도 위치·개항·목록 등 조사형 의도. 블로그 정보글이 상위 노출되는 키워드",
+      "pass": true
+    }
+  },
+  "cluster": [
+    "롱탄 국제공항",
+    "롱탄 공항 개항",
+    "롱탄 공항 위치",
+    "호치민 롱탄 공항",
+    "떤선녓 국제공항",
+    "떤선녓 3터미널",
+    "베트남 공항 이름",
+    "베트남 국제공항 위치",
+    "노이바이 국제공항",
+    "깜라인 국제공항",
+    "호치민 공항 이전",
+    "롱탄 공항 연결 철도"
+  ],
+  "serp": [
+    {
+      "url": "https://www.goodmorningvietnam.co.kr/news/article.html?no=82599",
+      "opened": true,
+      "note": "12/1 상업운항 확정(2026-07-14). 3단계 이전 계획 날짜·대상. 규모·거리 없음"
+    },
+    {
+      "url": "https://www.fnnews.com/news/202604201623064695",
+      "opened": true,
+      "note": "인천공항 컨소시엄 자문·9~11월 시범운영·1단계 장거리 국제선+화물(19%)·2030 이후 떤선녓 국내선 위주(2026-04-20)"
+    },
+    {
+      "url": "https://www.tripstore.kr/blog/베트남-국제-공항-이동-팁",
+      "opened": true,
+      "note": "경쟁 1위급. 5개 공항 시내거리·이동수단·요금 표. 롱탄·한국 직항 정보 없음(갭)"
+    },
+    {
+      "url": "https://somethingstravel.com/베트남-공항/",
+      "opened": true,
+      "note": "국제 11·국내 12 목록, 1,500자. 롱탄 미언급(갭)"
+    },
+    {
+      "url": "https://e.vnexpress.net/news/news/traffic/vietnam-s-mega-airport-long-thanh-to-open-december-1-with-ambitions-to-challenge-changi-5097439.html",
+      "opened": true,
+      "note": "12/1 개항, 40km 동나이, 1단계 2,500만 명, 사업비 336.63조 동(~$128억), 1,000km 초과 국제선·화물 우선, 2027년 90%, 최종 1억 명(2026-07-15)"
+    },
+    {
+      "url": "https://vietnamnet.vn/en/the-race-to-connect-long-thanh-airport-with-central-ho-chi-minh-city-2477249.html",
+      "opened": true,
+      "note": "고속도로 CT01 정체·1시간+·8~10차로 확장 2026말, 투티엠–롱탄 메트로 42km·20역·40분·2025~2031(2025-12-30)"
+    },
+    {
+      "url": "https://e.vnexpress.net/news/news/traffic/ho-chi-minh-city-plans-13-new-bus-routes-to-connect-long-thanh-airport-5066637.html",
+      "opened": true,
+      "note": "13개 버스 노선, 출발지, 9~80인승, 2026 3분기 급행 2개+조정 4개, 2027 5개, 2027 4분기 완성, 요금 미공개(2026-04-25)"
+    },
+    {
+      "url": "https://www.insidevina.com/news/articleView.html?idxno=30733",
+      "opened": true,
+      "note": "떤선녓 T3 2025-04-19 개장, 11만 2,500㎡, 시간당 7,000·연 2,000만, 총 3,000만→5,000만, $4억 2,440만, 국내선 전용(베트남항공·비엣젯)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Long_Thanh_International_Airport",
+      "opened": true,
+      "note": "LTH/VVLT, 40km 동쪽, 5,580ha, 활주로 4,000×60m, 터미널 399,987㎡, 2,500만/120만 톤, 2025-12-19 기술개항, 원래 2025-09→2026말 연기, 2단계 5,000만·3단계 1억"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_airports_in_Vietnam",
+      "opened": true,
+      "note": "운영 국제공항 11곳 코드·도시, 롱탄은 proposed"
+    },
+    {
+      "url": "https://en.baochinhphu.vn/long-thanh-intl-airport-set-for-commercial-launch-by-late-2026-111260330102151795.htm",
+      "opened": true,
+      "note": "총리 2026-03-29 현장점검, 4분기 상업운항, 공정 74%, 도시철도(수오이띠엔·비엔호아·롱탄) 구상"
+    },
+    {
+      "url": "https://travelmole.com/news/vietnam-traffic-transfer-long-thanh-airport",
+      "opened": false,
+      "note": "403"
+    },
+    {
+      "url": "https://www.routesonline.com/airports/12607/airports-corporation-of-vietnam/news/299665682/long-thanh-international-airport-officially-welcomes-its-first-commercial-flight/",
+      "opened": false,
+      "note": "403"
+    }
+  ],
+  "serp_summary": {
+    "intent": "정보(공항 목록·위치·거리) + 뉴스형(롱탄 개항)",
+    "common_items": [
+      "주요 공항 5곳 시내 거리·이동수단",
+      "공항 목록·코드",
+      "롱탄 개항일·규모(뉴스)"
+    ],
+    "gaps": [
+      "블로그 글들이 롱탄 신공항을 전혀 안 다룸",
+      "'2군 공항' 오해 해소 없음",
+      "한국 노선이 언제 옮겨가는지 단계표 없음",
+      "롱탄↔시내 교통(버스 13개·메트로 2031) 정리 없음",
+      "목적지→공항 매칭표 없음"
+    ],
+    "avg_length": "블로그 1,500~2,500자, 뉴스 800~1,500자"
+  },
+  "factcheck": [
+    {
+      "claim": "롱탄 상업 운항 2026-12-01 목표, 9~11월 시범 운영, 2025-12-19 기술 개항",
+      "sources": [
+        "https://www.goodmorningvietnam.co.kr/news/article.html?no=82599",
+        "https://e.vnexpress.net/news/news/traffic/vietnam-s-mega-airport-long-thanh-to-open-december-1-with-ambitions-to-challenge-changi-5097439.html",
+        "https://en.wikipedia.org/wiki/Long_Thanh_International_Airport"
+      ]
+    },
+    {
+      "claim": "위치 동나이성, 호치민 동쪽 약 40km; 1단계 2,500만 명·화물 120만 톤·활주로 4,000m·터미널 약 40만㎡",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Long_Thanh_International_Airport",
+        "https://e.vnexpress.net/news/news/traffic/vietnam-s-mega-airport-long-thanh-to-open-december-1-with-ambitions-to-challenge-changi-5097439.html"
+      ]
+    },
+    {
+      "claim": "이전 3단계: 1단계 2026.12.1~2027.3.27 장거리·화물·신규(국제선 약 19%), 2단계 2027.3.28~10.30 유럽·미주·오세아니아·중동·남아시아(떤선녓은 동북아·동남아), 3단계 2027.10.31~2028.3.25",
+      "sources": [
+        "https://www.goodmorningvietnam.co.kr/news/article.html?no=82599",
+        "https://www.fnnews.com/news/202604201623064695"
+      ]
+    },
+    {
+      "claim": "인천공항 컨소시엄이 운영 자문·시범운영 주관; 2030년 이후 떤선녓 국내선·전세편 위주",
+      "sources": [
+        "https://www.fnnews.com/news/202604201623064695",
+        "https://v.daum.net/v/20260420175235399"
+      ]
+    },
+    {
+      "claim": "시내 연결: 고속도로 1시간+, 확장 2026말; 버스 13개 노선(2026 3분기 급행 2개); 투티엠–롱탄 메트로 42km·2031 목표",
+      "sources": [
+        "https://vietnamnet.vn/en/the-race-to-connect-long-thanh-airport-with-central-ho-chi-minh-city-2477249.html",
+        "https://e.vnexpress.net/news/news/traffic/ho-chi-minh-city-plans-13-new-bus-routes-to-connect-long-thanh-airport-5066637.html"
+      ]
+    },
+    {
+      "claim": "떤선녓 T3 2025-04-19 개장, 국내선 전용, 연 2,000만·총 5,000만, 11만 2,500㎡, $4억 2,440만; 베트남항공 4/17부터 T3 국내선",
+      "sources": [
+        "https://www.insidevina.com/news/articleView.html?idxno=30733",
+        "https://www.vietnamairlines.com/kr/ko/vietnam-airlines/press-room/press-release/2025/0417-VI-VNA-chinh-thuc-chuyen-sang-khai-thac-tai-nha-ga-T3-Tan-Son-Nhat"
+      ]
+    },
+    {
+      "claim": "운영 국제공항 11곳(HAN·SGN·DAD·CXR·PQC·HPH·VDO·HUI·DLI·VII·VCA); 시내 거리 노이바이 30·떤선녓 7·다낭 3·깜라인 35km",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_airports_in_Vietnam",
+        "https://somethingstravel.com/베트남-공항/",
+        "https://www.tripstore.kr/blog/베트남-국제-공항-이동-팁"
+      ]
+    },
+    {
+      "claim": "2단계 동남아 노선은 롱탄 약 55%·떤선녓 약 45% 분배(동북아는 떤선녓 중심); 1단계 활주로 2본(2번 활주로 2026-07 완공 보도); 베트남항공 T3 이전 2025-04-19부터, 푸꾸옥·락자·까마우는 기존 터미널 잔류",
+      "sources": [
+        "https://www.goodmorningvietnam.co.kr/news/article.html?no=82599",
+        "https://en.wikipedia.org/wiki/Long_Thanh_International_Airport",
+        "https://www.vietnamairlines.com/kr/ko/vietnam-airlines/press-room/press-release/2025/0417-VI-VNA-chinh-thuc-chuyen-sang-khai-thac-tai-nha-ga-T3-Tan-Son-Nhat"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "베트남 국제공항",
+    "headline_finding": "롱탄은 2군이 아니라 동나이성 40km, 12/1 개항해도 한국 직항은 2027년까지 떤선녓 — '2군 공항' 오해를 위치·관문(투득·투티엠)으로 분리",
+    "phase_table": "이전 3단계 날짜·대상 표",
+    "airport_table": "국제공항 11+1 코드·도시·시내거리·한국직항 표",
+    "destination_table": "목적지→공항 매칭 7행 표",
+    "as_of": "2026-09-15"
+  },
+  "geo": {
+    "numeric_facts": "40km, 7km, 2,500만 명, 120만 톤, 4,000m, 5,580ha, 336조 동, 12월 1일, 13개 노선, 42km, 2031년, 5,000만 명, 11곳",
+    "source_mentions": [
+      "굿모닝베트남미디어 보도",
+      "VnExpress 보도",
+      "베트남넷 보도",
+      "파이낸셜뉴스 보도",
+      "인사이드비나 보도",
+      "위키백과",
+      "베트남항공 공식 보도자료"
+    ],
+    "quote": "2026년 4분기 상업 운항 (총리 현장 점검)",
+    "as_of": "2026년 9월 15일 기준(요약 박스·도입)"
+  },
+  "images": {
+    "hero": "pool/banner-01-airplane.png",
+    "body": "vietnam-international-airports-long-thanh.webp (PIL 도식, 크레딧 0)"
+  },
+  "hermes_score": 96,
+  "score_history": [
+    88,
+    96
+  ],
+  "judge_notes": "1R 88: T3 잔류 노선(푸꾸옥 등) 충돌·인천공항 역할 과장·동남아 55/45 분배·활주로 2본·아프리카 누락 → 10건 수정. 2R 96 통과, 선택 다듬기 3건 반영"
+}
