@@ -105,7 +105,3 @@ heroImage: '../../assets/pool/vietnam-female-celebrities-hero.png'
 ## 이미지 출처
 
 이 글의 인물 사진은 모두 위키미디어 공용(Wikimedia Commons)의 자유 라이선스 사진입니다. 미떰 ⓒ INAX Vietnam (CC BY 3.0) · 호응옥하 ⓒ KIYOUNG KIm (CC BY 2.0) · 화민지 ⓒ Lynguyen173315 (CC BY-SA 4.0) · 수보이 ⓒ SUBLIME ENT (CC BY 4.0) · 찌푸 ⓒ FoodHub (CC BY 3.0) · 닌즈엉란응옥 ⓒ Niyari147 (CC BY-SA 4.0) · 응오타인반 ⓒ LIFE TODAY Official (CC BY 3.0) · 흐헨니에 ⓒ California Fitness &amp; Yoga (CC BY 3.0).
-
----
-
-**관련 키워드** — #베트남여자연예인 #베트남여배우 #베트남여가수 #베트남미인 #베트남예쁜연예인 #베트남연예인순위 #미떰 #찌푸 #닌즈엉란응옥 #베트남미스유니버스 #브이팝 #베트남힙합

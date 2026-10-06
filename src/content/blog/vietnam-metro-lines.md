@@ -242,8 +242,6 @@ heroImage: '../../assets/posts/vietnam-metro-lines-hero.png'
 
 ---
 
-**관련 키워드** — #베트남지하철 #호치민지하철 #호치민메트로 #호치민지하철노선도 #하노이지하철 #하노이메트로 #베트남메트로 #호치민1호선 #베트남지하철노선 #호치민지하철요금 #베트남지하철계획 #수오이띠엔
-
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 (function () {

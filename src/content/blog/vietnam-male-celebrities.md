@@ -96,7 +96,3 @@ heroImage: '../../assets/pool/banner-03-city.png'
 - 호 꽝 히에우 — ⓒ MVC TOPS, CC BY 3.0
 - 응오 끼엔 후이 — ⓒ BEE Entertainment, CC BY 3.0
 - 흐어 비 반 — ⓒ SAIGONTV, CC BY 3.0
-
----
-
-**관련 키워드** — #베트남남자연예인 #베트남남자가수 #베트남남자배우 #베트남잘생긴남자 #베트남미남 #선뚱엠티피 #Vpop #베트남유명연예인 #베트남드라마배우 #베트남아이돌 #베트남연예인 #베트남여행
