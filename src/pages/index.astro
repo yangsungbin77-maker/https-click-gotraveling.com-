@@ -28,8 +28,9 @@ const catCounts = CATEGORIES.map((c) => ({ ...c, count: c.posts.length }));
 		<main id="main">
 			{/* 인트로 — 한 줄. 첫 화면을 잡아먹지 않는다 */}
 			<section class="intro">
-				<h1>호치민·다낭 여행, 현지에서 직접 씁니다</h1>
+				<h1>호치민에서 정리하는 베트남 여행, 그리고 해외여행 준비</h1>
 				<p>{SITE_DESCRIPTION}</p>
+				<p class="start"><a href="/about/">처음 오셨다면 상황별로 먼저 읽을 글 보기 →</a></p>
 			</section>
 
 			{/* 최신 글 — 가로형 리드 카드 */}
@@ -151,6 +152,8 @@ const catCounts = CATEGORIES.map((c) => ({ ...c, count: c.posts.length }));
 		max-width: 60ch;
 		font-size: 1rem;
 	}
+	.intro .start { margin-top: 0.4rem; }
+	.intro .start a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
 
 	/* ── 리드 카드 ───────────────────────── */
 	.lead { margin-bottom: var(--s6); }
