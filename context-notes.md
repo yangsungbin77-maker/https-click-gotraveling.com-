@@ -84,3 +84,10 @@
 - 핵심 과제(게임월드7 구축+배포+도메인+디자인) 완료. 글은 `src/content/blog/`에 .md 추가 후 push하면 자동 게시.
 - Higgsfield MCP는 claude.ai 커넥터로 연결됨(이미지 생성). 코딩 세션에서 쓰려면 앱 재시작 후 반영.
 - 두 번째 사이트 `sportskingdom24.com`은 이 사이트 동일 틀로 복제 예정(Namecheap일 가능성 높음).
+
+## 2026-10-06 — 애드센스 승인 준비 점검 (브랜치 claude/google-adsense-approval-dfvgr8)
+- 상세 기록·검토 체크리스트는 `adsense-review.md`.
+- 신규 글은 쓰지 않음: 30편이 핵심 주제를 이미 다룸. 대신 `/about/`을 상황별 시작 가이드로 바꿈.
+- 부동산 '실사진' 17장은 저작자 표기가 없고 1장은 시행사 저작권(EXIF)이라 내림. 표기 확인 전 복구 금지.
+- 404는 Workers 정적 에셋 `not_found_handling: "404-page"`로 처리. 오류 화면엔 애드센스 스크립트를 넣지 않음(BaseHead `noAds`).
+- 자동 발행 루틴이 사람 검토 없이 발행하는 점, AI가 넣은 '거주 경험' 문장의 사실 여부는 운영자 확인 필요로 남김.
