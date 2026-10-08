@@ -16,6 +16,9 @@ interface Props {
 	publishedTime?: Date;
 	modifiedTime?: Date;
 	faq?: { q: string; a: string }[];
+	// 오류 페이지처럼 광고·색인 대상이 아닌 화면에서 true
+	noAds?: boolean;
+	noindex?: boolean;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -27,6 +30,8 @@ const {
 	publishedTime,
 	modifiedTime,
 	faq = [],
+	noAds = false,
+	noindex = false,
 } = Astro.props;
 const imageURL = new URL(image.src, Astro.site);
 
@@ -54,7 +59,7 @@ if (type === 'article') {
 		image: imageURL.href,
 		datePublished: publishedTime?.toISOString(),
 		dateModified: (modifiedTime ?? publishedTime)?.toISOString(),
-		author: { '@type': 'Person', name: '고고', url: new URL('/about/', Astro.site).href, worksFor: { '@type': 'Organization', name: SITE_TITLE, url: Astro.site?.href } },
+		author: { '@type': 'Person', name: '고고', url: new URL('/author/', Astro.site).href, worksFor: { '@type': 'Organization', name: SITE_TITLE, url: Astro.site?.href } },
 		publisher: {
 			'@type': 'Organization',
 			name: SITE_TITLE,
@@ -93,7 +98,7 @@ if (type === 'article') {
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <!-- Google AdSense (2026-08-25 복구: 이 도메인이 애드센스 콘솔에 '준비 중'(심사 중)으로 등록돼 있는데 코드가 없어 심사가 완료될 수 없던 상태였음) -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8312549013849190" crossorigin="anonymous" is:inline></script>
+{!noAds && <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8312549013849190" crossorigin="anonymous" is:inline></script>}
 <!-- Google Analytics 4 (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MVVE8DPJQX" is:inline></script>
 <script is:inline>
@@ -127,7 +132,7 @@ if (type === 'article') {
 />
 
 <!-- Canonical URL -->
-<link rel="canonical" href={canonicalURL} />
+{noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonicalURL} />}
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>

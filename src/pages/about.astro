@@ -3,20 +3,71 @@ import Layout from '../layouts/BlogPost.astro';
 ---
 
 <Layout
-	title="클릭고트래블링 소개"
-	description="클릭고트래블링은 여행지 추천부터 항공권·숙소 꿀팁, 여행 준비 정보까지 전하는 여행 가이드 블로그입니다."
+	title="클릭고트래블링 소개 — 어떤 글이 있고 어디서부터 읽으면 되나"
+	description="클릭고트래블링은 호치민 거주 운영자가 정리하는 베트남 여행 정보와 일본·여행 준비 가이드 블로그입니다. 상황별로 먼저 읽을 글, 글을 만드는 방식, 정보 정정 방법을 안내합니다."
 	pubDate={new Date('June 14 2026')}
+	updatedDate={new Date('October 6 2026')}
 >
 	<p>
-		<strong>클릭고트래블링</strong>은 여행을 좋아하는 사람들을 위한 블로그입니다. 국내외 여행지 추천부터
-		항공권·숙소를 더 싸게 잡는 법, 짐 싸기와 환전 같은 준비 정보까지 — 떠나기 전 알아두면 좋은 이야기를
-		전합니다.
+		<strong>클릭고트래블링</strong>은 해외여행을 준비하는 한국인을 위한 여행 정보 블로그입니다. 가장 많은 글은
+		<strong>베트남(특히 호치민)</strong>이고, 그다음이 <strong>일본 여행 코스</strong>와 나라 상관없이 쓰는
+		<strong>항공·짐·통신 준비 정보</strong>입니다. 운영자 소개는 <a href="/author">운영자 소개</a> 페이지에
+		따로 적어두었습니다.
 	</p>
 
+	<h2>상황별로 먼저 읽을 글</h2>
+
+	<h3>해외여행이 처음이라면</h3>
+	<ul>
+		<li><a href="/overseas-travel-checklist-first-time/">처음 가는 해외여행 준비물 체크리스트</a> — 여권 유효기간부터 전자기기까지 빠뜨리기 쉬운 것 위주</li>
+		<li><a href="/carry-on-prohibited-items/">비행기 기내 반입 금지 물품</a> — 액체 100ml, 보조배터리 규정</li>
+		<li><a href="/usim-esim-difference/">유심과 이심 차이</a> — 내 휴대폰과 일정에 맞는 쪽 고르기</li>
+		<li><a href="/cheap-flight-tickets-tips/">항공권 싸게 사는 법</a>과 <a href="/lcc-airline-tips/">저가 항공 주의할 점</a></li>
+	</ul>
+
+	<h3>호치민·베트남 여행을 준비한다면</h3>
+	<ul>
+		<li><a href="/vietnam-travel-checklist/">베트남 여행 준비물 체크리스트</a> — 비자·이심·환전까지 출발 전 점검</li>
+		<li><a href="/vietnam-international-airports-long-thanh/">베트남 국제공항 총정리</a> — 어느 공항으로 들어갈지, 롱탄 신공항 현황</li>
+		<li><a href="/ho-chi-minh-map-travel-course/">호치민 지도와 1군 도보 코스</a> → <a href="/ho-chi-minh-restaurants-24/">군·시간대로 묶은 호치민 맛집 24곳</a></li>
+		<li><a href="/vietnam-food-names/">베트남 음식 이름 정리</a>와 <a href="/travel-vietnamese-phrases/">여행 베트남어 표현 30개</a> — 메뉴판 읽고 주문하기</li>
+		<li>지도로 동선을 보고 싶다면 <a href="/hochiminh-course/">도시별 여행 코스 지도</a></li>
+	</ul>
+
+	<h3>일본 여행 일정을 짠다면</h3>
+	<ul>
+		<li><a href="/osaka-free-travel-guide/">오사카 자유여행 입문</a> → <a href="/osaka-travel-course/">오사카 3박 4일 코스</a></li>
+		<li>동행·계절별로는 <a href="/parents-japan-travel-course/">부모님과</a>, <a href="/solo-japan-travel-course/">혼자</a>, <a href="/winter-japan-travel-course/">겨울</a> 코스</li>
+	</ul>
+
+	<p>주제별 전체 목록은 상단 메뉴의 <a href="/category/vietnam/">베트남</a>·<a href="/category/japan/">일본</a>·<a href="/category/tips/">여행꿀팁</a>에서 볼 수 있습니다.</p>
+
+	<h2>글을 만드는 방식</h2>
+	<ul>
+		<li>
+			<strong>직접 겪은 것과 조사한 것을 구분합니다.</strong> 운영자가 가보지 않은 곳(예: 다낭)은 글
+			첫머리에 조사 기반 글이라고 밝힙니다.
+		</li>
+		<li>
+			<strong>가격·운영시간·규정에는 기준 시점을 적습니다.</strong> 공항·항공사·정부 기관 등 공식 안내를
+			우선 확인하고, 글 안에 해당 출처를 링크합니다. 바뀌기 쉬운 정보는 출발 전에 공식 안내로 다시
+			확인해 주세요.
+		</li>
+		<li>
+			<strong>AI 도구를 함께 씁니다.</strong> 자료 정리와 초안 작성, 글 속 일러스트·대표 이미지 제작에
+			생성형 AI를 활용합니다. 사진처럼 보이는 이미지라도 출처 표기가 없는 것은 실제 촬영 사진이 아닌
+			참고용 이미지입니다. 실제 사진을 쓸 때는 라이선스와 저작자를 함께 적습니다.
+		</li>
+		<li>
+			<strong>예약·구매를 유도하는 제휴 링크는 현재 없습니다.</strong> 광고는 Google 애드센스로만
+			운영하며, 광고주는 글 내용에 관여하지 않습니다. 쿠키와 광고에 관한 내용은
+			<a href="/privacy">개인정보처리방침</a>에 있습니다.
+		</li>
+	</ul>
+
+	<h2>틀린 정보를 발견했다면</h2>
 	<p>
-		빠르고 안정적인 정적 사이트로 운영되며, 새로운 글이 꾸준히 업데이트됩니다. 궁금한 점이나 다뤘으면
-		하는 여행지가 있다면 <a href="/contact">문의하기</a>로 언제든 알려주세요.
+		가격·노선·영업 여부가 바뀐 것을 보셨다면 <a href="/contact">문의하기</a>의 이메일로 알려주세요. 확인 후
+		본문을 고치고 글의 '마지막 수정' 날짜를 갱신합니다.
 	</p>
-
-	<p>즐거운 여행 되세요! ✈️</p>
 </Layout>

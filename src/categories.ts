@@ -34,8 +34,6 @@ export const CATEGORIES: Category[] = [
 			'vietnam-beer',
 			'danang-rainy-season',
 			'vietnam-jobs',
-			'vietnam-female-celebrities',
-			'vietnam-male-celebrities',
 		],
 	},
 	{

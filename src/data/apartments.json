@@ -28,7 +28,7 @@
         "한국병원",
         "마트"
       ],
-      "img": "/realty/real/phumyhung-midtown.jpg",
+      "img": "/realty/riviera.webp",
       "desc": "한국인이 가장 많이 사는 지역. 한국국제학교·한국병원·한인마트가 모여 정착 편의 최고."
     },
     {
@@ -79,7 +79,7 @@
         "메트로",
         "빈컴몰"
       ],
-      "img": "/realty/real/masteri-thao-dien.jpg",
+      "img": "/realty/masteri.webp",
       "desc": "빈컴 메가몰·메트로 연결. 서양인·외국인이 밀집한 인기 지역, 강·공원 조망."
     },
     {
@@ -105,7 +105,7 @@
         "강변",
         "교민많음"
       ],
-      "img": "/realty/real/vinhomes-central-park.jpg",
+      "img": "/realty/vinhomes.webp",
       "desc": "베트남 최고층 랜드마크81을 품은 대형 강변 단지. 교민 많음. 랜드마크81 타워는 +25%."
     },
     {
@@ -135,7 +135,7 @@
         "가성비",
         "메트로예정"
       ],
-      "img": "/realty/real/vinhomes-grand-park.jpg",
+      "img": "/realty/vinhomes.webp",
       "desc": "271ha 초대형 신도시. 자체 몰·학교·중앙공원. 신규 분양 물량 많고 상대적 가성비. 교민도 유입 중."
     },
     {
@@ -165,7 +165,7 @@
         "신도시",
         "분양"
       ],
-      "img": "/realty/real/empire-city.jpg",
+      "img": "/realty/empire.webp",
       "desc": "투티엠 신도시 강변 프리미엄 복합. 호치민 최고가 축, 1군 접근성 우수. 신규 분양 진행."
     },
     {
@@ -188,7 +188,7 @@
         "신규분양",
         "대형복합"
       ],
-      "img": "/realty/real/global-city.png",
+      "img": "/realty/sunshine.webp",
       "desc": "Masterise Homes의 대형 복합 신도시. 2026 입주 예정, 616세대 등. 투득 프리미엄 신규 분양."
     },
     {
@@ -218,7 +218,7 @@
         "리버뷰",
         "분양"
       ],
-      "img": "/realty/real/metropole-thu-thiem.jpg",
+      "img": "/realty/empire.webp",
       "desc": "투티엠 최고가 럭셔리 단지. 마지막 강변 부지 프리미엄으로 호치민 최상위 분양가대."
     },
     {
@@ -243,7 +243,7 @@
         "리조트형",
         "강변"
       ],
-      "img": "/realty/real/diamond-island.jpg",
+      "img": "/realty/diamond.webp",
       "desc": "사이공강 리조트형 럭셔리 콘도. 조경·수영장 강점."
     },
     {
@@ -297,7 +297,7 @@
         "외곽",
         "가성비"
       ],
-      "img": "/realty/real/celadon-city.jpg",
+      "img": "/realty/sunshine.webp",
       "desc": "16ha 공원을 낀 타운십. 서부 외곽이라 저렴, 로컬 위주. 신규 분양도 진행."
     },
     {
@@ -327,7 +327,7 @@
         "가성비",
         "분양"
       ],
-      "img": "/realty/real/mizuki-park.jpg",
+      "img": "/realty/riviera.webp",
       "desc": "일본풍 타운십, 수변·녹지 강점. 남서부 가성비 신규 분양 단지."
     },
     {
@@ -356,7 +356,7 @@
         "리버뷰",
         "쇼핑몰 연결"
       ],
-      "img": "/realty/real/gateway-thao-dien.jpg",
+      "img": "/realty/masteri.webp",
       "desc": "메트로 1호선 타오디엔역 바로 앞 단지. 지하 상가 연결로 생활 편의성이 좋고 한인 거주도 많음."
     },
     {
@@ -555,7 +555,7 @@
       "tags": [
         "가성비"
       ],
-      "img": "/realty/real/thao-dien-pearl.jpg",
+      "img": "/realty/masteri.webp",
       "desc": "타오디엔 북측의 실속 단지. 저렴한 임대료 대비 넓은 평형으로 예산형 가족에게 적합."
     },
     {
@@ -641,7 +641,7 @@
         "케펠랜드",
         "한인 선호"
       ],
-      "img": "/realty/real/estella-heights.jpg",
+      "img": "/realty/masteri.webp",
       "desc": "에스텔라 후속 고급 단지. 마감 품질이 좋고 한인 커뮤니티가 형성되어 있음."
     },
     {
@@ -926,7 +926,7 @@
         "한국 시공",
         "신축 입주"
       ],
-      "img": "/realty/real/zeit-river-thu-thiem.jpg",
+      "img": "/realty/empire.webp",
       "desc": "GS건설이 시공한 투티엠 대형 단지. 한국 건설사 품질에 대한 신뢰로 한인 관심이 높으며 입주 초기."
     },
     {
@@ -1247,7 +1247,7 @@
         "대단지",
         "푸미흥인접"
       ],
-      "img": "/realty/real/sunrise-city.jpg",
+      "img": "/realty/sunshine.webp",
       "desc": "응웬흐우토 대로변 노바랜드 대단지. 푸미흥까지 차로 5~10분이라 한인 세컨드 수요가 꾸준함."
     },
     {
@@ -1450,7 +1450,7 @@
         "메트로1호선",
         "빈홈"
       ],
-      "img": "/realty/real/vinhomes-golden-river.jpg",
+      "img": "/realty/vinhomes.webp",
       "desc": "구 바선 부지의 1군 대표 단지(일명 빈홈 바선). 메트로 1호선 바선역 직결로 입지가 최상급."
     },
     {
@@ -1507,7 +1507,7 @@
         "럭셔리",
         "1군북부"
       ],
-      "img": "/realty/real/the-marq.jpg",
+      "img": "/realty/empire.webp",
       "desc": "응웬딘찌에우 거리의 하이엔드 단지. 1군 북부 총영사관·학원가 인접으로 고소득 수요 중심."
     },
     {
