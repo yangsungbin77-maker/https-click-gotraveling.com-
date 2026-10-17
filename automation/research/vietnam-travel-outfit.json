@@ -1,0 +1,206 @@
+{
+  "type": "info",
+  "keyword_filter": {
+    "keyword": "베트남 여행 옷차림",
+    "competition": {
+      "method": "allintitle/serp-scan",
+      "evidence": "상위 결과가 여행사 블로그(tripstore 4편)·베트남항공·빈원더스·vietnamtourism.com 등 브랜드 가이드 위주이고 나무위키·대형 언론은 없음. 월별 수치 표를 갖춘 글이 거의 없어 신생 블로그 진입 여지 있음",
+      "pass": true
+    },
+    "demand": {
+      "method": "autocomplete",
+      "evidence": "구글 자동완성(2026-10-17)에 '베트남 여행 옷차림'·'베트남 다낭 여행 옷차림'·'베트남 나트랑 여행 옷차림'·'베트남 1월 날씨 옷차림'·'다낭 12월 옷차림'·'하노이 1월 옷차림'·'호치민 12월 옷차림' 등 월·도시 변형 다수 노출. 키워드 큐 메모 검색 320",
+      "pass": true
+    },
+    "intent": {
+      "method": "serp-scan",
+      "evidence": "상위 10개가 전부 정보형 가이드 글(계절·지역별 옷차림, 사원 복장, 짐 싸기). 쇼핑탭·지도팩 없음",
+      "pass": true
+    }
+  },
+  "cluster": [
+    "베트남 옷차림",
+    "다낭 옷차림",
+    "다낭 12월 옷차림",
+    "하노이 1월 옷차림",
+    "나트랑 옷차림",
+    "호치민 12월 옷차림",
+    "달랏 옷차림",
+    "사파 겨울 옷차림",
+    "베트남 1월 날씨 옷차림",
+    "베트남 사원 복장"
+  ],
+  "serp": [
+    {
+      "url": "https://www.vietnamairlines.com/kr/ko/plan-book/travel/travel-guide/what-to-wear-in-vietnam",
+      "opened": true,
+      "note": "북·중·남부 월별 표+성별 표. 강점=월별 표. 약점=본문 중복, 하장 '영하 32도' 오기, 냉방 대비·출처 없음"
+    },
+    {
+      "url": "https://www.tripstore.kr/blog/베트남-옷차림-지역별-날씨-준비물",
+      "opened": true,
+      "note": "지역 3구분 표, 냉방병 아우터·사원·우기. 월별 수치·출처 없음, 달랏 없음, 상품 홍보 다수"
+    },
+    {
+      "url": "https://www.tripstore.kr/blog/하노이-날씨-월별-옷차림",
+      "opened": true,
+      "note": "하노이 계절 4구분 표(겨울 15~20℃), 숙소 난방 부재 팁. 1~12월 개별 수치 없음"
+    },
+    {
+      "url": "https://vinwonders.com/ko/wonderpedia/news/베트남에서-무엇을-입을지-계절별-지역별-가이드/",
+      "opened": true,
+      "note": "계절·지역·활동별 서술. 기온 수치 없음, 냉방·자외선 약함"
+    },
+    {
+      "url": "https://www.vietnamtourism.com/ko/what-to-wear-in-vietnam-temples-cities-and-cultural-etiquett",
+      "opened": true,
+      "note": "사원 복장 가장 자세함(어깨·무릎·신발·모자). 기온 수치 출처 없음"
+    },
+    {
+      "url": "https://www.tripstore.kr/blog/다낭-옷차림-월별-날씨-준비물",
+      "opened": true,
+      "note": "다낭 월별 3구분+바나힐(5~10도 낮음). 건기/우기 구분이 글 안에서 모순, 강수 수치 없음"
+    },
+    {
+      "url": "https://www.vietnamtourism.com/ko/what-to-wear-in-vietnam-in-may-female",
+      "opened": true,
+      "note": "5월 한정 여성 복장, 3-3-3 규칙·캡슐 옷장. 내부 수치 불일치"
+    },
+    {
+      "url": "https://www.tripstore.kr/blog/다낭-12월-날씨-옷차림-팁",
+      "opened": true,
+      "note": "다낭 12월 20~24℃, 비 10~15일, 바나힐 1,487m. 도입부와 본문 수치 불일치, 출처 없음"
+    },
+    {
+      "url": "https://goodinfo.leedolife.com/?p=13908",
+      "opened": true,
+      "note": "열어 보니 글 목록 페이지(옷차림 본문 없음) — 분석 가치 없음"
+    },
+    {
+      "url": "https://vinpearl.com/ko/베-트-남-여-행-준-비-물",
+      "opened": false,
+      "note": "HTTP 403 차단"
+    }
+  ],
+  "factcheck": [
+    {
+      "claim": "하노이 1월 평균 최고 약 20℃·최저 약 14℃",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hanoi#Climate (IBST 평년값 20.2/14.1)",
+        "https://weatherspark.com/countries/VN (1월 68°F/57°F)"
+      ]
+    },
+    {
+      "claim": "다낭은 10월 강수가 가장 많고 10~11월 비 오는 날 약 20일",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Da_Nang#Climate (IBST 10월 628mm, 강수일 20.0/20.3)",
+        "https://weatherspark.com/countries/VN (최다 강수월 10월 17.9in)"
+      ]
+    },
+    {
+      "claim": "호치민·남부는 5~10월 우기, 11~4월 건기, 연중 최저 23℃ 이상",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ho_Chi_Minh_City#Climate (IBST 강수일·최저기온)",
+        "https://www.vietnamairlines.com/kr/ko/plan-book/travel/travel-guide/what-to-wear-in-vietnam (남부 5~10월 우기·11~4월 건기)"
+      ]
+    },
+    {
+      "claim": "달랏은 해발 약 1,500m, 1월 평균 최저 12~14℃ 안팎으로 연중 서늘",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Da_Lat (1,513m, 1월 최저 11.7℃)",
+        "https://www.weatherapi.com/history/january/q/da-lat-2715468 (1월 평균 최저 14℃)"
+      ]
+    },
+    {
+      "claim": "사파 1월 평균 최저 약 6℃, 판시판 정상은 한파 때 영하·눈/서리",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sa_Pa_(town) (IBST 1월 6.2℃)",
+        "https://vietnamnews.vn/society/1442784/mount-fansipan-sees-snow-as-freezing-spell-envelops-northern-region.html",
+        "https://tuoitrenews.vn/news/society/20250105/frost-covers-vietnams-highest-peak-for-nearly-a-week/83739.html"
+      ]
+    },
+    {
+      "claim": "바나힐 해발 약 1,487m, 시내보다 5~10℃ 서늘(출처마다 차이)",
+      "sources": [
+        "https://www.tripstore.kr/blog/다낭-12월-날씨-옷차림-팁",
+        "https://diff.vn/en/danang-experience/ba-na-hills-weather-everything-you-need-to-know-before-visiting/"
+      ]
+    },
+    {
+      "claim": "사원·탑은 어깨·무릎을 가리고 주요 법당에서는 신발을 벗음",
+      "sources": [
+        "https://www.vietnamtourism.com/ko/what-to-wear-in-vietnam-temples-cities-and-cultural-etiquett",
+        "https://www.vietnamairlines.com/kr/ko/plan-book/travel/travel-guide/what-to-wear-in-vietnam",
+        "https://vinwonders.com/ko/wonderpedia/news/베트남에서-무엇을-입을지-계절별-지역별-가이드/"
+      ]
+    },
+    {
+      "claim": "후에 10월 강수량 약 770mm로 다낭(628mm)보다 많음",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hu%E1%BA%BF#Climate (IBST 10월 772.7mm)",
+        "https://www.climate-zone.com/climate/vn/hue/"
+      ]
+    },
+    {
+      "claim": "호이안은 다낭 시내에서 약 30km",
+      "sources": [
+        "https://vinpearl.com/en/da-nang-to-hoi-an-distance (시내→호이안 최단 28km)",
+        "https://www.geckoroutes.com/vietnam/hoi-an-to-da-nang/ (약 30km)"
+      ]
+    },
+    {
+      "claim": "1월 아침 기온 하노이와 호치민 차이 8℃ 이상",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ho_Chi_Minh_City#Climate (IBST 1월 최저 23.4℃) vs Hanoi 14.1℃",
+        "https://weatherspark.com/countries/VN (하노이 57°F·호치민 72°F)"
+      ]
+    }
+  ],
+  "variables": {
+    "keyword": "베트남 여행 옷차림",
+    "headline_finding": "도시 8곳×12개월 96칸 중 50칸이 반팔+얇은 겉옷, 경량패딩 이상은 15칸(하노이 12~1월·사파·달랏)",
+    "north_south_gap": "1월 아침 기온 하노이 14.1℃ vs 호치민 23.4℃(IBST)·22.2℃(웨더스파크 72°F) → 8℃ 넘게 차이",
+    "dalat_finding": "달랏·사파만 12개월 내내 반팔 단계가 없음",
+    "rain_peak": "다낭 10월 628mm·후에 10월 772.7mm(IBST)"
+  },
+  "structure": "핵심발견확장",
+  "gaps": [
+    {
+      "gap": "상위 10개 중 도시 8곳의 1~12월 최저기온을 한 표에 같이 놓고 옷차림 단계로 바꾼 글이 없음(월별 수치 자체가 거의 없음)",
+      "covered_in": "도시 8곳 월별 옷차림 달력"
+    },
+    {
+      "gap": "달랏이 한여름에도 아침저녁 15~16℃라 겉옷이 필요하다는 점을 다룬 상위 글이 없음(달랏 자체가 빠짐)",
+      "covered_in": "달랏은 왜 7월에도 겉옷이 필요할까?"
+    },
+    {
+      "gap": "하노이와 호치민을 한 번에 종단하는 일정의 짐(18℃ 차이)을 일정 유형별 표로 나눈 글이 없음",
+      "covered_in": "북부와 남부를 한 번에 돌 때 짐 꾸리기"
+    },
+    {
+      "gap": "사파 겨울이 하노이보다 7~8℃ 낮아 하노이 짐으로 부족하다는 비교를 수치로 한 글이 없음",
+      "covered_in": "사파 겨울 옷차림, 하노이와 같은 짐으로 될까요?"
+    }
+  ],
+  "own_evidence": [
+    {
+      "type": "calc",
+      "desc": "IBST 기후 평년값으로 도시 8곳×12개월 96칸을 최저기온 5단계로 직접 분류해 칸 수를 셈",
+      "proof": "96칸 중 50칸이 주황색"
+    },
+    {
+      "type": "table",
+      "desc": "96칸 분류 결과를 색 달력 그림으로 직접 제작(비 오는 날 15일+ 표시 포함)",
+      "proof": "칸의 숫자와 색은 모두 소수점 첫째 자리 값 기준"
+    }
+  ],
+  "hermes_score": 96,
+  "score_history": [
+    88,
+    96
+  ],
+  "factcheck_tool": {
+    "run": "2026-10-17 judge-gate factcheck.py",
+    "result": "30건 중 지지 23·틀림 1(L8 9℃→1차 출처 재확인 결과 IBST 9.3℃·웨더스파크 8.3℃라 '8℃ 넘게'로 보수 수정)·과장 1(달랏 출처 표기 보완)·미확인 5(남부 기온·강수일, IBST 표와 대조해 일치)"
+  }
+}
