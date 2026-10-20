@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { HOME_DESCRIPTION, HOME_TITLE, SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 import { getCollection } from 'astro:content';
 import { CATEGORIES, categoryOf } from '../categories';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -21,7 +21,7 @@ const catCounts = CATEGORIES.map((c) => ({ ...c, count: c.posts.length }));
 <!doctype html>
 <html lang="ko">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={HOME_TITLE} description={HOME_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
