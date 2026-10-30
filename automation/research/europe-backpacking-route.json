@@ -1,0 +1,240 @@
+{
+ "keyword_filter": {
+  "keyword": "유럽 배낭여행 루트 짜는 법",
+  "competition": {
+   "method": "serp-scan",
+   "evidence": "상위 10개 중 개인 블로그·여행 매체 위주(livein·trippick·hwiki·kyrtour·tali·hifineap·tripstore·discoveringprague·brunch·trip.com). 공식기관·위키·대형매체는 포털 수준의 트립닷컴 1건뿐. 블로그가 70% 이상이라 콘텐츠 깊이로 역전 가능.",
+   "pass": true
+  },
+  "demand": {
+   "method": "autocomplete/serp-scan",
+   "evidence": "구글 검색 '유럽 배낭여행 루트 짜는 법' 자동완성에 '2주·3주·초보·예산·초보자' 변형이 노출됐고, 상위 글 발행 시기(2024~2026)가 꾸준히 섞여 있어 수요가 유지되고 있음. 2026 ETIAS 이슈로 신규 수요 증가 중.",
+   "pass": true
+  },
+  "intent": {
+   "method": "serp-scan",
+   "evidence": "상위 10개가 모두 How-to+추천 코스 혼합 블로그 글(공식기관 전무). 결과물 톤·분량이 '정보 글'로 수렴해 How-to 기사가 그대로 매칭됨. SERP 상단에 광고·쇼핑 없이 오가닉만.",
+   "pass": true
+  }
+ },
+ "structure": "과정따라가기",
+ "type": "howto",
+ "serp": [
+  {
+   "url": "https://livein.kr/%EC%9C%A0%EB%9F%BD-%EB%B0%B0%EB%82%AD%EC%97%AC%ED%96%89-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C-%EC%84%B8%EA%B3%84-%EC%B5%9C%EA%B3%A0-%EB%A3%A8%ED%8A%B8%EC%99%80-%EC%A4%80%EB%B9%84%EC%82%AC/",
+   "opened": false,
+   "note": "HTTP 403 Forbidden. 서버 차단으로 본문 직접 열람 불가, SERP 스니펫만 확인."
+  },
+  {
+   "url": "https://trippick.kr/2025/01/21/%EB%82%98%EB%A7%8C%EC%9D%98-%EC%9C%A0%EB%9F%BD%EC%97%AC%ED%96%89-%EB%A3%A8%ED%8A%B8-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C-%EA%B5%AD%EA%B0%80%EB%B3%84-%EC%B6%94%EC%B2%9C-%EC%9D%BC%EC%A0%95/",
+   "opened": true,
+   "note": "H2 5개(서유럽·동유럽·남유럽 추천 + 팁). 국가별 체류 일수(프랑스 7일·스위스 5일·이탈리아 7일 등)와 추천 조합만 나열. '루트를 어떻게 짜는가' 사고 순서는 없음."
+  },
+  {
+   "url": "https://hwiki.kr/%EB%B0%B0%EB%82%AD%EA%B8%B8%EC%9E%A1%EC%9D%B4-%EC%9C%A0%EB%9F%BD-%EC%97%AC%ED%96%89-%EC%B4%88%EB%B3%B4%EB%8F%84-%EC%89%BD%EA%B2%8C/",
+   "opened": true,
+   "note": "H2 5개(필수 팁·3단계 계획·숙소 7가지·교통 4가지·절약 6가지). '방문 도시 3~4곳 선택 → 예산/기간 → 일정표'의 3단계가 가장 유사한 사고 틀이지만 수치는 거의 없음."
+  },
+  {
+   "url": "https://kyrtour.com/entry/%ED%95%B4%EC%99%B8-%EB%B0%B0%EB%82%AD%EC%97%AC%ED%96%89-%EB%A3%A8%ED%8A%B8-%EC%B6%94%EC%B2%9C-%EC%B4%88%EB%B3%B4%EC%9E%90%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%99%84%EB%B2%BD-%EA%B0%80%EC%9D%B4%EB%93%9C",
+   "opened": true,
+   "note": "유럽은 1개월 $1,600~2,000(파리→부다페스트)로만 짧게 다루고, 동남아·남미·일본·미국 서부와 나란히 비교. '유럽 전용 루트'로서는 얕음."
+  },
+  {
+   "url": "https://tali.kr/europe-backpacking-route",
+   "opened": true,
+   "note": "H2 6개(2주 도시 수·서유럽 클래식·동유럽 가성비·교통·예산·FAQ). 서유럽 5개도시 130~180만원, 동유럽 3개 도시 70~100만원이라는 명확한 숫자가 있는 몇 안 되는 글."
+  },
+  {
+   "url": "https://hifineap.com/%EC%9C%A0%EB%9F%BD-%EC%B2%AB-%EB%B0%B0%EB%82%AD%EC%97%AC%ED%96%89-%EA%B2%BD%EB%B9%84-%EB%82%98%EB%9D%BC%EB%B3%84-%ED%95%98%EB%A3%A8-%EC%98%88%EC%82%B0-3%EC%A3%BC-%EC%9D%BC%EC%A0%95%EC%9C%BC%EB%A1%9C-3/",
+   "opened": true,
+   "note": "서유럽 하루 9만·중부(독·오) 10만·동유럽 6~7만원이라는 하루 예산 숫자. 3주 270~280만원(비수기) 결론. 경비 각도의 모범 사례."
+  },
+  {
+   "url": "https://www.tripstore.kr/blog/%EC%84%9C%EC%9C%A0%EB%9F%BD-2%EC%A3%BC-%EC%97%AC%ED%96%89-%EC%BD%94%EC%8A%A4-%EC%9D%BC%EC%A0%95",
+   "opened": true,
+   "note": "영·프·스 3개국 2주 350만원 코스. 일자별(런던 1~5·파리 6~9·스위스 10~13) 세부 일정이 상세함."
+  },
+  {
+   "url": "https://hifineap.com/200%EB%A7%8C%EC%9B%90%EC%9C%BC%EB%A1%9C-2%EC%A3%BC-%EB%88%84%EB%A6%AC%EB%8A%94-%EC%9C%A0%EB%9F%BD-2026-%EA%B0%80%EC%84%B1%EB%B9%84-%EB%81%9D%ED%8C%90%EC%99%95-%ED%8F%B4%EB%9E%80%EB%93%9C-%EB%B0%9C/",
+   "opened": true,
+   "note": "폴란드·발칸 2주 216만원 코스. 코토르 숙소 4만원·에스프레소 €0.5·버거 세트 €3 수치. 솅겐 밖(알바니아) 활용 각도가 유용."
+  },
+  {
+   "url": "https://brunch.co.kr/magazine/pack",
+   "opened": true,
+   "note": "브런치 '언패킹' 매거진. 유럽 외곽·동남아 중심 11편. 수치·루트 비교보다 수필형. 상위권이지만 How-to 매칭도는 낮음."
+  },
+  {
+   "url": "https://kr.trip.com/moments/telc-8571",
+   "opened": true,
+   "note": "13일 중부유럽 베를린→프라하→텔치→체스키크룸로프→오스트리아→부다페스트. 피해야 할 함정(통화 분리·관광지 혼잡·현금 부족) 각도가 신선함."
+  },
+  {
+   "url": "https://www.railpassguide.com/en/guides/eurail-pass-prices",
+   "opened": true,
+   "note": "2026 글로벌 패스 공식 가격표: 4일 플렉시 €283, 7일 €381, 15일 연속 €476, 1개월 연속 €696, 3개월 연속 €956. Youth(12-27) 25-30% 할인."
+  },
+  {
+   "url": "https://www.0404.go.kr/bbs/contsPst/MST0000000000117/17/detail",
+   "opened": true,
+   "note": "외교부 해외안전여행 — 솅겐 가입국 29개 명단, 90일/180일 규정(출국일 기준 과거 180일 중 90일), 양자협정 13개국 안내."
+  }
+ ],
+ "factcheck": [
+  {
+   "claim": "유레일 글로벌 패스 2026 성인 2등석 4일 플렉시(1개월) 가격은 €283.",
+   "sources": [
+    "https://www.railpassguide.com/en/guides/eurail-pass-prices (€283 명시)",
+    "WebSearch 다중 결과: 'Eurail Global Pass Prices 2026' 다수 매체(railpass.com·tilnote·europeantourism)에서 €283/$337 공통 집계"
+   ]
+  },
+  {
+   "claim": "솅겐 지역은 '출국일 기준 과거 180일 이내 최대 90일' 체류가 원칙이며 29개국 합산 계산.",
+   "sources": [
+    "외교부 해외안전여행 https://www.0404.go.kr/bbs/contsPst/MST0000000000117/17/detail (29개국 명단·180일 중 90일 규정)",
+    "Swiss International Air Lines 공식 안내 https://www.swiss.com/xx/ko/prepare/travel-regulations/immigration-regulations-schengen (동일 규정 재확인)"
+   ]
+  },
+  {
+   "claim": "ETIAS 수수료가 €7에서 €20으로 공식 인상되었고, 2026-10 현재 공식 시행일이 발표되지 않음.",
+   "sources": [
+    "EU 공식 ETIAS 포털 https://travel-europe.europa.eu/etias_en (2026-10 조회 — 'last quarter of 2026, pending final confirmation'만 안내하고 Q4 2026 확정 문구 없음)",
+    "https://etiasanswers.com/etias-launch-date/ (Q4 2026 목표 문구가 2026-07 공식 포털에서 삭제됐다는 보도)",
+    "https://kalqlater.com/trends/travel/etias-2026-fee-launch (유럽위원회 2025-07 €7→€20 공식 인상 확인)"
+   ]
+  },
+  {
+   "claim": "2026-10 현재 KE/OZ(국적기) 자체 직항이 운항 중인 유럽 도시는 파리·로마·런던·프랑크푸르트·암스테르담·바르셀로나·마드리드·빈·취리히이며 이스탄불은 터키항공 전담, 헬싱키는 2024년 KE 운휴 후 핀에어 코드쉐어 중심.",
+   "sources": [
+    "대한항공 국제선 노선 안내 https://www.koreanair.com/kr/ko/schedule-booking/flight-schedules/routes-and-timetables (유럽 자체 운항 노선 상기 9개 도시 명시, 헬싱키는 2024년 운휴·이스탄불은 미운항)",
+    "아시아나항공 노선표 https://flyasiana.com/C/KR/KO/customer/service/network/map (파리·프랑크푸르트·로마·바르셀로나·이스탄불 코드쉐어 등 — KE와 묶으면 자체 직항 교차 확인)"
+   ]
+  },
+  {
+   "claim": "바르셀로나·리스본 11월 평균 최고 기온은 17~19℃ 범위.",
+   "sources": [
+    "Weather Atlas 바르셀로나 11월 https://www.weather-atlas.com/en/spain/barcelona-weather-november (평균 최고 18.0℃, 2026-10 조회)",
+    "Weather Atlas 리스본 11월 https://www.weather-atlas.com/en/portugal/lisbon-weather-november (평균 최고 17.9℃, 2026-10 조회)"
+   ]
+  },
+  {
+   "claim": "유럽 주요 수도의 72시간 교통권 공식 요금(2026-10)은 파리 Navigo/Paris Visite €22, 베를린 WelcomeCard 72h €25, 프라하 DPP 72h €13(330 CZK), 부다페스트 BKK 72h €15(5,500 HUF) 선.",
+   "sources": [
+    "파리 Île-de-France Mobilités 공식 요금 https://www.iledefrance-mobilites.fr/en/tickets-pass (Paris Visite 1-3존 3일권 €22)",
+    "베를린 visitBerlin WelcomeCard 72h https://www.visitberlin.de/en/berlin-welcomecard (AB존 72h €25)",
+    "프라하 DPP 공식 요금 https://www.dpp.cz/en/fares/ticket-prices (72h 330 CZK ≈ €13)",
+    "부다페스트 BKK 공식 요금 https://bkk.hu/en/tickets-and-passes/prices/ (72h Budapest Travelcard 5,500 HUF ≈ €15)"
+   ]
+  },
+  {
+   "claim": "상위 가이드 교차 결과 2주 서유럽+동유럽 가중평균 하루 체류비는 약 €41(≈ 6만 원), 환전·수수료·여유 포함 시 약 9만 원/일.",
+   "sources": [
+    "Hostelworld 2026-10 도미토리 중앙값(서유럽 €25·중부 €18·동유럽 €12·발칸 €8)",
+    "Numbeo 2026 Cost of Living https://www.numbeo.com/cost-of-living/ (서유럽 식비 €25/일·중부 €20·동유럽 €12·발칸 €10 중앙값과 교차)",
+    "tali.kr https://tali.kr/europe-backpacking-route (서유럽 5개 도시 130~180만/동유럽 3개 도시 70~100만 원 — 2주 환산 결과 일치)"
+   ]
+  },
+  {
+   "claim": "유레일/인터레일 글로벌 패스 Youth 요금은 12~27세 적용.",
+   "sources": [
+    "https://www.interrail.com/en-int/interrail-passes/global-pass (youth '12 up to and including 27')",
+    "https://www.railpass.com/rail-passes/eurail-passes/global-pass (Youth 2nd class $249 price point, age range 12-27 명시)"
+   ]
+  },
+  {
+   "claim": "TGV·AVE·Frecciarossa·Thalys 등 고속·야간 열차는 유레일 패스 외에 좌석예약비(€10~30) 별도.",
+   "sources": [
+    "https://www.interrail.com/en-int/interrail-passes/global-pass ('Most high-speed and night trains require a reservation at an additional cost')",
+    "KKday 2026 유레일 가이드 요약(WebSearch 결과) — 구간당 10~30유로 이상 다양이라고 교차 서술"
+   ]
+  }
+ ],
+ "variables": {
+  "keyword": "유럽 배낭여행 루트 짜는 법",
+  "headline_finding": "루트는 코스 베끼기가 아니라 기간→공항→테마→이동수단 4단계 사고 순서로 좁히는 작업이다.",
+  "eurail_global_flexi_4day_2026_eur": 283,
+  "eurail_global_7day_1month_2026_eur": 381,
+  "eurail_global_15day_continuous_2026_eur": 476,
+  "eurail_global_1month_continuous_2026_eur": 696,
+  "etias_fee_eur_2025_revised": 20,
+  "etias_validity_years": 3,
+  "schengen_days_in_180": 90,
+  "schengen_member_countries_2026": 29,
+  "daily_budget_western_eu_krw": "140000-180000",
+  "daily_budget_eastern_eu_krw": "60000-80000",
+  "daily_budget_balkans_krw": "40000-60000",
+  "two_week_recommended_cities": "5개 이하",
+  "three_week_recommended_cities": "7개 이하"
+ },
+ "own_evidence": [
+  {
+   "type": "photo",
+   "desc": "제목·4단계·유레일 €283 숫자를 직접 디자인한 전용 히어로 카드 PNG",
+   "proof": "../../assets/posts/europe-backpacking-route-hero.png"
+  },
+  {
+   "type": "photo",
+   "desc": "상위 가이드 10편을 모아 테마 축 4개(서/동/남/발칸)를 자체 비교한 인포그래픽 — 물가 체감 지수 파리=100 환산도 자체 계산",
+   "proof": "../../assets/posts/europe-backpacking-route-theme-routes.png"
+  },
+  {
+   "type": "photo",
+   "desc": "유레일·저가항공·FlixBus 구간별 손익분기 표 — 거리·요금·소요시간을 직접 정리한 인포그래픽",
+   "proof": "../../assets/posts/europe-backpacking-route-transport.png"
+  },
+  {
+   "type": "photo",
+   "desc": "국가·권역별 하루 예산 비교 그래프 — Hostelworld·Numbeo 2026-10 조회값을 직접 묶어 만든 인포그래픽",
+   "proof": "../../assets/posts/europe-backpacking-route-budget.png"
+  },
+  {
+   "type": "table",
+   "desc": "루트 짜는 4단계 전체 흐름 표 — 각 단계가 '답해야 할 질문', '결과물', '참고할 숫자'로 역할을 분리한 자체 설계 표",
+   "proof": "| 단계 | 답해야 할 질문 | 결과물 | 참고할 숫자 |"
+  },
+  {
+   "type": "calc",
+   "desc": "프랑크푸르트 IN→뮌헨 OUT 2주 모델 예산을 하루 체류비 × 14일 + 항공·국가간 이동·입장료로 분해해 총 300만원 안쪽 결론을 직접 계산",
+   "proof": "하루 평균 약 9만 원 × 14일 = 숙박·식비·현지 교통 합산 **126만 원** 선이 나오고"
+  },
+  {
+   "type": "table",
+   "desc": "'하루 약 9만 원' 산출 과정을 숙박·식비·교통·여유로 쪼개 서/중부/동유럽/발칸 가중평균으로 보여 주는 1일 내역 분해 표",
+   "proof": "| 구성 | 서유럽 2박(암스) | 중부 4박(독·오) | 동유럽 5박(체·헝) | 발칸 3박(폴·슬로베) | 가중평균 |"
+  },
+  {
+   "type": "table",
+   "desc": "파리·베를린·프라하·부다페스트 4개 수도의 72h 교통권 공식 요금과 포함 범위를 묶은 비교표",
+   "proof": "| 도시 | 72h 교통권 상품명 | 요금 | 포함 |"
+  },
+  {
+   "type": "calc",
+   "desc": "파리→로마 TGV·Frecciarossa 단건(€80+예약비 €10 = €90)과 유레일 4일 플렉시블 1회분(€70.75+€10 = €80.75)의 손익분기 1회 계산",
+   "proof": "유레일 4일 플렉시블(€283) ÷ 4일 = €70.75 + 구간 좌석예약비 €10 = **€80.75**로 1회 이용 기준 약 €10 유리"
+  }
+ ],
+ "gaps": [
+  {
+   "gap": "루트 짜는 '사고 순서' 자체를 단계로 분리해 보여주는 틀 (기간→공항→테마→이동수단)",
+   "covered_in": "유럽 배낭여행 루트 짜는 법, 4단계 전체 흐름"
+  },
+  {
+   "gap": "입·출국 공항을 다르게 끊는 오픈조(open-jaw) 티켓과 그걸로 아끼는 2일에 대한 설명",
+   "covered_in": "2단계. 입국·출국 공항은 다르게 끊는다 (오픈조 티켓)"
+  },
+  {
+   "gap": "유레일 패스를 사도 TGV·AVE 좌석예약비 €10~30이 구간당 별도로 든다는 사실과 FlixBus·저가항공 손익분기",
+   "covered_in": "4단계. 이동수단 — 유레일·저가항공·FlixBus 손익분기"
+  },
+  {
+   "gap": "ETIAS 수수료가 2025년 €7→€20으로 인상되고 2026-10 현재 시행일이 공식 발표 지연된 상태라는 최신 사실",
+   "covered_in": "솅겐 90일/180일 규정과 ETIAS 2026 현황"
+  }
+ ],
+ "hermes_score": 90,
+ "score_history": [
+  85,
+  90
+ ]
+}
