@@ -1,0 +1,217 @@
+{
+ "keyword_filter": {
+  "keyword": "여행 환전 해외 카드 꿀팁",
+  "competition": {
+   "method": "serp-scan",
+   "evidence": "상위 10개 중 공식기관은 KBthink(KB국민카드 공식) 2건뿐이고 나머지는 개인·중소 블로그(스카이스캐너·홀라플라이·뭉게·주마니·네오노마드·그린스케치·비주얼뱅크 등)로 구성. 공식 대형매체 지배력이 낮아 깊이·수치·자체 비교표로 역전 가능.",
+   "pass": true
+  },
+  "demand": {
+   "method": "autocomplete/serp-scan",
+   "evidence": "구글 검색 '여행 환전 꿀팁' 자동완성에 '트래블로그·트래블월렛·수수료·2026·공항 환전·DCC 차단' 변형이 노출됨. 상위 글 발행 시기(2025~2026 하반기)가 꾸준히 섞여 수요가 유지되고, 2026 트래블카드 혜택 개편으로 신규 수요 증가.",
+   "pass": true
+  },
+  "intent": {
+   "method": "serp-scan",
+   "evidence": "상위 10개가 모두 How-to+비교 블로그로 수렴하며 쇼핑·광고 결과 없이 오가닉만 노출. 정보형 가이드 글이 그대로 매칭되는 SERP 구성이라 이 글의 톤·분량과 의도가 일치함.",
+   "pass": true
+  }
+ },
+ "structure": "결론먼저",
+ "type": "howto",
+ "overlap_ok": "같은 사이트에 환전·해외 카드 수수료를 비교·수치로 다룬 글은 없으며 overseas-travel-checklist-first-time은 전반적 준비물 체크리스트(여권·보험·충전기 등)에 그친다. 이 글은 트래블카드 3종 수수료 구조·DCC 함정만 깊이 다루는 전용 전문글이다.",
+ "serp": [
+  {
+   "url": "https://kbthink.com/card/travel-vs-credit.html",
+   "opened": true,
+   "note": "KB국민카드 공식 — 트래블카드 vs 신용카드 비교. 해외결제수수료 2.5%·ATM 건당 $3·DCC 3~5% 핵심 수치의 1차 출처. H2 3개(핫한 이유·신용카드 보완·쓸까말까)."
+  },
+  {
+   "url": "https://www.skyscanner.co.kr/flights/advice/8tips-to-save-on-exchange",
+   "opened": false,
+   "note": "스카이스캐너 환전 꿀팁 8가지. 본문 본문 추출이 서버 측에서 반환 안 됨(빈 응답). 스니펫만 참조 — '공항 환전 지양, 트래블카드 메인' 결론."
+  },
+  {
+   "url": "https://www.skyscanner.co.kr/destinations/advice/things-to-know-when-using-credit-card-abroad",
+   "opened": false,
+   "note": "스카이스캐너 해외 카드 결제 7가지 꿀팁. 본문 추출 실패(빈 응답). 제목·스니펫만 확인."
+  },
+  {
+   "url": "https://kbthink.com/life/card/dcc-block.html",
+   "opened": true,
+   "note": "KB국민카드 공식 DCC 안내. 3~8% 수수료·이중 환전 구조·DCC 차단 경로(KB Pay > 해외이용서비스 > DCC차단) 1차 출처."
+  },
+  {
+   "url": "https://esim.holafly.com/ko/travel-tips/travel-log-travel-wallet-comparison/",
+   "opened": true,
+   "note": "홀라플라이 2026 비교. 트래블로그 58종·트래블월렛 46종·ATM $500 한도·재환전 1%/0% 숫자 핵심 교차용."
+  },
+  {
+   "url": "https://mungge.com/2026-07-14-travel-travel-card-comparison-2026/",
+   "opened": true,
+   "note": "뭉게 2026 트래블카드 비교. 4종(트래블로그/월렛/SOL/토스뱅크)을 묶어 ATM·환전·재환전 수수료를 표로 정리. H2 9개로 가장 체계적."
+  },
+  {
+   "url": "https://jumanni.com/travelog-vs-travelwallet-comparison/",
+   "opened": true,
+   "note": "주마니 트래블로그 vs 트래블월렛. 네트워크(Master·UnionPay vs Visa)·재환전·ATM 조건 재확인."
+  },
+  {
+   "url": "https://neonomadj.com/%ED%8A%B8%EB%9E%98%EB%B8%94%EB%A1%9C%EA%B7%B8-vs-sol%ED%8A%B8%EB%9E%98%EB%B8%94-vs-%ED%8A%B8%EB%9E%98%EB%B8%94%EC%9B%94%EB%A0%9B-%ED%95%B4%EC%99%B8%EC%97%AC%ED%96%89-%EC%B9%B4%EB%93%9C/",
+   "opened": true,
+   "note": "네오노마드 트래블로그·SOL·월렛 3종 비교. SOL트래블 42종·공항 라운지 혜택·'카드 2장 보유 권장' 결론 교차."
+  },
+  {
+   "url": "https://visualbank.io/blog/cards/overseas-card-fee-by-issuer/",
+   "opened": true,
+   "note": "비주얼뱅크 수수료 구조 해설. 국제브랜드 수수료 1% + 서비스 수수료 0.18~0.3% + DCC 3~8%의 산식 가장 명확하게 분리."
+  },
+  {
+   "url": "https://trip.kpark.co.kr/p/2026-%ED%8A%B8%EB%9E%98%EB%B8%94%ED%8E%98%EC%9D%B4-%EC%B9%B4%EB%93%9C-%EB%B9%84%EA%B5%90-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+   "opened": true,
+   "note": "KPARK 2026 트래블페이 비교. 중국·동남아 시나리오(알리페이·위챗페이) 각도와 '여행 마니아=SOL/트래블로그' 추천 교차."
+  },
+  {
+   "url": "https://www.greenskech2.com/2026/03/dcc.html",
+   "opened": true,
+   "note": "그린스케치 베트남 다낭 DCC 사례. 200만 동 결제에서 9,800원(약 9%) 추가 청구 실측 사례 — DCC 10% 극단 사례 교차."
+  },
+  {
+   "url": "https://money.utrip.kr/p/2026-%ED%95%B4%EC%99%B8%EC%97%AC%ED%96%89-%EC%B9%B4%EB%93%9C%EC%82%AC-%ED%98%9C%ED%83%9D-%EC%B4%9D%EC%A0%95%EB%A6%AC",
+   "opened": true,
+   "note": "유트립 2026 해외여행 카드 — 삼성 ID Global·신한비자·NH농협 휴가중카드 등 신용카드 쪽 추천과 설계사 경유 혜택 각도."
+  },
+  {
+   "url": "https://everylog.co.kr/%ED%8A%B8%EB%9E%98%EB%B8%94-%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C-%ED%8A%B8%EB%9E%98%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%82%AC%EC%9A%A9%EB%B2%95-%ED%98%9C%ED%83%9D/",
+   "opened": true,
+   "note": "에브리로그 트래블로그 사용법·혜택 2026 — 해외서비스 수수료 건당 $3·국제브랜드 1% 면제·54종 이벤트 2026-12-31까지 1차 교차."
+  },
+  {
+   "url": "https://www.0404.go.kr/",
+   "opened": true,
+   "note": "외교부 해외안전여행 공식. 영사콜센터 +82-2-3210-0404 24시간·여행경보 4단계·긴급 경비 지원 등 1차 출처."
+  }
+ ],
+ "factcheck": [
+  {
+   "claim": "신용카드 해외 결제 수수료는 국제브랜드 수수료 약 1% + 카드사 해외서비스 수수료 0.18~0.3%의 이중 구조로 약 2.5% 수준이다.",
+   "sources": [
+    "https://kbthink.com/card/travel-vs-credit.html (KB국민카드 공식 — 해외결제수수료 약 2.5% 수치 명시)",
+    "https://visualbank.io/blog/cards/overseas-card-fee-by-issuer/ (국제브랜드 수수료 1% + 해외서비스 수수료 0.18~0.3% 분리 설명)",
+    "https://everylog.co.kr/%ED%8A%B8%EB%9E%98%EB%B8%94-%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C-%ED%8A%B8%EB%9E%98%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%82%AC%EC%9A%A9%EB%B2%95-%ED%98%9C%ED%83%9D/ (해외서비스 건당 $0.5·국제브랜드 1% 면제 조건 교차)"
+   ]
+  },
+  {
+   "claim": "원화결제(DCC) 선택 시 가맹점 임의 환율로 3~8%, 심한 경우 10%까지 추가 수수료가 발생한다.",
+   "sources": [
+    "https://kbthink.com/life/card/dcc-block.html (KB국민카드 공식 — DCC 3~8% 수수료 수치 명시)",
+    "https://visualbank.io/blog/cards/overseas-card-fee-by-issuer/ (100만원 결제 시 최대 10만원 추가 사례)",
+    "https://www.greenskech2.com/2026/03/dcc.html (다낭 200만 동 결제 → 9,800원 ≈ 약 9% 실측 사례)"
+   ]
+  },
+  {
+   "claim": "하나 트래블로그는 상시 100% 우대 통화 4종(USD·JPY·EUR·GBP) + 이벤트 54종(2026-12-31까지)으로 사실상 58종 통화 환전 수수료 0원이다.",
+   "sources": [
+    "https://mungge.com/2026-07-14-travel-travel-card-comparison-2026/ (상시 4종 + 이벤트 54종 = 58종 명시)",
+    "https://esim.holafly.com/ko/travel-tips/travel-log-travel-wallet-comparison/ (58개국 통화 지원 교차)",
+    "https://everylog.co.kr/%ED%8A%B8%EB%9E%98%EB%B8%94-%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C-%ED%8A%B8%EB%9E%98%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%82%AC%EC%9A%A9%EB%B2%95-%ED%98%9C%ED%83%9D/ (상시 USD·JPY·EUR·GBP + 54종 이벤트 2026-12-31까지)"
+   ]
+  },
+  {
+   "claim": "트래블월렛은 해외 ATM 월 $500까지 무료, 초과분 2% 수수료가 적용되고 재환전 수수료는 0%이다.",
+   "sources": [
+    "https://esim.holafly.com/ko/travel-tips/travel-log-travel-wallet-comparison/ (ATM 월 $500 이하 무료 교차)",
+    "https://mungge.com/2026-07-14-travel-travel-card-comparison-2026/ (월 $500 무료, 초과 2% + 환급 수수료 0% 명시)",
+    "https://jumanni.com/travelog-vs-travelwallet-comparison/ (초과 2% + 재환전 0% 교차)"
+   ]
+  },
+  {
+   "claim": "외교부 영사콜센터는 24시간 운영되며 대표번호 +82-2-3210-0404로 통역·긴급경비·분실신고 지원이 제공된다.",
+   "sources": [
+    "https://www.0404.go.kr/ (외교부 해외안전여행 공식 — 영사콜센터 +82-2-3210-0404 24시간 운영)",
+    "WebSearch 교차: '영사콜센터 24시간 3210-0404' 다수 매체(외교부 보도자료·국민권익위) 공통 표기"
+   ]
+  }
+ ],
+ "variables": {
+  "keyword": "여행 환전 해외 카드 꿀팁",
+  "headline_finding": "결론은 환전 90% 트래블카드 + 비상용 현금 10%, 결제는 트래블카드 메인에 신용카드 보증금 백업, DCC 차단은 필수.",
+  "credit_card_fee_percent": 2.5,
+  "international_brand_fee_percent": 1.0,
+  "overseas_service_fee_percent_min": 0.18,
+  "overseas_service_fee_percent_max": 0.3,
+  "atm_overseas_service_fee_usd": 3,
+  "dcc_extra_fee_percent_min": 3,
+  "dcc_extra_fee_percent_max": 8,
+  "dcc_extra_fee_percent_extreme": 10,
+  "travelog_supported_currencies": 58,
+  "travelog_always_free_currencies": 4,
+  "travelwallet_supported_currencies": 46,
+  "travelwallet_always_free_currencies": 3,
+  "travelwallet_atm_free_cap_usd": 500,
+  "travelwallet_atm_over_fee_percent": 2,
+  "travelwallet_rechange_fee_percent": 0,
+  "travelog_rechange_fee_percent": 1,
+  "sol_travel_supported_currencies": 42,
+  "consulate_hotline": "+82-2-3210-0404"
+ },
+ "own_evidence": [
+  {
+   "type": "photo",
+   "desc": "제목·수수료 0원·DCC 3~8% 숫자를 자체 디자인한 이 글 전용 히어로 카드 PNG",
+   "proof": "../../assets/posts/travel-currency-exchange-card-tips-hero.png"
+  },
+  {
+   "type": "photo",
+   "desc": "공항·시중은행·트래블카드·현지ATM 4가지 환전 수단의 수수료 구조를 자체 비교한 인포그래픽 PNG",
+   "proof": "../../assets/posts/travel-currency-exchange-card-tips-methods.png"
+  },
+  {
+   "type": "photo",
+   "desc": "트래블로그·트래블월렛·SOL트래블 3종의 지원 통화·ATM·재환전·네트워크를 묶어 자체 정리한 비교표 PNG",
+   "proof": "../../assets/posts/travel-currency-exchange-card-tips-compare.png"
+  },
+  {
+   "type": "table",
+   "desc": "공항·시중은행·트래블카드·신용카드 4개 수단의 환전 수수료·결제 수수료·ATM 수수료·DCC 리스크를 한 표로 묶은 자체 설계 비교표",
+   "proof": "| 구분 | 환전 수수료 | 해외 결제 수수료 | 해외 ATM 수수료 | DCC 리스크 |"
+  },
+  {
+   "type": "table",
+   "desc": "트래블로그·트래블월렛·SOL트래블의 7개 항목(상시 우대·총 통화·결제·ATM·재환전·네트워크·발급) 자체 설계 비교표",
+   "proof": "| 상시 100% 우대 통화 | USD·JPY·EUR·**GBP 4종** | USD·JPY·EUR 3종 | USD·JPY·EUR 등 **42종** |"
+  },
+  {
+   "type": "table",
+   "desc": "미국·서유럽·영국·일본·동남아·중국 6개 지역별 메인·백업·현금 조합을 자체 설계한 지역별 매칭표",
+   "proof": "| 지역·통화 | 메인 카드 | 백업 카드 | 비상 현금 |"
+  },
+  {
+   "type": "calc",
+   "desc": "신용카드 2.5% 수수료 가정으로 10만 원·100만 원 결제 손익과 10일 여행 2.5만 원 절감 직접 산출",
+   "proof": "10만 원짜리 호텔을 신용카드로 결제하면 수수료 약 2,500원"
+  }
+ ],
+ "gaps": [
+  {
+   "gap": "신용카드 해외 결제 수수료가 '국제브랜드 수수료 약 1% + 카드사 해외서비스 수수료 0.18~0.3%'의 이중 구조로 어떻게 2.5%가 되는지 산식을 쪼개서 보여준 한국어 가이드가 거의 없다.",
+   "covered_in": "신용카드 해외 결제 수수료 2.5%는 어떻게 나오는가"
+  },
+  {
+   "gap": "트래블로그 상시 100% 우대 통화 4종(USD·JPY·EUR·GBP)·트래블월렛 3종·SOL트래블 42종의 지원 통화 격차와 네트워크(Master/UnionPay vs Visa) 차이를 한 표로 묶은 교차 비교.",
+   "covered_in": "트래블로그·트래블월렛·SOL트래블 — 2026 핵심 비교"
+  },
+  {
+   "gap": "결제 단말기뿐 아니라 ATM 화면에서도 DCC가 나와 'Continue without conversion / Decline conversion'을 눌러야 수수료가 빠지지 않는다는 ATM 수준 DCC 함정을 짚은 글이 드물다.",
+   "covered_in": "현지 ATM 출금 — 수수료 구조와 피하는 법"
+  },
+  {
+   "gap": "결제 거절·카드 분실·현지 사고 시 외교부 영사콜센터 +82-2-3210-0404 24시간 안내와 긴급 경비 지원 제도를 결제 수단 가이드와 묶어 다룬 글이 거의 없다.",
+   "covered_in": "분실·도난·결제 거절 대비 — 외교부와 영사콜센터"
+  }
+ ],
+ "hermes_score": 91,
+ "score_history": [
+  91
+ ]
+}
