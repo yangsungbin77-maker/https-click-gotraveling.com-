@@ -1,0 +1,278 @@
+{
+ "keyword_filter": {
+  "keyword": "동남아 여행 우기 피하는 시기",
+  "competition": {
+   "method": "serp-scan",
+   "evidence": "상위 10개 중 공식기관·대형매체는 없음. 다음 v.daum 뉴스 재게시 2건(daum.net), 개인·중소 여행 블로그 다수(skyscanner·joygoers·shpapa02·trip.minosplan·dailypop). 공식/위키 지배력이 거의 없어 깊이·수치·자체 비교표로 역전 가능한 롱테일 SERP.",
+   "pass": true
+  },
+  "demand": {
+   "method": "autocomplete/serp-scan",
+   "evidence": "구글 자동완성에 '동남아 우기 피하는 시기·동남아 여행시기·동남아 건기·동남아 11월 여행' 등 변형이 노출됨. 상위 글 발행 시기(2023~2026)가 꾸준히 섞여 수요 유지. 2025 동남아 홍수 뉴스 이후 2026 하반기 신규 수요 증가.",
+   "pass": true
+  },
+  "intent": {
+   "method": "serp-scan",
+   "evidence": "상위 10개가 전부 '국가/도시별 우기·건기 월 비교'의 How-to+정보 혼합 블로그. 광고·쇼핑 SERP 없이 오가닉만. 정보형 가이드 글이 그대로 매칭되는 구성이라 분량·수치 중심 글이 적중.",
+   "pass": true
+  }
+ },
+ "structure": "비교선택",
+ "type": "howto",
+ "overlap_ok": "같은 사이트에 동남아 전역 우기·건기를 국가별로 비교한 글은 없다. danang-rainy-season은 중부 베트남 1개 도시 전용 심층 글이고, vietnam-travel-checklist는 준비물 체크리스트라 주제가 다르다. 이 글은 7개국·세 몬순 축·태풍 창을 한 장에 묶은 전용 비교글이다.",
+ "serp": [
+  {
+   "url": "https://joygoers.com/%EB%8F%99%EB%82%A8%EC%95%84-%EB%82%A0%EC%94%A8/",
+   "opened": true,
+   "note": "동남아 7개국 날씨 정리 블로그. 베트남 북/남, 싱가포르 2~4월, 태국 11~5월, 캄보디아 11~2월, 라오스 11~2월, 필리핀 12~5월(태풍 7~9월), 말레이 2해안 리듬. 국가별 베스트월 분포 교차."
+  },
+  {
+   "url": "https://trip.minosplan.com/entry/%EB%8F%99%EB%82%A8%EC%95%84-%EC%9A%B0%EA%B8%B0-%EA%B1%B4%EA%B8%B0-%EC%A7%80%EC%97%AD%EB%B3%84-%EC%A0%95%EB%A6%AC-%EB%B0%8F-%EC%9B%90%EC%9D%B8-%EC%9D%B4%ED%95%B4",
+   "opened": true,
+   "note": "미노스트립 — 태국·캄보디아·라오스·베트남·필리핀·인니·말레이·싱가포르·괌·사이판 10곳 커버. 11~5월이 '덜 습한 때'·치앙마이 3~4월 연무 경고·몬순 원인(ITCZ) 설명이 특이."
+  },
+  {
+   "url": "https://shpapa02.com/southeast-asia-rainy-season-travel-guide/",
+   "opened": true,
+   "note": "동남아 3국(베트남 나트랑·다낭·푸꾸옥) 우기 가이드. 7~8월 나트랑·다낭 건기, 푸꾸옥 우기 분류 — '우기에도 리조트 호캉스 가능' 각도 교차."
+  },
+  {
+   "url": "https://v.daum.net/v/xf9qUO5J6V",
+   "opened": true,
+   "note": "다음 뉴스 재게시 — '건기 우기도 모르고 갔다가 여행 망쳤어요'. 다낭 9~11월 비 20배·태국 5~10월·발리 11~3월·싱가포르 6~8월·세부 6~10월 피하라는 핵심 결론 교차."
+  },
+  {
+   "url": "https://www.going.com/guides/best-time-to-visit-southeast-asia",
+   "opened": true,
+   "note": "Going.com Southeast Asia country-by-country. 태국 Nov-Feb dry / May-Oct wet · 베트남 3개 지역 분리(North/Central/South) · 캄보디아·라오스 Nov-Apr dry · 인니 May-Oct dry · 필리핀 Nov-May dry / Jun-Nov typhoon · 말레이 East vs West · 싱가포르 평탄."
+  },
+  {
+   "url": "https://southeastasiabackpacker.com/southeast-asia-climate/",
+   "opened": true,
+   "note": "본토 3계절(Dry Nov-Feb·Hot Mar-May·Wet Jun-Oct), 섬 2계절(Dry Apr-Sep·Wet Oct-Mar). 치앙마이 burning 3-4월 경고·보라카이 Oct~Feb(시아르가오 예외)·말레이 동해안 Nov-Feb 폐장 등 '예외 섬' 리듬 교차."
+  },
+  {
+   "url": "https://www.highlightstravel.com/southeast-asia/best-time-to-visit",
+   "opened": true,
+   "note": "Highlights Travel 2026. 국가별 Best Months 표(Thailand·Vietnam Nov-Apr / Cambodia Nov-Apr / Myanmar Nov-Feb / Laos Nov-Jan / Indonesia Apr-Sep). 총평 'Nov-Feb mainland·Dec-May Philippines'."
+  },
+  {
+   "url": "https://esim.holafly.com/travel-tips/best-time-to-visit-southeast-asia/",
+   "opened": true,
+   "note": "Holafly 2026 — 본토 Peak Nov-Feb·태국 Dry Nov-Apr·베트남 NE monsoon Oct-Apr·SW monsoon May-Sep·발리 May-Sep dry·말레이 서해안(Nov-Mar)/동해안(May-Sep)·'동해안 리조트 Nov-Feb 폐장'·'June-Nov typhoon in Philippines/Vietnam' 교차."
+  },
+  {
+   "url": "https://www.weather-atlas.com/en/thailand/bangkok-climate",
+   "opened": true,
+   "note": "Weather Atlas 방콕 — Dec 6.3mm(최건조)·Sep 334.3mm(최대) 월별 수치 1차 출처. 연 강수 1648mm·128 rainy days. Apr 평균 최고 35.4℃ 폭염 교차."
+  },
+  {
+   "url": "https://www.weather-atlas.com/en/vietnam/da-nang-climate",
+   "opened": true,
+   "note": "Weather Atlas 다낭 — Feb 49mm(최건조)·Nov 275mm(최대)·Sep 183mm. 연 1,570mm. Oct 최고 27.1℃·Nov 최고 25.5℃. 가을 집중 호우 패턴 1차 출처."
+  },
+  {
+   "url": "https://www.climatestotravel.com/climate/philippines/cebu-city",
+   "opened": true,
+   "note": "Climates to Travel 세부시 — 연 1,685mm·April 55.6mm(최건조)·July 210.6mm(최대). 열대저기압 위협 May-Dec·피크 Aug-Nov 1차 출처. 베스트 Mar-Apr·Dec-Feb 교차."
+  },
+  {
+   "url": "https://www.weather2travel.com/bali/denpasar/climate/",
+   "opened": true,
+   "note": "Weather2Travel 덴파사르 — Jan 328mm·Feb 261·Mar 225·Apr 117·May 107·Jun 90·Jul 119·Aug 53(최건조)·Sep 116·Oct 173·Nov 187·Dec 258. 발리 1월 328mm·8월 53mm 반대 리듬의 1차 출처."
+  },
+  {
+   "url": "https://www.skyscanner.co.kr/destinations/advice/the-weather-in-southeast-asia",
+   "opened": false,
+   "note": "스카이스캐너 '건기·우기 동남아 날씨' — 본문 추출 빈 응답(서버 측 봇 차단 추정). 스니펫만 확인."
+  },
+  {
+   "url": "https://www.thai-aec.com/what-to-know-about-monsoon-season-before-planning-a-southeast-asia-trip/",
+   "opened": false,
+   "note": "타이AEC Southeast Asia Monsoon Guide — 서버 403 Forbidden 차단. 스니펫만 확인."
+  },
+  {
+   "url": "https://www.dailypop.kr/news/articleView.html?idxno=40115",
+   "opened": false,
+   "note": "데일리팝 '동남아시아 도시별 건기·우기' — 302 리다이렉트로 본문 접근 불가. 스니펫에서 도시별 피해야 할 시기 요약만 참조."
+  }
+ ],
+ "factcheck": [
+  {
+   "claim": "방콕은 월 강수량이 12월 6.3mm에서 9월 334.3mm로 연중 50배 이상 벌어지고 5~10월이 우기, 11~2월이 건기다.",
+   "sources": [
+    "https://www.weather-atlas.com/en/thailand/bangkok-climate (Dec 6.3mm·Sep 334.3mm·연 1,648mm 명시)",
+    "https://www.going.com/guides/best-time-to-visit-southeast-asia (Thailand Dry Nov-Feb · Wet May-Oct 교차)",
+    "https://southeastasiabackpacker.com/southeast-asia-climate/ (mainland 3-season Dry Nov-Feb·Wet Jun-Oct 교차)"
+   ]
+  },
+  {
+   "claim": "다낭 월 강수량은 2월 49mm(최저)에서 11월 275mm(최고)로 이동해 2~5월 건기 대비 9~11월은 월 강수량 자체가 약 4~5배로 뛰고, 연중 피크는 275mm인 11월이다.",
+   "sources": [
+    "https://www.weather-atlas.com/en/vietnam/da-nang-climate (Feb 49mm·Nov 275mm·연 1,570mm 명시, 2026-11 조회)",
+    "https://v.daum.net/v/xf9qUO5J6V (다낭 9~11월이 연중 최대 강수 구간 요약 교차)",
+    "https://southeastasiabackpacker.com/southeast-asia-climate/ (중부 베트남 Oct-Jan wet 교차)"
+   ]
+  },
+  {
+   "claim": "하노이는 Weather Atlas 2026-11 조회 기준 월 강수량 Feb 7mm(최저)·Aug 135mm(최고)·연 595mm로 집계되며 5~9월이 우기, 11~2월이 건기다.",
+   "sources": [
+    "https://www.weather-atlas.com/en/vietnam/hanoi-climate (Feb 7mm·Aug 135mm·연 595mm 2026-11 조회)",
+    "https://www.going.com/guides/best-time-to-visit-southeast-asia (Vietnam North Oct-Dec dry 교차)",
+    "https://esim.holafly.com/travel-tips/best-time-to-visit-southeast-asia/ (Vietnam North NE monsoon pattern 교차)"
+   ]
+  },
+  {
+   "claim": "호치민은 Weather Atlas 2026-11 조회 기준 월 강수량 Feb 10mm(최저)·Jun 188mm(최고)·Sep 175mm·연 1,283mm로 5~10월이 우기, 12~3월이 건기다.",
+   "sources": [
+    "https://www.weather-atlas.com/en/vietnam/ho-chi-minh-city-climate (Jan 18·Feb 10·Jun 188·Sep 175·Dec 32mm 명시, 2026-11 조회)",
+    "https://www.going.com/guides/best-time-to-visit-southeast-asia (Vietnam South Nov-Apr dry 교차)",
+    "https://joygoers.com/%EB%8F%99%EB%82%A8%EC%95%84-%EB%82%A0%EC%94%A8/ (호치민 5~10월 우기 교차)"
+   ]
+  },
+  {
+   "claim": "발리(덴파사르)는 월 강수량이 1월 328mm(최고)·8월 53mm(최저)로 본토와 반대 리듬이고 5~9월이 건기다.",
+   "sources": [
+    "https://www.weather2travel.com/bali/denpasar/climate/ (월별 mm 전체 공개 — Jan 328·Aug 53)",
+    "https://esim.holafly.com/travel-tips/best-time-to-visit-southeast-asia/ (Indonesia May-Sep dry 교차)",
+    "https://southeastasiabackpacker.com/southeast-asia-climate/ (Indonesia best Apr-Sep·avoid Dec-Mar 교차)"
+   ]
+  },
+  {
+   "claim": "세부시 월 강수량은 Climates to Travel(연 1,685mm, Apr 55.6mm·Jul 210.6mm)·Weather Atlas(Oct 200mm 피크·Nov~Dec 110mm·연 1,340mm)를 교차하면 6월부터 비가 많고 10월에 추가 피크, 열대저기압은 5~12월·피크 8~11월이다.",
+   "sources": [
+    "https://www.climatestotravel.com/climate/philippines/cebu-city (연 1,685mm·April 55.6mm·July 210.6mm·태풍 May-Dec·피크 Aug-Nov 명시)",
+    "https://www.weather-atlas.com/en/philippines/cebu-city-climate (Oct 200mm·Nov 110mm·Dec 110mm·연 1,340mm 2026-11 조회)",
+    "https://esim.holafly.com/travel-tips/best-time-to-visit-southeast-asia/ ('typhoon June-November in Philippines' 교차)"
+   ]
+  },
+  {
+   "claim": "PAGASA는 2026년 11월 필리핀 담당 구역(PAR) 내 열대저기압 1~2개 진입 가능성을 공지했고, 10~11월이 세부·루손의 태풍 창 끝물이다.",
+   "sources": [
+    "https://www.gmanetwork.com/news/weather/content/1007988/pagasa-sees-1-2-tropical-cyclones-in-par-in-november-2026/story/ (PAGASA 2026-11 월간 전망 — PAR 내 TC 1~2개 명시)",
+    "https://www.climatestotravel.com/climate/philippines/cebu-city (세부 태풍 피크 Aug-Nov 명시)",
+    "https://en.wikipedia.org/wiki/2026_Pacific_typhoon_season (2026년 Pacific typhoon season 공식 집계 — 10월 4건 교차)"
+   ]
+  },
+  {
+   "claim": "싱가포르는 Weather Atlas 2026-11 조회 기준 연평균 2,343mm로 연중 편차가 작고 Jul 159mm(최저)·Dec 287mm(최고)·Feb 160mm·Nov 257mm 수준으로 11~1월이 월 240~290mm 피크다.",
+   "sources": [
+    "https://www.weather-atlas.com/en/singapore/singapore-climate (월별 mm 전체 공개, 연 2,343mm·Jul 158.7mm·Dec 287.4mm·Feb 159.9mm 2026-11 조회)",
+    "https://esim.holafly.com/travel-tips/best-time-to-visit-southeast-asia/ (Singapore 연중 편차 작음·NE monsoon Nov-Jan 교차)",
+    "https://joygoers.com/%EB%8F%99%EB%82%A8%EC%95%84-%EB%82%A0%EC%94%A8/ (싱가포르 6~8월 건기 경향 교차)"
+   ]
+  },
+  {
+   "claim": "치앙마이는 3~4월 화전 연기 시즌에 PM2.5가 급등해 3월 월평균 80.9μg/m³(PCD 2011~2020)·IQAir 2020~2024 범위 39.9~97.8μg/m³를 기록하고, 2026년 3월 26일에는 AQI 220 이상으로 세계 최악 10대 도시에 올랐다.",
+   "sources": [
+    "https://chiangmaibrief.com/air-quality-and-burning-season/air-quality-by-month/ (PCD 2011-2020 평균 March 80.9μg/m³·IQAir 2020-2024 range March 39.9-97.8μg/m³ 명시)",
+    "https://www.iqair.com/th-en/newsroom/chiang-mai-among-top-10-most-polluted-cities-in-the-world-3-27-2026 (2026-03-27 보도 — AQI 220+·세계 최악 10대 도시 명시)",
+    "https://trip.minosplan.com/entry/%EB%8F%99%EB%82%A8%EC%95%84-%EC%9A%B0%EA%B8%B0-%EA%B1%B4%EA%B8%B0-%EC%A7%80%EC%97%AD%EB%B3%84-%EC%A0%95%EB%A6%AC-%EB%B0%8F-%EC%9B%90%EC%9D%B8-%EC%9D%B4%ED%95%B4 (치앙마이 3~4월 연무 경고 교차)"
+   ]
+  },
+  {
+   "claim": "말레이시아는 서해안(쿠알라룸푸르·랑카위) 12~2월 건기, 동해안(티오만·페르헨티안) 3~9월 건기로 반대이고 동해안 리조트는 11~2월 폐장이 흔하다.",
+   "sources": [
+    "https://www.going.com/guides/best-time-to-visit-southeast-asia (West Coast Dec-Feb · East Coast Wet Nov-Mar 명시)",
+    "https://esim.holafly.com/travel-tips/best-time-to-visit-southeast-asia/ (서/동 해안 반대 + '동해안 리조트 Nov-Feb 폐장' 명시)",
+    "https://southeastasiabackpacker.com/southeast-asia-climate/ (East Coast 'closed' Nov-Feb 재확인)"
+   ]
+  }
+ ],
+ "variables": {
+  "keyword": "동남아 여행 우기 피하는 시기",
+  "headline_finding": "동남아는 본토·섬(발리)·필리핀 세 축이 반대로 움직여, 어디나 안정된 달은 2~3월뿐이고 8~10월은 전 축이 겹치는 최악 구간.",
+  "bangkok_sep_rain_mm": 334.3,
+  "bangkok_dec_rain_mm": 6.3,
+  "bangkok_annual_rain_mm": 1648,
+  "danang_nov_rain_mm": 275,
+  "danang_feb_rain_mm": 49,
+  "danang_annual_rain_mm": 1570,
+  "hanoi_aug_rain_mm_weatheratlas": 135,
+  "hanoi_feb_rain_mm_weatheratlas": 7,
+  "hanoi_annual_rain_mm_weatheratlas": 595,
+  "hochiminh_jun_rain_mm_weatheratlas": 188,
+  "hochiminh_sep_rain_mm_weatheratlas": 175,
+  "hochiminh_annual_rain_mm_weatheratlas": 1283,
+  "bali_jan_rain_mm": 328,
+  "bali_aug_rain_mm": 53,
+  "cebu_jul_rain_mm_climatestotravel": 210.6,
+  "cebu_apr_rain_mm_climatestotravel": 55.6,
+  "cebu_annual_rain_mm_climatestotravel": 1685,
+  "cebu_oct_rain_mm_weatheratlas": 200,
+  "cebu_nov_rain_mm_weatheratlas": 110,
+  "cebu_dec_rain_mm_weatheratlas": 110,
+  "cebu_annual_rain_mm_weatheratlas": 1340,
+  "singapore_annual_rain_mm_weatheratlas": 2343,
+  "singapore_jul_rain_mm_weatheratlas": 158.7,
+  "singapore_feb_rain_mm_weatheratlas": 159.9,
+  "singapore_dec_rain_mm_weatheratlas": 287.4,
+  "chiangmai_march_pm25_pcd": 80.9,
+  "chiangmai_march_pm25_iqair_range": "39.9-97.8",
+  "chiangmai_2026_03_26_aqi": "220+",
+  "typhoon_peak_months_philippines": "Aug-Nov",
+  "mainland_dry_months": "Nov-Feb",
+  "island_dry_months": "May-Sep",
+  "philippines_dry_months": "Dec-May",
+  "malaysia_east_coast_closed": "Nov-Feb"
+ },
+ "own_evidence": [
+  {
+   "type": "photo",
+   "desc": "제목·세 축·다낭 275mm·발리 328mm·세부 210~239mm 숫자를 자체 디자인한 이 글 전용 히어로 카드 PNG",
+   "proof": "../../assets/posts/southeast-asia-rainy-season-avoid-hero.png"
+  },
+  {
+   "type": "photo",
+   "desc": "7개 지역 × 12개월 몬순 매트릭스를 100mm·200mm 경계로 색칠한 자체 인포그래픽 PNG",
+   "proof": "../../assets/posts/southeast-asia-rainy-season-avoid-matrix.png"
+  },
+  {
+   "type": "photo",
+   "desc": "본토·중부 베트남·발리·필리핀·말레이 동·서해안의 건기 창과 최악의 두 달을 가로 바 차트로 묶은 자체 설계 비교표 PNG",
+   "proof": "../../assets/posts/southeast-asia-rainy-season-avoid-windows.png"
+  },
+  {
+   "type": "table",
+   "desc": "7개 지역(본토·중부 베트남·섬·필리핀·말레이 동·서해안·싱가포르)별 건기/우기/최악 두 달을 한 표로 묶은 자체 설계 결론 매트릭스",
+   "proof": "| 축 | 어디가 속하나 | 건기(가는 때) | 우기(피하는 때) | 가장 나쁜 2개월 |"
+  },
+  {
+   "type": "table",
+   "desc": "11개 여행지(방콕·치앙마이·다낭·호치민·세부·발리·말레이 동·서·싱가포르 등)별 '최악 두 달·월 강수량·안전 대체 창'을 묶은 자체 설계 비교표",
+   "proof": "| 여행지 | 최악 두 달 | 평균 월 강수량·이유 | 안전 대체 창 |"
+  },
+  {
+   "type": "calc",
+   "desc": "방콕 Dec 6.3mm와 Sep 334.3mm 비율(약 50배)·다낭 Feb 49mm와 Nov 275mm 비율(약 5~6배) 등 핵심 비율 직접 산출",
+   "proof": "**12월 6.3mm → 9월 334.3mm**로 50배 차이가 나요"
+  }
+ ],
+ "gaps": [
+  {
+   "gap": "동남아 전역을 '남서 몬순·북동 몬순·태풍' 세 축으로 분리해 왜 같은 달에 지역별 결론이 반대가 되는지를 한 글에서 정리한 가이드가 상위 10개 중 거의 없다.",
+   "covered_in": "왜 같은 동남아인데 월이 다를까 — 몬순 두 축과 태풍"
+  },
+  {
+   "gap": "본토 베트남/다낭/호치민을 북·중·남 세 지역으로 쪼개 월 강수량 수치와 함께 '2~4월은 어디나 OK, 9~10월은 어디도 안전하지 않음' 결론을 명시한 글이 드물다.",
+   "covered_in": "베트남은 남·중·북이 세 나라처럼 다르다"
+  },
+  {
+   "gap": "'최악 두 달'만 표로 묶어 여행지별로 '그 달에 가격이 왜 싼지' 구조적 이유와 안전 대체 창을 함께 적은 압축 요약이 상위 글에 거의 없다.",
+   "covered_in": "\"최악 두 달\"만 외우는 월별 피해야 할 시기 표"
+  },
+  {
+   "gap": "우기여도 가는 경우를 '오전 야외·투숙 1박 추가·플랜 B 노선' 세 요령과 '변경 가능 항공권·Free Cancellation 숙소'라는 예약 설계까지 함께 다룬 글이 드물다.",
+   "covered_in": "우기여도 가는 경우 — 가격·호캉스·태풍 플랜 B"
+  },
+  {
+   "gap": "'11월에 어디 가지?' 같은 월 기준 질문에 지역별로 안전/주의/비추천/폐장을 한 줄로 매칭한 카탈로그가 상위 글에 명시적으로 없다.",
+   "covered_in": "월·목적지 매칭 — \"11월에 어디 가지?\" 바로 답"
+  }
+ ],
+ "hermes_score": 88,
+ "score_history": [
+  85,
+  88
+ ]
+}
