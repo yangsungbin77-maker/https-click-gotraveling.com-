@@ -1,0 +1,241 @@
+{
+ "keyword_filter": {
+  "keyword": "베트남 다낭 여행 추천 코스",
+  "competition": {
+   "method": "serp-scan",
+   "evidence": "상위 10개 중 공식기관·대형매체는 없음. tripstore/baksatravel/cleaveliving/hifineap/kr.trip.com/tour.yanolja/vnguide/stancylife/danangpick 모두 개인·여행 플랫폼 블로그. '2박3일·3박4일·4박5일 완성형 비교' 각도의 글이 없어 깊이·수치·자체 비교 매트릭스로 역전 가능.",
+   "pass": true
+  },
+  "demand": {
+   "method": "autocomplete/serp-scan",
+   "evidence": "구글 자동완성에 '다낭 추천 코스·다낭 3박4일·다낭 2박3일·다낭 자유여행 코스' 변형이 노출됨. 상위 글 발행 시기(2022~2026)가 꾸준히 섞여 수요 유지. 2026-11 비수기 저가 항공권 노출 증가로 신규 검색 유입이 기대됨.",
+   "pass": true
+  },
+  "intent": {
+   "method": "serp-scan",
+   "evidence": "상위 10개가 모두 '일자별 일정 + 바나힐·호이안 묶는 원칙 + 가격' 정보형 가이드. 광고·쇼핑 SERP 없이 오가닉만. 2박3일·3박4일·4박5일 각 코스 비교 매트릭스를 명시한 글은 없어 '완성형 비교' 각도가 적중.",
+   "pass": true
+  }
+ },
+ "structure": "과정따라가기",
+ "type": "howto",
+ "overlap_ok": "같은 사이트 /danang-travel-course/는 '왜 바나힐과 호이안을 같은 날에 몰면 안 되는가'라는 동선 조립 원칙 설명 글이고, 본 글은 그 원칙 위에 2박3일(A·B안)·3박4일(표준)·4박5일(휴양+·관광+) 완성형 코스 5개를 한 매트릭스에 묶은 실행편이다. 원칙 글과 실행 글의 쌍으로 구성해 내부 링크로 묶음.",
+ "serp": [
+  {
+   "url": "https://www.tripstore.kr/blog/%EB%B2%A0%ED%8A%B8%EB%82%A8-%EB%8B%A4%EB%82%AD-%EC%97%AC%ED%96%89-3%EB%B0%954%EC%9D%BC-%EA%B0%80%EC%9D%B4%EB%93%9C",
+   "opened": true,
+   "note": "트립스토어 다낭 3박 4일 완벽 가이드. 1일차 한시장·핑크성당·용다리, 2일차 바나힐·골든 브릿지·마사지, 3일차 미케비치·호이안 올드타운·야시장·소원배. 바나힐 입장료 90만 동(약 49,000원)·호이안 올드타운 12만 동(약 6,500원)·반세오 6~8만 동 숫자 교차."
+  },
+  {
+   "url": "https://cleaveliving.com/danang-travel-itinerary-3n4d-4n5d/",
+   "opened": true,
+   "note": "클리브리빙 3박4일/4박5일 가이드. 3박4일 = 도착+미케비치 → 리조트·마사지 → 호이안·야경 → 한시장·귀국. 4박5일 = 도착·미케 → 바나힐 → 리조트풀데이 → 호이안·맞춤옷 → 한시장·귀국. 호이안 30분·바나힐 40분·그랩 25만 동·마사지 2.5~3만 원 교차."
+  },
+  {
+   "url": "https://baksatravel.com/magazine/danang-travel-course-2026",
+   "opened": true,
+   "note": "박사트래블 2026 다낭 완벽 가이드. 미케비치·용다리·오행산·바나힐 골든브릿지·호이안 올드타운 5대 명소. 1일차 미케→용다리→오행산→한시장→야경, 2일차 바나힐 종일, 3일차 호이안 역사·맞춤옷·랜턴, 4일차 선짜반도·참박물관. 건기 2~8월·우기 9~1월 교차."
+  },
+  {
+   "url": "https://tour.yanolja.com/content/articles/ca38ef83-8393-4ff2-b9ef-144ae2ef6bc1",
+   "opened": true,
+   "note": "야놀자 트리플 다낭 3박5일 집중 코스. Day2 7h(한시장·대성당·참박물관·오행산·호이안 야시장), Day3 7.5h(호이안 올드타운·일본교·푸젠회관·미케비치), Day4 8h(미케·바나힐·마사지). 호이안 Day2 또는 Day3 분리·반일 vs 종일 원칙 교차."
+  },
+  {
+   "url": "https://kr.trip.com/guide/stay/da-nang-solo-travel.html",
+   "opened": true,
+   "note": "트립닷컴 다낭 혼자 여행 3박4일 109만 원 코스. 1일차 오행산+아오자이쇼, 2일차 호이안 올드타운·코코넛배, 3일차 참섬 반나절 투어·마사지, 4일차 바나힐·공항. 다낭↔호이안 40~50분·참섬 스피드보트 20분·다낭↔바나힐 40km 숫자 교차."
+  },
+  {
+   "url": "https://stancylife.com/ko/danang-5-days-4-nights-itinerary/",
+   "opened": true,
+   "note": "스탠시라이프 다낭 4박5일 일정. Day1 도착·호텔, Day2 바나힐 일일 투어·다른 일정 금지, Day3 오행산·호이안 바구니배·구시가 야경, Day4 미케비치·수영장, Day5 귀국. '여행이 매일 꽉 채워야 가치 있는 게 아니'라는 체력 분배·비오는 날 대안 교차."
+  },
+  {
+   "url": "https://hifineap.com/4%EC%8B%9C%EA%B0%84%EC%9D%B4%EB%A9%B4-%EB%8F%84%EC%B0%A9%ED%95%98%EB%8A%94-%EA%B0%80%EC%84%B1%EB%B9%84-%EC%B2%9C%EA%B5%AD-2026-%EB%8B%A4%EB%82%AD-%ED%98%B8%EC%9D%B4%EC%95%88-3%EB%B0%954%EC%9D%BC/",
+   "opened": true,
+   "note": "하이핀랩 2026 다낭 호이안 3박4일. 인천→다낭 4h 10m·비엣젯 주중 편도 12만 9천원·주말 20만원대·게스트하우스 1박 5만원·호이안 호스텔 3~4만원·식비 하루 3만원·그랩 기본요금 7천원·다낭↔호이안 그랩 25만 동(13,000원). Day1 미케 노을, Day2 바나힐+호이안 야시장, Day3 호이안 자전거·안방비치·종이배, Day4 한시장·귀국."
+  },
+  {
+   "url": "https://www.tripstore.kr/blog/%EB%8B%A4%EB%82%AD-%EA%B0%80%EB%B3%BC%EB%A7%8C%ED%95%9C%EA%B3%B3-%EC%BD%94%EC%8A%A4-%EC%B6%94%EC%B2%9C",
+   "opened": true,
+   "note": "트립스토어 다낭 가볼만한곳 핵심 6곳 40만원대 코스. 핑크성당 30분·한시장 아오자이 1.5만원·미케비치 포브스 6대·바나힐 1,487m·호이안 40분·안방비치 저녁식사. 바나힐 '오전 8시 전 출발'·호이안 '해질 무렵 방문' 권장 교차."
+  },
+  {
+   "url": "https://vnguide.co.kr/bbs/board.php?bo_table=danang&wr_id=1479",
+   "opened": true,
+   "note": "베트남가이드 다낭 호이안 자유여행 코스. 3개 지리 코스 분리 — 바나힐 코스(손짜반도·린응사·바나힐), 호이안 코스(오행산·안방비치·올드타운), 다낭 시내 코스(한시장·담시장·롯데마트·헬리오 야시장·용다리·핑크성당·미케해변). '호이안과 바나힐이 완전 반대'로 분리 설계 필수 명시."
+  },
+  {
+   "url": "https://junglebosstours.com/explorer/tourism-blog/ba-na-hills-ticket-booking",
+   "opened": true,
+   "note": "Jungle Boss 2026 Ba Na Hills 공식 요금 정리(1차 출처). 성인 1,000,000 동(~$38), 어린이(1~1.4m)·70세+ 800,000 동, 1m 미만 무료, 다낭 주민 650,000 동. 케이블카·골든브릿지·판타지파크·꽃정원·사원 포함. 운영 08:00~22:00. 2026-01-01부터 티켓 연속 3일 유효. 콤보(케이블카+뷔페) 1,250,000 동."
+  },
+  {
+   "url": "https://danangfantasticity.com/en/discovery/hoi-an-ancient-town-entrance-tickets-2026",
+   "opened": true,
+   "note": "다낭 판타스틱시티 공식 Hoi An Ancient Town 입장권 2026(1차 출처). 120,000 동(박물관+유적 1+문화명소 3) · 80,000 동(공유공간+유적 1+문화명소 2) · 체류 최대 3일 유효. 보행자 전용 여름 09:00~21:30·겨울 09:00~21:00."
+  },
+  {
+   "url": "https://danangpick.net/danang-grab-vs-taxi-comparison-guide/",
+   "opened": true,
+   "note": "다낭픽 Grab vs 택시 2026 비교. 공항~시내 4~6km 그랩 60,000~100,000 동(≈3,000~5,000원)·호텔~공항 그랩 약 10만 동·Vinasun(흰색)·Mai Linh(초록) 안전 택시·KakaoT 한글·Grab 요금 사전 표시·Be 백업 앱 교차."
+  },
+  {
+   "url": "https://www.skyscanner.co.kr/destinations/advice/danang-travel-best-time",
+   "opened": false,
+   "note": "스카이스캐너 다낭 여행 베스트 시기 — WebFetch에 응답 없음(서버 측 봇 차단 추정). WebSearch 스니펫만 참조."
+  }
+ ],
+ "factcheck": [
+  {
+   "claim": "바나힐(Sun World Ba Na Hills) 2026-11 기준 입장료는 성인 1,000,000 동(≈ 55,000원·US$ 38)·어린이(1~1.4m)·70세 이상 800,000 동·1m 미만 무료, 운영 08:00~22:00이고 2026-01-01부터 티켓이 연속 3일간 유효로 바뀌었다.",
+   "sources": [
+    "https://junglebosstours.com/explorer/tourism-blog/ba-na-hills-ticket-booking (성인 1,000,000 동·어린이 800,000 동·다낭 주민 650,000 동·운영 08:00~22:00·2026-01-01 3일 유효 명시, 2026-11 조회)",
+    "WebSearch Sun World Ba Na Hills Ticket Price 2026 (Trip.com $37.57·KKday $36.07·Wanderon·Ticketstodo 교차 — 100만 동 게이트 가격·클룩/겟유어가이드 90만 동 할인)",
+    "https://www.tripstore.kr/blog/%EB%B2%A0%ED%8A%B8%EB%82%A8-%EB%8B%A4%EB%82%AD-%EC%97%AC%ED%96%89-3%EB%B0%954%EC%9D%BC-%EA%B0%80%EC%9D%B4%EB%93%9C ('바나힐 입장료 약 900,000 동(약 49,000원)' 할인가 교차)"
+   ]
+  },
+  {
+   "claim": "호이안 올드타운(Hoi An Ancient Town) 2026-11 기준 외국인 입장권은 120,000 동(약 6,500원)·베트남인은 80,000 동, 체류 최대 3일간 유효이고 보행자 전용 구간은 여름 09:00~21:30·겨울 09:00~21:00이다.",
+   "sources": [
+    "https://danangfantasticity.com/en/discovery/hoi-an-ancient-town-entrance-tickets-2026 (120,000 동/80,000 동 2티어·체류 3일 유효·여름 09:00~21:30·겨울 09:00~21:00 보행자 전용 2026-11 조회)",
+    "WebSearch Hoi An Ancient Town entrance ticket 2026 (hoiandaytrip·hoianlocals·huracars·lanytrip·sovaba·hoiandriver·hoiancreativecity 교차 — 외국인 120,000 동 / 베트남인 80,000 동 명시)",
+    "https://www.tripstore.kr/blog/%EB%B2%A0%ED%8A%B8%EB%82%A8-%EB%8B%A4%EB%82%AD-%EC%97%AC%ED%96%89-3%EB%B0%954%EC%9D%BC-%EA%B0%80%EC%9D%B4%EB%93%9C ('올드타운 입장료 120,000 동(약 6,500원)' 교차)"
+   ]
+  },
+  {
+   "claim": "다낭 국제공항에서 시내까지 거리는 4~6km로 짧고, 그랩(GrabCar 4인승)은 60,000~100,000 동(≈ 3,000~5,000원) 선이며 공식 택시는 Vinasun(흰색)·Mai Linh(초록) 외엔 바가지 리스크가 있다.",
+   "sources": [
+    "https://danangpick.net/danang-grab-vs-taxi-comparison-guide/ (공항~시내 4~6km·그랩 60,000~100,000 동·Vinasun·Mai Linh 지정·요금 사전 표시 2026-11 조회)",
+    "WebSearch 다낭 공항 시내 택시 그랩 요금 2026 (triple.guide·vietnamguide.co.kr·maybay.co.kr·tripstore 교차 — '한 시장 기준 7~9만 동·미케 비치 기준 12~15만 동·4인승 톨비 1만동')",
+    "https://kr.trip.com/guide/stay/da-nang-solo-travel.html ('공항~시내 10~15분·그랩 3,000~5,000원대·안전 주의' 교차)"
+   ]
+  },
+  {
+   "claim": "다낭에서 호이안까지는 약 30km·차로 40분이고 그랩 편도 약 25만 동(≈ 13,000원), 다낭에서 바나힐까지는 약 40km·차로 40분이다.",
+   "sources": [
+    "https://hifineap.com/4%EC%8B%9C%EA%B0%84%EC%9D%B4%EB%A9%B4-%EB%8F%84%EC%B0%A9%ED%95%98%EB%8A%94-%EA%B0%80%EC%84%B1%EB%B9%84-%EC%B2%9C%EA%B5%AD-2026-%EB%8B%A4%EB%82%AD-%ED%98%B8%EC%9D%B4%EC%95%88-3%EB%B0%954%EC%9D%BC/ ('다낭에서 호이안까지 그랩 택시로 40분·요금 약 25만 동(13,000원)' 명시 2026-11 조회)",
+    "https://kr.trip.com/guide/stay/da-nang-solo-travel.html ('다낭↔호이안 차로 40~50분·다낭~바나힐 약 40km' 명시)",
+    "https://baksatravel.com/magazine/danang-travel-course-2026 ('다낭→호이안 30분·다낭→바나힐 40분' 명시)"
+   ]
+  },
+  {
+   "claim": "미케비치(My Khe Beach)는 포브스가 선정한 '세계에서 가장 매력적인 6대 해변' 중 하나로 소개되며, 다낭 시내에서 도보 또는 그랩 단거리로 접근 가능한 대표 해변이다.",
+   "sources": [
+    "https://www.tripstore.kr/blog/%EB%8B%A4%EB%82%AD-%EA%B0%80%EB%B3%BC%EB%A7%8C%ED%95%9C%EA%B3%B3-%EC%BD%94%EC%8A%A4-%EC%B6%94%EC%B2%9C ('세계 6대 해변으로 꼽히는' 미케비치 명시)",
+    "https://baksatravel.com/magazine/danang-travel-course-2026 ('미케 해변 포브스 선정 세계 6대 해변' 명시)",
+    "https://kr.trip.com/moments/poi-intercontinental-danang-sun-peninsula-resort-an-ihg-hotel-21603582 ('다낭의 상징 My Khe 해변·포브스 세계 6대 해변' 교차)"
+   ]
+  },
+  {
+   "claim": "인천에서 다낭까지 직항 비행 소요는 약 4시간 10분이고 2026-11 기준 비엣젯항공 주중 편도 12만 9천 원대·주말 20만 원대부터 운임이 형성된다.",
+   "sources": [
+    "https://hifineap.com/4%EC%8B%9C%EA%B0%84%EC%9D%B4%EB%A9%B4-%EB%8F%84%EC%B0%A9%ED%95%98%EB%8A%94-%EA%B0%80%EC%84%B1%EB%B9%84-%EC%B2%9C%EA%B5%AD-2026-%EB%8B%A4%EB%82%AD-%ED%98%B8%EC%9D%B4%EC%95%88-3%EB%B0%954%EC%9D%BC/ ('인천에서 4시간 10분·비엣젯 주중 12만 9천원·주말 20만원대' 명시)",
+    "https://baksatravel.com/magazine/danang-travel-course-2026 ('공항→시내 10분·4시간대 비행' 교차)",
+    "https://kr.trip.com/guide/stay/da-nang-solo-travel.html ('항공권 약 50만 원 수준(왕복)' 교차 — 왕복/편도 기준이 다르지만 가격대 범위 일치)"
+   ]
+  },
+  {
+   "claim": "다낭 시내 60분 전신 마사지의 상위 블로그 교차 가격대는 약 25,000~30,000원(2.5~3만 원) 선이고, 실제 비용은 숍·시즌·코스(발·전신·오일)에 따라 달라진다.",
+   "sources": [
+    "https://cleaveliving.com/danang-travel-itinerary-3n4d-4n5d/ ('마사지 2.5~3만 원' 가격대 명시 2026-11 조회)",
+    "https://www.tripstore.kr/blog/%EB%B2%A0%ED%8A%B8%EB%82%A8-%EB%8B%A4%EB%82%AD-%EC%97%AC%ED%96%89-3%EB%B0%954%EC%9D%BC-%EA%B0%80%EC%9D%B4%EB%93%9C ('2일차 바나힐+마사지' 블록 공통 — 저녁 마사지 코스 교차)",
+    "https://baksatravel.com/magazine/danang-travel-course-2026 ('다낭 저녁 블록 마사지 포함' 교차)"
+   ]
+  }
+ ],
+ "variables": {
+  "keyword": "베트남 다낭 여행 추천 코스",
+  "headline_finding": "다낭은 바나힐 하나가 하루를 통째로 먹고 호이안이 반대 방향이라 2박 3일이면 하나는 포기해야 하고, 3박 4일이 완성형 최소 단위이며, 4박 5일이면 '리조트 풀데이' 또는 '미선/참섬' 블록이 자연스럽다.",
+  "banahill_adult_ticket_vnd": 1000000,
+  "banahill_child_ticket_vnd": 800000,
+  "banahill_operating_hours": "08:00-22:00",
+  "banahill_elevation_m": 1487,
+  "banahill_distance_km": 40,
+  "banahill_combo_buffet_vnd": 1250000,
+  "banahill_ticket_validity_days_2026": 3,
+  "hoian_foreign_ticket_vnd": 120000,
+  "hoian_vn_ticket_vnd": 80000,
+  "hoian_distance_km": 30,
+  "hoian_grab_fare_vnd": 250000,
+  "hoian_pedestrian_summer": "09:00-21:30",
+  "hoian_pedestrian_winter": "09:00-21:00",
+  "hoian_marble_mt_ticket_vnd": "55,000-70,000",
+  "airport_city_distance_km": "4-6",
+  "airport_grab_fare_vnd": "60,000-100,000",
+  "icn_dad_flight_hours": "4h 10m",
+  "vietjet_weekday_oneway_krw": 129000,
+  "vietjet_weekend_oneway_krw": 200000,
+  "dragon_bridge_show_time": "토·일 21:00",
+  "han_market_hours": "06:00-19:00",
+  "course_2n3d_total_krw_range": "550,000-750,000",
+  "course_3n4d_total_krw_range": "750,000-950,000",
+  "course_4n5d_resort_total_krw_range": "950,000-1,300,000",
+  "course_4n5d_tour_total_krw_range": "950,000-1,200,000"
+ },
+ "own_evidence": [
+  {
+   "type": "photo",
+   "desc": "제목과 바나힐 100만 동·호이안 12만 동·공항-시내 4~6km 핵심 숫자 3개를 자체 디자인한 이 글 전용 히어로 카드 PNG",
+   "proof": "../../assets/posts/danang-recommended-travel-courses-hero.png"
+  },
+  {
+   "type": "photo",
+   "desc": "2박3일(A·B안)·3박4일(표준)·4박5일(휴양+·관광+) 5개 코스 각 일자별 블록 배치를 색 코드(바나힐·호이안·시내·리조트·유적)로 구분한 자체 매트릭스 PNG",
+   "proof": "../../assets/posts/danang-recommended-travel-courses-matrix.png"
+  },
+  {
+   "type": "photo",
+   "desc": "바나힐·호이안·시내·오행산/공항 4개 블록 각각의 소요 시간·거리·입장료·운영시간·그랩 요금을 한 장에 비교한 자체 설계 인포그래픽 PNG",
+   "proof": "../../assets/posts/danang-recommended-travel-courses-blocks.png"
+  },
+  {
+   "type": "photo",
+   "desc": "상위 블로그 10편과 공식 안내를 교차해 다낭 코스 설계의 공통 실수 5가지(동시 몰기·낮만 호이안·1일차 날리기·바나힐 오후 출발·우기 포기)를 번호 리스트로 묶은 자체 디자인 체크리스트 PNG",
+   "proof": "../../assets/posts/danang-recommended-travel-courses-mistakes.png"
+  },
+  {
+   "type": "table",
+   "desc": "5개 코스(2박3일 A·B, 3박4일 표준, 4박5일 휴양+·관광+)의 일자별 블록 배치를 한 표로 묶은 자체 설계 결론 매트릭스",
+   "proof": "| 구분 | 1일차 | 2일차 | 3일차 | 4일차 | 5일차 |"
+  },
+  {
+   "type": "table",
+   "desc": "2박 3일·3박 4일·4박 5일(휴양+·관광+) 각 1인 예산을 항공·숙박·교통·입장권·식비·마사지 6개 항목으로 쪼갠 자체 설계 비용 매트릭스",
+   "proof": "| 코스 | 항공 | 숙박 | 교통(그랩·전세) | 입장권·투어 | 식비·마사지 | 합계(1인·중간값) |"
+  },
+  {
+   "type": "calc",
+   "desc": "바나힐 성인 입장료 1,000,000 동을 원화 환율로 환산해 ≈ 55,000원·US$ 38로 제시하고, 2026 할인가(사전 예매 약 900,000 동)와의 차액을 10%로 정리한 직접 산출",
+   "proof": "성인 1,000,000 동(≈ 55,000원·US$ 38)"
+  }
+ ],
+ "gaps": [
+  {
+   "gap": "2박 3일·3박 4일·4박 5일 각 코스를 '한 매트릭스'에 묶어 일자별 블록 배치를 한눈에 비교한 글이 상위 10개에 없다. 각 글은 한 길이만 깊게 다루고 비교는 하지 않음.",
+   "covered_in": "베트남 다낭 여행 추천 코스, 2박3일·3박4일·4박5일 결론 한 장에"
+  },
+  {
+   "gap": "항공편 '도착 시간대(낮·저녁·심야)'에 따라 1일차 설계가 완전히 달라진다는 점을 세 패턴으로 쪼개어 체크리스트화한 글이 상위 10개에 거의 없다.",
+   "covered_in": "1일차 — 공항 도착 시간대별로 갈라지는 다낭 첫날 설계"
+  },
+  {
+   "gap": "바나힐·호이안 각 블록의 '소요 시간·거리·입장료·운영 시간·그랩 요금'을 공식 1차 출처로 교차한 한 장짜리 비교 인포그래픽을 제시한 글이 상위 10개에 없다.",
+   "covered_in": "베트남 다낭 여행 추천 코스 하루 블록 시간·거리·비용 인포그래픽"
+  },
+  {
+   "gap": "'아이·부모·혼자' 동행 유형별로 같은 코스를 어떻게 변형할지(판타지 파크 비중·엘리베이터 코스·야간 그랩 전용 등)를 한 글 안에 묶어 비교한 가이드가 상위 10개에 거의 없다.",
+   "covered_in": "아이·부모·혼자 — 동행 유형별 변형 코스"
+  },
+  {
+   "gap": "다낭 코스 설계에서 반복되는 실수 5가지(바나힐·호이안 동일 몰기·호이안 낮만 보기·1일차 통째 날리기·바나힐 오후 출발·우기 포기)를 한 장으로 압축해 체크리스트화한 글이 상위 10개에 없다.",
+   "covered_in": "코스 짤 때 자주 하는 실수 5가지"
+  }
+ ],
+ "hermes_score": 89,
+ "score_history": [
+  87,
+  89
+ ]
+}
