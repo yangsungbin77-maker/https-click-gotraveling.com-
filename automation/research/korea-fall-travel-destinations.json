@@ -1,0 +1,255 @@
+{
+ "slug": "korea-fall-travel-destinations",
+ "topic": "국내 가볼 만한 가을 여행지",
+ "structure": "결론먼저",
+ "serp": [
+  {
+   "url": "https://kr.trip.com/blog/%EB%8B%A8%ED%92%8D%EB%AA%85%EC%86%8C/",
+   "opened": true,
+   "note": "2026 국내 단풍 명소 BEST 10. 명소별 절정 시기만 짧게 나열, 입장료/운영시간은 전무. 명소당 50~100단어."
+  },
+  {
+   "url": "https://kr.trip.com/blog/fall-trip-in-korea/",
+   "opened": true,
+   "note": "국내 가을 여행지 BEST 15. 지역별 3곳씩 묶는 구성이지만 절정일/요금/운영시간 모두 없음. 사진+짧은 설명형."
+  },
+  {
+   "url": "https://www.thinknote.co.kr/korea-november-travel-2026/",
+   "opened": true,
+   "note": "2026년 11월 국내여행 추천 7곳. 명소별 동선·실용 주의·공식 링크까지 담았으나 구체 요금과 주별 매트릭스가 없음."
+  },
+  {
+   "url": "https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=16b70896-12aa-4dd0-839e-ecd5aae26479",
+   "opened": true,
+   "note": "한국관광공사 가을 인생 단풍 명소 5곳. 공식 출처라 위치/운영시간/이용요금/문의/주차 필드가 일관. 대신 명소 수가 적고 절정 '시기'를 구체 날짜로 안 적음."
+  },
+  {
+   "url": "https://kr.trip.com/blog/autumn-sight-kr/",
+   "opened": true,
+   "note": "수도권·충청·경상 숨은 단풍 명소. 주소·운영시간·입장료·주차요금을 채운 글. 단, 숨은 명소 중심이라 설악·내장 같은 메인이 짧음."
+  },
+  {
+   "url": "https://wisefullife.com/ko/k-travel/korea-autumn-foliage-best-10-spots-2025/",
+   "opened": true,
+   "note": "지역별 피크 날짜(강원·중부·호남·경상·제주)를 영어·한국어 혼용으로 안내. 2025 기준이라 올해는 약간 어긋남."
+  },
+  {
+   "url": "https://hiuskorea.com/travel/%EC%9D%B4%EB%B2%88-%EC%A3%BC-%EB%86%93%EC%B9%98%EB%A9%B4-%EB%81%9D-2026%EB%85%84-10%EC%9B%94-%EB%A7%88%EC%A7%80%EB%A7%89-%EC%A3%BC-%EA%B0%80%EC%9D%84-%EC%97%AC%ED%96%89%EC%A7%80-8/",
+   "opened": true,
+   "note": "2026 10월 마지막 주 가을 여행지 8곳. 국화축제·야경 중심. 산 단풍은 적음."
+  },
+  {
+   "url": "https://foxcg.com/2026-autumn-foliage-peak",
+   "opened": true,
+   "note": "산림청 2026 공식 발표 요약(설악 10/20·속리 10/28·내장 11/4·한라 11/6). 기관별 50%/80% 기준 차이도 적어 둔 메타 소스."
+  },
+  {
+   "url": "https://www.dailian.co.kr/news/view/1693325/%EC%98%AC%ED%95%B4-%EB%8B%A8%ED%92%8D-%EC%A0%88%EC%A0%95-10%EC%9B%94-%EB%A7%90%EC%84%A4%EC%95%85%EC%82%B0-20-2026",
+   "opened": true,
+   "note": "데일리안 2026 산림청 발표 뉴스. 날짜 수치 교차 확인용 1차 매체 기사."
+  },
+  {
+   "url": "https://lightone.kr/hwadam-forest-autumn-foliage-festival-2026/",
+   "opened": true,
+   "note": "화담숲 2026 공식 요금/운영시간/100% 사전예약·모노레일 요금까지. 수도권 섹션 수치의 1차 소스."
+  },
+  {
+   "url": "https://www.make2t.kr/2026/11/naejangsan-admission-parking-cablecar-2026.html",
+   "opened": true,
+   "note": "내장산 2026 입장료·주차·케이블카·셔틀 공식 요금. 셔틀 10/30~11/15 무료 운영 기간 포함."
+  },
+  {
+   "url": "https://royal.khs.go.kr/ROYAL/contents/R601000000.do?schGroupCode=cdg",
+   "opened": true,
+   "note": "국가유산청 궁능유적본부 창덕궁 공식 예약 페이지. 후원 5,000원·회차 구성 1차 확인."
+  },
+  {
+   "url": "https://www.wegive.co.kr/wezine/detail/1245",
+   "opened": false,
+   "note": "wegive 경기도 가을 명소 3곳. queue-it.net 대기열 리디렉트로 본문 접근 차단."
+  },
+  {
+   "url": "https://www.skyscanner.co.kr/destinations/advice/where-to-go-on-holiday-in-september-and-october",
+   "opened": false,
+   "note": "스카이스캐너 9~10월 국내 여행 6곳. WebFetch 응답 본문이 거의 비어 있음(JS 렌더링)."
+  },
+  {
+   "url": "https://www.kkday.com/ko/blog/13090/asia-korea-autumn-travel-location",
+   "opened": false,
+   "note": "KKday 2026 가을 국내여행지 BEST 13. 403 Forbidden으로 서버가 차단."
+  }
+ ],
+ "factcheck": [
+  {
+   "claim": "2026 산림청 공식 발표 — 설악산 절정 10/20·속리산 10/28·내장산 11/4·한라산 11/6",
+   "sources": [
+    "https://foxcg.com/2026-autumn-foliage-peak",
+    "https://www.dailian.co.kr/news/view/1693325/%EC%98%AC%ED%95%B4-%EB%8B%A8%ED%92%8D-%EC%A0%88%EC%A0%95-10%EC%9B%94-%EB%A7%90%EC%84%A4%EC%95%85%EC%82%B0-20-2026"
+   ]
+  },
+  {
+   "claim": "내장산 국립공원 입장료 무료(2007-01-01 폐지)·주차 주중 4,000원 주말 5,000원·케이블카 대인 왕복 11,000원·셔틀 10/30~11/15 무료 운영",
+   "sources": [
+    "https://www.make2t.kr/2026/11/naejangsan-admission-parking-cablecar-2026.html",
+    "https://feed.viewus.co.kr/ai/article/354208/"
+   ]
+  },
+  {
+   "claim": "화담숲 2026 가을(10/1~11/22) 100% 사전예약제·성인 11,000원·경로 청소년 9,000원·어린이 7,000원·모노레일 순환 7,000~9,000원",
+   "sources": [
+    "https://lightone.kr/hwadam-forest-autumn-foliage-festival-2026/",
+    "https://daonjoyful.com/2026-%ED%99%94%EB%8B%B4%EC%88%B2-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EC%82%AC%EC%A0%84%EC%98%88%EC%95%BD%EB%B0%A9%EB%B2%95-%EC%98%A4%ED%94%88%EC%9D%BC%EC%A0%95-%ED%95%A0%EC%9D%B8-%EB%AA%A8%EB%85%B8/"
+   ]
+  },
+  {
+   "claim": "창덕궁 후원 성인 5,000원·만 7~18세 2,500원·회차당 100명(인터넷 50+현장 50)·관람일 6일 전 오전 10시 오픈·월요일 휴관",
+   "sources": [
+    "https://royal.khs.go.kr/ROYAL/contents/R601000000.do?schGroupCode=cdg",
+    "https://info.omnlog.com/entry/%EC%B0%BD%EB%8D%95%EA%B6%81-%ED%9B%84%EC%9B%90-%EC%98%88%EC%95%BD-%EB%B0%A9%EB%B2%95-6%EC%9D%BC-%EC%A0%84-%EC%98%A4%EC%A0%84-10%EC%8B%9C%C2%B7%EC%98%88%EC%95%BD%EC%A1%B0%ED%9A%8C%C2%B7%ED%98%84%EC%9E%A5%ED%91%9C-%ED%99%95%EC%9D%B8"
+   ]
+  },
+  {
+   "claim": "담양 메타세쿼이아길 성인 2,000원·청소년 군인 1,000원·어린이 700원·만 65세 이상 및 만 6세 이하 면제 — 담양군 공식 안내 기준 9월~4월 09:00~18:00, 5월~8월 09:00~19:00 운영(본문·FAQ 통일)",
+   "sources": [
+    "https://www.balpumnews.com/travel/damyang-metasequoia-lined-road-8",
+    "https://www.telltrip.com/domestic-travel/damyang-metasequoia-road-forest-tunnel-walk/"
+   ]
+  },
+  {
+   "claim": "산림청 50% vs 기상청 80% 기준 차이로 '첫 단풍/절정' 날짜가 기관마다 어긋남 — 산림청은 숲의 50%가 물든 날, 기상청은 80%가 물든 날",
+   "sources": [
+    "https://foxcg.com/2026-autumn-foliage-peak",
+    "https://calculkorea.com/fall-foliage-2026"
+   ]
+  },
+  {
+   "claim": "설악산 오색-대청봉 당일 왕복 소요시간은 국립공원공단 설악산국립공원 코스 안내 기준 편도 약 5km·4~5시간, 왕복 약 10시간 — 피크 주말 소공원 주차장은 성수기 토·일 오전 중 만차가 잦다는 완화 표현만 사용",
+   "sources": [
+    "https://seorak.knps.or.kr/",
+    "https://www.knps.or.kr/"
+   ]
+  },
+  {
+   "claim": "서울-신경주 KTX 공식 소요시간 약 2시간(코레일 시각표 기준) — 자가용은 성수기 주말 평균 통행시간에 1~2시간 추가되는 사례가 잦다는 범위 표현만 사용",
+   "sources": [
+    "https://www.letskorail.com/",
+    "https://www.ex.co.kr/"
+   ]
+  },
+  {
+   "claim": "내장산 내장사 매표소~내장사 본전 약 1km 단풍 숲길에 수령 100년 이상 108그루 단풍 터널(viewus 보도 기준)",
+   "sources": [
+    "https://feed.viewus.co.kr/ai/article/354208/",
+    "https://www.make2t.kr/2026/11/naejangsan-admission-parking-cablecar-2026.html"
+   ]
+  },
+  {
+   "claim": "반계리 은행나무는 천연기념물 제167호, 국가유산청 공식 기재 기준 수령 약 800년 이상(범위 단정)",
+   "sources": [
+    "https://www.heritage.go.kr/",
+    "https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=16b70896-12aa-4dd0-839e-ecd5aae26479"
+   ]
+  },
+  {
+   "claim": "남산공원 상시 개방·입장료 무료, 10월 말~11월 중순 단풍 절정 창(서울시 공식 공원 안내 기준)",
+   "sources": [
+    "https://parks.seoul.go.kr/",
+    "https://kr.trip.com/blog/%EB%8B%A8%ED%92%8D%EB%AA%85%EC%86%8C/"
+   ]
+  },
+  {
+   "claim": "성수기 주말 숙박은 조기 마감이 잦아 2~4주 전 선점 권장(완판 단정 금지), 설악동 리조트 성수기 주말 1박 20만~35만 원·내장산 인근 펜션 15만~25만 원 체감 범위",
+   "sources": [
+    "https://partners.yanolja.com/",
+    "https://www.make2t.kr/2026/11/naejangsan-admission-parking-cablecar-2026.html"
+   ]
+  },
+  {
+   "claim": "내장산 피크 셔틀(10/30~11/15)은 내장호 주차장↔월영교 구간, 평일 09~17시·주말 08~17시 운행, 대기 간격 10~15분",
+   "sources": [
+    "https://www.make2t.kr/2026/11/naejangsan-admission-parking-cablecar-2026.html",
+    "https://feed.viewus.co.kr/ai/article/354208/"
+   ]
+  },
+  {
+   "claim": "국내 여행 긴급 연락처는 국립공원공단 1670-9201·한국관광공사 관광안내 1330만 안내(외교부 영사콜센터는 국내 여행 글에서 제거)",
+   "sources": [
+    "https://www.knps.or.kr/",
+    "https://korean.visitkorea.or.kr/"
+   ]
+  }
+ ],
+ "variables": {
+  "keyword": "국내 가볼 만한 가을 여행지",
+  "headline_finding": "2026 산림청 기준 설악 10/20·속리 10/28·내장 11/4·한라 11/6 — 주별 매트릭스로 쉴 수 있는 주와 명소를 맞추는 쪽이 정답",
+  "peak_date_seoraksan": "2026-10-20",
+  "peak_date_songnisan": "2026-10-28",
+  "peak_date_naejangsan": "2026-11-04",
+  "peak_date_hallasan": "2026-11-06",
+  "hwadamsup_adult_fee_krw": 11000,
+  "naejangsan_cablecar_rt_krw": 11000,
+  "damyang_metasequoia_fee_krw": 2000,
+  "changdeokgung_hugwon_fee_krw": 5000,
+  "naejangsan_shuttle_window": "2026-10-30 ~ 2026-11-15 무료"
+ },
+ "keyword_filter": {
+  "keyword": "국내 가볼 만한 가을 여행지",
+  "competition": {
+   "method": "serp-scan",
+   "evidence": "SERP 1페이지에 trip.com·thinknote·kkday·wisefullife 같은 중소~중형 블로그 매체 위주. 위키·대형 공식 매체 지배형 아님. 신생 도메인도 충분한 깊이로 보강하면 승산 있음.",
+   "pass": true
+  },
+  "demand": {
+   "method": "autocomplete/trends",
+   "evidence": "구글 자동완성에서 '국내 가을 여행지 추천'·'국내 가볼 만한 가을 여행지 2026' 등 자동완성 다수 노출. 10~11월 계절 검색 수요가 급증하는 시즌 키워드.",
+   "pass": true
+  },
+  "intent": {
+   "method": "serp-scan",
+   "evidence": "상위 10개가 정보·추천 리스트 글(여행 블로그·매거진·OTA 매체) 위주. 거래·브랜드·앱 다운로드 결과 거의 없음 → 정보 콘텐츠로 충족 가능.",
+   "pass": true
+  }
+ },
+ "gaps": [
+  {
+   "gap": "산림청 50% vs 기상청 80% 기준 차이로 날짜가 며칠씩 어긋나는데 상위 글 과반이 왜 어긋나는지 설명을 안 함",
+   "covered_in": "첫 단풍·절정·낙엽 — 산림청 50% 기준으로 외우기 쉬운 3주차 지도"
+  },
+  {
+   "gap": "입장료·주차료·운영시간·100% 사전예약 등 실용 운영 수치가 상위 글에서 거의 전무 — '화담숲 당일 매표 없음' 같은 함정 안내가 빠짐",
+   "covered_in": "서울·수도권 — 창덕궁 후원·석촌호수·화담숲 당일치기 블록"
+  },
+  {
+   "gap": "주별 단풍 피크와 명소를 묶는 매트릭스가 상위 글에 없어 '내가 쉴 수 있는 주'와 명소 선택이 어긋나는 문제",
+   "covered_in": "국내 가볼 만한 가을 여행지, 2026 산림청 절정일 한 장에"
+  },
+  {
+   "gap": "내장산 10/30~11/15 차량통제·무료 셔틀, 설악산 피크 주말 자가용 진입 난이도 같은 가을철 특수 교통 안내 부재",
+   "covered_in": "가을 여행 실수 5가지 — 월요일 휴관·100% 예약·셔틀 제한"
+  }
+ ],
+ "own_evidence": [
+  {
+   "type": "table",
+   "desc": "2026 산림청 절정일을 주차별 매트릭스(대표 명소·지역·이유)로 자체 묶은 표",
+   "proof": "10월 셋째 주** | **10/20** (화) 설악산 | 설악산·오대산·북한산"
+  },
+  {
+   "type": "data",
+   "desc": "내장산·화담숲·담양·창덕궁 각 기관 공식 요금을 가을 여행자 관점에서 한 표로 재정리",
+   "proof": "케이블카 | 대인 왕복 **11,000원**(편도 7,000원)"
+  },
+  {
+   "type": "table",
+   "desc": "산림청 50% vs 기상청 80% 절정 기준 차이를 3주차 지도(D-14/D-day/D+7)로 자체 설계",
+   "proof": "D-14 ~ D-7**(절정 2주 ~ 1주 전): 숲이 **30~50% 물드는 구간"
+  }
+ ],
+ "pub_date": "Nov 12 2026",
+ "notes": "결론먼저 구성 — 상위 글들이 '명소 15~20곳 나열'로 끝나는 패턴을 피하고, 2026 산림청 공식 절정일을 뼈대로 '주별 매트릭스 → 주차별 축 → 함정 체크리스트'로 역순 구성. 히어로+인포그래픽 2장(매트릭스·실수 체크리스트+요금)으로 총 3장. 직전 2편과 장수 다름(4,3 → 3).",
+ "hermes_score": 88,
+ "score_history": [
+  87,
+  88
+ ]
+}
